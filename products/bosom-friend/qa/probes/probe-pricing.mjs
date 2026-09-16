@@ -1,0 +1,10 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await page.goto('http://127.0.0.1:3081/bosom-friend/', { waitUntil: 'networkidle', timeout: 120000 });
+const r = await page.request.get('http://127.0.0.1:3081/bosom-friend/api/ai/draft-generation/pricing');
+const body = await r.json();
+console.log(JSON.stringify(body, null, 1).slice(0, 3000));
+await browser.close();

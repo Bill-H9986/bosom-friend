@@ -1,0 +1,24 @@
+{
+  "minTokens": 70,
+  "minLines": 8,
+  "mode": "mild",
+  "format": ["typescript", "tsx", "javascript"],
+  "pattern": "**/*.{ts,tsx,mjs,cjs,js}",
+  "ignore": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/dist-electron/**",
+    "**/lib/**",
+    "**/legacy-archive/**",
+    "**/release/**",
+    "**/qa/evidence/**",
+    "**/test-results/**",
+    "**/*.d.ts"
+  ],
+  "absolute": true,
+  "reporters": ["console", "json"],
+  "output": "qa/reports/duplication",
+  "exitCode": 0,
+  "noColors": true,
+  "noTips": true
+}

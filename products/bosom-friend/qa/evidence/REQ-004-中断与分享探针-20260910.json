@@ -1,0 +1,94 @@
+{
+  "base": "http://127.0.0.1:31280/bosom-friend/",
+  "at": "2026-09-10T10:04:45.000Z",
+  "api": {
+    "taskList": {
+      "code": 0,
+      "total": 10,
+      "statuses": [
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed"
+      ]
+    },
+    "share": {
+      "taskId": "task-423d43d0",
+      "code": 0,
+      "token": "ec02c2d83cce4974948b0bafd5bf194e",
+      "expiresAt": "2026-09-10T11:04:45.042Z",
+      "urlPath": "#/chat?token=ec02c2d83cce4974948b0bafd5bf194e",
+      "claimedDays": 0,
+      "requestedSeconds": 3600
+    },
+    "shared": {
+      "code": 0,
+      "messageCount": 8,
+      "messageTypes": [
+        "user",
+        "assistant"
+      ],
+      "status": "completed",
+      "title": "请详细介绍你自己都能帮我做哪些事情，尽量写详细一些，内容多一"
+    },
+    "sharedBogus": {
+      "code": 40404,
+      "message": "shared task not found"
+    },
+    "shareAgain": {
+      "tokenChanged": true,
+      "oldTokenCode": 0,
+      "requestedSeconds": 60,
+      "claimedMinutes": 1
+    },
+    "probeTaskId": "task-423d43d0"
+  },
+  "ui": {
+    "shareButtonCount": 1,
+    "shareDialogText": "分享对话 选择要分享的消息 选取全部 选最近几条 清空选中 8 请详细介绍你自己都能帮我做哪些事情，尽量写详细一些，内容多一点。 ▾ 好的，我来详细介绍一下我能帮你做的事情。 🤖 我是谁 我是 Bosom Friend 的智能体，你的专属内容运营助手。我可以帮你完成从内容创作到发布、运营、数据分析的一站式全流程操作。 📝 一、内容创作 1. 生成视频/图文脚本 你只需告诉我主题或想法，我就能生成： 标题（≤30字，吸引眼球） 正文内容（可直接发布） 话题标签（热门、相关） 封面建议（素材搭配） 示例： \"帮我写一个关于夏日护肤的小红书笔记\" 我会生成完整的脚本，包括标题、正文、标签和封面建议。 2. 素材管理 查看素材库中的图片和视频素材 推荐合适的封面和素材搭配 🚀 二、内容发布 1. 多平台发布 支持主流社交平台： 小红书：图文笔记 抖音：视频内容 其他平台：根据配置支持 2. ",
+    "shareDialogButtons": [
+      "选取全部",
+      "选最近几条",
+      "清空选中",
+      "▾",
+      "▾",
+      "▾",
+      "▾",
+      "▾",
+      "▾",
+      "▾",
+      "▾",
+      "15天",
+      "复制链接",
+      "通过 Agent 分享",
+      "通过发布分享",
+      "下载长图",
+      "取消",
+      "Close"
+    ],
+    "shareDialogAfter": "能帮我做什么。 ▾ 我今天能帮你做三件事： 创作并发布内容 — 你给主题，我生成标题、正文、话题标签和封面建议，由前端自动完成小红书/抖音的图文或视频发布，并同步数据到数据中心。 自动回复评论私信 — 我监控待接待列表，生成拟人化的口语回复，前端执行发送，每条留痕可回看；敏感话题（价格/合同/医疗等）会提示你人工确认。 维护账号与数据状态 — 自动检查登录态、同步账号画像与作品数据、追踪任务进度，失效时引导重新扫码，全程你在页面看得到每一步的结果。 你想从哪件开始？ ▾ 链接有效期 15天 分享链接 http://127.0.0.1:31280/bosom-friend/#/chat?token=51e88c9a16d748728de17cc085d6635a 有效期至:2026/9/25 18:04:57 复制链接 分享方式 通过 Agent 分享通过发布分享 下载长图 取消 Close",
+    "generatedLink": "http://127.0.0.1:31280/bosom-friend/#/chat?token=51e88c9a16d748728de17cc085d6635a",
+    "shareLinkNode": "http://127.0.0.1:31280/bosom-friend/#/chat?token=51e88c9a16d748728de17cc085d6635a",
+    "linkHttpStatus": 200,
+    "linkFinalUrl": "http://127.0.0.1:31280/bosom-friend/#/chat?token=51e88c9a16d748728de17cc085d6635a",
+    "linkBodyText": "Bosom Friend 内容创作 AI互动 我的任务 发布日历 数据中心 全局监控 知识库 添加频道 Bosom Friend客户端 请详细介绍你自己都能帮我做哪些事情，尽量写详细一些，内容多一 仅供查看 请详细介绍你自己都能帮我做哪些事情，尽量写详细一些，内容多一点。 好的，我来详细介绍一下我能帮你做的事情。 🤖 我是谁 我是 Bosom Friend 的智能体，你的专属内容运营助手。我可以帮你完成从内容创作到发布、运营、数据分析的一站式全流程操作。 📝 一、内容创作 1. 生成视频/图文脚本 你只需告诉我主题或想法，我就能生成： 标题（≤30字，吸引眼球） 正文内容（可直接发布） 话",
+    "fixedLinkUrl": "http://127.0.0.1:31280/bosom-friend/#/chat?token=51e88c9a16d748728de17cc085d6635a",
+    "fixedLinkText": "Bosom Friend 内容创作 AI互动 我的任务 发布日历 数据中心 全局监控 知识库 添加频道 Bosom Friend客户端 请详细介绍你自己都能帮我做哪些事情，尽量写详细一些，内容多一 仅供查看 请详细介绍你自己都能帮我做哪些事情，尽量写详细一些，内容多一点。 好的，我来详细介绍一下我能帮你做的事情。 🤖 我是谁 我是 Bosom Friend 的智能体，你的专属内容运营助手。我可以帮你完成从内容创作到发布、运营、数据分析的一站式全流程操作。 📝 一、内容创作 1. 生成视频/图文脚本 你只需告诉我主题或想法，我就能生成： 标题（≤30字，吸引眼球） 正文内容（可直接发布） 话",
+    "detailInputCount": 1,
+    "sendButtonCount": 1,
+    "stopButtonVisible": true,
+    "stopToast": [],
+    "afterStopStatus": "aborted",
+    "settledStatus": "aborted",
+    "settledMessages": 10,
+    "mainTextAfterEverything": "请详细介绍你自己都能帮我做哪些事情，尽量写详细一些，内容多一 Bosom Friend 使用 Agent 来完成你所有的内容需求，期间会调用大量工具，执行时间会稍久，您可以随时退出，稍后再来查看任务的完成情况。 Bosom Friend 使用 Agent 来完成你所有的内容需求，期间会调用大量工具，执行时间会稍久，您可以随时退出，稍后再来查看任务的完成情况。 收藏 分享 评分 请详细介绍你自己都能",
+    "pageErrors": []
+  },
+  "notes": []
+}

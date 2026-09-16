@@ -1,0 +1,20 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await page.goto('http://127.0.0.1:3081/bosom-friend/#/draft-box', { waitUntil: 'networkidle', timeout: 120000 });
+await page.waitForTimeout(6000);
+await page.addScriptTag({ path: 'C:/Users/Jay/Desktop/Bosom friend APP/apps/bosom-friend/axe-core.min.js' });
+const info = await page.evaluate(async () => {
+  const s2 = document.createElement('div');
+  s2.id = '__poison_txt__';
+  s2.textContent = '毒丸文本对比度测试';
+  s2.style.cssText = 'color:#efefef;background-color:#ffffff;font-size:12px;display:block;width:200px;height:24px;margin:8px;position:relative;z-index:0';
+  document.body.appendChild(s2);
+  await new Promise(r => setTimeout(r, 500));
+  const v = await window.axe.run(s2, { runOnly: { type: 'rule', values: ['color-contrast'] } });
+  return { viol: v.violations.map(x => x.id + 'x' + x.nodes.length), incomp: v.incomplete.map(x => x.id + 'x' + x.nodes.length) };
+});
+console.log(JSON.stringify(info));
+await browser.close();

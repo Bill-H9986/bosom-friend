@@ -1,0 +1,185 @@
+{
+ "calls": [
+  {
+   "m": "GET",
+   "path": "/user/mine",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/v2/channels/platforms",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/user/mine",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/user/mine",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/user/mine",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/v2/channels/accounts",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/v2/channels/accounts",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/material/group/list/1/50",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/ai/draft-generation/pricing",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/material/group/info/mg-persist",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/ai/draft-generation/",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/material/list/1/20",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/media/list/1/20",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/media/list/1/20",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/material/list/1/20",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/media/list/1/20",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/media/list/1/20",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/agent/tasks",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "POST",
+   "path": "/v2/statistics/note-comment-search/options",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/v2/hot-content/categories",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/v2/hot-content/home/sources",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/v2/channels/publish/records",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/v2/statistics/published-content-summary/dashboard",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/v2/statistics/published-content-summary/dashboard",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/v2/customer-reception/rules",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/v2/customer-reception/logs",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/v2/channels/accounts",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/material/list/1/20",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/media/list/1/20",
+   "status": 200,
+   "note": ""
+  },
+  {
+   "m": "GET",
+   "path": "/media/list/1/20",
+   "status": 200,
+   "note": ""
+  }
+ ],
+ "errs": []
+}

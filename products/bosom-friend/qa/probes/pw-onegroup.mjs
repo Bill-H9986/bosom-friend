@@ -1,0 +1,14 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await browser.newPage();
+await page.goto('http://127.0.0.1:3081/bosom-friend/', { waitUntil: 'networkidle', timeout: 60000 });
+await page.waitForTimeout(9000);
+await page.evaluate(() => { location.hash = '#/draft-box'; }); await page.waitForTimeout(5000);
+const tabs = await page.evaluate(() => { const el = document.querySelector('[data-testid=draftbox-plan-tabs]'); return el ? el.innerText.split(String.fromCharCode(10)).filter(Boolean) : []; });
+console.log('planTabs=' + JSON.stringify(tabs));
+console.log('bodyHasPersist=' + (await page.evaluate(() => document.body.innerText.includes('持久化素材组'))));
+console.log('sawGroupsA=' + (await page.evaluate(() => document.body.innerText.includes('素材组A'))));
+console.log('sawDefault=' + (await page.evaluate(() => document.body.innerText.includes('默认草稿箱'))));
+await browser.close();

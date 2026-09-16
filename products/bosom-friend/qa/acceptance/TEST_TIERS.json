@@ -1,0 +1,39 @@
+{
+  "authority": "S 级前端监考协议 v4 是 Bosom Friend 项目最高测试权限",
+  "supreme": [
+    "frontend-auto-agent-exam.mjs",
+    "verify-frontend-final.mjs",
+    "frontend-empty-repro.mjs",
+    "frontend-sync-exam.mjs",
+    "verify-frontend-accounts.mjs",
+    "verify-follow-toggle.mjs",
+    "verify-agent-message-clean.mjs"
+  ],
+  "functional": [
+    "exam-runner.mjs",
+    "critical.mjs",
+    "verify-design-0231.mjs",
+    "verify-multi-model.mjs",
+    "verify-abort-timing-matrix.mjs",
+    "full-chain-loop.mjs"
+  ],
+  "infrastructure": [
+    "smoke.mjs",
+    "real-machine-exam.mjs",
+    "real-machine-verify.mjs",
+    "full-retrospective-audit.mjs",
+    "contract-audit.mjs",
+    "deep-source-audit.mjs",
+    "deep-page-uat.mjs",
+    "deep-page-actions.mjs",
+    "deep-agent-probe.mjs",
+    "data-consistency-audit.mjs",
+    "platform-engine-history-audit.mjs"
+  ],
+  "maintenance": [
+    "cleanup-test-data.mjs",
+    "repair-clean-tasks.mjs",
+    "clean-repro-artifacts.mjs",
+    "sync-real-xhs-notes.mjs"
+  ]
+}

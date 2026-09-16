@@ -1,0 +1,9 @@
+{
+  "name": "@bosom-friend/lifecycle",
+  "version": "0.2.0",
+  "private": true,
+  "main": "src/process-registry.cjs",
+  "scripts": {
+    "test:unit": "node test/process-registry.test.cjs"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "/janus/douyin/creator/data/overview/item_contribution_top?dimension=1&recent_days=7": {
+    "date_range": {
+      "end_date": "20260912",
+      "start_date": "20260906"
+    },
+    "dimension": 1,
+    "english_metric_name": "play_cnt",
+    "items": [
+      {
+        "item_id": 7682660673825869000,
+        "metric_value": 5,
+        "publish_time": "",
+        "title": ""
+      }
+    ],
+    "metric_name": "播放量",
+    "status_code": 0,
+    "status_msg": "",
+    "value_type": 1
+  },
+  "/janus/douyin/creator/data/overview/item_contribution_top?dimension=1&recent_days=7&count=50": {
+    "date_range": {
+      "end_date": "20260912",
+      "start_date": "20260906"
+    },
+    "dimension": 1,
+    "english_metric_name": "play_cnt",
+    "items": [
+      {
+        "item_id": 7682660673825869000,
+        "metric_value": 5,
+        "publish_time": "",
+        "title": ""
+      }
+    ],
+    "metric_name": "播放量",
+    "status_code": 0,
+    "status_msg": "",
+    "value_type": 1
+  },
+  "/janus/douyin/creator/data/overview/item_contribution_top?dimension=1&recent_days=7&limit=50": {
+    "date_range": {
+      "end_date": "20260912",
+      "start_date": "20260906"
+    },
+    "dimension": 1,
+    "english_metric_name": "play_cnt",
+    "items": [
+      {
+        "item_id": 7682660673825869000,
+        "metric_value": 5,
+        "publish_time": "",
+        "title": ""
+      }
+    ],
+    "metric_name": "播放量",
+    "status_code": 0,
+    "status_msg": "",
+    "value_type": 1
+  },
+  "/janus/douyin/creator/data/overview/item_contribution_top?dimension=1&recent_days=7&page_size=50": {
+    "date_range": {
+      "end_date": "20260912",
+      "start_date": "20260906"
+    },
+    "dimension": 1,
+    "english_metric_name": "play_cnt",
+    "items": [
+      {
+        "item_id": 7682660673825869000,
+        "metric_value": 5,
+        "publish_time": "",
+        "title": ""
+      }
+    ],
+    "metric_name": "播放量",
+    "status_code": 0,
+    "status_msg": "",
+    "value_type": 1
+  },
+  "/janus/douyin/creator/data/overview/item_contribution_top?dimension=1&recent_days=7&top_n=50": {
+    "date_range": {
+      "end_date": "20260912",
+      "start_date": "20260906"
+    },
+    "dimension": 1,
+    "english_metric_name": "play_cnt",
+    "items": [
+      {
+        "item_id": 7682660673825869000,
+        "metric_value": 5,
+        "publish_time": "",
+        "title": ""
+      }
+    ],
+    "metric_name": "播放量",
+    "status_code": 0,
+    "status_msg": "",
+    "value_type": 1
+  },
+  "/janus/douyin/creator/data/item/list?recent_days=7": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/item/data?recent_days=7": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/content/item?recent_days=7": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/overview/item?recent_days=7": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/overview/item_list?recent_days=7": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/overview/item_contribution?dimension=1&recent_days=7": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/overview/item_contribution_list?dimension=1&recent_days=7": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/overview/dashboard": {
+    "metrics": [],
+    "status_code": 0,
+    "status_msg": ""
+  },
+  "/janus/douyin/creator/data/overview/dashboard/item": {
+    "status_code": null,
+    "status_msg": null
+  }
+}

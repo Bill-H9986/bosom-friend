@@ -1,0 +1,133 @@
+{
+  "name": "qa-guard2",
+  "runAt": "2026-09-11T15:16:06.344Z",
+  "pass": 24,
+  "total": 25,
+  "items": [
+    {
+      "n": "A11Y-#/",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/draft-box",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/tasks-history",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/ai-interaction",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/knowledge",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/calendar",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/data-statistics",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/monitor",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/settings",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/accounts",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "VISUAL-布局指纹稳定(基线对比)",
+      "pass": false,
+      "d": "DIFF: #/knowledge: [2] [\"ASIDE\",\"flex w-60 shrink-0 flex-col border-r bor\",240,96,240,804] -> [\"NAV\",\"page-tabs\",264,52,108,32] ; [3] [\"ASIDE\",\"hidden w-56 shrink-0 flex-col border-l b\",976,96,224,804] -> [\"ASIDE\",\"flex w-60 shrink-0 flex-col border-r bor\",240,96,240,804] ; [4] [\"ASIDE\",\"group sticky right-0 top-0 hidden h-scre\",1200,0,240,900] -> [\"ASIDE\",\"hidden w-56 shrink-0 flex-col border-l b\",976,96,224,804] ; [5] undefined -> [\"ASIDE\",\"group sticky right-0 top-0 hidden h-scre\",1200,0,240,900]"
+    },
+    {
+      "n": "SELF-CHECK-视觉注入可检测(漏h层)",
+      "pass": true,
+      "d": "injected overlay detected=true"
+    },
+    {
+      "n": "SELF-CHECK-毒丸A-axe能抓无名称按钮(防检测器失灵)",
+      "pass": true,
+      "d": "caught=true"
+    },
+    {
+      "n": "SELF-CHECK-毒丸B-axe能抓低对比文本(防检测器失灵)",
+      "pass": true,
+      "d": "perElement=false perDoc=true"
+    },
+    {
+      "n": "SELF-CHECK-毒丸C-axe能抓非法ARIA角色(防检测器失灵)",
+      "pass": true,
+      "d": "caught=true"
+    },
+    {
+      "n": "PERF-LCP<4000ms(未采集=FAIL防假阳性)",
+      "pass": true,
+      "d": "{\"lcp\":352,\"cls\":0,\"resources\":46,\"bytesMB\":6.7,\"lcpElement\":\"\"}"
+    },
+    {
+      "n": "PERF-CLS<=0.15",
+      "pass": true,
+      "d": "cls=0"
+    },
+    {
+      "n": "LOGO-品牌区无重叠(按钮与logo不同时可见/不相交)",
+      "pass": true,
+      "d": "{\"result\":\"ok\",\"expandedCentered\":true,\"asideW\":240}"
+    },
+    {
+      "n": "LOGO-右侧展开态-紧凑头部(32px logo+AI助手+32px收起钮)",
+      "pass": true,
+      "d": "{\"result\":\"ok\",\"imgW\":32,\"word\":\"AI助手\",\"btnSizeOK\":true,\"leftAligned\":true}"
+    },
+    {
+      "n": "LOGO/INPUT-右侧输入框紧凑(高度≤190px)",
+      "pass": true,
+      "d": "{\"result\":\"ok\",\"h\":115}"
+    },
+    {
+      "n": "LOGO-右侧收起态与左侧同款(同位置交替-按钮叠logo)",
+      "pass": true,
+      "d": "{\"result\":\"sameSpot\",\"imgW\":35,\"btnSizeOK\":true,\"linkOpacityIdle\":1,\"btnOpacityIdle\":0}"
+    },
+    {
+      "n": "LOGO-右侧收起态-悬浮原位替换(不同时可见)",
+      "pass": true,
+      "d": "{\"lo\":0,\"bo\":1,\"simultaneous\":false}"
+    },
+    {
+      "n": "LOGO-首页品牌粒子场(点面Logo不拦截事件)",
+      "pass": true,
+      "d": "{\"result\":\"ok\",\"w\":960,\"h\":899,\"pe\":\"none\",\"aria\":\"true\"}"
+    },
+    {
+      "n": "LOGO-首页粒子场-动画进行中(两帧不同)",
+      "pass": true,
+      "d": "{\"same\":false,\"len\":12938}"
+    },
+    {
+      "n": "TITLE-功能页无左上角标题(9 路由)",
+      "pass": true,
+      "d": ""
+    }
+  ]
+}

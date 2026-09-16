@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'DIN';
+  src: url('./DIN-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HYHanHeiJ';
+  /* HYHanHeiJ.ttf 自基线起即为 0 字节空文件（历史遗留），浏览器解析失败一直回退系统字体。
+     改用同目录开源思源黑体，保持家族名不变，全部既有样式无需改动即生效 */
+  src: url('./SourceHanSansCN-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.source-han-sans-cn {
+  font-family: 'HYHanHeiJ', sans-serif;
+}

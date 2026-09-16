@@ -1,0 +1,21 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await page.goto('http://127.0.0.1:3081/bosom-friend/#/draft-box', { waitUntil: 'networkidle', timeout: 120000 });
+await page.waitForTimeout(6000);
+await page.addScriptTag({ path: 'C:/Users/Jay/Desktop/Bosom friend APP/apps/bosom-friend/axe-core.min.js' });
+const info = await page.evaluate(async () => {
+  const s2 = document.createElement('div');
+  s2.id = '__poison_txt__';
+  s2.textContent = '毒丸文本';
+  s2.style.cssText = 'color:#fefefe;background:#ffffff;font-size:12px;position:fixed;left:0;top:0;z-index:0';
+  document.querySelector('#app, main, body').appendChild(s2);
+  const cs = getComputedStyle(s2);
+  const r = await window.axe.run('#__poison_txt__', { runOnly: { type: 'rule', values: ['color-contrast'] } });
+  s2.remove();
+  return { color: cs.color, bg: cs.backgroundColor, fontSize: cs.fontSize, violations: r.violations.map(v => v.id + 'x' + v.nodes.length), incomplete: r.incomplete.map(v => v.id + 'x' + v.nodes.length) };
+});
+console.log(JSON.stringify(info, null, 1));
+await browser.close();

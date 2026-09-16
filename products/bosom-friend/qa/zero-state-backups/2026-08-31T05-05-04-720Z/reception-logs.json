@@ -1,0 +1,33 @@
+[
+  {
+    "id": "log-9nfc2a4d",
+    "message": "你们家价格多少？",
+    "platform": "douyin",
+    "ruleId": "rule-default-2",
+    "ruleName": "价格规则",
+    "reply": "当前价格与优惠以商品页为准，新客关注店铺可领专属券～",
+    "aiUsed": false,
+    "source": "dm",
+    "createdAt": "2026-08-30T16:09:26.992Z"
+  },
+  {
+    "id": "log-kcglu64n",
+    "message": "????????",
+    "platform": "douyin",
+    "reply": "您好，收到您的消息～我们已记录，稍后为您处理。",
+    "aiUsed": false,
+    "source": "dm",
+    "createdAt": "2026-08-30T16:09:04.999Z"
+  },
+  {
+    "id": "log-bmid73v3",
+    "message": "什么时候发货？",
+    "platform": "xhs",
+    "ruleId": "rule-mvkae8q3",
+    "ruleName": "全流程接待规则",
+    "reply": "亲，48小时内发货哦~",
+    "aiUsed": false,
+    "source": "manual",
+    "createdAt": "2026-08-30T13:55:03.742Z"
+  }
+]

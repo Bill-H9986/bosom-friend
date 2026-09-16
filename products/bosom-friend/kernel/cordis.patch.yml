@@ -1,0 +1,40 @@
+# Bosom Friend 内核 bundle 补丁层：在 dsh-base 之上挂载 SDK JSON-RPC 服务端与本内核插件。
+# stdout 只承载 JSON-RPC 帧；dsh-base 不含控制台日志插件，此处也不挂任何 logger。
+
+- insert:
+    - id: bosom-jsonrpc
+      name: '@deepseek-ai/dsh-sdk-jsonrpc-server'
+
+    - id: bosom-kernel
+      name: '@deepseek-ai/dsh-bosom-friend-kernel'
+
+# 用户自定义 OpenAI 兼容网关（Agnes）：静态目录、无密钥；密钥经子进程环境变量 AGNES_API_KEY。
+- id: llm-pi-ai
+  config:
+    providers:
+      agnes:
+        displayName: Agnes
+        apiKeyEnv: AGNES_API_KEY
+        api: openai-completions
+        baseURL: https://api.agnes-ai.cn/v1
+        models:
+          - id: agnes-2.0-flash
+            name: Agnes 2.0 Flash
+            contextWindow: 65536
+            maxTokens: 8192
+          - id: agnes-2.5-flash
+            name: Agnes 2.5 Flash
+            contextWindow: 65536
+            maxTokens: 8192
+          - id: agnes-2.5-pro
+            name: Agnes 2.5 Pro
+            contextWindow: 131072
+            maxTokens: 16384
+          - id: agnes-2.5-pro-alpha
+            name: Agnes 2.5 Pro Alpha
+            contextWindow: 131072
+            maxTokens: 16384
+          - id: agnes-2.5-pro-beta
+            name: Agnes 2.5 Pro Beta
+            contextWindow: 131072
+            maxTokens: 16384

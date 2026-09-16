@@ -1,0 +1,507 @@
+[
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/fans/index/config?aid=1128&a_bogus=EysjDwSwOxQfKpKbmcJdHSIlG%2Fj%2FNBSjjPioR9WjtPLNLZ0GS3e3QnckrowUsYyWSSpAkq1H1VM%2FbxVcqUkwpInpumkkSwJjAT%2FnnXvLhqq",
+    "topKeys": [
+      "base_resp",
+      "enable",
+      "explanation_info",
+      "follower_count_str_desc",
+      "follower_count_str_desc_v2",
+      "status_code",
+      "status_msg"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/v2/creator/xigua/user/info",
+    "topKeys": [
+      "extra",
+      "status_code",
+      "uid",
+      "xigua_content_info"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/web/oversea/judgment/",
+    "topKeys": [
+      "oversea_info",
+      "status_code"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/pc/user/info/",
+    "topKeys": [
+      "extra",
+      "is_confer_login",
+      "is_log_as_person",
+      "is_registered",
+      "status_code",
+      "status_msg",
+      "uid"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/notice/?msToken=JXiRSIYCj7NSRVFf7iK2E34xMlsDKGHHmHLHLSS9m-Ca8BQjz85ZjHeBdwvHFB7BL-msGEgwdwCS1St0r6HB7WRrNIW1DvG6ZUE68IUu9DAZXvvNk-crBVc7vLkPQ5R",
+    "topKeys": [
+      "extra",
+      "message_notice",
+      "status_code",
+      "status_msg"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user/info/",
+    "topKeys": [
+      "cert_info",
+      "dashboard_opend_date",
+      "douyin_user_verify_info",
+      "extra",
+      "has_data_mgmt_perm",
+      "has_welfare_donate_permission",
+      "is_commerce_user",
+      "is_confer_login",
+      "is_log_as_person",
+      "is_login_hotsoon",
+      "is_perm_revoke",
+      "is_registered",
+      "permissions",
+      "person_info",
+      "roles",
+      "status_code",
+      "status_msg",
+      "user_dashboard_time",
+      "user_profile"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/media/user/info/",
+    "topKeys": [
+      "country_code",
+      "extra",
+      "login_app",
+      "status_code",
+      "user"
+    ],
+    "metricPaths": [
+      "user.permission.show_chapter_editor"
+    ],
+    "hasNonZeroMetric": true,
+    "sampleNonZero": [
+      {
+        "path": "user.permission.show_chapter_editor",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/user/exclusive_operator?app_id=2906&msToken=JXiRSIYCj7NSRVFf7iK2E34xMlsDKGHHmHLHLSS9m-Ca8BQjz85ZjHeBdwvHFB7BL-msGEgwdwCS1St0r6HB7WRrNIW1DvG6ZUE68IUu9D",
+    "topKeys": [
+      "base_resp",
+      "has_exclusive_operator",
+      "status_code",
+      "status_msg"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/mcn/account_base_info?show_mcn_status=1&msToken=JXiRSIYCj7NSRVFf7iK2E34xMlsDKGHHmHLHLSS9m-Ca8BQjz85ZjHeBdwvHFB7BL-msGEgwdwCS1St0r6HB7WRrNIW1DvG6ZUE68IUu9DAZX",
+    "topKeys": [
+      "BaseResp",
+      "admin",
+      "ban_expried_time",
+      "complete_info_timestamp",
+      "has_agree_migration",
+      "has_complete_popup",
+      "has_invalid_popup",
+      "has_migration_popup",
+      "has_operation_mcn",
+      "level",
+      "mcn_created_timestamp",
+      "mcn_desc",
+      "mcn_id",
+      "mcn_name",
+      "mcn_status",
+      "mcn_user_name",
+      "mock_attach_status",
+      "permission",
+      "reason",
+      "status_code"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/v1/im/token/?msToken=JXiRSIYCj7NSRVFf7iK2E34xMlsDKGHHmHLHLSS9m-Ca8BQjz85ZjHeBdwvHFB7BL-msGEgwdwCS1St0r6HB7WRrNIW1DvG6ZUE68IUu9DAZXvvNk-crBVc7vLkPQ5R5MMke2sUVjpXurXhy",
+    "topKeys": [
+      "code",
+      "data",
+      "message"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/user/relation_account?aid=2906&msToken=JXiRSIYCj7NSRVFf7iK2E34xMlsDKGHHmHLHLSS9m-Ca8BQjz85ZjHeBdwvHFB7BL-msGEgwdwCS1St0r6HB7WRrNIW1DvG6ZUE68IUu9DAZXvv",
+    "topKeys": [
+      "base_resp",
+      "status_code",
+      "status_msg"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/ai_creation/entries?msToken=JXiRSIYCj7NSRVFf7iK2E34xMlsDKGHHmHLHLSS9m-Ca8BQjz85ZjHeBdwvHFB7BL-msGEgwdwCS1St0r6HB7WRrNIW1DvG6ZUE68IUu9DAZXvvNk-crBVc7vL",
+    "topKeys": [
+      "base_resp",
+      "entries",
+      "status_code",
+      "status_msg"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/unread_count/?msToken=JXiRSIYCj7NSRVFf7iK2E34xMlsDKGHHmHLHLSS9m-Ca8BQjz85ZjHeBdwvHFB7BL-msGEgwdwCS1St0r6HB7WRrNIW1DvG6ZUE68IUu9DAZXvvNk-crBVc7v",
+    "topKeys": [
+      "count",
+      "extra",
+      "star_count",
+      "status_code",
+      "status_msg",
+      "total_count"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/msg/top/?msToken=JXiRSIYCj7NSRVFf7iK2E34xMlsDKGHHmHLHLSS9m-Ca8BQjz85ZjHeBdwvHFB7BL-msGEgwdwCS1St0r6HB7WRrNIW1DvG6ZUE68IUu9DAZXvvNk-crBVc7vLkPQ5R5MMke2sUVjpX",
+    "topKeys": [
+      "extra",
+      "status_code",
+      "status_msg"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/relation/following/list/?aid=2906&app_name=aweme_creator_platform&device_platform=web&referer=&user_agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%2",
+    "topKeys": [
+      "cursor",
+      "extra",
+      "has_more",
+      "hotsoon_has_more",
+      "hotsoon_text",
+      "status_code",
+      "status_msg",
+      "total_num",
+      "user_info_list"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/relation/following/list/?aid=2906&app_name=aweme_creator_platform&device_platform=web&referer=&user_agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%2",
+    "topKeys": [
+      "cursor",
+      "extra",
+      "has_more",
+      "hotsoon_has_more",
+      "hotsoon_text",
+      "status_code",
+      "status_msg",
+      "total_num",
+      "user_info_list"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/relation/following/list/?aid=2906&app_name=aweme_creator_platform&device_platform=web&referer=&user_agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%2",
+    "topKeys": [
+      "cursor",
+      "extra",
+      "has_more",
+      "hotsoon_has_more",
+      "hotsoon_text",
+      "status_code",
+      "status_msg",
+      "total_num",
+      "user_info_list"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/fans/index/config?aid=1128&msToken=RoLdW14iUIncUeWRE93MXc2olb3M9IalYDtlVrW9CrxYWcSvQAwtf2TpqP00YODF2NWMlRN4fYVSOcrVaHqnBL6F7hqdqjJ_f9EphpmkEkkrolFTzPn",
+    "topKeys": [
+      "base_resp",
+      "enable",
+      "explanation_info",
+      "follower_count_str_desc",
+      "follower_count_str_desc_v2",
+      "status_code",
+      "status_msg"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/pc/user/info/",
+    "topKeys": [
+      "extra",
+      "is_confer_login",
+      "is_log_as_person",
+      "is_registered",
+      "status_code",
+      "status_msg",
+      "uid"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/v2/creator/xigua/user/info",
+    "topKeys": [
+      "extra",
+      "status_code",
+      "uid",
+      "xigua_content_info"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/web/oversea/judgment/",
+    "topKeys": [
+      "oversea_info",
+      "status_code"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/notice/?msToken=ZPJnXxS2pbelfTFgHQ1luBlxXwvVj_N0qoliTwTzMeSA3c04xs2zk5dJ_hI05vlDPejLigcfbi-xwQuZSH38z_TXomaZ565J7qUc9Q0r0UbOEoECrf6WujuH2dHO27r",
+    "topKeys": [
+      "extra",
+      "message_notice",
+      "status_code",
+      "status_msg"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user/info/",
+    "topKeys": [
+      "cert_info",
+      "dashboard_opend_date",
+      "douyin_user_verify_info",
+      "extra",
+      "has_data_mgmt_perm",
+      "has_welfare_donate_permission",
+      "is_commerce_user",
+      "is_confer_login",
+      "is_log_as_person",
+      "is_login_hotsoon",
+      "is_perm_revoke",
+      "is_registered",
+      "permissions",
+      "person_info",
+      "roles",
+      "status_code",
+      "status_msg",
+      "user_dashboard_time",
+      "user_profile"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/media/user/info/",
+    "topKeys": [
+      "country_code",
+      "extra",
+      "login_app",
+      "status_code",
+      "user"
+    ],
+    "metricPaths": [
+      "user.permission.show_chapter_editor"
+    ],
+    "hasNonZeroMetric": true,
+    "sampleNonZero": [
+      {
+        "path": "user.permission.show_chapter_editor",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/user/exclusive_operator?app_id=2906&msToken=ZPJnXxS2pbelfTFgHQ1luBlxXwvVj_N0qoliTwTzMeSA3c04xs2zk5dJ_hI05vlDPejLigcfbi-xwQuZSH38z_TXomaZ565J7qUc9Q0r0U",
+    "topKeys": [
+      "base_resp",
+      "has_exclusive_operator",
+      "status_code",
+      "status_msg"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/mcn/account_base_info?show_mcn_status=1&msToken=ZPJnXxS2pbelfTFgHQ1luBlxXwvVj_N0qoliTwTzMeSA3c04xs2zk5dJ_hI05vlDPejLigcfbi-xwQuZSH38z_TXomaZ565J7qUc9Q0r0UbOE",
+    "topKeys": [
+      "BaseResp",
+      "admin",
+      "ban_expried_time",
+      "complete_info_timestamp",
+      "has_agree_migration",
+      "has_complete_popup",
+      "has_invalid_popup",
+      "has_migration_popup",
+      "has_operation_mcn",
+      "level",
+      "mcn_created_timestamp",
+      "mcn_desc",
+      "mcn_id",
+      "mcn_name",
+      "mcn_status",
+      "mcn_user_name",
+      "mock_attach_status",
+      "permission",
+      "reason",
+      "status_code"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/user/relation_account?aid=2906&msToken=ZPJnXxS2pbelfTFgHQ1luBlxXwvVj_N0qoliTwTzMeSA3c04xs2zk5dJ_hI05vlDPejLigcfbi-xwQuZSH38z_TXomaZ565J7qUc9Q0r0UbOEoE",
+    "topKeys": [
+      "base_resp",
+      "status_code",
+      "status_msg"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/v1/im/token/?msToken=ZPJnXxS2pbelfTFgHQ1luBlxXwvVj_N0qoliTwTzMeSA3c04xs2zk5dJ_hI05vlDPejLigcfbi-xwQuZSH38z_TXomaZ565J7qUc9Q0r0UbOEoECrf6WujuH2dHO27r-9BTw_nfrNz8CutYk",
+    "topKeys": [
+      "code",
+      "data",
+      "message"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/ai_creation/entries?msToken=ZPJnXxS2pbelfTFgHQ1luBlxXwvVj_N0qoliTwTzMeSA3c04xs2zk5dJ_hI05vlDPejLigcfbi-xwQuZSH38z_TXomaZ565J7qUc9Q0r0UbOEoECrf6WujuH2d",
+    "topKeys": [
+      "base_resp",
+      "entries",
+      "status_code",
+      "status_msg"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/unread_count/?msToken=ZPJnXxS2pbelfTFgHQ1luBlxXwvVj_N0qoliTwTzMeSA3c04xs2zk5dJ_hI05vlDPejLigcfbi-xwQuZSH38z_TXomaZ565J7qUc9Q0r0UbOEoECrf6WujuH2",
+    "topKeys": [
+      "count",
+      "extra",
+      "star_count",
+      "status_code",
+      "status_msg",
+      "total_count"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/msg/top/?msToken=ZPJnXxS2pbelfTFgHQ1luBlxXwvVj_N0qoliTwTzMeSA3c04xs2zk5dJ_hI05vlDPejLigcfbi-xwQuZSH38z_TXomaZ565J7qUc9Q0r0UbOEoECrf6WujuH2dHO27r-9BTw_nfrNz8",
+    "topKeys": [
+      "extra",
+      "status_code",
+      "status_msg"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/relation/following/list/?aid=2906&app_name=aweme_creator_platform&device_platform=web&referer=&user_agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%2",
+    "topKeys": [
+      "cursor",
+      "extra",
+      "has_more",
+      "hotsoon_has_more",
+      "hotsoon_text",
+      "status_code",
+      "status_msg",
+      "total_num",
+      "user_info_list"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/relation/following/list/?aid=2906&app_name=aweme_creator_platform&device_platform=web&referer=&user_agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%2",
+    "topKeys": [
+      "cursor",
+      "extra",
+      "has_more",
+      "hotsoon_has_more",
+      "hotsoon_text",
+      "status_code",
+      "status_msg",
+      "total_num",
+      "user_info_list"
+    ],
+    "metricPaths": [],
+    "hasNonZeroMetric": false,
+    "sampleNonZero": []
+  }
+]

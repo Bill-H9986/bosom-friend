@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+
+.ant-tabs-dropdown {
+  z-index: 10000000;
+}
+
+/* 确保根元素和 body 占满整个视口高度 */
+html, body, #root {
+  @apply h-full w-full m-0 p-0;
+}
+
+/* 添加一些全局的布局类 */
+@layer components {
+  .page-container {
+    @apply w-full h-full p-4 overflow-auto;
+  }
+  
+  .content-wrapper {
+    @apply max-w-7xl mx-auto w-full h-full;
+  }
+}
+
+.ant-drawer-header {
+  -webkit-app-region: no-drag;
+}
+
+.ant-image-preview-close {
+  top: 60px;
+}
+
+/* 强制 #root 占满容器（覆盖历史残留的 margin:auto / padding:2rem 规则） */
+#root {
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 全局自定义滚动条样式 */
+.ant-table-body {
+  scrollbar-width: auto;
+  scrollbar-color: auto;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 6px;
+  border: 2px solid #f0f0f0;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #a2a2a2;
+}
+
+/* ==================== 设计系统：全局组件微调（苹果风） ==================== */
+
+/* 页面统一内容容器 */
+.app-page {
+  padding: var(--sp-5);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* antd Card 统一风格 */
+.ant-card {
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+
+  .ant-card-head {
+    border-bottom: 1px solid var(--border-subtle);
+  }
+}
+
+/* 表格容器圆角与滚动 */
+.ant-table-wrapper .ant-table {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+/* 按钮过渡 */
+.ant-btn {
+  transition: all 0.18s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+/* 主按钮：Zhiyin 官网同款 粉橙→浅紫 渐变（1:1 复刻） */
+.ant-btn-primary:not(.ant-btn-dangerous) {
+  background-image: linear-gradient(90deg, #8b7cf6, #a78bfa);
+  border-color: transparent;
+
+  &:hover {
+    background-image: linear-gradient(90deg, #ff5f8e, #9c7bff);
+  }
+}
+
+/* 键盘焦点环清晰可见（无障碍） */
+.ant-btn:focus-visible,
+.ant-input:focus-visible,
+.ant-select-focused .ant-select-selector {
+  outline: 2px solid rgba(169, 137, 255, 0.45);
+  outline-offset: 1px;
+}
+
+/* 弹窗遮罩柔化 */
+.ant-modal-mask {
+  backdrop-filter: blur(4px);
+}
+
+/*
+ * 低配模式：桌面壳探测到本机是低配档位时（html[data-perf="low"]），关掉真实卡顿源——
+ * 全屏模糊在集显上每帧都要重算，长动画在机械盘机器上会和后台采集抢 CPU。
+ * 只关效果，不动布局、不藏信息。
+ */
+html[data-perf='low'] {
+  .ant-modal-mask {
+    backdrop-filter: none;
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 精致滚动条（苹果风细条） */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 8px;
+  border: none;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* 自动接待：内容白卡片 */
+.reception-tabs-card {
+  min-height: calc(100vh - 100px);
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: var(--sp-5);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-subtle);
+
+  /* Tab 与下方内容保持呼吸间距 */
+  .ant-tabs-content-holder {
+    margin-top: 12px;
+  }
+
+  .ant-tabs-content,
+  .ant-tabs-tabpane {
+    height: 100%;
+  }
+}
+
+/* 桌面端：放宽从 web 迁移页面的 max-w-5xl/4xl/3xl 限制，内容铺满可用宽度 */
+main .max-w-5xl,
+main .max-w-4xl,
+main .max-w-3xl {
+  max-width: 1400px;
+}
+
+/* 首页 swiper：容器裁切溢出，slide 跟随容器宽度（宽度变化后无需重算） */
+main .swiper,
+main [class*="swiper"] {
+  overflow: hidden;
+}

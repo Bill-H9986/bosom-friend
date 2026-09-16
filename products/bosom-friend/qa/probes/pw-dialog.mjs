@@ -1,0 +1,12 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await browser.newPage();
+await page.goto('http://127.0.0.1:3081/bosom-friend/', { waitUntil: 'networkidle', timeout: 60000 });
+await page.waitForTimeout(8000);
+const dlg = await page.evaluate(() => { const d = document.querySelector('[role=dialog]'); return d ? d.innerText.slice(0, 300) : 'none'; });
+console.log('dialog content: ' + dlg);
+const btns = await page.evaluate(() => { const d = document.querySelector('[role=dialog]'); return d ? [...d.querySelectorAll('button')].map(b => (b.innerText || b.getAttribute('aria-label') || '') .trim().slice(0, 24)) : []; });
+console.log('dialog buttons: ' + JSON.stringify(btns));
+await browser.close();

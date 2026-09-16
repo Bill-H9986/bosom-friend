@@ -1,0 +1,349 @@
+{
+  "dim1_d7": {
+    "date_range": {
+      "end_date": "20260912",
+      "start_date": "20260906"
+    },
+    "dimension": 1,
+    "english_metric_name": "play_cnt",
+    "items": [
+      {
+        "item_id": 7682660673825869000,
+        "metric_value": 5,
+        "publish_time": "",
+        "title": ""
+      }
+    ],
+    "metric_name": "播放量",
+    "status_code": 0,
+    "status_msg": "",
+    "value_type": 1
+  },
+  "dim1_d30": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim1_d90": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim2_d7": {
+    "date_range": {
+      "end_date": "20260912",
+      "start_date": "20260906"
+    },
+    "dimension": 2,
+    "english_metric_name": "interact",
+    "items": [
+      {
+        "item_id": 7682660673825869000,
+        "metric_value": 0,
+        "publish_time": "",
+        "title": ""
+      }
+    ],
+    "metric_name": "互动量",
+    "status_code": 0,
+    "status_msg": "",
+    "value_type": 1
+  },
+  "dim2_d30": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim2_d90": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim3_d7": {
+    "date_range": {
+      "end_date": "20260912",
+      "start_date": "20260906"
+    },
+    "dimension": 3,
+    "english_metric_name": "play_finish_ratio",
+    "items": [
+      {
+        "item_id": 7682660673825869000,
+        "metric_value": 0.4,
+        "publish_time": "",
+        "title": ""
+      }
+    ],
+    "metric_name": "完播率",
+    "status_code": 0,
+    "status_msg": "",
+    "value_type": 2
+  },
+  "dim3_d30": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim3_d90": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim4_d7": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim4_d30": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim4_d90": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim5_d7": {
+    "date_range": {
+      "end_date": "20260912",
+      "start_date": "20260906"
+    },
+    "dimension": 5,
+    "english_metric_name": "new_fans",
+    "items": [
+      {
+        "item_id": 7682660673825869000,
+        "metric_value": 0,
+        "publish_time": "",
+        "title": ""
+      }
+    ],
+    "metric_name": "新增粉丝",
+    "status_code": 0,
+    "status_msg": "",
+    "value_type": 1
+  },
+  "dim5_d30": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim5_d90": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim6_d7": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim6_d30": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim6_d90": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim7_d7": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim7_d30": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim7_d90": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim8_d7": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim8_d30": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "dim8_d90": {
+    "date_range": {},
+    "dimension": 0,
+    "english_metric_name": "",
+    "items": [],
+    "metric_name": "",
+    "status_code": 5,
+    "status_msg": "参数不合法",
+    "value_type": 0
+  },
+  "/janus/douyin/creator/data/item_analysis/overview?item_id=7682660673825869000": {
+    "average_comment_count_per_video": {
+      "metric_name": "条均评论量"
+    },
+    "average_like_count_per_video": {
+      "metric_name": "条均点赞数"
+    },
+    "average_play_duration": {
+      "metric_name": "条均播放时长"
+    },
+    "average_share_count_per_video": {
+      "metric_name": "条均分享量"
+    },
+    "bounce_rate_2s": {
+      "metric_name": "条均2s跳出率"
+    },
+    "completion_rate_5s": {
+      "metric_name": "条均5s完播率"
+    },
+    "cover_click_ratio": {
+      "metric_name": "条均点击率"
+    },
+    "median_play_count": {
+      "metric_name": "播放量中位数"
+    },
+    "status_code": 0,
+    "status_msg": "",
+    "submission_count": {
+      "metric_name": "周期内投稿量"
+    }
+  },
+  "/janus/douyin/creator/data/item_analysis/trend?item_id=7682660673825869000": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/item_analysis/detail?item_id=7682660673825869000": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/item_analysis/base?item_id=7682660673825869000": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/item_analysis/source?item_id=7682660673825869000": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/item_analysis/play_trend?item_id=7682660673825869000": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/item_analysis/metric?item_id=7682660673825869000": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/item_analysis/statistics?item_id=7682660673825869000": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/item/detail?item_id=7682660673825869000": {
+    "status_code": null,
+    "status_msg": null
+  },
+  "/janus/douyin/creator/data/item/overview?item_id=7682660673825869000": {
+    "status_code": null,
+    "status_msg": null
+  }
+}

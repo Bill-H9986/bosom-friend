@@ -1,0 +1,65 @@
+.modal-slot {
+  .update-progress {
+    display: flex;
+  }
+
+  .new-version__target,
+  .update__progress {
+    margin-left: 40px;
+  }
+
+  .progress__title {
+    margin-right: 10px;
+  }
+
+  .progress__bar {
+    width: 0;
+    flex-grow: 1;
+  }
+
+  .can-not-available {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.update-body {
+  padding: 8px 4px 12px;
+}
+
+.update-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--foreground, #1f2937);
+  margin-bottom: 8px;
+}
+
+.update-desc {
+  font-size: 13px;
+  color: var(--muted-foreground, #6b7280);
+  line-height: 1.7;
+}
+
+.update-force {
+  margin-left: 6px;
+  color: #d4380d;
+}
+
+.update-notes {
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: var(--muted, #f3f4f6);
+  font-size: 12px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  color: var(--foreground, #1f2937);
+}
+
+.update__progress {
+  margin-top: 14px;
+}
+
+.progress__title {
+  margin-bottom: 6px;
+}

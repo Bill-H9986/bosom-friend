@@ -1,0 +1,9 @@
+{
+  "name": "bosom-friend-desktop",
+  "productName": "Bosom Friend",
+  "author": "Bosom Friend",
+  "version": "0.2.51",
+  "description": "Bosom Friend 0.2.51 桌面壳：DSH 内核宿主与自研前端容器（安装期自动开启长路径 + 自带解压器 + 现场修复包 + 随包平台引擎）",
+  "main": "electron/main.cjs",
+  "private": true
+}

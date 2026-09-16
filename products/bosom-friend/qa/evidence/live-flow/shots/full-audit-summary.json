@@ -1,0 +1,17 @@
+{
+  "net": [
+    {
+      "t": 1788257992505,
+      "m": "GET",
+      "u": "http://127.0.0.1:3080/bosom-friend/api/ai/draft-generation/pricing"
+    },
+    {
+      "t": 1788257992505,
+      "m": "GET",
+      "u": "http://127.0.0.1:3080/bosom-friend/api/ai/draft-generation/?page=1&pageSize=100"
+    }
+  ],
+  "filled": false,
+  "imageEvidence": false,
+  "syncChanged": false
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' http://127.0.0.1:*;"
+    >
+    <title>Bosom Friend</title>
+    <style>
+      body { font-family: "Microsoft YaHei", sans-serif; background: #0f1117; color: #e5e7eb; }
+      main { max-width: 760px; margin: 10vh auto; padding: 32px; border: 1px solid #27272a; border-radius: 12px; }
+      .muted { color: #9ca3af; }
+      code { background: #18181b; padding: 2px 6px; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Bosom Friend 0.2.0</h1>
+      <p class="muted">桌面应用地基已经建立。</p>
+      <p>
+        当前版本：<code data-role="version">加载中…</code><br>
+        运行状态：<code data-role="status">加载中…</code>
+      </p>
+      <p class="muted">本窗口是本地桌面窗口，不打开外部浏览器。</p>
+    </main>
+    <script>
+      window.bosomFriend.getStatus().then((status) => {
+        document.querySelector('[data-role="version"]').textContent = `v${status.version}`
+        document.querySelector('[data-role="status"]').textContent = `运行中（受管进程 ${status.managedChildPids.length} 个）`
+      }).catch(() => {
+        document.querySelector('[data-role="status"]').textContent = '状态查询失败'
+      })
+    </script>
+  </body>
+</html>

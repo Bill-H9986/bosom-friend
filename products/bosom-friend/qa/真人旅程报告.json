@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-09-03T17:23:54.834Z",
+  "target": "已安装桌面应用",
+  "pageerrors": 0,
+  "results": [
+    {
+      "id": "01",
+      "name": "桌面窗口打开即产品界面",
+      "pass": true,
+      "detail": "窗口地址: http://127.0.0.1:31280/bosom-friend/"
+    },
+    {
+      "id": "02",
+      "name": "AI 未配置时如实提示",
+      "pass": true,
+      "detail": "页面出现“当前还没有配置大模型 API…”"
+    },
+    {
+      "id": "03",
+      "name": "空输入禁用发送且不崩溃",
+      "pass": true,
+      "detail": "发送按钮禁用，页面仍可响应"
+    },
+    {
+      "id": "nav-内容创作",
+      "name": "导航到「内容创作」",
+      "pass": true,
+      "detail": "页面有内容"
+    },
+    {
+      "id": "nav-AI互动",
+      "name": "导航到「AI互动」",
+      "pass": true,
+      "detail": "页面有内容"
+    },
+    {
+      "id": "nav-我的任务",
+      "name": "导航到「我的任务」",
+      "pass": true,
+      "detail": "页面有内容"
+    },
+    {
+      "id": "nav-发布日历",
+      "name": "导航到「发布日历」",
+      "pass": true,
+      "detail": "页面有内容"
+    },
+    {
+      "id": "nav-数据中心",
+      "name": "导航到「数据中心」",
+      "pass": true,
+      "detail": "页面有内容"
+    },
+    {
+      "id": "nav-全局监控",
+      "name": "导航到「全局监控」",
+      "pass": true,
+      "detail": "页面有内容"
+    },
+    {
+      "id": "nav-知识库",
+      "name": "导航到「知识库」",
+      "pass": true,
+      "detail": "页面有内容"
+    },
+    {
+      "id": "04",
+      "name": "刷新后产品界面仍可用",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

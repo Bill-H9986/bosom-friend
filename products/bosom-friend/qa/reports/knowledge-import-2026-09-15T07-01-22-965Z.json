@@ -1,0 +1,3138 @@
+{
+  "importedAt": "2026-09-15T07:01:22.965Z",
+  "knowledgeFile": "C:\\Users\\Jay\\.bosom-friend\\bosom-friend\\knowledge.json",
+  "backup": "C:\\Users\\Jay\\.bosom-friend\\bosom-friend\\knowledge.json.bak-2026-09-15T07-01-22-965Z",
+  "counts": {
+    "items": 363,
+    "duplicates": 231,
+    "skipped": 4,
+    "notesBefore": 1,
+    "notesAfter": 365,
+    "added": 363,
+    "updated": 0
+  },
+  "items": [
+    {
+      "note": "知识库/条目/01-项目全景与交付链路.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\知识库\\条目\\01-项目全景与交付链路.md",
+      "bytes": 3963,
+      "sha256": "080eaad1a780f3388b585d42eff51a53de8d15dc37b68b79bd5c3a8893150dfd"
+    },
+    {
+      "note": "知识库/条目/02-启动链路与内核运行时.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\知识库\\条目\\02-启动链路与内核运行时.md",
+      "bytes": 14906,
+      "sha256": "2ebc51791637b2aca484b77977eb529976843e8d888e92519a9a39917d8c5eb9"
+    },
+    {
+      "note": "知识库/条目/03-安装包与交付产物管理.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\知识库\\条目\\03-安装包与交付产物管理.md",
+      "bytes": 4381,
+      "sha256": "cbebb8a841b1f65d65d8ea18751187766dcfff760aa52fe8ee25a89680d328fe"
+    },
+    {
+      "note": "知识库/条目/04-缺陷台账与根因方法论.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\知识库\\条目\\04-缺陷台账与根因方法论.md",
+      "bytes": 3263,
+      "sha256": "7065db3ffcf77bdbf73e09b0199cf52589235005f52ce2b732adbf75c39b5645"
+    },
+    {
+      "note": "知识库/条目/05-诚实性缺陷专题.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\知识库\\条目\\05-诚实性缺陷专题.md",
+      "bytes": 4171,
+      "sha256": "69e252efc4cf1db37a8f44d708c20e75fc9a04b19ed150f5526e8f7d6cc813b4"
+    },
+    {
+      "note": "知识库/条目/06-测试有效性专题.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\知识库\\条目\\06-测试有效性专题.md",
+      "bytes": 2586,
+      "sha256": "6da70b09e96882a9c0dadc7eed3c8816f614d01df8d2281b6a29fea09efcc80f"
+    },
+    {
+      "note": "知识库/条目/07-门禁设计原则.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\知识库\\条目\\07-门禁设计原则.md",
+      "bytes": 2518,
+      "sha256": "d18b1b7d9d5a88409f798684f2eb9c390bca71b1e67171a8a0b0f26aecc0a511"
+    },
+    {
+      "note": "知识库/条目/08-AI协作规范.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\知识库\\条目\\08-AI协作规范.md",
+      "bytes": 2639,
+      "sha256": "bc7a3046d6ce35022d0071eda8924a9ae753a390a2855eb125c7ba8c27f1f6a4"
+    },
+    {
+      "note": "知识库/条目/09-平台发布与运营引擎.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\知识库\\条目\\09-平台发布与运营引擎.md",
+      "bytes": 3422,
+      "sha256": "76a29b1d8441b5eb43f3a2e83601a473c9a6e0fbeda74b09af8ba97c4fc8fe3b"
+    },
+    {
+      "note": "知识库/条目/10-低配机器适配.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\知识库\\条目\\10-低配机器适配.md",
+      "bytes": 2380,
+      "sha256": "ee63ef997c79d08296605ca1e6553b4d3e4ca3ac9d064601187fc4f10dcc5822"
+    },
+    {
+      "note": "知识库/条目/11-数据与用户数据安全.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\知识库\\条目\\11-数据与用户数据安全.md",
+      "bytes": 2821,
+      "sha256": "2d1fa209509d9a5ca14792bb2aaf24f9e51dc67b45a3dd0c7f4364bf4d7aa788"
+    },
+    {
+      "note": "知识库/条目/12-常见坑速查表.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\知识库\\条目\\12-常见坑速查表.md",
+      "bytes": 5482,
+      "sha256": "b707ce118a6b15ddbf2eaf40be46845675181a2840d461596e6c40c66270db95"
+    },
+    {
+      "note": "知识库/原文/本仓库/AGENTS.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\AGENTS.md",
+      "bytes": 16533,
+      "sha256": "8163041175e2ad1ee470da605032286ff067fcf183626ebbee05efb85a4e664c"
+    },
+    {
+      "note": "知识库/原文/本仓库/BENCHMARK.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\BENCHMARK.md",
+      "bytes": 231,
+      "sha256": "3e38b63e4507b4db923d2cacdff0828e12e2774a35cd1695b592cfaa3d9e7bc2"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/adr/ADR-000-模板.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\adr\\ADR-000-模板.md",
+      "bytes": 859,
+      "sha256": "91af7c36a840ba4fb9583bf8355c84906719decf5f433de0d2b6fa53a5948d62"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/adr/ADR-000-绞杀式迁移与双入口.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\adr\\ADR-000-绞杀式迁移与双入口.md",
+      "bytes": 2173,
+      "sha256": "b645a958124226ab07f9f72ccd8f2a5aa8e90b1edfef0e68591a396202cab621"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/adr/ADR-001-前端AI会话改走官方内核.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\adr\\ADR-001-前端AI会话改走官方内核.md",
+      "bytes": 2483,
+      "sha256": "3b0f897baf0707e41da7dac381116195062f70c3000d4e88b0b13eae229ccbd7"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/adr/ADR-002-DSH边界与数据所有权.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\adr\\ADR-002-DSH边界与数据所有权.md",
+      "bytes": 2076,
+      "sha256": "7bd1fc1185f0c8005fba72960277f39c9557ce158f0bcae339694c08592b6368"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/adr/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\adr\\README.md",
+      "bytes": 914,
+      "sha256": "0dfc3ab4be235b4661edfa30f591c05f20ce08cf65b283e14bc499e764c53c5a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/releases/CHANGELOG.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\releases\\CHANGELOG.md",
+      "bytes": 48153,
+      "sha256": "2105d8358e3d91b1ece6ee9b7e631d6da0bbfab93d683233ef05bef19a19b606"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/releases/发布就绪清单-模板.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\releases\\发布就绪清单-模板.md",
+      "bytes": 867,
+      "sha256": "cc4420a603b7f86d857f9e63d920f385b825991a5507a7ed74b52651343df83b"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/requirements/Phase1开工准备与结论.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\requirements\\Phase1开工准备与结论.md",
+      "bytes": 1571,
+      "sha256": "2d84297f43a891d100062490cedabd26d160176664389f644252c8c9c2e975bb"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/requirements/前端功能需求盘点清单.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\requirements\\前端功能需求盘点清单.md",
+      "bytes": 14428,
+      "sha256": "42becd506a6498b12ad7ee8115500f79891884c11213f15cb7607a1d67597501"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/reviews/复盘报告-模板.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\reviews\\复盘报告-模板.md",
+      "bytes": 775,
+      "sha256": "03fe4262f1103769dafaf6214c5df97a938e826043e5ab9033e33b1fe298327d"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/reviews/阶段门记录-模板.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\reviews\\阶段门记录-模板.md",
+      "bytes": 340,
+      "sha256": "c877406b85060a9488dfcfb4880fe6e2f265a26b352839ad6a60f07f67a465ab"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/trace/REQ-000-模板.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\trace\\REQ-000-模板.md",
+      "bytes": 862,
+      "sha256": "0858640d3a1aa09fd7a86b8fbe1b81951f2da05e1e14c10a6b0e9afc58bfbd09"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/trace/RTM.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\trace\\RTM.md",
+      "bytes": 22811,
+      "sha256": "ba785687bff62f12d153271a3f5961de1d0ae6c8e573585ff5064ef3db41b1e4"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/全自动平台操作与风控规避设计.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\全自动平台操作与风控规避设计.md",
+      "bytes": 8907,
+      "sha256": "37219bf88a23956ecf6b4233424bc8e387cec659536bcad22c25df6bbfee8e00"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/内容创作板块-监测执行报告.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\内容创作板块-监测执行报告.md",
+      "bytes": 56118,
+      "sha256": "cdac5ee49360e11c5e795ee8e22d84457b1f44569cd2f3e5537f2c2b416040e9"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/功能清单-三大核心功能.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\功能清单-三大核心功能.md",
+      "bytes": 49258,
+      "sha256": "1102c18cf3713033f37491fd22b2cfa99aaf246c56ee690660a484484de886c5"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/协作/bosom_friend_agent_prompt.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\协作\\bosom_friend_agent_prompt.md",
+      "bytes": 9006,
+      "sha256": "5e234ffbb011c96110c6aabb769da26bafaa4d7ab2baf7c897e163bc50014252"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/参考资料/抖音-7680454386149100819/REPORT.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\参考资料\\抖音-7680454386149100819\\REPORT.md",
+      "bytes": 6158,
+      "sha256": "0a56444b93b6523d1fd1c8f82504267a2b03078d29acff2623308790ee666a7e"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/最终交付方案-v1.0.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\最终交付方案-v1.0.md",
+      "bytes": 12899,
+      "sha256": "c8d65348e6e0226ac1c70e4738cbe03b85a69fc0bad309b7adb6e504292cd30b"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/规范/客户端APP工程与Bug控制规范.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\规范\\客户端APP工程与Bug控制规范.md",
+      "bytes": 18455,
+      "sha256": "024ba507d0c06c4277f1b60fe204bb2cf08614473bc8bfaf42576fc24cd348a9"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/规范/工程化流程与可追溯体系规范.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\规范\\工程化流程与可追溯体系规范.md",
+      "bytes": 24186,
+      "sha256": "ae7681af20b6f96e34226dc63062b691d448fa45b6ce8cac619b6db9ae34552c"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/规范/开发与验收规范-小白版.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\规范\\开发与验收规范-小白版.md",
+      "bytes": 4288,
+      "sha256": "e81c5f8088099276d3298cdf2e6b9cb8c9520170c9a05e6df03c2bd09d0c3e7d"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/规范/项目铁律.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\规范\\项目铁律.md",
+      "bytes": 26872,
+      "sha256": "615d6b8dc3c4d2e999f52f04d371216538914c9bc0db9a3cf890bc3cf104cc60"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/审计/APP架构审计报告.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\审计\\APP架构审计报告.md",
+      "bytes": 4672,
+      "sha256": "bcf6c18810aef3787aaec36d2ba16c464196e3ef86ad22c5b9eb2451f1bdd1da"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/审计/APP架构审计报告（标准版）.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\审计\\APP架构审计报告（标准版）.md",
+      "bytes": 4385,
+      "sha256": "dc1c8107376ab3b569d8935736c35269fd1950ce0db4e467b9ab259376b889f1"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/审计/审计执行报告v2.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\审计\\审计执行报告v2.md",
+      "bytes": 2249,
+      "sha256": "74828bda3fd094d48dbd343f28914e9542269eb2667a9bb93bd3b05215d4df35"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/审计/审计范围与覆盖矩阵.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\审计\\审计范围与覆盖矩阵.md",
+      "bytes": 1986,
+      "sha256": "4ce7052bf425cb1e7d3e692f6ccd5656664cf51b1c5dbee6c648f34b503d031a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/工作日志/工作日志-2026-08-31.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\工作日志\\工作日志-2026-08-31.md",
+      "bytes": 16542,
+      "sha256": "2ee8914611511fa36545088c1fccc5839077ab110ef564122bee18ea4b273087"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/工作日志/工作日志-2026-09-01.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\工作日志\\工作日志-2026-09-01.md",
+      "bytes": 8821,
+      "sha256": "425944881b41f24f09691696931714fb5423376b40eadebd0ace437eca2a0b69"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/工作日志/工作日志-2026-09-02.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\工作日志\\工作日志-2026-09-02.md",
+      "bytes": 5593,
+      "sha256": "87dc228ecb2626e5673fc5222898cbb1be553cea9e6eaaf938cd368d83c605af"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/工作日志/工作日志-2026-09-09.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\工作日志\\工作日志-2026-09-09.md",
+      "bytes": 56992,
+      "sha256": "13a14822d87089010a43ca1f34a0ec7202fcd9556cd885509934a442162b3e29"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/工作日志/工作日志-2026-09-10.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\工作日志\\工作日志-2026-09-10.md",
+      "bytes": 19297,
+      "sha256": "b9d58cbd4a5f93f795fa9018c6d4ef002cfdde8f77c3a0628aa49a54f7666f52"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/工作日志/工作日志-2026-09-11.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\工作日志\\工作日志-2026-09-11.md",
+      "bytes": 53482,
+      "sha256": "91138e8b6155c5fe72dea79f88364d33f118306ba575458938e22dee8093aed9"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/工作日志/工作日志-2026-09-13.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\工作日志\\工作日志-2026-09-13.md",
+      "bytes": 33932,
+      "sha256": "f90527f96d9f8af3717e66c3f00332149ca05149dd22d527bf30ab3e628f1a96"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/工作日志/工作日志-2026-09-14.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\工作日志\\工作日志-2026-09-14.md",
+      "bytes": 27039,
+      "sha256": "8f336a1cbb7c0ffe9afa6abbfcd22c2692105a0cb246ff0b6fcadbac48939699"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/工作日志/工作日志-2026-09-15.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\工作日志\\工作日志-2026-09-15.md",
+      "bytes": 18717,
+      "sha256": "ece6313b9bc0f344570ee9a25e0331e8c4392a4e4485c1c24fa633739608aa92"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/归档/框架与调用逻辑.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\归档\\框架与调用逻辑.md",
+      "bytes": 12037,
+      "sha256": "7978de41cc95bcbdc17fd41435d35e00c8e262bc632a60f7db4205ba4e53d735"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/归档/部署说明.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\归档\\部署说明.md",
+      "bytes": 8164,
+      "sha256": "8d5af2a9e6bc7000b5f8e54a5c8c03d83d4c91176503a7c39828b67a0103867d"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/归档/项目整理清单.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\归档\\项目整理清单.md",
+      "bytes": 18294,
+      "sha256": "9dc2d3bd8007e3ed2f8e9695e8de09225417a9d6216fe7ffd369841e2715a172"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/归档/项目文件功能描述表.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\归档\\项目文件功能描述表.md",
+      "bytes": 7472,
+      "sha256": "9eb0a81ec99234e6e3ec9f3cf39d9d407c1d7d3898f5781f06e7f17f82fc69b9"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/方案与路线/0.2.0统一开发方案与路线图.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\方案与路线\\0.2.0统一开发方案与路线图.md",
+      "bytes": 37145,
+      "sha256": "bbcf67aa929fdb51cd3ef08f2ab32617de595b706ae5317ab437b2082257a8e2"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/方案与路线/DSH内核开发执行方案.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\方案与路线\\DSH内核开发执行方案.md",
+      "bytes": 19932,
+      "sha256": "5eb46eb6ec974b67865ece548973835af7837f63b3d9259388120ebef50e0575"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/方案与路线/DSH内核统一执行方案-v2.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\方案与路线\\DSH内核统一执行方案-v2.md",
+      "bytes": 9225,
+      "sha256": "794eb1fb14b13df2d3cf1f8932c251893093851c09d6a4f5eb257dfab60d1e2f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/方案与路线/kernel-upgrade-plan.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\方案与路线\\kernel-upgrade-plan.md",
+      "bytes": 36388,
+      "sha256": "5099d7cb86a9e62d30c1c4d3e153742f7828cc757fdc513559b43eca56d4a708"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/方案与路线/功能清单与对标开发路线.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\方案与路线\\功能清单与对标开发路线.md",
+      "bytes": 6040,
+      "sha256": "8dce9dab1702b0d4896e78de228a8bb6dc3961edf2dcf7a6a208a38ba13274a4"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/方案与路线/成熟方案搬用路线图-能搬则搬版.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\方案与路线\\成熟方案搬用路线图-能搬则搬版.md",
+      "bytes": 6334,
+      "sha256": "29473c597c4d75e0a993160ba7599a278de2912372e79e53554f07f0a5eaf0b2"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/方案与路线/项目交付状态报告-2026-09-02.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\方案与路线\\项目交付状态报告-2026-09-02.md",
+      "bytes": 4877,
+      "sha256": "8a70bdb46c4daa11c94716ee95dd54f790157fc17f0833134d52adf7b5e7ed65"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/方案与路线/项目整理方案.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\方案与路线\\项目整理方案.md",
+      "bytes": 46718,
+      "sha256": "b4b7fd7922f04c321dcacd071f8f6a4bf217d0d1d7fea7823ecbfdf07dea7ef0"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/测试报告/BUG自检报告-2026-09-08-实测.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\测试报告\\BUG自检报告-2026-09-08-实测.md",
+      "bytes": 5708,
+      "sha256": "87c54f9d8c2e97354847a9c5458d697dffc62dd10056ae532e56ddb6b7a8f528"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/测试报告/QA深度测试报告-0.2.31桌面端-2026-09-08.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\测试报告\\QA深度测试报告-0.2.31桌面端-2026-09-08.md",
+      "bytes": 27341,
+      "sha256": "d32509615aadafee416fe711eb0d2fb35ba261a42b08daa0fa61bc3fbe821520"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/测试报告/三盒测试与Debug报告.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\测试报告\\三盒测试与Debug报告.md",
+      "bytes": 2439,
+      "sha256": "cdaa089ed73895011d0a94b20b312ff00d86e518614ec2b855233b68a4612799"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/测试报告/全量功能测试报告-2026-09-04.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\测试报告\\全量功能测试报告-2026-09-04.md",
+      "bytes": 4418,
+      "sha256": "ebbe32bbb739497ba183f965ee780f591459aafe90981200b4dabca211fa71e0"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/过程档案/测试报告/桌面端全量测试清单-DSH唯一内核版-v1.0.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\过程档案\\测试报告\\桌面端全量测试清单-DSH唯一内核版-v1.0.md",
+      "bytes": 25269,
+      "sha256": "bdf296b8705b82ece0c98d73d9e01707f77e2c7b410e899107c8323c0ebb0e69"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/docs/项目优化方案-v2.0.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\项目优化方案-v2.0.md",
+      "bytes": 19743,
+      "sha256": "bc59a43e07cb51892799c7262f71fa723c18040a4635040e731f3f74d62d1416"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/.venv/Lib/site-packages/idna-3.19.dist-info/licenses/LICENSE.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\idna-3.19.dist-info\\licenses\\LICENSE.md",
+      "bytes": 1541,
+      "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/.venv/Lib/site-packages/numpy/random/LICENSE.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\numpy\\random\\LICENSE.md",
+      "bytes": 3511,
+      "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/.venv/Lib/site-packages/numpy-2.5.2.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\numpy-2.5.2.dist-info\\licenses\\numpy\\fft\\pocketfft\\LICENSE.md",
+      "bytes": 1498,
+      "sha256": "a85ca13fdf90160b64a0698215868c13b74d835ad0a4e2ba44713b8c5058a056"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/.venv/Lib/site-packages/numpy-2.5.2.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\numpy-2.5.2.dist-info\\licenses\\numpy\\random\\src\\distributions\\LICENSE.md",
+      "bytes": 2745,
+      "sha256": "469778be8f33d54e1bcaab28c281cc472916d2d273f835e55bc487d30503face"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/.venv/Lib/site-packages/numpy-2.5.2.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\numpy-2.5.2.dist-info\\licenses\\numpy\\random\\src\\mt19937\\LICENSE.md",
+      "bytes": 2926,
+      "sha256": "0e111337b25494a773106695f0e799f642b8567aaacca4f116a74a8177179156"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/.venv/Lib/site-packages/numpy-2.5.2.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\numpy-2.5.2.dist-info\\licenses\\numpy\\random\\src\\pcg64\\LICENSE.md",
+      "bytes": 1154,
+      "sha256": "e7d4f4fb20358f314210a892ae17351e04993813646f697ec387385ca2a36918"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/.venv/Lib/site-packages/numpy-2.5.2.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\numpy-2.5.2.dist-info\\licenses\\numpy\\random\\src\\philox\\LICENSE.md",
+      "bytes": 1509,
+      "sha256": "6f5828a57223d4cc7f8ea505a2623e7b978b242752c1515e355f46ba2cec1800"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/.venv/Lib/site-packages/numpy-2.5.2.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\numpy-2.5.2.dist-info\\licenses\\numpy\\random\\src\\sfc64\\LICENSE.md",
+      "bytes": 1226,
+      "sha256": "9d4098846018319cd68e228ee6220361787f73bccbf00237a85e4fc9621b998f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/.venv/Lib/site-packages/numpy-2.5.2.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\numpy-2.5.2.dist-info\\licenses\\numpy\\random\\src\\splitmix64\\LICENSE.md",
+      "bytes": 332,
+      "sha256": "268b0ca06759d31ea3ca68dd35f20e877916e927b1c2a835e4592a3c4354b1f9"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/.venv/Lib/site-packages/numpy-2.5.2.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\numpy-2.5.2.dist-info\\licenses\\numpy\\_core\\src\\npysort\\x86-simd-sort\\LICENSE.md",
+      "bytes": 1514,
+      "sha256": "211e7d737d6179a08f791ebb0a99897ce7cd2457410c542876d125576edfe910"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/docs/agent-bootstrap.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\docs\\agent-bootstrap.md",
+      "bytes": 4690,
+      "sha256": "a987c1815dfa2b6ae1670c2a528164a140d6c7ff914194e39ca7ca36fd053dc0"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/docs/CLI.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\docs\\CLI.md",
+      "bytes": 11948,
+      "sha256": "950249de4d6af249d078dbcd108af07fcb591b119f76710fe4509267c4c5d299"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/docs/install.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\docs\\install.md",
+      "bytes": 7963,
+      "sha256": "4f80b7afcc76a8f31809fb0d609f1fdba60af385f76a4f910a50cc8ec8eba47d"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/docs/legacy-web.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\docs\\legacy-web.md",
+      "bytes": 1210,
+      "sha256": "57b4c716aec9244712838fb68cf52e0aee2888314077c16c82fb2f56580db144"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/docs/skill-distribution.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\docs\\skill-distribution.md",
+      "bytes": 6139,
+      "sha256": "8168704b976d79a8ec73f58c4192a1dd9996689621455136a043f4d32c993d47"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/docs/superpowers/plans/2026-03-25-bilibili-cli-implementation.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\docs\\superpowers\\plans\\2026-03-25-bilibili-cli-implementation.md",
+      "bytes": 13862,
+      "sha256": "a5938c0420420638b512b8dd619c8c04f7dd2ad0269789dd2f013ef1452821c1"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/docs/superpowers/plans/2026-03-25-browser-cli-unification-implementation.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\docs\\superpowers\\plans\\2026-03-25-browser-cli-unification-implementation.md",
+      "bytes": 18101,
+      "sha256": "d1a862649dab5e7b8ef74b7c21c9290eca95a15a80a7350c2df2241b7b6b8f8b"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/docs/superpowers/plans/2026-03-25-xiaohongshu-shallow-alignment.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\docs\\superpowers\\plans\\2026-03-25-xiaohongshu-shallow-alignment.md",
+      "bytes": 2242,
+      "sha256": "eb733ec9d77164aa0f999e2f55ee356581155f24d38720d0a192ea1b2f61d239"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/docs/superpowers/specs/2026-03-25-bilibili-cli-design.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\docs\\superpowers\\specs\\2026-03-25-bilibili-cli-design.md",
+      "bytes": 6976,
+      "sha256": "87859814b88bba08c5a8b5a86ca61384cb595c6ba20f5c0437343bc0b725e6bb"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/docs/superpowers/specs/2026-03-25-browser-cli-unification-design.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\docs\\superpowers\\specs\\2026-03-25-browser-cli-unification-design.md",
+      "bytes": 9654,
+      "sha256": "1cdf86bf48a51e98f1d157678cabe0adde0e46791b593f86665ba300f1c64ca6"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/docs/update.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\docs\\update.md",
+      "bytes": 3290,
+      "sha256": "a35268fb655c855e6dccb649143e74e6b6d4b42d085ea199f79aeadd3eb02311"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\README.md",
+      "bytes": 17541,
+      "sha256": "f33ed551f8bbfd40d4983741f71ba437cedefb3e8f7b334f069070ed8e401fc2"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/sau_backend/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\sau_backend\\README.md",
+      "bytes": 2260,
+      "sha256": "f650b550dce29a6b15494ef67dbab3a1a01e470779d42b26d910c77ab0eccd91"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/sau_frontend/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\sau_frontend\\README.md",
+      "bytes": 3465,
+      "sha256": "f2fe4c2724a584557314a4ce53511cafe7021b6d3fec88a694c805954f4853cb"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/bilibili-upload/references/cli-contract.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\bilibili-upload\\references\\cli-contract.md",
+      "bytes": 1417,
+      "sha256": "b93d693185c280b5de8c1e9dba6a667660b4d406e2bb7257a40ee09183cb0fe5"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/bilibili-upload/references/runtime-requirements.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\bilibili-upload\\references\\runtime-requirements.md",
+      "bytes": 1453,
+      "sha256": "6786e1e08f9d35c8da63f33245a04af6176060a11f05c9b9da55b1da23614f76"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/bilibili-upload/references/troubleshooting.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\bilibili-upload\\references\\troubleshooting.md",
+      "bytes": 1610,
+      "sha256": "74e060c906851ecaee9dc86c638ff8d14e283357f6d59c2d9d212557570d298a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/bilibili-upload/SKILL.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\bilibili-upload\\SKILL.md",
+      "bytes": 2117,
+      "sha256": "b2f16069716ff558001f0d3ab5fc41f231ea5a0341cb4e49b10e5d7b52b0f203"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/douyin-upload/references/cli-contract.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\douyin-upload\\references\\cli-contract.md",
+      "bytes": 2295,
+      "sha256": "46dd60c89b3ed0eee82ed05a261f8fb3df056e1b6bea7a41df9ad666799da542"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/douyin-upload/references/runtime-requirements.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\douyin-upload\\references\\runtime-requirements.md",
+      "bytes": 1415,
+      "sha256": "c7f9a250c44c52819bee5169de428ee60404b1bd61c35b3256ddfac277465c71"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/douyin-upload/references/troubleshooting.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\douyin-upload\\references\\troubleshooting.md",
+      "bytes": 1416,
+      "sha256": "590f1ce72b347014bfaf5986e6ff6e936a2424e2d1df43d818cfc8897408ae53"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/douyin-upload/SKILL.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\douyin-upload\\SKILL.md",
+      "bytes": 2788,
+      "sha256": "2f3d73379b35c6af903cf9e16cb4803f4601a6e58ce69be1479d74c8fb2f293a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/kuaishou-upload/references/cli-contract.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\kuaishou-upload\\references\\cli-contract.md",
+      "bytes": 2215,
+      "sha256": "bdd138207399fbad22cf43b1c7961b9b4853554bb9410898aecb89240c3d9fa0"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/kuaishou-upload/references/runtime-requirements.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\kuaishou-upload\\references\\runtime-requirements.md",
+      "bytes": 1440,
+      "sha256": "13ebfbdf1b67e52fc259cc438012d273f7fe92708f421a361b2dbe9a5f78805e"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/kuaishou-upload/references/troubleshooting.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\kuaishou-upload\\references\\troubleshooting.md",
+      "bytes": 1532,
+      "sha256": "536d246908ea9b87990a79e53fcc470f11ebecb5675ce48f0ac07060b7e2a992"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/kuaishou-upload/SKILL.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\kuaishou-upload\\SKILL.md",
+      "bytes": 2814,
+      "sha256": "7b7372cbb0bfef42a353895dc9a8a82345366fa88709448eb252e82860429fb3"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/xiaohongshu-upload/references/cli-contract.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\xiaohongshu-upload\\references\\cli-contract.md",
+      "bytes": 2135,
+      "sha256": "ea0c4f0f66a74a0e1474b38e0dd3d9cefd67ef4277aca7f1d979732f7792361f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/xiaohongshu-upload/references/runtime-requirements.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\xiaohongshu-upload\\references\\runtime-requirements.md",
+      "bytes": 1435,
+      "sha256": "1dffaab3a6818fefa271fd09ef27275acc4cd59679db960b9b743ee1ba0dff54"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/xiaohongshu-upload/references/troubleshooting.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\xiaohongshu-upload\\references\\troubleshooting.md",
+      "bytes": 1270,
+      "sha256": "bcc170aca5bdf8e65f2db5e9ed7384560a3bf5410bf5fbb5f894b54e5211a362"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/social-auto-upload/skills/xiaohongshu-upload/SKILL.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\social-auto-upload\\skills\\xiaohongshu-upload\\SKILL.md",
+      "bytes": 2880,
+      "sha256": "7485a9e31cf42a866b117538f2650fc711e17d5b665d2b1afe29ce0d37cafa8d"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/VENDORED.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\VENDORED.md",
+      "bytes": 3108,
+      "sha256": "075cf4f5d68209c2e54a7abc39e7afe35083842f2d72e34c75172652d6c67796"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/engine/VENDORED_RECEPTION.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\VENDORED_RECEPTION.md",
+      "bytes": 4500,
+      "sha256": "b006af0e593a843c9824e781154b9a8210fcb5e1bfa3c48f13eee3e3cf23a3ee"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-electron/electron/main/browserControl/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-electron\\electron\\main\\browserControl\\README.md",
+      "bytes": 1876,
+      "sha256": "e90287db78f2427cf08bebf134713afe3ea4ae775b0b56c018902c4a043d80e0"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-electron/src/components/update/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-electron\\src\\components\\update\\README.md",
+      "bytes": 1984,
+      "sha256": "313c0d6ab0fca412b4123d1d353dbd2f6482621fc052a5bf49eaa7108a9a4924"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-electron/src/components/update/README.zh-CN.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-electron\\src\\components\\update\\README.zh-CN.md",
+      "bytes": 1547,
+      "sha256": "73bae04dffba6bed92f2d962f81f1099d90ac00e2b6457cd9be6451a5676955a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\README.md",
+      "bytes": 897,
+      "sha256": "bc2c6ff34af74f1c7837ed18057c7c17f0fbcc17ad80db1ab14a2ce86e04fc3f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/api/accounts/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\accounts\\README.md",
+      "bytes": 2237,
+      "sha256": "43e7f60e2d2c15a0863146bf3aecd39516d8f677b7898efabefcc3a3a7acdee1"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/api/ai/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\ai\\README.md",
+      "bytes": 11018,
+      "sha256": "45d3fff21043c52fdf8eea4773b5cd0d29b4cb6137cb866622a2dc6c431d7b78"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/api/analytics/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\analytics\\README.md",
+      "bytes": 595,
+      "sha256": "d913b70b7e56904fb23cc68325d86498f2a03cc75846878c5c78c1da84948b52"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/api/auth/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\auth\\README.md",
+      "bytes": 1897,
+      "sha256": "d73f6a1fb8c503f4dca53b7b2e0df6de1ce617adbfc6b129ca39b7ea6614571e"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/api/channels/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\channels\\README.md",
+      "bytes": 5899,
+      "sha256": "ed94e9faaae32663f1fe387aae2f4da7cdc5456f85315e8efbf6738ad4267840"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/api/materials/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\materials\\README.md",
+      "bytes": 6552,
+      "sha256": "7f937f830c6bcae5f394b1b73c18984ce7d8516e01c68858f59da7d8a50f6fc9"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/api/platforms/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\platforms\\README.md",
+      "bytes": 6497,
+      "sha256": "c61735ea626fcdcd6f68a914e485f99e8d97e18aef4a8d9c45a55817cef760bd"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/api/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\README.md",
+      "bytes": 2495,
+      "sha256": "b47fb7b20a2309d18fd2ce41675831822bd006885012eb2ac09fd37abdd4588a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/api/_server/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\_server\\README.md",
+      "bytes": 912,
+      "sha256": "ff27bf1b011a5e3440b19a06bcffbfe1f59d9372e725d862686084b61eea2a33"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/api/_shared/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\_shared\\README.md",
+      "bytes": 890,
+      "sha256": "f314fd2fa7bdacc2a70663e6cb8a5a979b8e42767f9690d5a667bc4c8bd62a71"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/app/layout/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\app\\layout\\README.md",
+      "bytes": 4952,
+      "sha256": "d234844743eda3279ca6e818714c9809b9edbd50d568d08799c3d5dfd61bba19"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/MobileCalendar/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\app\\[lng]\\accounts\\components\\CalendarTiming\\MobileCalendar\\README.md",
+      "bytes": 6016,
+      "sha256": "994b11fca30db82aa192d656f9b431342807a2c0600e68c6c37e4abc1991cfe7"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/app/[lng]/ai-social/components/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\app\\[lng]\\ai-social\\components\\README.md",
+      "bytes": 1561,
+      "sha256": "4390885f077daeab6b907a598984073163a8c646973e956fd2495671f3dec485"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/components/Chat/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\Chat\\README.md",
+      "bytes": 1158,
+      "sha256": "014e9798a45a2508535eb6a98ddbe50b4858d1c4a7645cb5fcdbcfe18b03ea50"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/components/common/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\common\\README.md",
+      "bytes": 1286,
+      "sha256": "c9b477622b049e90ea2a24efa56d5eccf9651d228a5085888c9c4a5ec4fbb194"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\components\\ImageStack\\README.md",
+      "bytes": 1490,
+      "sha256": "351ed5aca6ae001c118d30180d9560e2488cbb62b84eba374e62a58dc011d8b3"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\components\\MediaMentionPromptInput\\README.md",
+      "bytes": 1842,
+      "sha256": "0f76a9e0e33a72ff57a23938d30813a749d3a304dce643dbb832fc66cdefdbfd"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\components\\ToolBarInline\\README.md",
+      "bytes": 1234,
+      "sha256": "b096c55ef423425f4c66834007b36e9fdbdac5a456bb6025b03edb09f994f1f2"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\README.md",
+      "bytes": 2898,
+      "sha256": "6716624280450cad61d2f62a20ddecbe81aa6ec702cf7fa15d1cb5bc789d0dde"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/store/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\store\\README.md",
+      "bytes": 1759,
+      "sha256": "d6bf3d2d2186830978ae25b23ea0491ebe9ffbdfca1fd2dffb6ee0361101cb24"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/components/draft-box/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\README.md",
+      "bytes": 1450,
+      "sha256": "bc021acd246973ee394cf3287c8e376a549b212d50d8454cea2b44e603843014"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/components/draft-box/utils/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\utils\\README.md",
+      "bytes": 652,
+      "sha256": "a5b4f7c98e7e5f5c00a368386e9277a32a699eb8748e967bf15356270308e50f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/components/PublishDialog/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\PublishDialog\\README.md",
+      "bytes": 17073,
+      "sha256": "910e572a131aba9ad4daf7b6094ef0ed7308ec48ca5abb785a4fa9e00113777a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/components/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\README.md",
+      "bytes": 3358,
+      "sha256": "a3f87b320f67298f88db3c89dbcfeeddfc2eef63ea3dbb879528d0024e0c2a45"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/components/ui/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\ui\\README.md",
+      "bytes": 874,
+      "sha256": "bc0743898f8606655bdee5b3d7dd8b99a7a9ca6509f0db96c95450124ae2b7b7"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/hooks/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\hooks\\README.md",
+      "bytes": 2640,
+      "sha256": "c3113fd655a2ce0e2b75bdd48ed046f462547a88dadf373b59bdc2cbe9c5c02c"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/store/agent/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\store\\agent\\README.md",
+      "bytes": 10570,
+      "sha256": "292b85c2c1eefe04e4939c0e3e8cd9c481a758270aa733f594d4af4abfc1ac01"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/store/plugin/docs/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\store\\plugin\\docs\\README.md",
+      "bytes": 9462,
+      "sha256": "0bbcd409e84d3d7b062b4d7a267a4d70f0e1f1306c64ef3633e11e21ee4e2bc3"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/store/plugin/plats/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\store\\plugin\\plats\\README.md",
+      "bytes": 7860,
+      "sha256": "0216cd3423bb02733dd3e5e19c248f77198cf28e3b429d52f1c9fa3a1e1d59fe"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/store/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\store\\README.md",
+      "bytes": 5627,
+      "sha256": "2c2b32f518a8fedc43e05d781b94bb33838cc87a9e624232d2f744c6580f2a85"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/store/user/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\store\\user\\README.md",
+      "bytes": 1383,
+      "sha256": "06dedbd5ad539853973b60cbeb8c1ba9bb275e797607e949640865a9f63ac9a8"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/utils/agent/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\agent\\README.md",
+      "bytes": 802,
+      "sha256": "fc5174e2b837f529a5484185a585d21316e24a555c32178e4e94285f10a9c52a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/utils/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\README.md",
+      "bytes": 4389,
+      "sha256": "dc20248a605cac96ab9a944177155b77fcf6442fb03152cbfd47e8d35fa49ae3"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/utils/region/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\region\\README.md",
+      "bytes": 689,
+      "sha256": "12201a8221a4c4312dac3627e8fb835ac11ac8c7fbf228ad1efe41ce4521736f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/utils/request/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\request\\README.md",
+      "bytes": 1736,
+      "sha256": "a9ffc63e57890b6b446afa675ba180b0dcc3ea7e40f2af145007c61da9f6021f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/utils/social/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\social\\README.md",
+      "bytes": 705,
+      "sha256": "2bf2c8f069aa97cdf39fd1fd0d7169fa905b479971838248d76928f53f04b554"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/utils/storage/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\storage\\README.md",
+      "bytes": 1216,
+      "sha256": "940c374e840b6bbbdeaf857cab336040947535afc1a0c6d31ca4c9e0ecf7bd52"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/project/bosom-friend-web/src/utils/ui/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\ui\\README.md",
+      "bytes": 1167,
+      "sha256": "676a6f8051befbfd8616e70c7e9aa11452081eaf88f906ed7d5bae269f5e6c80"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/baseline/安装包只读保护清单.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\baseline\\安装包只读保护清单.md",
+      "bytes": 2500,
+      "sha256": "99de9f12dfaf0a1a1cf5814e1113526bc5ffed9d5c6916e73510c77a135832f1"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/BUTTONS_REPORT.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\BUTTONS_REPORT.md",
+      "bytes": 5073,
+      "sha256": "57f44f05bfd81dcbb4e955be94fd8d51898d1dc9bec5007626b26455ee4c811e"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/defects/2026-09-03-测试用例定位器缺陷.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\defects\\2026-09-03-测试用例定位器缺陷.md",
+      "bytes": 18053,
+      "sha256": "5aeeddcf0fa50b74696be6d1a3ffe43a78062aa0ae67f97b3d2aa824c401ccc3"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/defects/2026-09-04-imagesize-resolution.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\defects\\2026-09-04-imagesize-resolution.md",
+      "bytes": 1364,
+      "sha256": "f6c5312b02604f993cc4266a65a82383db3c6f91db67060f3ef48cc1b54c270c"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/defects/2026-09-11-图片档位-频道平台-模型收纳.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\defects\\2026-09-11-图片档位-频道平台-模型收纳.md",
+      "bytes": 13593,
+      "sha256": "2d05d84d8dcf3092ce719d7fbd3ddb1ec46abd000424ddc7a1c8287380884fe6"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/defects/DEF-000-模板.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\defects\\DEF-000-模板.md",
+      "bytes": 994,
+      "sha256": "6901a5992841b70fe81eb15da5725b655eb0571045d702e840054a569649d3f0"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/defects/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\defects\\README.md",
+      "bytes": 389,
+      "sha256": "a7f0a7476ec2e785f36e7751c8892fbf237b066a9f310de261f8905c194fd994"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/defects/缺陷台账.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\defects\\缺陷台账.md",
+      "bytes": 39628,
+      "sha256": "ac2d4ce831fa8c6fed8d0700ba0bc53b335c8cc17933a3acccf7bcefc99c3591"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/e2e/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\e2e\\README.md",
+      "bytes": 1531,
+      "sha256": "743632d5b92a0585de43536053da8fd26ffde8588aad6bc23ac7732ada2fe5a6"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/e2e/test-results/ac-verification-AC-010-2-切换视图图表随之更新-数据中心在指标视图之间切换时图表内容随之变化/error-context.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\e2e\\test-results\\ac-verification-AC-010-2-切换视图图表随之更新-数据中心在指标视图之间切换时图表内容随之变化\\error-context.md",
+      "bytes": 16191,
+      "sha256": "89339167bd269e71d27f9e6536460bd955d60fc957a0b64f904bf7b88be168b6"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/e2e/test-results/dashboard-honesty-数据中心-·-诚实性可见-播放量没采到时，页面给出原因而不是显示成-0-真值/error-context.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\e2e\\test-results\\dashboard-honesty-数据中心-·-诚实性可见-播放量没采到时，页面给出原因而不是显示成-0-真值\\error-context.md",
+      "bytes": 10195,
+      "sha256": "deb8e3ec0cdc76166776a34171afb116bfe25c701eb78c2ff9b56fac9f10488e"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/e2e/test-results/publish-dialog-发布弹窗-·-唯一宿主-内容创作「一键发布」打开弹窗，且同一时刻只有一个实例/error-context.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\e2e\\test-results\\publish-dialog-发布弹窗-·-唯一宿主-内容创作「一键发布」打开弹窗，且同一时刻只有一个实例\\error-context.md",
+      "bytes": 9352,
+      "sha256": "c3ef0acdf167c58607357ab8f93df20d4dac900b2b8271884d452aa26386ddb4"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/e2e/test-results/publish-dialog-发布弹窗-·-唯一宿主-账号日历入口打开的是同一个实例（不会多出一份）/error-context.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\e2e\\test-results\\publish-dialog-发布弹窗-·-唯一宿主-账号日历入口打开的是同一个实例（不会多出一份）\\error-context.md",
+      "bytes": 10840,
+      "sha256": "6c33e70e18b00a08480363e6b0fb82d4163bbadaf45600dda0a3551c778903fb"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/FIELD_TEST_REPORT.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\FIELD_TEST_REPORT.md",
+      "bytes": 4781,
+      "sha256": "e60942a2e181712773f7c2ad946d9e56dc5da61effe70d1d0d94e7d13603d0a6"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/FULL_QA_REPORT.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\FULL_QA_REPORT.md",
+      "bytes": 7942,
+      "sha256": "287fd404db02a157534667e19fc02dbb0ae136e78152ea29aeb851ed9de5aa6c"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/GUARD2_REPORT.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\GUARD2_REPORT.md",
+      "bytes": 5427,
+      "sha256": "491af0dc3d025fc3f9abcb92b99b490456929856f6b28b707358d708d78ec54a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/manual-current/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\manual-current\\README.md",
+      "bytes": 655,
+      "sha256": "8784da7b98d54030376acf52ab48592d261c68136405cdac445bd33481181ad1"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/manual-current/用户使用手册-图文版.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\manual-current\\用户使用手册-图文版.md",
+      "bytes": 13899,
+      "sha256": "5d8fca67c0d8c756d67b08b6a8142f1b97bc8f060591552abf10905da71fc6d0"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/parallel/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\parallel\\README.md",
+      "bytes": 1262,
+      "sha256": "1f3f4ae00d82f878e81110a2fb3eca53be446c54504d05defa483fc5b8e69bdd"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/probes/AUDIT.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\probes\\AUDIT.md",
+      "bytes": 6192,
+      "sha256": "9c591c788cd439b55273c4643c4d8a4882bab4d45cbf5d2656ef60998aea4834"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\README.md",
+      "bytes": 5442,
+      "sha256": "617260db60f3e61a47c9bb993927c594ebd5371e2d46249dd0d0110db80675da"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/RELEASE_CHECKLIST-v1.0.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\RELEASE_CHECKLIST-v1.0.md",
+      "bytes": 6345,
+      "sha256": "af2d6072792d41e777d34237f36144b49d7fa0b4397ce5cdb17fcee0dd1c3264"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/RELEASE_GATE.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\RELEASE_GATE.md",
+      "bytes": 6477,
+      "sha256": "d8268e8d19ca367f84c2dd1df48b3b8b12fee91b714641fae57b2e6cbd30e9f6"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/cleanup-2026-09-11.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\cleanup-2026-09-11.md",
+      "bytes": 3501,
+      "sha256": "129e2c0afcef032358b3d5706d9f93493d582768368b75e4d313f6984c514942"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/cleanup-2026-09-13-github-old-releases.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\cleanup-2026-09-13-github-old-releases.md",
+      "bytes": 2909,
+      "sha256": "069ad2ff893b97a86ed38f605fec133ce869a881a34136938b5a52340a7173af"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/cleanup-2026-09-13-old-installers.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\cleanup-2026-09-13-old-installers.md",
+      "bytes": 1850,
+      "sha256": "e19e3290cd187625b0824ddb5d9172dd39f8f83f5c60c4b2a23dcc1a0c76675c"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/cleanup-2026-09-14-retired-rollback-net.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\cleanup-2026-09-14-retired-rollback-net.md",
+      "bytes": 3282,
+      "sha256": "eac023595c95da02c202957071c81c74ec5b0ed588ba149f78b088a5f61d5378"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/fix-progress-fansCount-2026-09-09.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\fix-progress-fansCount-2026-09-09.md",
+      "bytes": 5602,
+      "sha256": "79ebd6610654428e8bb00c252bb64a595edab1e22b2c9db6003bd0da88d388ec"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/fix-progress-QA契约-2026-09-07.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\fix-progress-QA契约-2026-09-07.md",
+      "bytes": 9580,
+      "sha256": "14f4123855067e5d9987dd1bdb580f725735d9235af9138422ae579bf94c43b3"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/fix-progress-打包态同步-2026-09-07.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\fix-progress-打包态同步-2026-09-07.md",
+      "bytes": 2244,
+      "sha256": "b3aa79b5387ac3209245c8c9a51dac63cad879c3ec67b11b48a12d45969fe082"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/fix-progress-抖音发布SOP-2026-09-07.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\fix-progress-抖音发布SOP-2026-09-07.md",
+      "bytes": 9989,
+      "sha256": "5a26f775f5e776917d9cd93981127f5ac663efd7140fea2376058115840bc5c0"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/fix-progress-账号线-2026-09-07.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\fix-progress-账号线-2026-09-07.md",
+      "bytes": 8589,
+      "sha256": "621787d914ae6588453e46278694f868f73a4841c15845882672c6c05535dd66"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260902-134501.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-134501.md",
+      "bytes": 1317,
+      "sha256": "016937fbce0eef7fc1d68ac05f130e1be4010c764dc2a5eaad1943d28094d407"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260902-182331.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-182331.md",
+      "bytes": 1524,
+      "sha256": "e566fb6f2e7726a8c912874c10de2dc93b21942dda3fbcfe57d7b76b8b4c057a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260902-185522.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-185522.md",
+      "bytes": 1795,
+      "sha256": "3e694e429f302ddc97ce76cbf63780eef151cc4c76c62723eda757ba4946b164"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260902-190531.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-190531.md",
+      "bytes": 1868,
+      "sha256": "75bc04041b6b7eedcf57a1f0bc3ec845a72c5cda947284c9d8f8f55a8034b0dd"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260902-192236.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-192236.md",
+      "bytes": 2072,
+      "sha256": "889801c442c4de09ffc5f51b625b62f0f5f70a916f1f0fd53fa621d364c374b8"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260902-192259.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-192259.md",
+      "bytes": 2092,
+      "sha256": "0a31e40d3078a3a2b0e2da6a7891b9434120836996a61832985e9013c67dc3a9"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260902-193913.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-193913.md",
+      "bytes": 2155,
+      "sha256": "99834b2d9c41e01e085e464209e191dd2d605b8ad7e3b9a6bc808d7680c5ec44"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260902-194107.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-194107.md",
+      "bytes": 1979,
+      "sha256": "a81483281a8f53887cb1ce2351196a12d806573c4fdeef73e9ae7223b349ec86"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260902-212034.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-212034.md",
+      "bytes": 2042,
+      "sha256": "f4a00c8dfd790b081842f34df0cb7a757faad5fd56be7f4dc21d17f4206a8e43"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260902-212205.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-212205.md",
+      "bytes": 2042,
+      "sha256": "6545456f61a44e448619e86acb7594fd6b7e9d4abdfd9912460e8868c348a0dd"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-095518.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-095518.md",
+      "bytes": 2042,
+      "sha256": "185ebc90c1ee627d6648b2746eb5659b7bf3d13fb460b840473f7856fdc39d68"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-133657.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-133657.md",
+      "bytes": 2121,
+      "sha256": "6dd9198b9893bd1489bd4b8db9439f8ea6ba9a83a74490fd4e387664e75c01c4"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-135043.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-135043.md",
+      "bytes": 2121,
+      "sha256": "9b8f3f595115c471a66e499a20ac8c834aa8c5ffbf30e540745cea0e5693a627"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-135056.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-135056.md",
+      "bytes": 2121,
+      "sha256": "fb7077b5f4281d432f2a200453af30c870b57f11f0050d14bf9018ab19beea15"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-135142.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-135142.md",
+      "bytes": 2045,
+      "sha256": "107377b15a56c8be61e8f55a0636b3b1787fbafd60d04810817058083a8e3d75"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-140628.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-140628.md",
+      "bytes": 2045,
+      "sha256": "9ccbe56fccc8e77df216899189467fcb992af198d4c0dd56df68c90ddf730e86"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-170710.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-170710.md",
+      "bytes": 3150,
+      "sha256": "0fd6155cfdc84d3b533ef9d741a17e04a150d8f2f93fd6423b067b77a931a498"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-170724.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-170724.md",
+      "bytes": 3096,
+      "sha256": "15ffa3aa1865a18c32654bd8e6149009f307c14426cd9c2230c3b0506092d81f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-171534.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-171534.md",
+      "bytes": 3159,
+      "sha256": "259ce8b2933ce6dc08d644e3c5732747281d39a3a1396b64849ed5e25cb9f674"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-171617.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-171617.md",
+      "bytes": 2102,
+      "sha256": "72d71f36e10d900763e039a7af573b78ea50d49052cd7005b08f1714c3ae9365"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-193916.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-193916.md",
+      "bytes": 2039,
+      "sha256": "3a5bf84838ca89891122d90343e3a395c394334f89f9568eb477fdabdf39eb59"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-203128.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-203128.md",
+      "bytes": 2039,
+      "sha256": "fff2159d58c388732c21d5ad6bd773697d327c68defb0cc5a28da8261f95653a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-205007.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-205007.md",
+      "bytes": 2039,
+      "sha256": "ae53bb609c395124c4c664cc8560881c0e9668c99b357f328f544a8cac975a87"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-223913.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-223913.md",
+      "bytes": 2102,
+      "sha256": "b26ca8eda9189488bab0a4b788bbfb2212632823bd24a960720f812107ec995b"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-231008.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-231008.md",
+      "bytes": 1744,
+      "sha256": "04718e1fd386e76d4a3bc2b9c3f080eccde0e9a57b6b09df1b18297b6d92aebb"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260903-231242.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-231242.md",
+      "bytes": 1659,
+      "sha256": "cc393565797b8b40ed0897949fb998f54be48d3fd8216b85bc18ca5c09096c76"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260904-191457.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260904-191457.md",
+      "bytes": 1652,
+      "sha256": "fb07a9d6ac67065a1f2d8ec912eaed098ba6b2cf57bbd2b9376e8d7cde9aee3d"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260907-104326.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260907-104326.md",
+      "bytes": 1652,
+      "sha256": "7743b5af364c612b7696415400d5cb146ed78a6c61275232677ac82e7a25e3c1"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260907-112010.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260907-112010.md",
+      "bytes": 1652,
+      "sha256": "5c1dcd93996c1a6f614a4969aca0935f7dcf29205cebd9a8b20f648418c07833"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260907-133313.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260907-133313.md",
+      "bytes": 1931,
+      "sha256": "e7c4d04bcd53008160431aa77fabce82a9ea92fbfca2e75876994c2026ee1115"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260907-133408.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260907-133408.md",
+      "bytes": 1931,
+      "sha256": "21812487808c3261d1c218659f788e96e9602a2daeb9f7f55db943b0d1bb9deb"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260908-141109.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-141109.md",
+      "bytes": 2035,
+      "sha256": "3fda7beab68e63121acd5a54dbe1f74b2eb8670d06c4388ab3a2e3ea62438370"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260908-191209.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-191209.md",
+      "bytes": 1972,
+      "sha256": "7aa158e962688eb215c78a8344dab7d0db006ce3a7e2a8d97eb58e98a02ff318"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260908-191945.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-191945.md",
+      "bytes": 1906,
+      "sha256": "3a799b4cf3f591c2f8d15c72e4905ea07d461d7f56a9e7c7458797284b67aece"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260908-192043.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-192043.md",
+      "bytes": 1764,
+      "sha256": "3000cfb2bbfb4e8ecdb24f1f85ffb129b5e8249f1bbf29db7ad55fb478255cd3"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260908-192806.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-192806.md",
+      "bytes": 1784,
+      "sha256": "8e1f4781f3b95641d9638e55636fc08b54d7275b37084cd2c039bf5017444b42"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260908-192826.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-192826.md",
+      "bytes": 1714,
+      "sha256": "225a3b73aa034af1c2372d16b6cf17e99afb89f655f86af4de2fa6ac565ce815"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260908-192949.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-192949.md",
+      "bytes": 1614,
+      "sha256": "a1c064b7c1a883f499a7551d4e3d99f06f31b678d02e7bf68b5167b1884fe0bd"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260908-200506.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-200506.md",
+      "bytes": 1570,
+      "sha256": "62be1f69897e23e54879dcaf9d3147b4ec5e64a5f9bb49a4d09dbff140082f52"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260908-202854.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-202854.md",
+      "bytes": 1485,
+      "sha256": "aa17c5297070e5ca7f262362171ff151180977cc98f41ccadd5dd0893d163abd"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260909-003226.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260909-003226.md",
+      "bytes": 1485,
+      "sha256": "a058289b981e5bb789a34f881a3fc646f43dfb744e772ab1b8d98852aee49afe"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260909-123239.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260909-123239.md",
+      "bytes": 1485,
+      "sha256": "b7a3ece94f9e714e360848eda41fd7f4ccc9353cc9f1a9b4ad2b5245d34dd2b3"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260909-145023.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260909-145023.md",
+      "bytes": 1485,
+      "sha256": "fcaee7ff4004e680eba37c623366cbe15fc78716bfe5e40b8e1f31ef18147f95"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260909-194729.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260909-194729.md",
+      "bytes": 2223,
+      "sha256": "154c8e9fe9400360bde4977c45d9b41c0d061007179af636a064e1ecdea107d9"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260909-202147.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260909-202147.md",
+      "bytes": 2223,
+      "sha256": "e78e1e2127692841d6926042204bfb03685cc9ee3f940ff8c39a303ad653b403"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-015314.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-015314.md",
+      "bytes": 2372,
+      "sha256": "f92a6e83b0a684c121dfaca7eb22093711f8baf14f0be7c84f240dffc7d99333"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-021102.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-021102.md",
+      "bytes": 2536,
+      "sha256": "c94cb9516d7ecda5553cc11bed3fc75d6c5eac42f0b8f10875281894b16d0345"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-021445.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-021445.md",
+      "bytes": 2536,
+      "sha256": "78e17d85c2488169098f375c90e627fc309901ee43e3c8afa32ff29ef19bf3df"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-131838.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-131838.md",
+      "bytes": 2536,
+      "sha256": "3e29ce904a826ac8e60eefe37652fb94c4dc425ab65b1fc7776aaf8b5e2593d5"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-132741.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-132741.md",
+      "bytes": 2701,
+      "sha256": "de72363c1314d47f06daa1092535086fc7064b03f83767ee1e57b89009de5fc8"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-182759.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-182759.md",
+      "bytes": 2421,
+      "sha256": "45cdfaa841a6d060f1134802489dc1736419ae8a059eed3e78f170ba43a081d6"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-190631.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-190631.md",
+      "bytes": 2875,
+      "sha256": "847a7e259e24a198db6c26d06ea49103aa5cf5c7adabfc62cf9af8d7c601b5c3"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-191155.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-191155.md",
+      "bytes": 2875,
+      "sha256": "a5ecaa33372420a5d0c84ca4e78791b0698e45a8f88f3c3755351c1e97a7cff6"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-202547.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-202547.md",
+      "bytes": 2875,
+      "sha256": "a99b6849ffba6032dc107f41bf9d995ddf07c1e4b834eadba7b31b14b8836d2a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-203750.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-203750.md",
+      "bytes": 3387,
+      "sha256": "25d14436f9bc944cffa833cc6212f858d84c630d104970927c8fc776ede0d8a6"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-203959.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-203959.md",
+      "bytes": 2875,
+      "sha256": "93e5fba6f5fec28dd75c0c88f62c799d4fa10e8ad9252916fdbfb4ef7b35ece0"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-204203.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-204203.md",
+      "bytes": 2875,
+      "sha256": "a7a7d9a7480b4e4cf1a3d3f5e6f3398637423d7b28a9cd56abf8b57523eb5589"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-221635.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-221635.md",
+      "bytes": 2773,
+      "sha256": "76b25217f57bfcf00c28820a14b043b8b2bb5b0fdc48243cbfc59136e493a047"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-230628.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-230628.md",
+      "bytes": 2717,
+      "sha256": "d83a4af62ff04edc7beab2ec9ee153180d35eba1eb9ab0d1925633efcdb2e7ef"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260910-231616.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-231616.md",
+      "bytes": 2717,
+      "sha256": "67112e15454728d4cfad5ebc1881e0c312fd68ee3df30467a25d0a186102348c"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-005448.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-005448.md",
+      "bytes": 2919,
+      "sha256": "a521926c4efa03e0725e647ea80edb1aeb2f528cb45e0ac38ccc2c4fb5d57cae"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-120004.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-120004.md",
+      "bytes": 2567,
+      "sha256": "ad2d98597c633d0eb01f2d255149d071e702e6b9af62b6d10b726a58b9be4125"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-120359.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-120359.md",
+      "bytes": 3580,
+      "sha256": "720c48c14b6059a45c75f1526994c374624eee1a908e0b173048a9bcc36696f8"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-123059.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-123059.md",
+      "bytes": 2919,
+      "sha256": "deb0e423c63d41f79102d35dc0fbd9bcc9c274000d524e12bce6ee7560f4bcc9"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-124005.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-124005.md",
+      "bytes": 3166,
+      "sha256": "696acff618c2b479d33e5ced7e950721ad56ebb0ca31e754f893c1a37b74f2e2"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-130717.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-130717.md",
+      "bytes": 3361,
+      "sha256": "d04c73fcad413ca6128d2d9d972cbac0d1c0bf7c15be5c719e7e272a7fc4747b"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-132521.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-132521.md",
+      "bytes": 3298,
+      "sha256": "d4ab6eb783c930c54c5f408b5b97581f63e2eddbdef8a75d7220f355f65d1223"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-133325.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-133325.md",
+      "bytes": 3512,
+      "sha256": "6516c3436552d3a5b2a82fd95e8ffc8579a9db6b76508ba69557e65a8624dc24"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-133700.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-133700.md",
+      "bytes": 3512,
+      "sha256": "0bc4d10a1ba274f6448ed0205a305ecc62e8b44e609b23c1c08a33a603e8384d"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-135652.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-135652.md",
+      "bytes": 3655,
+      "sha256": "9f1bac10ccde83ca89b76875cc1c053ee9ed891fa8e7626c666d94664d9bfd89"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-140924.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-140924.md",
+      "bytes": 3655,
+      "sha256": "1c8cf699d3d6abd7410593780363ded4ff55723171a4a24936a16c9d72ffc3bd"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-142259.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-142259.md",
+      "bytes": 4398,
+      "sha256": "573ce521209b812e933fed9aa957f9d24c6c5c45d56f6bd436d08b3e4432850e"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-143543.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-143543.md",
+      "bytes": 3655,
+      "sha256": "364013bd40721f718cd13fb9be789efddab386c7aed0471c0ddb331b572842d1"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-145910.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-145910.md",
+      "bytes": 3655,
+      "sha256": "541a1a954ade7a606df8569eca70063bfd9994d1d8defd29f50d07eaf2b9d94d"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-150949.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-150949.md",
+      "bytes": 3826,
+      "sha256": "ed9b4db4a091d42e21e408165a95645fad62b42bf70801ed255c0b2923e00acd"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-151856.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-151856.md",
+      "bytes": 3952,
+      "sha256": "08069f5ed63420c4c03cbcf7f469a9d3c52527f42bab11d0ab8cd79aefbf4e9c"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-153241.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-153241.md",
+      "bytes": 4147,
+      "sha256": "c33f4c3539c14c67fc46a2a04e5a7d158919f58746cdc952040520ed9c27e710"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-163003.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-163003.md",
+      "bytes": 5446,
+      "sha256": "284c4c2bbe69cb4c8405f7306e7ecd902d5242ec172d5402aae86871c356dd21"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-164101.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-164101.md",
+      "bytes": 5699,
+      "sha256": "3aa4943b59b5e268feb1af7a21550e989c1127b5e8fff33f06011183c848dddb"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-164806.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-164806.md",
+      "bytes": 5665,
+      "sha256": "c7fa459a6996429f93fc5f8aebef32bc41ffcefe42ec6d33f15093328dacfb64"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-165656.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-165656.md",
+      "bytes": 4036,
+      "sha256": "bda270255cf3ad537fa4260db17bbfdb1fd0ace9d91ed173b9841b378a14381d"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-165954.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-165954.md",
+      "bytes": 3973,
+      "sha256": "a64de6929cc765cc69c164cb44c68f8212365aa8d13a889826c9b4554e97f9d8"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-170741.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-170741.md",
+      "bytes": 4036,
+      "sha256": "0b1e2de98e01b338d9d0901a12888156e6473a563453bd50e19aacb131c6085e"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-180931.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-180931.md",
+      "bytes": 3973,
+      "sha256": "2843950a2db1c1da26a8e29a7fda4c295ed69515df04b6a1ffef92ca21ef9ea9"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-220715.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-220715.md",
+      "bytes": 4122,
+      "sha256": "7709d6a2438b03db0ea713e96bf2eb17bd5836dac6d5039f149a57078dc05e23"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260911-232655.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-232655.md",
+      "bytes": 4185,
+      "sha256": "6fc9daf91953ca650a8aa7649c24eefbfbf432f8637e095f5c07b52a83933249"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260912-125815.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-125815.md",
+      "bytes": 6970,
+      "sha256": "2684e6ce0437148113ea1aae74c1d6b344eefbb8a148107a744e6484d55aa4bd"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260912-130804.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-130804.md",
+      "bytes": 5574,
+      "sha256": "5044f875777f6ebe61d36e61ff7ccfff588489a6e0581362e4ea2d3d384da7ba"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260912-131742.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-131742.md",
+      "bytes": 4036,
+      "sha256": "826dbef8ede399eae1e37b1755755b6f01a39f6db2c6eb94fa10a2275b64e66e"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260912-135212.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-135212.md",
+      "bytes": 4036,
+      "sha256": "9af398c2737d8fd004620822eda501e0cc063053be6b0212d36f3f08abe30e3b"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260912-143658.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-143658.md",
+      "bytes": 4036,
+      "sha256": "7e68500b8b7f1c7d3da6d5fd9bab1fa25f2eeb23423d541400bdfc3981aa318f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260912-145037.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-145037.md",
+      "bytes": 4036,
+      "sha256": "fab71dac62cc3c27c718ce9b3ab298d53bb608d27977510627c2915f3710ffac"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260912-150057.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-150057.md",
+      "bytes": 4036,
+      "sha256": "041468e9e522435f6cc6a14eb2b6cf5815b97280d4c97ccd03d040cad4ee20be"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260912-165336.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-165336.md",
+      "bytes": 3938,
+      "sha256": "0c37910570bd603bfb0a62c0c3f584564e697eb62ad8158d4a8cb5ccf7d8c5b7"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260913-130801.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-130801.md",
+      "bytes": 4779,
+      "sha256": "c14dfae39d4cdd4c37375b747769b4dafc99c95674184ba6857cfb2be2e2e53b"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260913-132408.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-132408.md",
+      "bytes": 4848,
+      "sha256": "38d10e74c53ef77f318430b78a00c46a7c12f96707e201e84305cf805fd1e800"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260913-143742.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-143742.md",
+      "bytes": 4848,
+      "sha256": "49d52258670a7375df80f015946c67732f9131e81fe0d01f601a35041f5d14df"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260913-171228.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-171228.md",
+      "bytes": 6869,
+      "sha256": "c353057f4fe4a10ec1aaded326a065b4fa6b6968c6a5e3550b2a8e69b3c6f7e6"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260913-173742.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-173742.md",
+      "bytes": 6434,
+      "sha256": "0ccee92e57da5435e0a7171a0d1998188beb73cedd1a960e9416c40d0e776d40"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260913-180503.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-180503.md",
+      "bytes": 5003,
+      "sha256": "1e738c40b6c563b1301badb8848a985e84ec0f17d1bfcd1bd54567c4ca8cc202"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260913-195038.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-195038.md",
+      "bytes": 6301,
+      "sha256": "b634451c804396cf00df19edc901e569db55ea65b95a78b359ab8b45dacd4eb7"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260913-201000.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-201000.md",
+      "bytes": 4854,
+      "sha256": "bd9ee0e2e55ccc410c363966f87897f0570427f51520934a4d7cd82f3b5b8610"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260913-213246.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-213246.md",
+      "bytes": 4854,
+      "sha256": "e038b1f8d44521f22f487ebda6b66423362f73d7be56ece28390c8e4012f6868"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260914-151752.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260914-151752.md",
+      "bytes": 4845,
+      "sha256": "e801483598ec5acfd6ee861337050fbbf4cc3e61bd4ec5bb68b59f4a2f23675e"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260914-151930.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260914-151930.md",
+      "bytes": 5232,
+      "sha256": "fe5d1c139897680e14513f56bf7d17a8fca95f1cc14558d1d9c52c47d9a95e06"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260914-153806.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260914-153806.md",
+      "bytes": 4986,
+      "sha256": "5d4d00641fb35909edc27d7e5598a8eab0d398233d7b2902c104232fae95abbc"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260914-154009.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260914-154009.md",
+      "bytes": 4737,
+      "sha256": "7a1250a852547ef505111ec6881fe8d638844e712a15f08bfb82d652da61ecb9"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260914-235219.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260914-235219.md",
+      "bytes": 6878,
+      "sha256": "bebe26521e4d09fa6061eaae7f7b48f795c5809a08725c14087fe91605eab677"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/gate-20260915-004715.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260915-004715.md",
+      "bytes": 6326,
+      "sha256": "59b3baa8d8f3e5c204a1b9809e6e3b9094d715183add7146d340011b2eaf18ac"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/GATE-RUN-1.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\GATE-RUN-1.md",
+      "bytes": 2010,
+      "sha256": "66688b900a6b7be89cdaf6533f48fce7c2a9cb8bc53b4b98fb981fe28a3ed982"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/installed-ai-business-2026-09-13T12-40-54.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\installed-ai-business-2026-09-13T12-40-54.md",
+      "bytes": 394,
+      "sha256": "cec77fbb2ccd6ee4b058c63c102bda7fcbae3bf4ba6053a52e498cb0dd89c0ab"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/installed-ai-business-2026-09-13T12-45-11.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\installed-ai-business-2026-09-13T12-45-11.md",
+      "bytes": 1851,
+      "sha256": "029a3378d9632c592df00c8270dd04307f4457a6531c899e88ce37772fbd35e5"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/installed-first-run-2026-09-13T12-45-59.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\installed-first-run-2026-09-13T12-45-59.md",
+      "bytes": 553,
+      "sha256": "d1ffc165ab9e99a40f4b45add8578035e17cf2153e5c08d169380f1b437fed9f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/R3-无源不显示-修复与验证-20260912.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\R3-无源不显示-修复与验证-20260912.md",
+      "bytes": 3529,
+      "sha256": "0a5cb7c1faf1360b667d4806b8704a7590e8e216d08892ddfa02268f4376bbd4"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/release-0.2.41-20260912.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\release-0.2.41-20260912.md",
+      "bytes": 2853,
+      "sha256": "652099e571926ebad829c0a55f54c0fb826ee78bb3b7f3b8625c4eed4a574328"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/release-0.2.41.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\release-0.2.41.md",
+      "bytes": 1502,
+      "sha256": "e6b5155f1a0d929958800872c1d791081e24ad5ed0db0372780acdc881b70a8f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/release-0.2.42-20260913.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\release-0.2.42-20260913.md",
+      "bytes": 5303,
+      "sha256": "59203e3dd98697f96569635d4bb06d085e2f5b7e5682a93bc5fd76336e0bdbef"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/release-0.2.43-20260914.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\release-0.2.43-20260914.md",
+      "bytes": 4366,
+      "sha256": "39f6e316bfe26216cc9e32aad5f5d7da9b4c4c75e1e4bcaab632d391b5665c3c"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/release-0.2.44-20260914.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\release-0.2.44-20260914.md",
+      "bytes": 3256,
+      "sha256": "244699468846f3e50b45404a718cbf133a39a62d6157504586db1638d3cee74e"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/release-0.2.45-20260914.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\release-0.2.45-20260914.md",
+      "bytes": 5217,
+      "sha256": "6e55d2bb67e69a9c23cf889d7921570cadca49183e2779d0d9dc93c722fde5b7"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/release-0.2.47-20260914.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\release-0.2.47-20260914.md",
+      "bytes": 4284,
+      "sha256": "d8a54bfb20819e471d2f8f023e16139d987e8b35f751cda2a4230f5247942360"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/release-0.2.48-20260915.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\release-0.2.48-20260915.md",
+      "bytes": 5963,
+      "sha256": "556e345a8ea194dc07de72faaec563c452190190a20bf02a380b78e830471c85"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/release-0.2.49-20260915.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\release-0.2.49-20260915.md",
+      "bytes": 4789,
+      "sha256": "f60656ae756fd4c6d0b86c753fe918adc4f157fc2871f8283b44b2203858860e"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/s-level-acceptance-2026-09-09-publish.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\s-level-acceptance-2026-09-09-publish.md",
+      "bytes": 6310,
+      "sha256": "8efde25c64594aab81840e3029f373ad87c6dc1be9c402d84a006fecb96f680c"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/s-level-acceptance-2026-09-09.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\s-level-acceptance-2026-09-09.md",
+      "bytes": 3714,
+      "sha256": "da3df202e7dc92d51ae7f073d6c8dd492510eda6aae6f9801a7ac1ea6c11dc86"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/self-check-4layer-20260911.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\self-check-4layer-20260911.md",
+      "bytes": 16615,
+      "sha256": "eb0adb0e81a364efa9d331dd6431eb38fbaf8a6dec22ba28184f1e648c110072"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T08-41-03.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T08-41-03.md",
+      "bytes": 22489,
+      "sha256": "99ab0dd05294c189c8e76767b80121839b28822ae6c7a735977bccf423e26a91"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T08-45-33.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T08-45-33.md",
+      "bytes": 932,
+      "sha256": "6609a7a72c25f0de2a155017e81a816e1007eb74e07c76c17881dc05f3516ebd"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T08-47-42.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T08-47-42.md",
+      "bytes": 3439,
+      "sha256": "54512f0f4eec148d8779bc460c0eb686f62b061a38becd655992546059e2727c"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T08-48-48.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T08-48-48.md",
+      "bytes": 3366,
+      "sha256": "7f70ce713066da1459586db337678ae5e30fae305cd6deb76276b6cb872cffe6"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T08-56-20.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T08-56-20.md",
+      "bytes": 3568,
+      "sha256": "47f89062ef0063eea5a453484d57e484ab31d4fe87e7752e0478d71c78bac24d"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T09-18-58.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T09-18-58.md",
+      "bytes": 3668,
+      "sha256": "6ac111e4489e227a80ce64d0a4cfaa9c72c167ebaf7cf53b7495de70ad729baa"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T09-46-44.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T09-46-44.md",
+      "bytes": 3668,
+      "sha256": "7d2ac69a8c9a317a31bd4e8bc25923a197fcd7c42be950dbabb7c64bbae5f5cb"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T10-05-45.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T10-05-45.md",
+      "bytes": 3231,
+      "sha256": "47b36e6ffcff436f31e46ffd0274754f773a588fe9b32f42347fc08db908e704"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T11-15-28.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T11-15-28.md",
+      "bytes": 1176,
+      "sha256": "5ae2f7125d856a0e9c2a5ecf214d4d6af9673376edbb5864a60a0715e0c162d2"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T11-30-17.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T11-30-17.md",
+      "bytes": 865,
+      "sha256": "afeb6c6fd35de32b8e6eafce2f138223889a37ab5cbdbd5f320445be7cc9ef2c"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T11-30-38.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T11-30-38.md",
+      "bytes": 1374,
+      "sha256": "8def24dd6321d094c0428998331a4c85f1a24ec1c434be0cf63d94ef8c598ef5"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T11-33-08.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T11-33-08.md",
+      "bytes": 3551,
+      "sha256": "1edbfd305dc408e13e19c9ea3ab65e3899beb2e874a3d2a824d16a6941141ceb"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T11-53-32.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T11-53-32.md",
+      "bytes": 3618,
+      "sha256": "f4b858bdd9912bdd6086b8c811640a0e6345303e83271762efaeb1b3d3037552"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-13T13-16-05.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T13-16-05.md",
+      "bytes": 3551,
+      "sha256": "50b9720b459394429ba3ae33a318600acdff51e521ae14723380c5b964741695"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-15T05-03-44.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-15T05-03-44.md",
+      "bytes": 1376,
+      "sha256": "5aed244b83a1fb00914d45d79dbe719470b6d0a5160d7eda35a663b02632a2fd"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/splash-progress-2026-09-15T05-49-01.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-15T05-49-01.md",
+      "bytes": 1376,
+      "sha256": "0fd2ea815689d4f11dd9b9b6b6aac5bcfda8b5e079c2c437f89eebd5733e642b"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/TESTING-METHOD-2026-09-03.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\TESTING-METHOD-2026-09-03.md",
+      "bytes": 2904,
+      "sha256": "a8c9a7178125b021bb7eb07d6dc55b1641d01da5bf230b34cccd8976097999ed"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/功能测试执行记录-2026-09-04.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\功能测试执行记录-2026-09-04.md",
+      "bytes": 3664,
+      "sha256": "284d79d5f331165b0c0ef856de1be4e138001b136eb1a06e9044f62caef31411"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/工作总结-2026-09-04.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\工作总结-2026-09-04.md",
+      "bytes": 3772,
+      "sha256": "00ab29c58dcef4a7cd7a74448865feeea19e82adcb7a22ae490fc188734e101c"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/并行修复总看板-2026-09-07.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\并行修复总看板-2026-09-07.md",
+      "bytes": 4839,
+      "sha256": "b1618f48a8c12427049b5b8b593196eee1bfa300416631feae60c376dcfefb98"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/最终交付报告-20260912.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\最终交付报告-20260912.md",
+      "bytes": 8316,
+      "sha256": "867d1ba502ef679d7c832e4928dc8674d6bd8dfcbeae08b1b5cdeab8f6f1af52"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/最终测试与安装包汇总-2026-09-04.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\最终测试与安装包汇总-2026-09-04.md",
+      "bytes": 4931,
+      "sha256": "44e3a227bf30466c74f647fe1a2371816c9d20a790ab666604dd92f8541fbd5f"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/清单测试记录-2026-09-04.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\清单测试记录-2026-09-04.md",
+      "bytes": 2292,
+      "sha256": "d4b1b7130d74952f3bd40b065b00819ca7fc935e78fb273748670915729334c6"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/reports/诚实验收状态-2026-09-04.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\诚实验收状态-2026-09-04.md",
+      "bytes": 3278,
+      "sha256": "d7872b34723d6afb67287197fd89bfdc56d52b269b3c824f457ea5da4208f9bb"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/TEST_REPORT.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\TEST_REPORT.md",
+      "bytes": 4260,
+      "sha256": "2d8601d7a535cbaedbce519f31e9255b54ff605f0b2c220b8e425db634451c2b"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/VISUAL_REPORT.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\VISUAL_REPORT.md",
+      "bytes": 3690,
+      "sha256": "ff5969e101fc8500236d1ab9078f9195be1945e3c94cea595f0ca8729b0e7e26"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/交付测试规则-v1.0.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\交付测试规则-v1.0.md",
+      "bytes": 8819,
+      "sha256": "ce83d7d38216d400aa7b2dee996819fb51ba46b7c526fa1b847887018a832052"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/功能全量测试清单.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\功能全量测试清单.md",
+      "bytes": 8713,
+      "sha256": "2d30a106ec3f1867e008f1d838bc4d48f2bc4f2ed1b0fcc6b8792186bdb7bec8"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/功能测试与Debug手册.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\功能测试与Debug手册.md",
+      "bytes": 5818,
+      "sha256": "e6169e2bb008c8bc2654c42db80617f3f3bc46610ceffe408282b91497f8b51a"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/测试计划与用例设计.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\测试计划与用例设计.md",
+      "bytes": 2967,
+      "sha256": "e082addddb34ad479dfaec74227e7ea62fda77f206ed282ac3e786af309fd7e2"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/qa/真人测试清单.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\真人测试清单.md",
+      "bytes": 2514,
+      "sha256": "c19e60e2804dbb57205a4626331a0cc1f173121f53a9a0ebc137dbee6991f1c4"
+    },
+    {
+      "note": "知识库/原文/本仓库/products/bosom-friend/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\README.md",
+      "bytes": 9793,
+      "sha256": "e9c052d77a4ecbb8569daa503057b403b34cd9daabf3fb140afc144d289bf40d"
+    },
+    {
+      "note": "知识库/原文/本仓库/Vibe-Coding-避坑实战指南.md",
+      "source": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\Vibe-Coding-避坑实战指南.md",
+      "bytes": 12900,
+      "sha256": "9dcd1b08f5ff9cc9bc34fb77fe2c37bf4d3f443a441adaad28a2a93abb99febe"
+    },
+    {
+      "note": "知识库/原文/另一份副本/docs/releases/CHANGELOG.md",
+      "source": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\releases\\CHANGELOG.md",
+      "bytes": 43786,
+      "sha256": "9eddc67621870f3fcb50e20836fecec32e700d248cb0bec87dec510256322cf6"
+    },
+    {
+      "note": "知识库/原文/另一份副本/qa/baseline/安装包只读保护清单.md",
+      "source": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\baseline\\安装包只读保护清单.md",
+      "bytes": 1464,
+      "sha256": "50d5b47db3e7ab491536835c6d86a48819e1a8c867b97aacc1d133add010a154"
+    },
+    {
+      "note": "知识库/原文/另一份副本/qa/defects/缺陷台账.md",
+      "source": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\defects\\缺陷台账.md",
+      "bytes": 25301,
+      "sha256": "76494b57e234b0b39b56701195023e1d0d78adeec89686c1ef39739a71e548e6"
+    },
+    {
+      "note": "知识库/原文/另一份副本/qa/RELEASE_CHECKLIST-v1.0.md",
+      "source": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\RELEASE_CHECKLIST-v1.0.md",
+      "bytes": 6230,
+      "sha256": "38a6f28eb59bfc7e1edc1631688fd2902f38dacbe78ff6cc608421a7757bae42"
+    },
+    {
+      "note": "知识库/原文/另一份副本/qa/reports/release-0.2.42-20260913.md",
+      "source": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\release-0.2.42-20260913.md",
+      "bytes": 4875,
+      "sha256": "0caf43e808460881804e3602c0a644f5e38aba3375f8e291e7898906fb436010"
+    },
+    {
+      "note": "知识库/原文/另一份副本/README.md",
+      "source": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\README.md",
+      "bytes": 2637,
+      "sha256": "74f2b906ef15dca633754648c30231659f70debdcbe5e48acb3418439318c291"
+    },
+    {
+      "note": "知识库/原文/另一份副本/RELEASE-0.2.42.md",
+      "source": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\RELEASE-0.2.42.md",
+      "bytes": 2681,
+      "sha256": "32356c7f205ef17c80b133daaa3717d7261bfd11fd02bf0c929f33205cfda47b"
+    },
+    {
+      "note": "知识库/原文/另一份副本/上传到GitHub-两步.md",
+      "source": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\上传到GitHub-两步.md",
+      "bytes": 2101,
+      "sha256": "6c18422b7b58b16b7b31320673097865340bf0d843366d324bde352d41c1746b"
+    },
+    {
+      "note": "知识库/原文/历史备份/README-如何恢复.md",
+      "source": "C:\\Users\\Jay\\Documents\\项目历史备份\\README-如何恢复.md",
+      "bytes": 3100,
+      "sha256": "f1b5c718052f71177960e34f6b4d347e20cf874670998f683a32de1420a3fbae"
+    },
+    {
+      "note": "知识库/原文/历史备份/非git资产/Desktop-skills/README-PWA-Setup.md",
+      "source": "C:\\Users\\Jay\\Documents\\项目历史备份\\非git资产\\Desktop-skills\\README-PWA-Setup.md",
+      "bytes": 1481,
+      "sha256": "dcfd5acb19afe234fb47b7de2b00c3c4b5cc4f6b81fa53204131629d03798ae5"
+    },
+    {
+      "note": "知识库/原文/历史备份/非git资产/Make money!/知音APP变现化优化方案-2026-08-27.md",
+      "source": "C:\\Users\\Jay\\Documents\\项目历史备份\\非git资产\\Make money!\\知音APP变现化优化方案-2026-08-27.md",
+      "bytes": 9609,
+      "sha256": "9e7b358c19f4ef7e218103abf4f6d9a52b9ee84023cf7660d5c594ba79a3869c"
+    },
+    {
+      "note": "知识库/原文/历史备份/非git资产/Make money!/知音v2.0-OPC-AI运营引擎-最终优化方案-v2.1-现状修订版.md",
+      "source": "C:\\Users\\Jay\\Documents\\项目历史备份\\非git资产\\Make money!\\知音v2.0-OPC-AI运营引擎-最终优化方案-v2.1-现状修订版.md",
+      "bytes": 24551,
+      "sha256": "6094d1cba990a7a2562e051df48d94bd66bef0f28c36a66ba4a9080bc60b0140"
+    },
+    {
+      "note": "知识库/原文/历史备份/非git资产/Make money!/知音v2.0-OPC-AI运营引擎-最终优化方案.md",
+      "source": "C:\\Users\\Jay\\Documents\\项目历史备份\\非git资产\\Make money!\\知音v2.0-OPC-AI运营引擎-最终优化方案.md",
+      "bytes": 25918,
+      "sha256": "7b6c52b750cffa5854c23fb8ca0e388640e87c6685003ea4224b9a99fc94cc15"
+    },
+    {
+      "note": "知识库/原文/历史备份/非git资产/Make money!/知音v2.0优化执行清单.md",
+      "source": "C:\\Users\\Jay\\Documents\\项目历史备份\\非git资产\\Make money!\\知音v2.0优化执行清单.md",
+      "bytes": 9882,
+      "sha256": "cfe943237e75e697b9be0ed4000cde3d2b64a0cf86a04307a15422b267c69dbd"
+    },
+    {
+      "note": "知识库/原文/历史备份/非git资产/Make money!/知音项目现状优化方案-2026-08-27.md",
+      "source": "C:\\Users\\Jay\\Documents\\项目历史备份\\非git资产\\Make money!\\知音项目现状优化方案-2026-08-27.md",
+      "bytes": 6252,
+      "sha256": "91cdd993179e11e97e374802664c8926209f60666001080f63684f6a1f142868"
+    },
+    {
+      "note": "知识库/原文/历史备份/非git资产/ZhiYin-v2/packages/account-core/README.md",
+      "source": "C:\\Users\\Jay\\Documents\\项目历史备份\\非git资产\\ZhiYin-v2\\packages\\account-core\\README.md",
+      "bytes": 815,
+      "sha256": "f84f51143574445b8f3e9ed60e2816300f07f48ad5f52ece70de041417528430"
+    },
+    {
+      "note": "知识库/原文/历史备份/非git资产/ZhiYin-v2/packages/playwright-drivers/docs/tribal-knowledge.md",
+      "source": "C:\\Users\\Jay\\Documents\\项目历史备份\\非git资产\\ZhiYin-v2\\packages\\playwright-drivers\\docs\\tribal-knowledge.md",
+      "bytes": 2631,
+      "sha256": "bb69f94df42c95eeeab1e46642f9f0b9d481353373110ecf4d39b9464c4ae7ee"
+    },
+    {
+      "note": "知识库/原文/历史备份/非git资产/ZhiYin-v2/packages/playwright-drivers/README.md",
+      "source": "C:\\Users\\Jay\\Documents\\项目历史备份\\非git资产\\ZhiYin-v2\\packages\\playwright-drivers\\README.md",
+      "bytes": 906,
+      "sha256": "a3e04669e0d9ccd3162cc5f6700ea1f2e352acf82ff17992f26e0d9d1016ea03"
+    },
+    {
+      "note": "知识库/原文/历史备份/非git资产/ZhiYin-v2/packages/video-assembly/README.md",
+      "source": "C:\\Users\\Jay\\Documents\\项目历史备份\\非git资产\\ZhiYin-v2\\packages\\video-assembly\\README.md",
+      "bytes": 577,
+      "sha256": "b2924e0379a2595f8807b0d69a2e4b99f6d56f45bf026ce0577d56753caee74a"
+    },
+    {
+      "note": "知识库/原文/历史备份/非git资产/ZhiYin-v2/packages/zhiyin-dsh-bridge/README.md",
+      "source": "C:\\Users\\Jay\\Documents\\项目历史备份\\非git资产\\ZhiYin-v2\\packages\\zhiyin-dsh-bridge\\README.md",
+      "bytes": 1504,
+      "sha256": "d5e2d42b6dec1327d69f4d304fb9d4dd502e077e535e44f16d8b26166c169165"
+    }
+  ],
+  "duplicates": [
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\numpy-2.5.2.dist-info\\licenses\\numpy\\random\\LICENSE.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\numpy\\random\\LICENSE.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\pip\\_vendor\\idna\\LICENSE.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\idna-3.19.dist-info\\licenses\\LICENSE.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\pip-26.2.1.dist-info\\licenses\\src\\pip\\_vendor\\idna\\LICENSE.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\idna-3.19.dist-info\\licenses\\LICENSE.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\latest.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260915-004715.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\adr\\ADR-000-模板.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\adr\\ADR-000-模板.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\adr\\ADR-000-绞杀式迁移与双入口.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\adr\\ADR-000-绞杀式迁移与双入口.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\adr\\ADR-001-前端AI会话改走官方内核.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\adr\\ADR-001-前端AI会话改走官方内核.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\adr\\ADR-002-DSH边界与数据所有权.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\adr\\ADR-002-DSH边界与数据所有权.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\adr\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\adr\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\README-前端移植历史.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\releases\\发布就绪清单-模板.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\releases\\发布就绪清单-模板.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\requirements\\Phase1开工准备与结论.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\requirements\\Phase1开工准备与结论.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\requirements\\前端功能需求盘点清单.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\requirements\\前端功能需求盘点清单.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\reviews\\复盘报告-模板.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\reviews\\复盘报告-模板.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\reviews\\阶段门记录-模板.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\reviews\\阶段门记录-模板.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\trace\\REQ-000-模板.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\trace\\REQ-000-模板.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\trace\\RTM.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\trace\\RTM.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\全自动平台操作与风控规避设计.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\全自动平台操作与风控规避设计.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\内容创作板块-监测执行报告.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\内容创作板块-监测执行报告.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\功能清单-三大核心功能.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\功能清单-三大核心功能.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\最终交付方案-v1.0.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\最终交付方案-v1.0.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\docs\\项目优化方案-v2.0.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\docs\\项目优化方案-v2.0.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\engine\\VENDORED.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\VENDORED.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\engine\\VENDORED_RECEPTION.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\VENDORED_RECEPTION.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-electron\\electron\\main\\browserControl\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-electron\\electron\\main\\browserControl\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-electron\\src\\components\\update\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-electron\\src\\components\\update\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-electron\\src\\components\\update\\README.zh-CN.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-electron\\src\\components\\update\\README.zh-CN.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\api\\accounts\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\accounts\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\api\\ai\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\ai\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\api\\analytics\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\analytics\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\api\\auth\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\auth\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\api\\channels\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\channels\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\api\\materials\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\materials\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\api\\platforms\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\platforms\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\api\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\api\\_server\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\_server\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\api\\_shared\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\api\\_shared\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\app\\layout\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\app\\layout\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\app\\[lng]\\accounts\\components\\CalendarTiming\\MobileCalendar\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\app\\[lng]\\accounts\\components\\CalendarTiming\\MobileCalendar\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\app\\[lng]\\ai-social\\components\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\app\\[lng]\\ai-social\\components\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\components\\Chat\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\Chat\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\components\\common\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\common\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\components\\ImageStack\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\components\\ImageStack\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\components\\MediaMentionPromptInput\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\components\\MediaMentionPromptInput\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\components\\ToolBarInline\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\components\\ToolBarInline\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\store\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\components\\AiBatchGenerateBar\\store\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\components\\draft-box\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\components\\draft-box\\utils\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\draft-box\\utils\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\components\\PublishDialog\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\PublishDialog\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\components\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\components\\ui\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\components\\ui\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\hooks\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\hooks\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\store\\agent\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\store\\agent\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\store\\plugin\\docs\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\store\\plugin\\docs\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\store\\plugin\\plats\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\store\\plugin\\plats\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\store\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\store\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\store\\user\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\store\\user\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\utils\\agent\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\agent\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\utils\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\utils\\region\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\region\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\utils\\request\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\request\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\utils\\social\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\social\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\utils\\storage\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\storage\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\project\\bosom-friend-web\\src\\utils\\ui\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\project\\bosom-friend-web\\src\\utils\\ui\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\BUTTONS_REPORT.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\BUTTONS_REPORT.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\defects\\2026-09-03-测试用例定位器缺陷.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\defects\\2026-09-03-测试用例定位器缺陷.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\defects\\2026-09-04-imagesize-resolution.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\defects\\2026-09-04-imagesize-resolution.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\defects\\2026-09-11-图片档位-频道平台-模型收纳.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\defects\\2026-09-11-图片档位-频道平台-模型收纳.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\defects\\DEF-000-模板.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\defects\\DEF-000-模板.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\defects\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\defects\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\e2e\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\e2e\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\FIELD_TEST_REPORT.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\FIELD_TEST_REPORT.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\FULL_QA_REPORT.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\FULL_QA_REPORT.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\GUARD2_REPORT.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\GUARD2_REPORT.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\manual-current\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\manual-current\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\manual-current\\用户使用手册-图文版.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\manual-current\\用户使用手册-图文版.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\parallel\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\parallel\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\README.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\README.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\RELEASE_GATE.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\RELEASE_GATE.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\cleanup-2026-09-11.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\cleanup-2026-09-11.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\cleanup-2026-09-13-old-installers.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\cleanup-2026-09-13-old-installers.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\fix-progress-fansCount-2026-09-09.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\fix-progress-fansCount-2026-09-09.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\fix-progress-QA契约-2026-09-07.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\fix-progress-QA契约-2026-09-07.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\fix-progress-打包态同步-2026-09-07.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\fix-progress-打包态同步-2026-09-07.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\fix-progress-抖音发布SOP-2026-09-07.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\fix-progress-抖音发布SOP-2026-09-07.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\fix-progress-账号线-2026-09-07.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\fix-progress-账号线-2026-09-07.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260902-134501.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-134501.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260902-182331.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-182331.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260902-185522.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-185522.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260902-190531.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-190531.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260902-192236.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-192236.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260902-192259.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-192259.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260902-193913.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-193913.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260902-194107.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-194107.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260902-212034.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-212034.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260902-212205.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260902-212205.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-095518.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-095518.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-133657.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-133657.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-135043.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-135043.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-135056.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-135056.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-135142.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-135142.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-140628.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-140628.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-170710.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-170710.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-170724.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-170724.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-171534.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-171534.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-171617.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-171617.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-193916.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-193916.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-203128.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-203128.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-205007.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-205007.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-223913.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-223913.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-231008.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-231008.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260903-231242.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260903-231242.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260904-191457.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260904-191457.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260907-104326.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260907-104326.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260907-112010.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260907-112010.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260907-133313.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260907-133313.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260907-133408.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260907-133408.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260908-141109.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-141109.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260908-191209.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-191209.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260908-191945.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-191945.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260908-192043.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-192043.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260908-192806.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-192806.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260908-192826.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-192826.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260908-192949.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-192949.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260908-200506.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-200506.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260908-202854.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260908-202854.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260909-003226.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260909-003226.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260909-123239.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260909-123239.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260909-145023.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260909-145023.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260909-194729.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260909-194729.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260909-202147.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260909-202147.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-015314.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-015314.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-021102.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-021102.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-021445.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-021445.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-131838.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-131838.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-132741.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-132741.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-182759.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-182759.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-190631.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-190631.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-191155.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-191155.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-202547.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-202547.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-203750.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-203750.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-203959.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-203959.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-204203.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-204203.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-221635.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-221635.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-230628.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-230628.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260910-231616.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260910-231616.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-005448.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-005448.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-120004.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-120004.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-120359.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-120359.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-123059.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-123059.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-124005.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-124005.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-130717.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-130717.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-132521.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-132521.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-133325.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-133325.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-133700.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-133700.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-135652.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-135652.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-140924.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-140924.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-142259.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-142259.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-143543.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-143543.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-145910.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-145910.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-150949.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-150949.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-151856.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-151856.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-153241.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-153241.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-163003.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-163003.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-164101.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-164101.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-164806.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-164806.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-165656.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-165656.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-165954.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-165954.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-170741.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-170741.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-180931.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-180931.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-220715.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-220715.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260911-232655.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260911-232655.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260912-125815.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-125815.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260912-130804.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-130804.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260912-131742.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-131742.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260912-135212.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-135212.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260912-143658.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-143658.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260912-145037.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-145037.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260912-150057.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-150057.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260912-165336.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260912-165336.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260913-130801.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-130801.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260913-132408.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-132408.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260913-143742.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-143742.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260913-171228.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-171228.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260913-173742.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-173742.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260913-180503.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-180503.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260913-195038.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-195038.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260913-201000.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-201000.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\gate-20260913-213246.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-213246.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\GATE-RUN-1.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\GATE-RUN-1.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\installed-ai-business-2026-09-13T12-40-54.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\installed-ai-business-2026-09-13T12-40-54.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\installed-ai-business-2026-09-13T12-45-11.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\installed-ai-business-2026-09-13T12-45-11.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\installed-first-run-2026-09-13T12-45-59.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\installed-first-run-2026-09-13T12-45-59.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\latest.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\gate-20260913-213246.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\R3-无源不显示-修复与验证-20260912.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\R3-无源不显示-修复与验证-20260912.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\release-0.2.41-20260912.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\release-0.2.41-20260912.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\release-0.2.41.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\release-0.2.41.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\s-level-acceptance-2026-09-09-publish.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\s-level-acceptance-2026-09-09-publish.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\s-level-acceptance-2026-09-09.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\s-level-acceptance-2026-09-09.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\self-check-4layer-20260911.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\self-check-4layer-20260911.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T08-41-03.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T08-41-03.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T08-45-33.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T08-45-33.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T08-47-42.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T08-47-42.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T08-48-48.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T08-48-48.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T08-56-20.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T08-56-20.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T09-18-58.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T09-18-58.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T09-46-44.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T09-46-44.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T10-05-45.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T10-05-45.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T11-15-28.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T11-15-28.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T11-30-17.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T11-30-17.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T11-30-38.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T11-30-38.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T11-33-08.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T11-33-08.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T11-53-32.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T11-53-32.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\splash-progress-2026-09-13T13-16-05.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\splash-progress-2026-09-13T13-16-05.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\TESTING-METHOD-2026-09-03.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\TESTING-METHOD-2026-09-03.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\功能测试执行记录-2026-09-04.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\功能测试执行记录-2026-09-04.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\工作总结-2026-09-04.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\工作总结-2026-09-04.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\并行修复总看板-2026-09-07.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\并行修复总看板-2026-09-07.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\最终交付报告-20260912.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\最终交付报告-20260912.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\最终测试与安装包汇总-2026-09-04.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\最终测试与安装包汇总-2026-09-04.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\清单测试记录-2026-09-04.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\清单测试记录-2026-09-04.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\reports\\诚实验收状态-2026-09-04.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\reports\\诚实验收状态-2026-09-04.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\TEST_REPORT.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\TEST_REPORT.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\VISUAL_REPORT.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\VISUAL_REPORT.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\交付测试规则-v1.0.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\交付测试规则-v1.0.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\功能全量测试清单.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\功能全量测试清单.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\功能测试与Debug手册.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\功能测试与Debug手册.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\测试计划与用例设计.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\测试计划与用例设计.md"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\bosom-friend-app\\qa\\真人测试清单.md",
+      "of": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\真人测试清单.md"
+    }
+  ],
+  "skipped": [
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\patchright\\driver\\package\\README.md",
+      "reason": "过小"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\patchright\\driver\\README.md",
+      "reason": "过小"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\playwright\\driver\\package\\README.md",
+      "reason": "过小"
+    },
+    {
+      "path": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\engine\\.venv\\Lib\\site-packages\\playwright\\driver\\README.md",
+      "reason": "过小"
+    }
+  ]
+}

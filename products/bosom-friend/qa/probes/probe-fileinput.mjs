@@ -1,0 +1,22 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await page.goto('http://127.0.0.1:3081/bosom-friend/#/draft-box', { waitUntil: 'networkidle', timeout: 120000 });
+await page.waitForTimeout(5000);
+const info = await page.evaluate(() => {
+  const out = [];
+  for (const el of document.querySelectorAll('input[type=file]')) out.push(el.outerHTML.slice(0, 400));
+  const sw = document.querySelectorAll('button[aria-pressed], button[role=tab]'); 
+  out.push('TABS: ' + Array.from(sw).slice(0,6).map(b => b.getAttribute('id') + ':' + (b.innerText||'').slice(0,12)).join(' | '));
+  const el2 = document.querySelector('.w-7');
+  out.push('W7: ' + (el2 ? el2.outerHTML.slice(0,300) : 'none'));
+  const el3 = document.querySelector('[data-testid=draftbox-ai-submit-btn]');
+  out.push('SUBMIT: ' + (el3 ? el3.outerHTML.slice(0,300) : 'none'));
+  const prompt = Array.from(document.querySelectorAll('span')).find(s => (s.textContent||'').trim() === '提示词');
+  out.push('PROMPT: ' + (prompt ? prompt.parentElement.outerHTML.slice(0,300) : 'none'));
+  return out.join('\n---\n');
+});
+console.log(info);
+await browser.close();

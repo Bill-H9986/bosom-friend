@@ -1,0 +1,15 @@
+create: {"code":0,"data":{"taskIds":["gen-2fe31380"]},"message":"ok"}
+poll 5s status=generating
+poll 10s status=generating
+poll 15s status=generating
+poll 20s status=generating
+poll 25s status=generating
+poll 30s status=generating
+poll 35s status=generating
+poll 40s status=generating
+poll 45s status=generating
+poll 50s status=generating
+poll 55s status=generating
+poll 60s status=generating
+poll 65s status=failed
+final: {"code":0,"data":[{"id":"gen-2fe31380","status":"failed","points":0,"createdAt":"2026-09-07T06:57:31.874Z","updatedAt":"2026-09-07T06:58:32.700Z","request":{"groupId":"mg-persist","kind":"video","prompt":"晨跑","duration":0,"resolution":"","aspectRatio":"","quantity":1,"imageCount":1},"response":{"title":"晨跑｜口播脚本","description":"大模型调用失败：模型响应超时。请检查 API 地址、密钥和模型名后重试。","topics":["#干货","#晨跑"]},"errorMessage":"模型响应超时"}],"message":"ok"}

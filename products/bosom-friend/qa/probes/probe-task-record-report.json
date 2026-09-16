@@ -1,0 +1,26 @@
+{
+  "base": "http://127.0.0.1:31280/bosom-friend/",
+  "at": "2026-09-10T12:36:10.761Z",
+  "title": "自检任务-770760",
+  "taskId": "task-d081190d",
+  "apiAfterPatch": {
+    "status": "completed",
+    "rating": 5,
+    "favorite": true
+  },
+  "listShows": {
+    "title": true,
+    "hasTime": true,
+    "hasStatus": true
+  },
+  "detailShows": {
+    "title": true,
+    "hasFavorite": true,
+    "hasRating": true
+  },
+  "afterReload": {
+    "rating": 5,
+    "favorite": true
+  },
+  "cleaned": true
+}

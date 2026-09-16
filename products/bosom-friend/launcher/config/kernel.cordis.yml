@@ -1,0 +1,3 @@
+# Bosom Friend 内核运行时根配置（空条目列表）；产品树由
+# dsh-base 与 dsh-bosom-friend-kernel 两层 bundle 补丁叠加（见 launcher/src/bin-kernel.ts）。
+[]

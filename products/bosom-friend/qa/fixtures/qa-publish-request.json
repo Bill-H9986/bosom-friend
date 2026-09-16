@@ -1,0 +1,23 @@
+{
+  "content": {
+    "title": "人社局无人机装调检修就业培训",
+    "body": "人社局官方认证：无人机装调检修就业培训招生中！专业师资，实操教学，结业推荐就业。10秒带你了解无人机装调检修全流程，抓住新职业风口，实现高质量就业。",
+    "topics": ["#人社局", "#无人机", "#就业培训", "#装调检修", "#职业教育"],
+    "media": [
+      {
+        "url": "/bosom-friend/api/assets/file/ai-vid-0f543205.mp4",
+        "metadata": { "duration": 10, "resolution": "1080p", "ratio": "16:9" }
+      }
+    ],
+    "cover": {
+      "url": "/bosom-friend/api/assets/file/ai-img-441d0caf.png"
+    }
+  },
+  "context": {
+    "type": "VIDEO"
+  },
+  "items": [
+    { "accountId": "acc-nnpqqueo", "platform": "douyin" },
+    { "accountId": "acc-ukzk41h7", "platform": "xhs" }
+  ]
+}

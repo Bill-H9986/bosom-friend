@@ -1,0 +1,6 @@
+{
+  "extends": "../bosom-friend-electron/tsconfig.json",
+  "include": [
+    "src"
+  ]
+}

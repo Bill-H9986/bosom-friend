@@ -1,0 +1,39 @@
+{
+  "#/monitor": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodes": [
+        {
+          "t": ".ant-btn-link > span",
+          "a": {
+            "fgColor": "#8b7cf6",
+            "bgColor": "#ffffff",
+            "contrastRatio": 3.32,
+            "fontSize": "10.5pt (14px)",
+            "fontWeight": "normal",
+            "messageKey": null,
+            "expectedContrastRatio": "4.5:1"
+          },
+          "c": "Fix any of the following:\n  Element has insufficient color contrast of 3.32 (foreground color: #8b7cf6, background color"
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "nodes": [
+        {
+          "t": "#rc_select_0",
+          "a": null,
+          "c": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <lab"
+        },
+        {
+          "t": "#rc_select_1",
+          "a": null,
+          "c": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <lab"
+        }
+      ]
+    }
+  ]
+}

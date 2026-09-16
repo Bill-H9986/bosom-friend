@@ -1,0 +1,20 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await page.goto('http://127.0.0.1:3081/bosom-friend/', { waitUntil: 'networkidle', timeout: 120000 });
+await page.waitForTimeout(4000);
+const notif = await page.request.get('http://127.0.0.1:3081/bosom-friend/api/notification/list');
+const nb = await notif.json();
+const times = nb.data ? nb.data.map(x => x.time + ' | ' + x.title).join(' || ') : 'EMPTY';
+console.log('NOTIF TIMES:', times.slice(0, 700));
+const ver = await page.evaluate(() => window.__APP_VERSION__ || 'MISSING');
+console.log('APP VERSION:', ver);
+await page.evaluate(() => { const el = document.querySelector('[data-testid=sidebar-settings-entry]'); el && el.click(); });
+await page.waitForTimeout(1500);
+const sett = await page.evaluate(() => {
+  return JSON.stringify({ hash: location.hash, dialog: !!document.querySelector('[role=dialog]') });
+});
+console.log('SETTINGS:', sett);
+await browser.close();

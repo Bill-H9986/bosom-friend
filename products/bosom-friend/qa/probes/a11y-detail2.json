@@ -1,0 +1,90 @@
+{
+ "#/ai-interaction": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "nodes": [
+    {
+     "target": ".ring-inset > .text-ellipsis.whitespace-nowrap.min-w-14",
+     "html": "<span class=\"min-w-14 overflow-hidden text-ellipsis whitespace-nowrap text-center\">AI互动</span>"
+    }
+   ]
+  }
+ ],
+ "#/knowledge": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "nodes": [
+    {
+     "target": ".ring-1 > .text-ellipsis.overflow-hidden.whitespace-nowrap",
+     "html": "<span class=\"min-w-14 overflow-hidden text-ellipsis whitespace-nowrap text-center\">知识库</span>"
+    }
+   ]
+  }
+ ],
+ "#/data-statistics": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "nodes": [
+    {
+     "target": ".ring-1 > .text-ellipsis.whitespace-nowrap.min-w-14",
+     "html": "<span class=\"min-w-14 overflow-hidden text-ellipsis whitespace-nowrap text-center\">数据中心</span>"
+    },
+    {
+     "target": ".border-primary\\/40",
+     "html": "<button class=\"btn btn-outline btn-sm h-8 cursor-pointer shadow-none border-primary/40 bg-primary/5 text-primary\" type=\""
+    },
+    {
+     "target": ".panel:nth-child(1) > .justify-between.flex-wrap.gap-3 > .flex-wrap.gap-1.items-center > .btn-secondary.text-primary.rounded-lg",
+     "html": "<button type=\"button\" class=\"btn btn-sm rounded-lg font-medium btn-secondary text-primary\">播放/浏览</button>"
+    }
+   ]
+  }
+ ],
+ "#/monitor": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "nodes": [
+    {
+     "target": ".ring-1 > .text-ellipsis.overflow-hidden.whitespace-nowrap",
+     "html": "<span class=\"min-w-14 overflow-hidden text-ellipsis whitespace-nowrap text-center\">全局监控</span>"
+    },
+    {
+     "target": ".ant-card-body > p",
+     "html": "<p style=\"margin: 10px 0px 0px; font-size: 12px; color: rgb(153, 153, 153);\">绑定即接入，无需配置；评论接待覆盖全平台，私信接待覆盖抖音、小红书。</p>"
+    },
+    {
+     "target": ".ant-col-12.ant-col.css-1a76ql:nth-child(1) > .ant-card.ant-card-bordered.ant-card-small > .ant-card-head > .ant-card-head-wrapper > .ant-card-extra > .ant-tag-green.ant-tag.css-1a76ql",
+     "html": "<span class=\"ant-tag ant-tag-green css-1a76ql\">常驻运行</span>"
+    },
+    {
+     "target": ".ant-col-12.ant-col.css-1a76ql:nth-child(1) > .ant-card.ant-card-bordered.ant-card-small > .ant-card-body > .ant-spin-nested-loading.css-1a76ql > .ant-spin-container > div:nth-child(1) > .ant-tag-green.ant-tag.css-1a76ql",
+     "html": "<span class=\"ant-tag ant-tag-green css-1a76ql\">回复评论：0</span>"
+    },
+    {
+     "target": ".ant-spin-container > .text-xs",
+     "html": "<div class=\"text-xs\" style=\"margin: 0px 0px 10px; padding: 8px 12px; color: rgb(139, 124, 246); background: rgb(245, 243"
+    },
+    {
+     "target": ".ant-col-12.ant-col.css-1a76ql:nth-child(2) > .ant-card.ant-card-bordered.ant-card-small > .ant-card-head > .ant-card-head-wrapper > .ant-card-extra > .ant-tag-green.ant-tag.css-1a76ql",
+     "html": "<span class=\"ant-tag ant-tag-green css-1a76ql\">常驻运行</span>"
+    },
+    {
+     "target": ".ant-col-12.ant-col.css-1a76ql:nth-child(2) > .ant-card.ant-card-bordered.ant-card-small > .ant-card-body > .ant-spin-nested-loading.css-1a76ql > .ant-spin-container > div > .ant-tag-green.ant-tag.css-1a76ql",
+     "html": "<span class=\"ant-tag ant-tag-green css-1a76ql\">回复私信：0</span>"
+    },
+    {
+     "target": ".ant-spin-container > p",
+     "html": "<p style=\"margin: 0px; font-size: 12px; color: rgb(153, 153, 153);\">私信接待当前覆盖：抖音、小红书（7×24 自动运行）。视频号/快手私信待官方浏览器插件支持（评论接待已全"
+    },
+    {
+     "target": ".ant-empty-description",
+     "html": "<div class=\"ant-empty-description\">等待平台账号登录，登录后自动纳入监控</div>"
+    }
+   ]
+  }
+ ]
+}

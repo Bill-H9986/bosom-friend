@@ -1,0 +1,65 @@
+{
+  "说明": "发布安装包只读保护基线：回滚网 = 当前出货版本 + 上一版本；文件存放在仓库外的固定目录（dir 字段），仓库被整理清理不影响。任何改动必须同步更新本文件、qa/baseline/安装包只读保护清单.md 与 qa/reports/cleanup-*.md。",
+  "capturedAt": "2026-09-02",
+  "updatedAt": "2026-09-16",
+  "dir": "C:/Users/Jay/BosomFriend-Releases",
+  "files": [
+    {
+      "name": "BosomFriend-Setup-0.2.51.exe",
+      "sizeBytes": 1046116194,
+      "sha256": "1301D7A736168D65F9F2F006705CB6A76A413FE22A33890670B6E5C243329E0E"
+    }
+  ],
+  "retired": [
+    {
+      "name": "BosomFriend-Setup-0.2.50.exe",
+      "sizeBytes": 1046116429,
+      "sha256": "335E2BD3790492044612723765687D4E3338CB751D18F70A6C97EDB5F8F3F4C2",
+      "retiredAt": "2026-09-16",
+      "reason": "用户口径「安装包只留最新版」：桌面副本与 desktop/release/0.2.50 一并删除，回滚网的『上一版本』一环就此放弃，只有当前版 0.2.51 可回滚。若要恢复，需用提交 edeca049 重建（出包链 8 步，40~70 分钟）。"
+    },
+    {
+      "name": "BosomFriend-Setup-0.13.5.exe",
+      "sizeBytes": 475734016,
+      "sha256": "A36DDD050182DC5743553ED3C7256A5E46C31E89546F0DAD6D7CFC978657353D",
+      "retiredAt": "2026-09-14",
+      "reason": "改名/改架构之前的版本：数据根与数据格式都已变化，装回去读不了现有用户数据，留作回滚只会是假绿；文件已随仓库整理丢失，无法找回。"
+    },
+    {
+      "name": "BosomFriend-Setup-0.13.6.exe",
+      "sizeBytes": 496911360,
+      "sha256": "D2504737E83BD4B860BA229FD729AB2ED834663220101431D8C34DB2230D3EFB",
+      "retiredAt": "2026-09-14",
+      "reason": "同上：改名/改架构之前的版本，回滚价值为零。"
+    },
+    {
+      "name": "BosomFriend-Setup-0.13.7.exe",
+      "sizeBytes": 452257792,
+      "sha256": "78DB6862A7DE02F9D2D4F8B0EF98CA5AEAD84AC4BBC3431EBA3E03AB5164801C",
+      "retiredAt": "2026-09-14",
+      "reason": "同上：改名/改架构之前的版本，回滚价值为零。"
+    },
+    {
+      "name": "BosomFriend-Setup-0.13.8.exe",
+      "sizeBytes": 454498725,
+      "sha256": "9B66C29BB4E9116D05E2C362B3E18D84032657686D9543DAD9D2340A9131680E",
+      "retiredAt": "2026-09-14",
+      "reason": "同上：改名/改架构之前的版本，回滚价值为零。"
+    },
+    {
+      "name": "BosomFriend-Setup-0.2.0.exe",
+      "sizeBytes": 379308192,
+      "sha256": "1E8DD5F7B7C986A603BD9C61448B7EC342CBE449988081762986E114649DA299",
+      "retiredAt": "2026-09-14",
+      "reason": "同上：早期版本，回滚价值为零；0.2.41 的回滚包也在同一次整理中丢失，无法找回。"
+    }
+  ],
+  "recovery": {
+    "channel": "GitHub Release（公开下载仓）",
+    "repo": "Bill-H9986/zhiyin",
+    "asset": "https://github.com/Bill-H9986/zhiyin/releases/download/v0.2.51/BosomFriend-Setup-0.2.51.exe",
+    "script": "qa/probes/fetch-release-installer.ps1（下载后按本文件逐字节核对大小与 SHA256；-VerifyOnly 只核对本地）",
+    "note": "0.2.51 同时是当前出货版与唯一回滚包；GitHub 上这份是它的第二份来源，本机副本丢失时按本文件的指纹取回。"
+  },
+  "policy": "以「当前出货版 + 上一版」为默认口径，但用户明确要求只留最新版时按用户口径执行，并把放弃的那一版写进 retired（留指纹与重建来源）。每出一版把新包复制进 dir、更新 files 与 updatedAt，并在 qa/reports/cleanup-*.md 记一条。门禁「安装包只读保护」逐文件校验 SHA256：dir 不在位判黄（外置盘未接入），文件缺失或哈希不一致判红。"
+}

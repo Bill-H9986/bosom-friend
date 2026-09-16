@@ -1,0 +1,68 @@
+{
+  "base": "http://127.0.0.1:31280/bosom-friend/",
+  "at": "2026-09-10T12:34:12.765Z",
+  "taskId": "task-7e2c4910",
+  "apiBefore": {
+    "rating": 0
+  },
+  "apiAfterPatch": {
+    "id": "task-7e2c4910",
+    "userId": "zy-user-001",
+    "title": "帮我写一条抖音文案。",
+    "description": "",
+    "tags": [],
+    "status": "completed",
+    "medias": [],
+    "errorMessage": "",
+    "prompt": "帮我写一条抖音文案。",
+    "messages": [
+      {
+        "type": "user",
+        "uuid": "u-84c78ad4",
+        "message": "帮我写一条抖音文案。",
+        "createdAt": "2026-09-10T12:28:10.635Z"
+      },
+      {
+        "type": "assistant",
+        "uuid": "a-213ecfb8",
+        "content": "大模型调用失败：未知错误。请检查 API 地址、密钥和模型名后重试。",
+        "message": {
+          "content": [
+            {
+              "type": "text",
+              "text": "大模型调用失败：未知错误。请检查 API 地址、密钥和模型名后重试。"
+            }
+          ]
+        },
+        "createdAt": "2026-09-10T12:28:12.616Z"
+      }
+    ],
+    "rating": 5,
+    "ratingComment": "刷新保持自检",
+    "favorite": true,
+    "favoritedAt": "2026-09-10T12:34:12.799Z",
+    "createdAt": "2026-09-10T12:28:10.635Z",
+    "updatedAt": "2026-09-10T12:34:12.781Z"
+  },
+  "coldOpen": {
+    "url": "http://127.0.0.1:31280/bosom-friend/#/chat/task-7e2c4910",
+    "headerFavorited": true,
+    "hasRateEntry": true,
+    "titleShown": "帮我写一条抖音文案。 Bosom Friend 使用 Agent 来完成你所有的",
+    "mainSnippet": "帮我写一条抖音文案。 Bosom Friend 使用 Agent 来完成你所有的内容需求，期间会调用大量工具，执行时间会稍久，您可以随时退出，稍后再来查看任务的完成情况。 Bosom Friend 使用 Agent 来完成你所有的内容需求，期间会调用大量工具，执行时间会稍久，您可以随时退出，稍后再来查看任务的完成情况。"
+  },
+  "afterClick": {
+    "url": "http://127.0.0.1:31280/bosom-friend/#/chat/task-7e2c4910",
+    "headerFavorited": true,
+    "hasRateEntry": true,
+    "titleShown": "帮我写一条抖音文案。 Bosom Friend 使用 Agent 来完成你所有的",
+    "mainSnippet": "帮我写一条抖音文案。 Bosom Friend 使用 Agent 来完成你所有的内容需求，期间会调用大量工具，执行时间会稍久，您可以随时退出，稍后再来查看任务的完成情况。 Bosom Friend 使用 Agent 来完成你所有的内容需求，期间会调用大量工具，执行时间会稍久，您可以随时退出，稍后再来查看任务的完成情况。"
+  },
+  "afterReload": {
+    "url": "http://127.0.0.1:31280/bosom-friend/#/chat/task-7e2c4910",
+    "headerFavorited": true,
+    "hasRateEntry": true,
+    "titleShown": "帮我写一条抖音文案。 Bosom Friend 使用 Agent 来完成你所有的",
+    "mainSnippet": "帮我写一条抖音文案。 Bosom Friend 使用 Agent 来完成你所有的内容需求，期间会调用大量工具，执行时间会稍久，您可以随时退出，稍后再来查看任务的完成情况。 Bosom Friend 使用 Agent 来完成你所有的内容需求，期间会调用大量工具，执行时间会稍久，您可以随时退出，稍后再来查看任务的完成情况。"
+  }
+}

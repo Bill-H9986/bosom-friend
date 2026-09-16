@@ -1,0 +1,1 @@
+import{r as o,j as t}from"./vendor-ui-utiYQgBO.js";function i(r,s={}){const e=o.lazy(async()=>{const n=await r();return{default:n.default??n}}),a=s.loading??null;function c(n){return t.jsx(o.Suspense,{fallback:a?t.jsx(a,{}):null,children:t.jsx(e,{...n})})}return c}export{i as d};

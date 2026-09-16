@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://creator.douyin.com/janus/douyin/creator/data/author/upgrade/",
+    "status": 200,
+    "body": {
+      "is_show_per_client_data": false,
+      "show_yumme_trends": false,
+      "status_code": 0,
+      "status_msg": "",
+      "upgrade_type": 0
+    }
+  },
+  {
+    "url": "https://creator.douyin.com/janus/douyin/creator/data/item_analysis/involved_vertical?start_date=20260615&end_date=20260913",
+    "status": 200,
+    "body": {
+      "primary_verticals": [],
+      "status_code": 0,
+      "status_msg": ""
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "name": "@deepseek-ai/dsh-bosom-friend-kernel",
+  "description": "Bosom Friend 官方 DSH 内核工具包：无 UI，仅注册产品业务工具，供 dsh-sdk-jsonrpc-server 运行时组合",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./lib/index.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@deepseek-ai/dsh-bosom-friend-server": "workspace:^",
+    "@deepseek-ai/dsh-llm": "workspace:^",
+    "@deepseek-ai/dsh-tools": "workspace:^"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "workspace:^"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --target=node22 \"--external:@deepseek-ai/dsh-tools\" --outfile=lib/index.js"
+  }
+}

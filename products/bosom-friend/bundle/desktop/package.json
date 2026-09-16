@@ -1,0 +1,16 @@
+{
+  "name": "@deepseek-ai/dsh-bosom-friend-desktop-bundle",
+  "description": "Bosom Friend 桌面运行时补丁层：官方 webServer + 产品业务服务 + 内核 + SDK JSON-RPC",
+  "version": "0.2.1",
+  "private": true,
+  "type": "module",
+  "files": [
+    "cordis.patch.yml"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@deepseek-ai/dsh-host-webserver": "workspace:^",
+    "@deepseek-ai/dsh-bosom-friend-server": "workspace:^",
+    "@deepseek-ai/dsh-bosom-friend-kernel": "workspace:^"
+  }
+}

@@ -1,0 +1,1 @@
+import{r as s}from"./vendor-ui-utiYQgBO.js";import{aJ as i}from"./index-Dmwc9mwp.js";async function r(t,n){return`Bosom Friend - ${t}`}function u(t,n){const o=i();s.useEffect(()=>{(async()=>{const e=t||n;e&&(document.title=await r(e))})()},[t,n,o])}export{u};

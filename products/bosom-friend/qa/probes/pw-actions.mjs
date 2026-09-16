@@ -1,0 +1,32 @@
+// 动态按钮抽查：点击关键按钮，断言副作用（面板/请求/文本变化）。
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+const apiCalls = [];
+page.on('request', r => { if (r.url().includes('/bosom-friend/api')) apiCalls.push(r.method() + ' ' + r.url().split('/bosom-friend/api')[1]); });
+const results = [];
+async function act(name, fn) { try { const d = await fn(); results.push((d ? 'PASS ' : 'FAIL ') + name); } catch (e) { results.push('FAIL ' + name + ' :: ' + String(e).slice(0, 80)); } }
+await page.goto('http://127.0.0.1:3081/bosom-friend/', { waitUntil: 'networkidle', timeout: 60000 });
+await page.waitForTimeout(9000);
+await act('添加频道→频道管理弹窗', async () => { await page.evaluate(() => document.querySelector('[data-testid=sidebar-account-entry]').click()); await page.waitForTimeout(800); return await page.evaluate(() => !!document.querySelector('[data-testid=channel-manager-dialog]')); });
+await act('弹窗-连接新频道', async () => { const t = await page.evaluate(() => document.body.innerText); return t.includes('连接新频道'); });
+await act('弹窗-关闭(ESC)', async () => { await page.keyboard.press('Escape'); await page.waitForTimeout(600); return await page.evaluate(() => !document.querySelector('[data-testid=channel-manager-dialog]')); });
+await page.evaluate(() => { location.hash = '#/draft-box'; }); await page.waitForTimeout(5000);
+await act('生成栏-数量选择器打开', async () => { await page.evaluate(() => document.querySelector('[data-testid=draftbox-ai-quantity]').click()); await page.waitForTimeout(600); return await page.evaluate(() => document.body.innerText.includes('生成数量') || [...document.querySelectorAll('[role=dialog],[data-state=open]')].length > 0); });
+await page.keyboard.press('Escape'); await page.waitForTimeout(400);
+await act('生成栏-模型选择器打开', async () => { await page.evaluate(() => document.querySelector('[data-testid=draftbox-ai-model]').click()); await page.waitForTimeout(600); return await page.evaluate(() => [...document.querySelectorAll('[data-state=open]')].length > 0); });
+await page.keyboard.press('Escape'); await page.waitForTimeout(400);
+await act('一键发布→发布弹窗', async () => { const c = await page.evaluate(() => { const b = [...document.querySelectorAll('button')].find(x => (x.innerText || '').trim() === '一键发布'); if (b) { b.click(); return true; } return false; }); await page.waitForTimeout(1200); return c && await page.evaluate(() => document.body.innerText.includes('发布') && document.body.innerText.includes('账号')); });
+await page.keyboard.press('Escape'); await page.waitForTimeout(500);
+await page.evaluate(() => { location.hash = '#/tasks-history'; }); await page.waitForTimeout(4500);
+await act('任务记录-日志弹窗', async () => { const c = await page.evaluate(() => { const b = document.querySelector('button[title], button[aria-label]'); return !!b; }); return c; });
+await page.evaluate(() => { location.hash = '#/data-statistics'; }); await page.waitForTimeout(4500);
+const reqBefore = apiCalls.length;
+await act('数据中心-刷新类请求', async () => { const c = await page.evaluate(() => { const b = [...document.querySelectorAll('button')].find(x => /刷新|导出/.test((x.innerText || ''))); if (b) { b.click(); return true; } return false; }); await page.waitForTimeout(1500); return c && apiCalls.length > reqBefore; });
+await page.evaluate(() => { location.hash = '#/settings'; }); await page.waitForTimeout(3500);
+await act('设置-Tab切换(大模型)', async () => { const c = await page.evaluate(() => { const b = [...document.querySelectorAll('button')].find(x => (x.innerText || '').trim() === '自定义大模型'); if (b) { b.click(); return true; } return false; }); await page.waitForTimeout(800); return c; });
+console.log(results.join(String.fromCharCode(10)));
+console.log('apiCalls during run: ' + apiCalls.length);
+await browser.close();

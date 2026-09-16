@@ -1,0 +1,14 @@
+diff --git a/dist/build-BxT2lm9L.mjs b/dist/build-BxT2lm9L.mjs
+index 2384015..8a07625 100644
+--- a/dist/build-BxT2lm9L.mjs
++++ b/dist/build-BxT2lm9L.mjs
+@@ -95,7 +95,8 @@ async function resolveConfig(inlineConfig) {
+ 	const configs = (await Promise.all(rootConfigs.map(async (rootConfig) => {
+ 		const { configs: workspaceConfigs, deps: workspaceDeps } = await resolveWorkspace(rootConfig, inlineConfig, rootDeps);
+ 		debug$4("workspace configs %O", workspaceConfigs);
+-		const configs = (await Promise.all(workspaceConfigs.filter((config) => !config.workspace || config.entry).map((config) => resolveUserConfig(config, inlineConfig, workspaceDeps)))).flat().filter((config) => !!config);
++		const __bfSuiteRootEntry = (entry) => Array.isArray(entry) && entry.some((item) => typeof item === "string" && item.includes("{index,invariant,startup}"));
++		const configs = (await Promise.all(workspaceConfigs.filter((config) => !(config.workspace && __bfSuiteRootEntry(config.entry)) && (!config.workspace || config.entry)).map((config) => resolveUserConfig(config, inlineConfig, workspaceDeps)))).flat().filter((config) => !!config);
+ 		workspaceDeps.forEach((dep) => globalDeps.add(dep));
+ 		return configs;
+ 	}))).flat();

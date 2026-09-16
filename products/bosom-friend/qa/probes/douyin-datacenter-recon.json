@@ -1,0 +1,328 @@
+[
+  {
+    "url": "https://creator.douyin.com/web/api/media/user/info/",
+    "metricKeys": [
+      "user.permission.show_chapter_editor"
+    ],
+    "hasPositive": true,
+    "positiveSample": [
+      [
+        "user.permission.show_chapter_editor",
+        1
+      ]
+    ]
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/media/user/info/",
+    "metricKeys": [
+      "user.permission.show_chapter_editor"
+    ],
+    "hasPositive": true,
+    "positiveSample": [
+      [
+        "user.permission.show_chapter_editor",
+        1
+      ]
+    ]
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/msg/top/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/msg/top/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/msg/top/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/msg/top/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/pc/user/info/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/pc/user/info/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user/info/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user/info/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/notice/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/notice/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/notice/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/notice/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/unread_count/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/unread_count/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/unread_count/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/unread_count/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/janus/douyin/creator/data/author/upgrade/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/janus/douyin/creator/data/item_analysis/involved_vertical",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/janus/douyin/creator/data/overview/dashboard",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/janus/douyin/creator/data/overview/dashboard/fans",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/janus/douyin/creator/data/overview/item_contribution_top",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/ai_creation/entries",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/ai_creation/entries",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/ai_creation/entries",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/ai_creation/entries",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/fans/index/config",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/fans/index/config",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/fans/index/config",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/fans/index/config",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/user/exclusive_operator",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/user/exclusive_operator",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/user/exclusive_operator",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/user/exclusive_operator",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/user/relation_account",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/user/relation_account",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/user/relation_account",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/center/user/relation_account",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/item/list",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/item/mix/list",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/item/mix/list",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/mcn/account_base_info",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/mcn/account_base_info",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/mcn/account_base_info",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/creator/mcn/account_base_info",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/v1/im/token/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/v1/im/token/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/v1/im/token/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/v1/im/token/",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/v2/creator/xigua/user/info",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  },
+  {
+    "url": "https://creator.douyin.com/web/api/v2/creator/xigua/user/info",
+    "metricKeys": [],
+    "hasPositive": false,
+    "positiveSample": []
+  }
+]

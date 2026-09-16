@@ -1,0 +1,22 @@
+# 桌面运行时补丁层：官方 Web 服务 + 产品业务服务。inject webServer 由本层提供；
+# 前端产物目录经环境变量 BF_FRONTEND_DIST 注入（打包态指向资源目录，开发态指仓库 dist）。
+
+- insert:
+    # 端口跟随 BF_DESKTOP_PORT（默认 31280）：桌面主进程、并行 QA 与探针都用这个变量做端口隔离，
+    # 主进程读它去连服务端，服务端也必须读它去监听——写死会让「服务在 31280、探针等 31299」永远不成立（DEF-060）。
+    # 注意：改这个文件后必须跑一次 pnpm install 再重新物化运行时——注入式安装把工作区包按 files 复制到
+    # .pnpm/<id>/，运行时加载的是那份副本，不 install 就还是旧内容（2026-09-16 踩过）。
+    - id: bosom-webserver
+      name: '@deepseek-ai/dsh-host-webserver'
+      config:
+        host: 127.0.0.1
+        port: !!js Number(process.env.BF_DESKTOP_PORT ?? 31280)
+
+    # 与 dev/web 层（bundle/app/cordis.patch.yml）挂的是同一个插件：id 与共享配置必须一致，
+    # 只有 frontendDist 是桌面运行时独有。一致性由 qa/verify-cordis-patches.mjs 在门禁里校验。
+    - id: bosom-friend-server-api
+      name: '@deepseek-ai/dsh-bosom-friend-server/api'
+      config:
+        dataRoot: !!js dshHomePath('bosom-friend')
+        authEnabled: false
+        frontendDist: !!js (process.env.BF_FRONTEND_DIST ?? '')

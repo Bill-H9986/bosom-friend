@@ -1,0 +1,31 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await page.addInitScript(() => { localStorage.setItem('bosom-friend-disclaimer-accepted-v1', 'true'); });
+await page.goto('http://127.0.0.1:3081/bosom-friend/', { waitUntil: 'networkidle', timeout: 120000 });
+await page.waitForTimeout(8000);
+const snap = async (label) => {
+  const s = await page.evaluate(() => {
+    const d = [].slice.call(document.querySelectorAll('[role=dialog]')).find(x => x.getBoundingClientRect().width > 700);
+    if (!d) return 'NONE';
+    const content = d.querySelector('.flex-1.overflow-auto');
+    if (!content) return 'NO CONTENT';
+    const txt = (content.textContent||'').trim();
+    return JSON.stringify({ len: txt.length, head: txt.slice(0, 70) });
+  });
+  console.log(label + ': ' + s);
+};
+await page.evaluate(() => document.querySelector('[data-testid=sidebar-user-trigger]')?.click());
+await page.waitForTimeout(300);
+await page.evaluate(() => document.querySelector('[data-testid=sidebar-settings-entry] button')?.click());
+await page.waitForTimeout(60);
+await snap('+60ms');
+await page.waitForTimeout(200);
+await snap('+260ms');
+await page.waitForTimeout(800);
+await snap('+1060ms');
+await page.waitForTimeout(1500);
+await snap('+2560ms');
+await browser.close();

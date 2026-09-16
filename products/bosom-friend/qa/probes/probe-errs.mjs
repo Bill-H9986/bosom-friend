@@ -1,0 +1,15 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+const errs = [];
+page.on('console', m => { if (m.type() === 'error') errs.push(m.text().slice(0, 200)); });
+page.on('pageerror', e => errs.push('PAGEERROR: ' + String(e).slice(0, 300)));
+await page.addInitScript(() => { localStorage.setItem('bosom-friend-disclaimer-accepted-v1', 'true'); });
+await page.goto('http://127.0.0.1:3081/bosom-friend/#/draft-box', { waitUntil: 'networkidle', timeout: 180000 });
+await page.waitForTimeout(12000);
+console.log('ERRS:', JSON.stringify(errs.slice(0, 8), null, 1));
+const stat = await page.evaluate(() => ({ btn: document.querySelectorAll('button').length, bodyLen: document.body.textContent.trim().length }));
+console.log('STAT:', JSON.stringify(stat));
+await browser.close();

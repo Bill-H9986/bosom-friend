@@ -1,0 +1,25 @@
+# Bosom Friend 产品补丁层：叠加在 dsh-base → dsh-web-app 之后。
+# 行按 id 定位；只挂载产品自身所需的后端行。
+
+- insert:
+    - id: bosom-friend-server-api
+      name: '@deepseek-ai/dsh-bosom-friend-server/api'
+      config:
+        dataRoot: !!js dshHomePath('bosom-friend')
+        authEnabled: false
+    - id: mcp-computer-use
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: computer
+        transport: stdio
+        command: npx
+        args: ['-y', '@playwright/mcp']
+        toolCallTimeoutMs: 300000
+    - id: mcp-ssh
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: ssh
+        transport: stdio
+        command: npx
+        args: ['-y', 'mcp-server-ssh']
+        toolCallTimeoutMs: 300000

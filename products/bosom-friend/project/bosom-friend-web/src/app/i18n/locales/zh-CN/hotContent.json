@@ -1,0 +1,54 @@
+{
+  "error": {
+    "title": "加载失败",
+    "description": "热门内容暂时无法加载，请稍后重试。"
+  },
+  "home": {
+    "title": "实时热榜",
+    "platformsTitle": "平台导航",
+    "emptyTitle": "暂无热门内容",
+    "emptyDescription": "当前没有可用的热点数据源，请稍后再来。"
+  },
+  "feed": {
+    "updatedAt": "更新于 {{time}}",
+    "waiting": "等待更新…",
+    "empty": "该榜单暂无内容",
+    "errorTitle": "榜单加载失败",
+    "errorDescription": "获取该平台热榜时出现问题，请重试。",
+    "unavailableTitle": "该榜单暂不可用",
+    "unavailableDescription": "该平台暂时无法提供热点数据，请稍后再试。",
+    "openExternal": "打开原文"
+  },
+  "actions": {
+    "viewAll": "查看全部"
+  },
+  "navigation": {
+    "home": "首页",
+    "more": "更多",
+    "label": "热门内容导航"
+  },
+  "search": {
+    "open": "搜索平台",
+    "dialogTitle": "搜索热门平台",
+    "close": "关闭搜索",
+    "placeholder": "输入平台名称搜索…",
+    "inputLabel": "搜索平台名称",
+    "idleTitle": "搜索全网热榜平台",
+    "idleDescription": "输入至少 2 个字符，即可搜索百度、微博、知乎等平台。",
+    "loading": "搜索中…",
+    "emptyTitle": "没有找到相关平台",
+    "emptyDescription": "换个关键词试试。",
+    "errorTitle": "搜索失败",
+    "errorDescription": "搜索服务暂时不可用，请重试。",
+    "results": "搜索结果（{{count}}）"
+  },
+  "detail": {
+    "sidebarLabel": "同分类平台",
+    "selectSource": "选择平台",
+    "siblingNavigation": "同分类平台列表"
+  },
+  "category": {
+    "totalSources": "共 {{count}} 个平台",
+    "empty": "该分类暂无平台"
+  }
+}

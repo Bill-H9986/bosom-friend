@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="gradA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B7CF6"/>
+      <stop offset="55%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#C4B5FD"/>
+    </linearGradient>
+  </defs>
+  <!-- 无限符号（∞）莫比乌斯环：扁长连续双环，中心交叉，寓意无限可能 -->
+  <path
+    d="M 33 100
+       C 33 71 58 55 84 65
+       C 101 73 99 73 116 65
+       C 142 55 167 71 167 100
+       C 167 129 142 145 116 135
+       C 99 127 101 127 84 135
+       C 58 145 33 129 33 100 Z"
+    fill="none"
+    stroke="url(#gradA)"
+    stroke-width="18"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- 中心交叉带（莫比乌斯扭转：一条带在另一条上方） -->
+  <path
+    d="M 92 70 C 96 80 96 120 92 130"
+    stroke="#A78BFA"
+    stroke-width="18"
+    stroke-linecap="round"
+    opacity="0.55"
+  />
+</svg>

@@ -1,0 +1,29 @@
+PASS user/info update
+PASS material group ensure :: mg-persist
+PASS material group list :: total=1
+PASS material create :: promo-ia0e1h72
+PASS material list :: found=true
+PASS material info
+PASS material update
+PASS material by-scene
+PASS material optimal :: 咖啡笔记V2
+PASS material delete
+PASS draft generation create :: gen-867cc064,gen-54955bb9
+PASS draft generation settle :: failed(大模型调用失败),success
+PASS draft pricing
+PASS draft stats
+PASS chat models :: 2 models
+PASS douyin searchTopic (未接入·断言如实空列表，不伪造) :: len=0
+PASS note agent-collect :: items=14
+PASS note comments
+PASS hot categories
+PASS hot feed :: items=5/limit=5
+PASS hot search
+PASS miniapp auth (未接入·断言拒绝而非伪装成功) :: code=50100
+PASS miniapp fans (endpoint returns honest empty until authorized, AC-021-2/4)
+PASS feedback
+PASS work validate (未接入·断言拒绝而非伪造通过) :: code=50100
+PASS work analytics
+PASS account login
+PASS ai logs
+PASS video gens page

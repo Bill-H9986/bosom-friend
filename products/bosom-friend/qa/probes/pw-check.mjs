@@ -1,0 +1,20 @@
+// 真实浏览器验证 v2：全量 pageerror + 404 资源清单。
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const errors = [];
+const notFound = [];
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+page.on('pageerror', e => errors.push(String(e).slice(0, 220)));
+page.on('response', r => { if (r.status() === 404) notFound.push(r.url()); });
+await page.goto('http://127.0.0.1:3081/bosom-friend/', { waitUntil: 'networkidle', timeout: 60000 });
+await page.waitForTimeout(12000);
+console.log('title=' + await page.title());
+console.log('bodyTextLen=' + await page.evaluate(() => document.body ? document.body.innerText.length : -1));
+console.log('sidebarShown=' + await page.evaluate(() => document.querySelector('aside, [class*=sidebar], [class*=Sidebar]') !== null));
+console.log('pageerrors=' + errors.length);
+for (const e of errors.slice(0, 8)) console.log('  PE: ' + e.split(String.fromCharCode(10))[0]);
+console.log('notFound=' + notFound.length);
+for (const u of notFound.slice(0, 5)) console.log('  404: ' + u);
+await browser.close();

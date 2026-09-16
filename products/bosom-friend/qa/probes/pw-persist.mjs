@@ -1,0 +1,13 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await browser.newPage();
+await page.goto('http://127.0.0.1:3081/bosom-friend/', { waitUntil: 'networkidle', timeout: 60000 });
+await page.waitForTimeout(9000);
+await page.evaluate(() => { location.hash = '#/draft-box'; }); await page.waitForTimeout(5000);
+const body = await page.evaluate(() => document.body.innerText);
+console.log('persistGroupInDraft=' + body.includes('持久化素材组'));
+console.log('defaultPlan=' + body.includes('默认草稿箱'));
+console.log('bodyLen=' + body.length);
+await browser.close();

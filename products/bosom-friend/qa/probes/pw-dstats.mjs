@@ -1,0 +1,11 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await browser.newPage();
+await page.goto('http://127.0.0.1:3081/bosom-friend/', { waitUntil: 'networkidle', timeout: 60000 });
+await page.waitForTimeout(9000);
+await page.evaluate(() => { location.hash = '#/data-statistics'; }); await page.waitForTimeout(4500);
+const btns = await page.evaluate(() => [...document.querySelectorAll('button')].map(b => (b.innerText || b.getAttribute('aria-label') || b.title || '').trim()).filter(t => t.length > 0));
+console.log(JSON.stringify([...new Set(btns)]));
+await browser.close();

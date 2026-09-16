@@ -1,0 +1,20 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await page.goto('http://127.0.0.1:3081/bosom-friend/', { waitUntil: 'networkidle', timeout: 120000 });
+await page.waitForTimeout(7000);
+const info = await page.evaluate(() => {
+  const link = document.querySelector('[data-testid=sidebar-logo-link]');
+  if (!link) return 'NO LINK';
+  const img = link.querySelector('img');
+  const word = link.querySelector('h1');
+  const ir = img ? img.getBoundingClientRect() : null;
+  const wr = word ? word.getBoundingClientRect() : null;
+  const cls = link.className;
+  const above = ir && wr ? (ir.y + ir.height <= wr.y + 2) : false;
+  return JSON.stringify({ cls: cls.slice(0, 90), img: ir ? [Math.round(ir.x), Math.round(ir.y), Math.round(ir.width), Math.round(ir.height)] : null, word: wr ? [Math.round(wr.x), Math.round(wr.y), Math.round(wr.width), Math.round(wr.height)] : null, aboveBelow: above ? 'LOGO-ABOVE' : 'NOT-ABOVE' });
+});
+console.log(info);
+await browser.close();

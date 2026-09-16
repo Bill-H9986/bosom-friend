@@ -1,0 +1,27 @@
+# v2.0 软起步策略：workspace 只管理新增核心包
+packages:
+  - "packages/*"
+
+allowBuilds:
+  '@deepseek-ai/dsh-subprocess-local': true
+  '@google/genai': true
+  esbuild: true
+  koffi: true
+  node-pty: true
+  protobufjs: true
+  sharp: true
+  better-sqlite3: true
+
+catalog:
+  "@deepseek-ai/dsh": "0.1.1-rc.2"
+  "@deepseek-ai/cordis": "4.0.1"
+  "@deepseek-ai/dsh-tools": "0.1.1-rc.2"
+  "@deepseek-ai/dsh-scope": "0.1.1-rc.2"
+  "@deepseek-ai/schemastery": "^3.18.1"
+  "patchright": "^1.55.0"
+  "zod": "^3.23.8"
+  "fingerprint-injector": "^2.1.88"
+  "fingerprint-generator": "^2.1.88"
+  "browserforge": "^0.1.1"
+  "bottleneck": "^2.19.5"
+  "opossum": "^8.1.4"

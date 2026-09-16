@@ -1,0 +1,12 @@
+const base = 'http://127.0.0.1:3081';
+const H = { Authorization: 'Bearer x', 'content-type': 'application/json' };
+const u = await (await fetch(base + '/bosom-friend/api/user/mine', { headers: H })).json();
+console.log('[共享1-用户档案] ' + u.code + ' name=' + u.data.name);
+const g = await (await fetch(base + '/bosom-friend/api/material/group/list/1/10', { headers: H })).json();
+console.log('[共享2-素材组种子] groups=' + JSON.stringify(g.data.list.map(x => x.name)));
+const t = await (await fetch(base + '/bosom-friend/api/agent/tasks', { headers: H })).json();
+console.log('[共享3-任务空态] tasks=' + t.data.total);
+const ac = await (await fetch(base + '/bosom-friend/api/v2/channels/accounts', { headers: H })).json();
+console.log('[共享4-账号空态] accounts=' + ac.data.total);
+const grp = await (await fetch(base + '/bosom-friend/api/v2/channels/account-groups', { headers: H })).json();
+console.log('[共享5-默认分组] ' + JSON.stringify(grp.data.map(x => x.name)));

@@ -1,0 +1,72 @@
+appId: com.bosomfriend.desktop
+productName: Bosom Friend
+electronVersion: 33.4.11
+npmRebuild: false
+artifactName: BosomFriend-Setup-${version}.exe
+
+directories:
+  output: release/${version}
+
+# LOGO/图标：必须显式声明，否则 electron-builder 会回落到 Electron 默认图标
+# （构建日志会出现 "default Electron icon is used reason=application icon is not set"）。
+# buildResourcesDir 保持默认 build/，里面放 icon.ico（256x256，7 档）+ icon.png。
+icon: build/icon.ico
+
+files:
+  - electron/**/*
+  - renderer/**/*
+  - build/icon.ico
+  - package.json
+
+extraResources:
+  - from: dist/runtime
+    to: runtime
+    filter:
+      - "**/*"
+  - from: dist/kernel-runtime.zip
+    to: kernel-runtime.zip
+    filter:
+      - "**/*"
+  # 自带解压器：安装器（NSIS 跑不了 asar 里的代码）与主进程共用这一份实现。
+  # 纯 Node + 显式 \\?\ 前缀，是唯一不依赖 PATH / 系统长路径开关的解压路径（DEF-055）。
+  - from: electron/kernel-unzip.cjs
+    to: kernel-unzip.cjs
+  - from: ../project/bosom-friend-electron/dist
+    to: frontend-dist
+    filter:
+      - "**/*"
+  # 平台 Python 引擎（worker.py + .venv + social-auto-upload + 便携 Python + 浏览器）：
+  # 由 build-engine-portable.ps1 组装；缺失时安装版无法真实登录/发布/同步。
+  - from: dist/engine-portable
+    to: engine
+    filter:
+      - "**/*"
+
+electronDist: ../project/bosom-friend-electron/node_modules/electron/dist
+
+win:
+  icon: build/icon.ico
+  target:
+    - target: nsis
+      arch:
+        - x64
+
+nsis:
+  # 安装期解压随包内核运行时（417MB / 约 23 万个文件）；不设 include 时 electron-builder
+  # 只找默认名 installer.nsh，自定义钩子会被静默忽略，解压全部落到首次启动。
+  include: build/installer.nsh
+  # 安装程序/卸载程序自身的图标（不设的话安装包 exe 是默认的绿色齿轮）
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  installerHeaderIcon: build/icon.ico
+  oneClick: false
+  perMachine: false
+  allowElevation: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Bosom Friend
+  runAfterFinish: false
+  deleteAppDataOnUninstall: false
+
+publish: null

@@ -1,0 +1,21 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('C:/Users/Jay/Desktop/Bosom friend APP/node_modules/.pnpm/playwright-core@1.61.1/node_modules/playwright-core');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await page.addInitScript(() => { localStorage.setItem('bosom-friend-disclaimer-accepted-v1', 'true'); });
+await page.goto('http://127.0.0.1:3081/bosom-friend/', { waitUntil: 'networkidle', timeout: 180000 });
+await page.waitForTimeout(9000);
+await page.evaluate(() => document.querySelector('[data-testid=sidebar-user-trigger]')?.click());
+await page.waitForTimeout(400);
+await page.evaluate(() => document.querySelector('[data-testid=sidebar-settings-entry] button')?.click());
+await page.waitForTimeout(900);
+const s = await page.evaluate(() => {
+  const d = [].slice.call(document.querySelectorAll('[role=dialog]')).find(x => x.getBoundingClientRect().width > 700);
+  if (!d) return 'NO DIALOG';
+  const content = d.querySelector('.flex-1.overflow-auto');
+  const txt = content ? (content.textContent||'').trim() : '';
+  return JSON.stringify({ len: txt.length, head: txt.slice(0, 80), blank: txt.length < 30 });
+});
+console.log('SETTINGS BLANK CHECK:', s);
+await browser.close();

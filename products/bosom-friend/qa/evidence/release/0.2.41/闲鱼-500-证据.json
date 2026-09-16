@@ -1,0 +1,7 @@
+{
+  "sessionId": "plogin-llmromcc",
+  "qrHttpStatus": 500,
+  "qrBody": "{\"code\":50000,\"data\":null,\"message\":\"平台登录失败: BrowserType.launch: Executable doesn't exist at C:\\\\Users\\\\Jay\\\\AppData\\\\Local\\\\Programs\\\\Bosom Friend\\\\resources\\\\engine\\\\browsers\\\\chromium_headless_shell-1169\\\\chrome-win\\\\headless_shell.exe\\n╔════════════════════════════════════════════════════════════╗\\n║ Looks like Playwright was just installed or updated.       ║\\n║ Please run the following comma",
+  "statusBody": "{\"code\":50000,\"data\":null,\"message\":\"二维码加载失败或已过期，请点击“重试”重新获取二维码\"}",
+  "at": "2026-09-12T04:28:21.482Z"
+}

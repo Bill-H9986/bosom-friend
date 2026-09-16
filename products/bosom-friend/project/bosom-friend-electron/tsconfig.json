@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "types": ["vite-plugin-svgr/client", "node"],
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "ignoreDeprecations": "6.0",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@web/*": [
+        "../bosom-friend-web/src/*"
+      ],
+      "@@/*": [
+        "./commont/*"
+      ],
+    },
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+  },
+  "include": [
+    "src",
+    "electron",
+    "commont",
+    "../bosom-friend-web/src",
+    "electron/main/api/.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+}

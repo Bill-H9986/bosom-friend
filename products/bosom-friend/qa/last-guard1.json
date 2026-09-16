@@ -1,0 +1,123 @@
+{
+  "name": "qa-guard",
+  "runAt": "2026-09-11T14:26:05.435Z",
+  "pass": 23,
+  "total": 23,
+  "items": [
+    {
+      "n": "SELF-CHECK 关键词检测(应命中)",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "SELF-CHECK 关键词检测(不应误报)",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "SELF-CHECK 拆行检测(去空白后命中)",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "static-禁词零残留(21 文件层)",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "i18n-route 键七语言同步",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "UX-首屏无禁词",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "UX-品牌字标正确",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "UX-免责首次弹出",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "UX-免责同意关闭",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "UX-免责记录写入(本地副本)",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "UX-免责刷新不再弹",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "LAYOUT-#/",
+      "pass": true,
+      "d": "ox=false broken=0 len=1163"
+    },
+    {
+      "n": "LAYOUT-#/draft-box",
+      "pass": true,
+      "d": "ox=false broken=0 len=6044"
+    },
+    {
+      "n": "LAYOUT-#/tasks-history",
+      "pass": true,
+      "d": "ox=false broken=0 len=1034"
+    },
+    {
+      "n": "LAYOUT-#/ai-interaction",
+      "pass": true,
+      "d": "ox=false broken=0 len=2001"
+    },
+    {
+      "n": "LAYOUT-#/knowledge",
+      "pass": true,
+      "d": "ox=false broken=0 len=247"
+    },
+    {
+      "n": "LAYOUT-#/calendar",
+      "pass": true,
+      "d": "ox=false broken=0 len=368"
+    },
+    {
+      "n": "LAYOUT-#/data-statistics",
+      "pass": true,
+      "d": "ox=false broken=0 len=1118"
+    },
+    {
+      "n": "LAYOUT-#/monitor",
+      "pass": true,
+      "d": "ox=false broken=0 len=655"
+    },
+    {
+      "n": "LAYOUT-#/settings",
+      "pass": true,
+      "d": "ox=false broken=0 len=285"
+    },
+    {
+      "n": "LAYOUT-#/accounts",
+      "pass": true,
+      "d": "ox=false broken=0 len=641"
+    },
+    {
+      "n": "UX-页面零错误",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "API-响应全部code=0",
+      "pass": true,
+      "d": ""
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# 产品层忽略：桌面壳运行时与构建产物不入库
+desktop/dist/
+desktop/vendor-kernel*/
+desktop/release/
+
+# QA 证据（截图/日志/验收录屏）是运行产物，不是源码；导入脚本同样按 evidence/acceptance 排除
+qa/evidence/
+qa/acceptance/
+# 旧 harness 源码留档，不参与构建也不进 git
+legacy-archive/
+# 安装器的编译产物（源码在 installer/，随包发布走 desktop/release/）
+installer/*.exe

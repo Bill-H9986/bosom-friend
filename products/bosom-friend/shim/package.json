@@ -1,0 +1,14 @@
+{
+  "name": "@deepseek-ai/dsh-bosom-friend-web-shim",
+  "description": "Bosom Friend 启动占位包：为 dsh web-app 启动链提供 dist/index.html 跳转页（不参与工作区解析，仅留档）",
+  "version": "0.1.1-rc.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node -e \"console.log('shim: dist/index.html is static, nothing to build')\""
+  },
+  "exports": {
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  }
+}

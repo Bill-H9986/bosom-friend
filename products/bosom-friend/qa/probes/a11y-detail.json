@@ -1,0 +1,182 @@
+{
+ "#/calendar": [
+  {
+   "id": "aria-roles",
+   "impact": "critical",
+   "nodes": [
+    {
+     "target": "div[role=\"DraggableBox\"]",
+     "html": "<div role=\"DraggableBox\" style=\"opacity: 1;\">"
+    }
+   ]
+  },
+  {
+   "id": "button-name",
+   "impact": "critical",
+   "nodes": [
+    {
+     "target": "button[data-testid=\"calendar-prev-btn\"]",
+     "html": "<button class=\"btn btn-ghost btn-icon h-8 w-8 cursor-pointer\" data-testid=\"calendar-prev-btn\">"
+    },
+    {
+     "target": "button[data-testid=\"calendar-next-btn\"]",
+     "html": "<button class=\"btn btn-ghost btn-icon h-8 w-8 cursor-pointer\" data-testid=\"calendar-next-btn\">"
+    },
+    {
+     "target": ".flex:nth-child(2) > .hover\\:bg-muted\\/10.p-2.group:nth-child(6) > .top-1.right-1.opacity-0",
+     "html": "<button class=\"btn btn-ghost btn-icon absolute top-1 right-1 h-6 w-6 opacity-0 group-hover:opacity-100 cursor-pointer transition-o"
+    },
+    {
+     "target": ".flex:nth-child(2) > .hover\\:bg-muted\\/10.p-2.group:nth-child(7) > .top-1.right-1.opacity-0",
+     "html": "<button class=\"btn btn-ghost btn-icon absolute top-1 right-1 h-6 w-6 opacity-0 group-hover:opacity-100 cursor-pointer transition-o"
+    },
+    {
+     "target": ".flex:nth-child(2) > .hover\\:bg-muted\\/10.p-2.group:nth-child(8) > .top-1.right-1.opacity-0",
+     "html": "<button class=\"btn btn-ghost btn-icon absolute top-1 right-1 h-6 w-6 opacity-0 group-hover:opacity-100 cursor-pointer transition-o"
+    },
+    {
+     "target": ".flex:nth-child(3) > .hover\\:bg-muted\\/10.p-2.group:nth-child(6) > .top-1.right-1.opacity-0",
+     "html": "<button class=\"btn btn-ghost btn-icon absolute top-1 right-1 h-6 w-6 opacity-0 group-hover:opacity-100 cursor-pointer transition-o"
+    }
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "nodes": [
+    {
+     "target": ".ring-inset > .text-ellipsis.whitespace-nowrap.min-w-14",
+     "html": "<span class=\"min-w-14 overflow-hidden text-ellipsis whitespace-nowrap text-center\">发布日历</span>"
+    },
+    {
+     "target": ".px-0\\.5.align-baseline[aria-label=\"大势至菩萨圣诞 · 公历节日\"]",
+     "html": "<button type=\"button\" class=\"inline cursor-pointer rounded-sm px-0.5 text-left align-baseline transition-colors hover:bg-primary/1"
+    },
+    {
+     "target": "button[aria-label=\"纳米比亚日 · 公历节日\"]",
+     "html": "<button type=\"button\" class=\"inline cursor-pointer rounded-sm px-0.5 text-left align-baseline transition-colors hover:bg-primary/1"
+    },
+    {
+     "target": "button[aria-label=\"全国律师咨询日 · 公历节日\"]",
+     "html": "<button type=\"button\" class=\"inline cursor-pointer rounded-sm px-0.5 text-left align-baseline transition-colors hover:bg-primary/1"
+    }
+   ]
+  }
+ ],
+ "#/draft-box": [
+  {
+   "id": "aria-input-field-name",
+   "impact": "serious",
+   "nodes": [
+    {
+     "target": "._editorContent_bs8kl_6",
+     "html": "<div class=\"_editorContent_bs8kl_6 min-h-[80px] max-h-[160px] overflow-auto pr-12 text-sm @min-[640px]:min-h-[100px]\" contentedita"
+    }
+   ]
+  },
+  {
+   "id": "button-name",
+   "impact": "critical",
+   "nodes": [
+    {
+     "target": ".w-7",
+     "html": "<button type=\"button\" class=\"inline-flex items-center justify-center w-7 h-7 rounded-r-full hover:text-foreground hover:bg-muted t"
+    },
+    {
+     "target": ".bg-foreground",
+     "html": "<button data-testid=\"draftbox-ai-submit-btn\" type=\"button\" class=\"flex h-8 w-8 cursor-pointer items-center justify-center rounded-"
+    }
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "nodes": [
+    {
+     "target": ".ring-inset > .text-ellipsis.overflow-hidden.min-w-14",
+     "html": "<span class=\"min-w-14 overflow-hidden text-ellipsis whitespace-nowrap text-center\">内容创作</span>"
+    },
+    {
+     "target": ".font-normal > span",
+     "html": "<span>提示词</span>"
+    },
+    {
+     "target": ".file\\:border-0",
+     "html": "<input class=\"flex w-full border transition-all duration-200 ease-apple-out file:border-0 file:bg-transparent file:text-sm file:fo"
+    },
+    {
+     "target": "#radix-\\:r19\\:-trigger-drafts",
+     "html": "<button type=\"button\" role=\"tab\" aria-selected=\"false\" aria-controls=\"radix-:r19:-content-drafts\" data-state=\"inactive\" id=\"radix-"
+    },
+    {
+     "target": "#radix-\\:r19\\:-trigger-video",
+     "html": "<button type=\"button\" role=\"tab\" aria-selected=\"false\" aria-controls=\"radix-:r19:-content-video\" data-state=\"inactive\" id=\"radix-:"
+    },
+    {
+     "target": "#radix-\\:r19\\:-trigger-img",
+     "html": "<button type=\"button\" role=\"tab\" aria-selected=\"false\" aria-controls=\"radix-:r19:-content-img\" data-state=\"inactive\" id=\"radix-:r1"
+    }
+   ]
+  }
+ ],
+ "#/tasks-history": [
+  {
+   "id": "button-name",
+   "impact": "critical",
+   "nodes": [
+    {
+     "target": ".btn-icon.btn-ghost.w-8:nth-child(3)",
+     "html": "<button class=\"btn btn-ghost btn-icon w-8 h-8\">"
+    }
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "nodes": [
+    {
+     "target": ".ring-1 > .text-ellipsis.overflow-hidden.whitespace-nowrap",
+     "html": "<span class=\"min-w-14 overflow-hidden text-ellipsis whitespace-nowrap text-center\">我的任务</span>"
+    }
+   ]
+  }
+ ],
+ "#/settings": [
+  {
+   "id": "button-name",
+   "impact": "critical",
+   "nodes": [
+    {
+     "target": ".border-input",
+     "html": "<button type=\"button\" role=\"combobox\" aria-expanded=\"false\" aria-autocomplete=\"none\" dir=\"ltr\" data-state=\"closed\" class=\"flex ite"
+    }
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "nodes": [
+    {
+     "target": ".text-primary.transition-colors.font-medium",
+     "html": "<span class=\"text-sm transition-colors text-primary font-medium\">浅色</span>"
+    }
+   ]
+  }
+ ],
+ "#/accounts": [
+  {
+   "id": "button-name",
+   "impact": "critical",
+   "nodes": [
+    {
+     "target": "tr[data-row-key=\"rule-default-1\"] > td:nth-child(6) > .ant-switch-checked.ant-switch[role=\"switch\"]",
+     "html": "<button type=\"button\" role=\"switch\" aria-checked=\"true\" class=\"ant-switch css-1a76ql ant-switch-checked\"><div class=\"ant-switch-ha"
+    },
+    {
+     "target": "tr[data-row-key=\"rule-default-2\"] > td:nth-child(6) > .ant-switch-checked.ant-switch[role=\"switch\"]",
+     "html": "<button type=\"button\" role=\"switch\" aria-checked=\"true\" class=\"ant-switch css-1a76ql ant-switch-checked\"><div class=\"ant-switch-ha"
+    }
+   ]
+  }
+ ]
+}

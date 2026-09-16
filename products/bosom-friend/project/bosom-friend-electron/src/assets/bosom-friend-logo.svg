@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="zhiyinWave" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+  <!-- 声波：知音对话 · AI 回应 · 内容传播（三条渐强弧线，极简大气） -->
+  <path d="M86 90 a58 58 0 0 1 0 76" fill="none" stroke="url(#zhiyinWave)" stroke-width="16" stroke-linecap="round" opacity="0.32"/>
+  <path d="M112 76 a84 84 0 0 1 0 104" fill="none" stroke="url(#zhiyinWave)" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+  <path d="M138 62 a110 110 0 0 1 0 132" fill="none" stroke="url(#zhiyinWave)" stroke-width="16" stroke-linecap="round"/>
+</svg>

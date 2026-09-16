@@ -1,0 +1,617 @@
+@import 'tailwindcss';
+/* Tailwind v4 内容扫描白名单：
+   - Web 主界面源码包位于 ../zhiyin-web（vite 根目录之外），自动扫描不覆盖，
+     必须显式 @source，否则仅该目录使用的工具类（md:flex、w-[240px] 等）全部缺失，
+     侧边栏塌缩、栅格失效，导致整个前端排版被打乱；
+   - electron 遗留视图（reception 等）同样显式纳入，保证双前端树样式完整。 */
+@source '../';
+@source '../../../../zhiyin-electron/src';
+@import '../assets/fonts/font.css';
+
+@plugin 'tailwindcss-animate';
+
+@custom-variant dark (&:is(.dark *));
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Welcome 页面样式隔离 - 防止全局污染 */
+html:not(.welcome-page-active) {
+  font-size: 100% !important;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', Suisseintl, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* A11Y 对比度修正（antd 默认紫/红在白色上不足 4.5:1） */
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #6d28d9 !important;
+}
+/* 链接型按钮用的是品牌紫 #8b7cf6（白底 3.32），取同一支更深的紫，与上面 tabs 保持一致。 */
+.ant-btn-link:not(:disabled) {
+  color: #6d28d9 !important;
+}
+.ant-btn-dangerous.ant-btn-color-dangerous.ant-btn-default:not(:disabled) {
+  color: #dc2626;
+}
+.ant-btn-dangerous.ant-btn-color-dangerous.ant-btn-default:not(:disabled):hover {
+  color: #b91c1c !important;
+}
+
+@theme inline {
+  --breakpoint-3xl: 1400px;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-brand-purple: var(--brand-purple);
+  --color-brand-cyan: var(--brand-cyan);
+  --color-brand-purple-deep: var(--brand-purple-deep);
+  --color-gradient-foreground: var(--gradient-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --background-image-gradient-back: var(--gradientBackColor);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  /* 苹果风格缓动曲线 */
+  --ease-apple: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-apple-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  /* 主 CTA 渐变：Zhiyin 官网同款 粉橙 → 浅紫（1:1 复刻） */
+  --gradientBackColor: linear-gradient(90deg, #8b7cf6, #a78bfa);
+  /* 品牌色：淡紫相邻色系（主色淡紫、相邻紫罗兰、淡紫白） */
+  --brand-purple: #8b7cf6;
+  --brand-purple-deep: #5b4bc4;
+  --brand-purple-light: #a78bfa;
+  --brand-purple-lighter: #c4b5fd;
+  --brand-pink: #c4b5fd;
+  --brand-cyan: #a78bfa;
+  --gradient-foreground: oklch(0.985 0 0);
+  /* Section 交替背景色 */
+  --section-alt-bg: lab(96.52% 0 0);
+
+  --radius: 0.625rem;
+  /* Zhiyin 官网：纯白底 + 近黑前景 + 浅灰边框 */
+  --background: #fff;
+  --foreground: #0a0a0a;
+  --card: #fff;
+  --card-foreground: #0a0a0a;
+  --popover: #fff;
+  --popover-foreground: #0a0a0a;
+  --primary: var(--brand-purple);
+  --primary-foreground: var(--gradient-foreground);
+  --secondary: lab(96.52% 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: lab(96.52% 0 0);
+  --muted-foreground: #5b6472;
+  --accent: lab(96.52% 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --success: oklch(0.65 0.2 145);
+  --success-foreground: oklch(0.985 0 0);
+  --warning: oklch(0.75 0.18 70);
+  --warning-foreground: oklch(0.2 0 0);
+  --info: oklch(0.6 0.18 250);
+  --info-foreground: oklch(0.985 0 0);
+  --border: #e5e5e5;
+  --input: #e5e5e5;
+  --ring: var(--brand-cyan);
+  --chart-1: oklch(0.64 0.16 162);
+  --chart-2: oklch(0.68 0.12 190);
+  --chart-3: oklch(0.45 0.09 205);
+  --chart-4: oklch(0.78 0.14 145);
+  --chart-5: oklch(0.55 0.13 175);
+  --sidebar: color-mix(in oklch, var(--brand-cyan) 3%, var(--background));
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--brand-cyan);
+  --sidebar-primary-foreground: var(--gradient-foreground);
+  --sidebar-accent: color-mix(in oklch, var(--brand-cyan) 10%, var(--background));
+  --sidebar-accent-foreground: var(--foreground);
+  --sidebar-border: color-mix(in oklch, var(--border) 50%, transparent);
+  --sidebar-ring: var(--brand-cyan);
+}
+
+.dark {
+  --gradient-foreground: oklch(0.985 0 0);
+  --brand-purple-deep: var(--brand-cyan);
+  --section-alt-bg: rgba(255, 255, 255, 0.03);
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: var(--brand-cyan);
+  --primary-foreground: var(--gradient-foreground);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+  --success: oklch(0.7 0.2 145);
+  --success-foreground: oklch(0.15 0 0);
+  --warning: oklch(0.8 0.18 70);
+  --warning-foreground: oklch(0.15 0 0);
+  --info: oklch(0.65 0.18 250);
+  --info-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: var(--brand-cyan);
+  --chart-1: oklch(0.68 0.15 165);
+  --chart-2: oklch(0.75 0.12 190);
+  --chart-3: oklch(0.5 0.09 210);
+  --chart-4: oklch(0.8 0.13 150);
+  --chart-5: oklch(0.6 0.12 180);
+  --sidebar: color-mix(in oklch, var(--brand-cyan) 7%, var(--background));
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--brand-cyan);
+  --sidebar-primary-foreground: var(--gradient-foreground);
+  --sidebar-accent: color-mix(in oklch, var(--brand-cyan) 14%, var(--background));
+  --sidebar-accent-foreground: var(--foreground);
+  --sidebar-border: color-mix(in oklch, var(--border) 50%, transparent);
+  --sidebar-ring: var(--brand-cyan);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground text-sm;
+  }
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+}
+
+@layer components {
+  .publish-topic-mention {
+    display: inline;
+    align-items: center;
+    margin-inline: 0.0625rem;
+    padding: 0 0.0625rem 0.0625rem;
+    vertical-align: baseline;
+    color: color-mix(in oklch, var(--brand-cyan) 76%, var(--foreground));
+    border-radius: calc(var(--radius-sm) + 1px);
+    background: linear-gradient(90deg, var(--brand-cyan), var(--brand-purple)) 0 100% / 100% 0.08em
+      no-repeat;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    line-height: inherit;
+    transition:
+      background 0.18s ease,
+      color 0.18s ease;
+  }
+
+  .publish-topic-mention_trigger {
+    color: color-mix(in oklch, var(--brand-purple) 62%, var(--brand-cyan));
+    font-weight: 700;
+  }
+
+  .publish-topic-mention_value {
+    color: color-mix(in oklch, var(--brand-cyan) 76%, var(--foreground));
+    font-weight: 600;
+  }
+
+  .publish-topic-mention-focused {
+    padding-inline: 0.25rem;
+    background:
+      linear-gradient(var(--background), var(--background)) padding-box,
+      var(--gradientBackColor) border-box;
+    box-shadow: 0 0 0 1px color-mix(in oklch, var(--brand-cyan) 34%, transparent);
+  }
+
+  .publish-topic-mention-focused .publish-topic-mention_trigger,
+  .publish-topic-mention-focused .publish-topic-mention_value {
+    color: color-mix(in oklch, var(--brand-cyan) 82%, var(--foreground));
+  }
+}
+
+body > div {
+  pointer-events: auto;
+}
+
+/* 添加账号Modal响应式优化 */
+.add-account-responsive-modal {
+  /* 移动端优化 - 确保内容占满宽度 */
+  @media (max-width: 640px) {
+    /* 针对 shadcn Dialog 的移动端样式 */
+    & [role='dialog'] {
+      padding: 16px !important;
+    }
+  }
+}
+
+/* 自定义滚动条 - 细节优化 */
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-thumb-gray-300 {
+    scrollbar-color: #d1d5db #f3f4f6;
+  }
+
+  .scrollbar-track-gray-100 {
+    /* 用于scrollbar-color的第二个值 */
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+/* Webkit浏览器滚动条优化 */
+.add-account-responsive-modal ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.add-account-responsive-modal ::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 10px;
+}
+
+.add-account-responsive-modal ::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.add-account-responsive-modal ::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* 定价页面响应式布局 - 1400px 以上显示4列 */
+@media (min-width: 1400px) {
+  .pricing-grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Shimmer 渐变动画 - 用于骨架屏 loading 效果 */
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* 隐藏浏览器默认的密码显示按钮 */
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+/* TaskDetail 动画 */
+@keyframes pulse-ring {
+  0% {
+    opacity: 0.6;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes td-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* ===== 桌面端窗口拖拽区（Electron 无边框窗口）=====
+ * 无边框窗口隐藏了系统标题栏，必须显式声明拖拽区才能移动窗口。
+ * 浏览器中这两条规则无副作用（-webkit-app-region 为 Electron 专有属性）。
+ */
+.app-drag-region {
+  -webkit-app-region: drag;
+  app-region: drag;
+}
+
+.app-no-drag {
+  -webkit-app-region: no-drag;
+  app-region: no-drag;
+}
+
+/* ===== 统一按钮规格（知音设计语言 · 苹果风格）=====
+ * 全项目按钮只允许使用以下规格：
+ * 尺寸：btn-sm / btn-md（默认）/ btn-lg / btn-xl / btn-icon / btn-icon-sm
+ * 样式：btn-primary（渐变主操作）/ btn-secondary（浅紫次操作）/
+ *       btn-outline（描边）/ btn-ghost（幽灵）/ btn-danger（危险）/ btn-link（文字）
+ * 圆角、高度、阴影、过渡全部统一，禁止在各页面手写零散按钮样式。
+ */
+@layer base {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap select-none rounded-xl text-sm font-medium
+      transition-all duration-200 ease-apple-out
+      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/25 focus-visible:ring-offset-1
+      disabled:pointer-events-none disabled:opacity-50
+      [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-4;
+    cursor: pointer;
+  }
+
+  .btn-sm {
+    @apply h-8 gap-1.5 rounded-lg px-3 text-xs [&_svg]:size-3.5;
+  }
+
+  .btn-md {
+    @apply h-9 px-4;
+  }
+
+  .btn-lg {
+    @apply h-10 px-5 text-[15px];
+  }
+
+  .btn-xl {
+    @apply h-11 px-6 text-[15px];
+  }
+
+  .btn-icon {
+    @apply h-9 w-9 rounded-xl [&_svg]:size-4;
+  }
+
+  .btn-icon-sm {
+    @apply h-8 w-8 rounded-lg [&_svg]:size-4;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-back text-gradient-foreground shadow-sm shadow-primary/20
+      hover:shadow-md hover:shadow-primary/30 hover:brightness-[1.04]
+      active:scale-[0.97];
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground shadow-sm hover:bg-accent active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply border border-input bg-background text-foreground/80 shadow-sm
+      hover:border-primary/40 hover:bg-accent hover:text-foreground active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply text-foreground/70 hover:bg-accent hover:text-foreground active:scale-[0.98];
+  }
+
+  .btn-danger {
+    @apply bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90 active:scale-[0.98];
+  }
+
+  .btn-link {
+    @apply h-auto gap-1 p-0 text-primary underline-offset-4 hover:underline;
+  }
+
+  /* ===== 页面文字层级（类 Word 标题分级）=====
+   * page-title  = 页面标题（H1，每页仅一个）
+   * section-title = 区块标题（H2）
+   * card-title  = 卡片标题（H3）
+   * text-body / text-secondary / text-caption = 正文三级
+   */
+  .page-title {
+    @apply shrink-0 whitespace-nowrap text-xl font-semibold tracking-tight text-foreground;
+  }
+
+  .section-title {
+    @apply text-base font-semibold tracking-tight text-foreground;
+  }
+
+  .card-title {
+    @apply text-sm font-medium text-foreground;
+  }
+
+  .text-body {
+    @apply text-sm leading-relaxed text-foreground/85;
+  }
+
+  .text-secondary {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .text-caption {
+    @apply text-xs text-muted-foreground;
+  }
+
+  /* ===== 功能页顶部导航栏统一规格 =====
+   * 所有功能页一级导航统一：高度 56px、同款描边底、同款内边距。
+   */
+  .page-header {
+    @apply flex h-14 shrink-0 items-center gap-3 border-b border-border/60 bg-background/90 px-4 backdrop-blur-sm md:px-6;
+  }
+
+  /* ===== 功能页母版（PageShell）：全站统一结构 =====
+   * page-shell    = 页面最外层盒子（唯一）
+   * page-header   = 顶部栏（标题 H1 + 标签 NAV + 操作区）
+   * page-toolbar  = 第二行工具条（搜索/筛选等，可选）
+   * page-content  = 内容滚动区（唯一，默认带统一内边距）
+   * page-content-inner = 内容区内层（需要全宽内容时用 p-0 覆盖）
+   */
+  .page-shell {
+    @apply flex h-full min-h-0 flex-col bg-background;
+  }
+
+  .page-toolbar {
+    @apply flex h-14 shrink-0 items-center gap-2 border-b border-border/60 bg-background/90 px-4 backdrop-blur-sm md:px-6;
+  }
+
+  .page-content {
+    @apply min-h-0 flex-1 overflow-y-auto overflow-x-hidden px-4 py-5 md:px-6;
+  }
+
+  /* ===== 统一卡片盒子（区域格式化）=====
+   * 所有卡片/面板统一使用 panel：同款圆角、边框、背景、阴影、内边距。
+   */
+  .panel {
+    @apply rounded-2xl border border-border/70 bg-card p-4 shadow-sm;
+  }
+
+  .panel-header {
+    @apply flex items-center justify-between gap-3 border-b border-border/60 pb-3;
+  }
+
+  .page-tabs {
+    @apply flex items-center gap-1;
+  }
+
+  .page-tab {
+    @apply inline-flex h-8 select-none items-center justify-center gap-1.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium
+      transition-all duration-200 ease-apple-out cursor-pointer;
+  }
+
+  .page-tab-active {
+    @apply bg-secondary text-secondary-foreground shadow-sm;
+  }
+
+  .page-tab-idle {
+    @apply text-foreground/60 hover:bg-accent hover:text-foreground;
+  }
+
+  /* ===== 卡片通用交互 ===== */
+  .card-interactive {
+    @apply transition-all duration-300 ease-apple-out hover:-translate-y-0.5 hover:shadow-md active:scale-[0.99];
+  }
+
+  /* ===== 侧边栏渐变分割线 =====
+   * 顶部与页面渐变背景融合（透明过渡），向下淡入常规边框色，
+   * 避免生硬的纯色竖线穿过顶部渐变区。
+   */
+  .sidebar-divider-r {
+    border-right: 1px solid;
+    border-image: linear-gradient(to bottom, transparent 0%, transparent 26%, var(--border) 46%) 1;
+  }
+
+  .sidebar-divider-l {
+    border-left: 1px solid;
+    border-image: linear-gradient(to bottom, transparent 0%, transparent 26%, var(--border) 46%) 1;
+  }
+}
+
+/* ===== 页面切换过渡 ===== */
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-enter {
+  animation: page-enter 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* 页面内容区细滚动条（统一规格） */
+.page-content {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
+
+.page-content::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.page-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.page-content::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 9999px;
+}
+
+.page-content::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* 无障碍：antd 标签在浅色背景上的颜色对比度（WCAG 1.4.3） */
+.ant-tag-green { color: #237804 !important; }
+.ant-tag-blue { color: #0958d9 !important; }
+.ant-tag-orange { color: #ad4e00 !important; }
+.ant-tag-red { color: #cf1322 !important; }
+/* cyan 是同一批对比度修复漏掉的一个：默认 #08979c 在 #e6fffb 上只有 3.39，取 Ant cyan-8。 */
+.ant-tag-cyan { color: #006d75 !important; }
+.ant-empty-description { color: #595959 !important; }
+/* Ant List 的空态文案默认 #c2c2c2（白底 1.78），与上面 empty-description 取同一个可读灰度。 */
+.ant-list-empty-text { color: #595959 !important; }
+.ant-card-body p { line-height: 1.6; }
