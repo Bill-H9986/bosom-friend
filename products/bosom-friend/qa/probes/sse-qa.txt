@@ -1,0 +1,476 @@
+data: {"type":"init","taskId":"task-34a31c95","sessionId":"task-34a31c95"}
+
+data: {"type":"stream_event","uuid":"s-ab8838bf","parent_tool_use_id":null,"event":{"type":"message_start","index":0}}
+
+data: {"type":"stream_event","uuid":"e-05958ff7","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"闹"}}}
+
+data: {"type":"stream_event","uuid":"e-1e3312e6","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"钟"}}}
+
+data: {"type":"stream_event","uuid":"e-d793861b","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"响"}}}
+
+data: {"type":"stream_event","uuid":"e-58dc9ba3","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"的时候"}}}
+
+data: {"type":"stream_event","uuid":"e-ca5c92cc","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-923556b4","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"我"}}}
+
+data: {"type":"stream_event","uuid":"e-9c7e5429","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"正"}}}
+
+data: {"type":"stream_event","uuid":"e-e4efd002","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"梦见"}}}
+
+data: {"type":"stream_event","uuid":"e-d249b63c","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"自己"}}}
+
+data: {"type":"stream_event","uuid":"e-ed600b2f","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"是一"}}}
+
+data: {"type":"stream_event","uuid":"e-8e369941","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"滩"}}}
+
+data: {"type":"stream_event","uuid":"e-fa0efafe","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"液态"}}}
+
+data: {"type":"stream_event","uuid":"e-b7527b55","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"的"}}}
+
+data: {"type":"stream_event","uuid":"e-9051ee51","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"懒惰"}}}
+
+data: {"type":"stream_event","uuid":"e-88b7073a","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。\n\n"}}}
+
+data: {"type":"stream_event","uuid":"e-21cafd02","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"手指"}}}
+
+data: {"type":"stream_event","uuid":"e-b09f5991","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"在"}}}
+
+data: {"type":"stream_event","uuid":"e-93e975ac","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"被子"}}}
+
+data: {"type":"stream_event","uuid":"e-7439246d","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"边缘"}}}
+
+data: {"type":"stream_event","uuid":"e-4db4e9e2","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"试探"}}}
+
+data: {"type":"stream_event","uuid":"e-50124478","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。"}}}
+
+data: {"type":"stream_event","uuid":"e-8c68b43f","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"外面"}}}
+
+data: {"type":"stream_event","uuid":"e-4f8ca973","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"七"}}}
+
+data: {"type":"stream_event","uuid":"e-24ceb95f","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"度"}}}
+
+data: {"type":"stream_event","uuid":"e-60bb06f9","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-88be3ec2","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"被"}}}
+
+data: {"type":"stream_event","uuid":"e-6a736328","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"窝"}}}
+
+data: {"type":"stream_event","uuid":"e-be502499","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"三十"}}}
+
+data: {"type":"stream_event","uuid":"e-b9c5b1a2","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"七"}}}
+
+data: {"type":"stream_event","uuid":"e-2bc703a5","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"度"}}}
+
+data: {"type":"stream_event","uuid":"e-2144599d","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。"}}}
+
+data: {"type":"stream_event","uuid":"e-4d7fe38c","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"这是"}}}
+
+data: {"type":"stream_event","uuid":"e-474652f8","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"每天"}}}
+
+data: {"type":"stream_event","uuid":"e-758a7c9c","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"早晨"}}}
+
+data: {"type":"stream_event","uuid":"e-b4da8d16","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"最"}}}
+
+data: {"type":"stream_event","uuid":"e-4adf7f79","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"激烈的"}}}
+
+data: {"type":"stream_event","uuid":"e-500a1704","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"身体"}}}
+
+data: {"type":"stream_event","uuid":"e-74d18f62","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"对抗"}}}
+
+data: {"type":"stream_event","uuid":"e-f802a5c7","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"赛"}}}
+
+data: {"type":"stream_event","uuid":"e-172afd78","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"——"}}}
+
+data: {"type":"stream_event","uuid":"e-38c4d9f1","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"温暖"}}}
+
+data: {"type":"stream_event","uuid":"e-8f0fbeaf","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"劝"}}}
+
+data: {"type":"stream_event","uuid":"e-e52a1034","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"我"}}}
+
+data: {"type":"stream_event","uuid":"e-5c0317e2","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"留下"}}}
+
+data: {"type":"stream_event","uuid":"e-41f1c30f","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-f21fd782","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"自律"}}}
+
+data: {"type":"stream_event","uuid":"e-e7dda711","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"在"}}}
+
+data: {"type":"stream_event","uuid":"e-35f674ce","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"耳边"}}}
+
+data: {"type":"stream_event","uuid":"e-88fbc045","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"骂"}}}
+
+data: {"type":"stream_event","uuid":"e-9a2153a3","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"骂"}}}
+
+data: {"type":"stream_event","uuid":"e-a0da069f","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"咧咧"}}}
+
+data: {"type":"stream_event","uuid":"e-fbe234f5","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。\n\n"}}}
+
+data: {"type":"stream_event","uuid":"e-41405fc0","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"我"}}}
+
+data: {"type":"stream_event","uuid":"e-81abd92e","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"选了"}}}
+
+data: {"type":"stream_event","uuid":"e-eba9c6ed","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"第三条"}}}
+
+data: {"type":"stream_event","uuid":"e-00875ab6","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"路"}}}
+
+data: {"type":"stream_event","uuid":"e-a3ff06f4","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"："}}}
+
+data: {"type":"stream_event","uuid":"e-86239a69","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"闭"}}}
+
+data: {"type":"stream_event","uuid":"e-250c3a5f","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"着眼睛"}}}
+
+data: {"type":"stream_event","uuid":"e-aa9b0b84","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"坐"}}}
+
+data: {"type":"stream_event","uuid":"e-88d5c310","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"起来"}}}
+
+data: {"type":"stream_event","uuid":"e-75ec6f71","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。"}}}
+
+data: {"type":"stream_event","uuid":"e-7b99c832","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"像"}}}
+
+data: {"type":"stream_event","uuid":"e-04e69645","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"破"}}}
+
+data: {"type":"stream_event","uuid":"e-fabe7ca4","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"壳"}}}
+
+data: {"type":"stream_event","uuid":"e-82ddb5a9","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"的"}}}
+
+data: {"type":"stream_event","uuid":"e-ca84e6a1","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"恐龙"}}}
+
+data: {"type":"stream_event","uuid":"e-7336cef2","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"一样"}}}
+
+data: {"type":"stream_event","uuid":"e-55afd3e4","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"笨"}}}
+
+data: {"type":"stream_event","uuid":"e-a3795d32","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"拙"}}}
+
+data: {"type":"stream_event","uuid":"e-1c7b1868","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-8b51a0cf","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"把自己"}}}
+
+data: {"type":"stream_event","uuid":"e-5bbedd64","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"从"}}}
+
+data: {"type":"stream_event","uuid":"e-64c527fc","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"床上"}}}
+
+data: {"type":"stream_event","uuid":"e-781ea97e","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"撕"}}}
+
+data: {"type":"stream_event","uuid":"e-d227af68","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"扯"}}}
+
+data: {"type":"stream_event","uuid":"e-07417f62","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"下来"}}}
+
+data: {"type":"stream_event","uuid":"e-2f94a00e","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。\n\n"}}}
+
+data: {"type":"stream_event","uuid":"e-d880b62b","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"走出"}}}
+
+data: {"type":"stream_event","uuid":"e-a93f41d2","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"门"}}}
+
+data: {"type":"stream_event","uuid":"e-8b085e23","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-532c4fc9","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"风"}}}
+
+data: {"type":"stream_event","uuid":"e-d87b00d6","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"是"}}}
+
+data: {"type":"stream_event","uuid":"e-00fcbfee","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"清醒"}}}
+
+data: {"type":"stream_event","uuid":"e-d1edab06","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"的"}}}
+
+data: {"type":"stream_event","uuid":"e-707415cb","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-94550587","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"空气"}}}
+
+data: {"type":"stream_event","uuid":"e-ee23d5c6","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"是"}}}
+
+data: {"type":"stream_event","uuid":"e-172e51ac","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"冷的"}}}
+
+data: {"type":"stream_event","uuid":"e-e9779859","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。"}}}
+
+data: {"type":"stream_event","uuid":"e-52346478","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"影子"}}}
+
+data: {"type":"stream_event","uuid":"e-edd4555d","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"被"}}}
+
+data: {"type":"stream_event","uuid":"e-64e1e877","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"路灯"}}}
+
+data: {"type":"stream_event","uuid":"e-53225303","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"拉"}}}
+
+data: {"type":"stream_event","uuid":"e-d4a15483","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"得很"}}}
+
+data: {"type":"stream_event","uuid":"e-2c77f79e","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"长"}}}
+
+data: {"type":"stream_event","uuid":"e-01738217","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-bc879da0","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"像"}}}
+
+data: {"type":"stream_event","uuid":"e-aa631d17","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"另一个"}}}
+
+data: {"type":"stream_event","uuid":"e-cbc4c76a","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"在"}}}
+
+data: {"type":"stream_event","uuid":"e-8ae42c53","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"晨"}}}
+
+data: {"type":"stream_event","uuid":"e-c480e9cb","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"跑"}}}
+
+data: {"type":"stream_event","uuid":"e-b8088d4e","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"的我"}}}
+
+data: {"type":"stream_event","uuid":"e-b5c4e362","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-628a6470","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"在"}}}
+
+data: {"type":"stream_event","uuid":"e-bb8a39eb","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"平行的"}}}
+
+data: {"type":"stream_event","uuid":"e-bbca7b65","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"世界里"}}}
+
+data: {"type":"stream_event","uuid":"e-e5f99a2c","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"替我"}}}
+
+data: {"type":"stream_event","uuid":"e-59e13978","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"继续"}}}
+
+data: {"type":"stream_event","uuid":"e-ba90662a","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"赖"}}}
+
+data: {"type":"stream_event","uuid":"e-69cb7f2c","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"床"}}}
+
+data: {"type":"stream_event","uuid":"e-e779aac7","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。"}}}
+
+data: {"type":"stream_event","uuid":"e-1a6a6646","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"可"}}}
+
+data: {"type":"stream_event","uuid":"e-f02e226c","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"我不想"}}}
+
+data: {"type":"stream_event","uuid":"e-8b15d3a5","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"跟"}}}
+
+data: {"type":"stream_event","uuid":"e-26a99a44","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"影子"}}}
+
+data: {"type":"stream_event","uuid":"e-6ae2fd29","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"换"}}}
+
+data: {"type":"stream_event","uuid":"e-6d419e94","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。\n\n"}}}
+
+data: {"type":"stream_event","uuid":"e-a0c208db","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"跑"}}}
+
+data: {"type":"stream_event","uuid":"e-977acf88","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"起来"}}}
+
+data: {"type":"stream_event","uuid":"e-f4e81c4b","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"的时候"}}}
+
+data: {"type":"stream_event","uuid":"e-19fab46e","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-445fc037","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"大脑"}}}
+
+data: {"type":"stream_event","uuid":"e-c95fc372","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"才开始"}}}
+
+data: {"type":"stream_event","uuid":"e-d93ec5e6","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"慢慢"}}}
+
+data: {"type":"stream_event","uuid":"e-aae3f96c","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"通电"}}}
+
+data: {"type":"stream_event","uuid":"e-0f57c6d6","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。"}}}
+
+data: {"type":"stream_event","uuid":"e-801062b0","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"昨天"}}}
+
+data: {"type":"stream_event","uuid":"e-259b3f79","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"卡"}}}
+
+data: {"type":"stream_event","uuid":"e-0a8c40d2","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"住"}}}
+
+data: {"type":"stream_event","uuid":"e-1a651b33","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"的问题"}}}
+
+data: {"type":"stream_event","uuid":"e-a00b38c2","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-97b5672f","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"跑"}}}
+
+data: {"type":"stream_event","uuid":"e-3910d541","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"着"}}}
+
+data: {"type":"stream_event","uuid":"e-8c2c9809","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"跑"}}}
+
+data: {"type":"stream_event","uuid":"e-adb3e3ec","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"着"}}}
+
+data: {"type":"stream_event","uuid":"e-cac0de0a","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"突然"}}}
+
+data: {"type":"stream_event","uuid":"e-84f02451","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"有了"}}}
+
+data: {"type":"stream_event","uuid":"e-6f87029b","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"答案"}}}
+
+data: {"type":"stream_event","uuid":"e-472ee64b","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"——"}}}
+
+data: {"type":"stream_event","uuid":"e-5009a0e1","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"不是因为"}}}
+
+data: {"type":"stream_event","uuid":"e-f2783ef2","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"灵感"}}}
+
+data: {"type":"stream_event","uuid":"e-a8e961d9","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"降临"}}}
+
+data: {"type":"stream_event","uuid":"e-cfa1a4f7","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-412e8525","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"而是"}}}
+
+data: {"type":"stream_event","uuid":"e-dce551eb","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"因为"}}}
+
+data: {"type":"stream_event","uuid":"e-8d45fbfa","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"呼吸"}}}
+
+data: {"type":"stream_event","uuid":"e-3ca055fa","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"吞"}}}
+
+data: {"type":"stream_event","uuid":"e-0235e2db","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"掉了"}}}
+
+data: {"type":"stream_event","uuid":"e-4e288e18","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"焦虑"}}}
+
+data: {"type":"stream_event","uuid":"e-32b4edce","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-0850835c","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"步子"}}}
+
+data: {"type":"stream_event","uuid":"e-d5b5f2c7","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"碾"}}}
+
+data: {"type":"stream_event","uuid":"e-f815fa74","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"碎了"}}}
+
+data: {"type":"stream_event","uuid":"e-a53db072","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"内"}}}
+
+data: {"type":"stream_event","uuid":"e-405272dc","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"耗"}}}
+
+data: {"type":"stream_event","uuid":"e-bdd2ebe5","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。\n\n"}}}
+
+data: {"type":"stream_event","uuid":"e-252e030d","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"跑到"}}}
+
+data: {"type":"stream_event","uuid":"e-556827a4","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"第三"}}}
+
+data: {"type":"stream_event","uuid":"e-1bd84dff","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"公里"}}}
+
+data: {"type":"stream_event","uuid":"e-2056b8e3","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-7476f2e0","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"路边"}}}
+
+data: {"type":"stream_event","uuid":"e-ed81ac01","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"卖"}}}
+
+data: {"type":"stream_event","uuid":"e-c60c07ad","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"早"}}}
+
+data: {"type":"stream_event","uuid":"e-80b31e23","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"点的"}}}
+
+data: {"type":"stream_event","uuid":"e-67cc47c6","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"阿姨"}}}
+
+data: {"type":"stream_event","uuid":"e-ea7ec2d6","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"对我"}}}
+
+data: {"type":"stream_event","uuid":"e-4fb03e96","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"喊"}}}
+
+data: {"type":"stream_event","uuid":"e-592a8ac1","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"：“"}}}
+
+data: {"type":"stream_event","uuid":"e-0f61591b","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"姑娘"}}}
+
+data: {"type":"stream_event","uuid":"e-b43d2aa5","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-8683c475","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"今天"}}}
+
+data: {"type":"stream_event","uuid":"e-8cbe315f","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"又来"}}}
+
+data: {"type":"stream_event","uuid":"e-de609653","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"啦"}}}
+
+data: {"type":"stream_event","uuid":"e-0a2dd760","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"！”"}}}
+
+data: {"type":"stream_event","uuid":"e-e51e3fda","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"那是"}}}
+
+data: {"type":"stream_event","uuid":"e-7bfb383f","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"陌生的"}}}
+
+data: {"type":"stream_event","uuid":"e-9a0c0f91","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"、"}}}
+
+data: {"type":"stream_event","uuid":"e-7bbd186d","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"江湖"}}}
+
+data: {"type":"stream_event","uuid":"e-2498a409","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"的"}}}
+
+data: {"type":"stream_event","uuid":"e-9dee2d90","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"善意"}}}
+
+data: {"type":"stream_event","uuid":"e-aa7e06f6","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-1f0b418f","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"比"}}}
+
+data: {"type":"stream_event","uuid":"e-10891e3d","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"任何"}}}
+
+data: {"type":"stream_event","uuid":"e-345d933c","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"闹"}}}
+
+data: {"type":"stream_event","uuid":"e-c232ad99","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"钟"}}}
+
+data: {"type":"stream_event","uuid":"e-579aa23d","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"都"}}}
+
+data: {"type":"stream_event","uuid":"e-a933c800","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"响亮"}}}
+
+data: {"type":"stream_event","uuid":"e-92ba0578","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。\n\n"}}}
+
+data: {"type":"stream_event","uuid":"e-07fc3f48","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"回家"}}}
+
+data: {"type":"stream_event","uuid":"e-55876c14","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"路上"}}}
+
+data: {"type":"stream_event","uuid":"e-9db4fc8b","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"我"}}}
+
+data: {"type":"stream_event","uuid":"e-6f0a7037","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"懂了"}}}
+
+data: {"type":"stream_event","uuid":"e-17eb5ad6","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"："}}}
+
+data: {"type":"stream_event","uuid":"e-37ec7934","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"晨"}}}
+
+data: {"type":"stream_event","uuid":"e-29a95e41","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"跑"}}}
+
+data: {"type":"stream_event","uuid":"e-01accaca","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"根本不是"}}}
+
+data: {"type":"stream_event","uuid":"e-7147d896","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"跟"}}}
+
+data: {"type":"stream_event","uuid":"e-03ad5adf","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"身体"}}}
+
+data: {"type":"stream_event","uuid":"e-bb27a21e","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"较"}}}
+
+data: {"type":"stream_event","uuid":"e-79d39477","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"劲"}}}
+
+data: {"type":"stream_event","uuid":"e-464bbea3","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-ad70a148","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"是"}}}
+
+data: {"type":"stream_event","uuid":"e-fd61e19d","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"跟"}}}
+
+data: {"type":"stream_event","uuid":"e-36065cc2","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"昨天的"}}}
+
+data: {"type":"stream_event","uuid":"e-3d223c95","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"自己"}}}
+
+data: {"type":"stream_event","uuid":"e-dd114846","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"打招呼"}}}
+
+data: {"type":"stream_event","uuid":"e-6567eaa2","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。\n\n"}}}
+
+data: {"type":"stream_event","uuid":"e-0d7f8872","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"你不用"}}}
+
+data: {"type":"stream_event","uuid":"e-c44d14e1","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"跑"}}}
+
+data: {"type":"stream_event","uuid":"e-0226d2f4","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"得"}}}
+
+data: {"type":"stream_event","uuid":"e-1ab0dcd6","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"很快"}}}
+
+data: {"type":"stream_event","uuid":"e-a0a746f4","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-5a3e9eb8","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"只需要"}}}
+
+data: {"type":"stream_event","uuid":"e-ee808a76","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"比"}}}
+
+data: {"type":"stream_event","uuid":"e-d2163774","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"那个"}}}
+
+data: {"type":"stream_event","uuid":"e-40f7e5d0","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"赖"}}}
+
+data: {"type":"stream_event","uuid":"e-e7660196","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"床"}}}
+
+data: {"type":"stream_event","uuid":"e-a528f072","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"的"}}}
+
+data: {"type":"stream_event","uuid":"e-b77cf3dc","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"版本"}}}
+
+data: {"type":"stream_event","uuid":"e-67b40e02","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"，"}}}
+
+data: {"type":"stream_event","uuid":"e-98c210b9","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"多"}}}
+
+data: {"type":"stream_event","uuid":"e-624cec9b","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"坚持"}}}
+
+data: {"type":"stream_event","uuid":"e-c553fe8f","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"了"}}}
+
+data: {"type":"stream_event","uuid":"e-df431faa","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"二"}}}
+
+data: {"type":"stream_event","uuid":"e-c45b86f1","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"十分钟"}}}
+
+data: {"type":"stream_event","uuid":"e-2a18e0c1","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。"}}}
+
+data: {"type":"stream_event","uuid":"e-69996e33","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"就"}}}
+
+data: {"type":"stream_event","uuid":"e-b87acb99","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"赢"}}}
+
+data: {"type":"stream_event","uuid":"e-3f1e1820","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"了一"}}}
+
+data: {"type":"stream_event","uuid":"e-ace08b86","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"整"}}}
+
+data: {"type":"stream_event","uuid":"e-3efdb6de","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"天的"}}}
+
+data: {"type":"stream_event","uuid":"e-4ece759b","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"自己"}}}
+
+data: {"type":"stream_event","uuid":"e-1178b890","parent_tool_use_id":null,"event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"。"}}}
+
+data: {"type":"result","data":{},"sessionId":"task-34a31c95","taskId":"task-34a31c95","model":"deepseek-chat"}
+
+data: {"type":"done","taskId":"task-34a31c95"}
+

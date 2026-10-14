@@ -1,0 +1,17 @@
+﻿CLICKED=64 RESULTS=64
+{"DOM":31,"API":20,"NOOP":13}
+NOOP (no observable effect) count: 13
+  NOOP #/ai-interaction :: 热点内容|
+  NOOP #/knowledge :: 挂载外部库|
+  NOOP #/knowledge :: 新建笔记|
+  NOOP #/calendar :: calendar-toggle-solar-festival
+  NOOP #/calendar :: calendar-toggle-solar-term
+  NOOP #/calendar :: calendar-view-week
+  NOOP #/data-statistics :: 播放/浏览|
+  NOOP #/data-statistics :: 点赞|
+  NOOP #/data-statistics :: 评论|
+  NOOP #/data-statistics :: 分享|
+  NOOP #/data-statistics :: 收藏|
+  NOOP #/monitor :: 刷新|
+  NOOP #/settings :: 通用设置|
+ERRORS: 0

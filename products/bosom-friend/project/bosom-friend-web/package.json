@@ -1,0 +1,8 @@
+{
+  "name": "bosom-friend-web",
+  "version": "0.8.0",
+  "private": true,
+  "description": "Bosom Friend AI 内容创作与多平台营销系统 Web 应用",
+  "main": "src/index.ts"
+}
+

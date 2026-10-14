@@ -1,0 +1,19 @@
+{
+  "base": "http://127.0.0.1:31280/bosom-friend/",
+  "at": "2026-09-10T12:35:23.717Z",
+  "steps": [
+    {
+      "state": "unconfigured",
+      "hit": false,
+      "text": "AI 助手 跟随模式 跟随中 新对话 帮我写一条抖音文案。 "
+    },
+    {
+      "state": "failing",
+      "hit": true,
+      "fellBackToTemplate": false,
+      "text": "AI 助手 跟随模式 跟随中 新对话 帮我写一条抖音文案。 大模型调用失败：未知错误。请检查 API 地址、密钥和模型名后重试。"
+    }
+  ],
+  "configRestored": true,
+  "backupLeft": true
+}

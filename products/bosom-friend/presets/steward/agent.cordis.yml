@@ -1,0 +1,40 @@
+# 总管（steward）：理解那句话，分派给四个管家，汇总后向你汇报。
+# 依据：ADR-005-AGENT《管家 preset 与 Skills 规格》第 3 节；工具面即权限边界（BFS-102）。
+
+# 人设：追加在部署默认提示之后（不用 complete，保留基座的通用能力与安全边界）。
+- id: persona
+  name: '@deepseek-ai/dsh-persona'
+  config:
+    prefix: >-
+      你是 Bosom Friend 的**总管**：用户说一句话，你负责理解、拆解、分派给对应的管家（创作 / 发布 / 运营 / 设备），汇总后向用户汇报。你自己不做创作、不发布、不回复评论——那些是管家的活。
+    suffix: >-
+      汇报只讲三件事：做了什么、结果在页面哪里看得见、下一步是什么。涉及发布、删除、花钱、对外沟通这四类动作时，必须先拿到用户的明确指令；不确定发哪一条、哪个号时先问清楚再动手。
+
+# 工具面：本管家能看到并调用的工具。面之外的工具不注册——对它是「不存在」，
+# 比「注册了再叮嘱别用」可靠（内核插件的 config.tools 支持完整名与前缀星号；单写 `*` = 全量）。
+#
+# 唯一事实源：`presets/roles.json`——内核运行期只读它（经 BF_AGENT_ROLE 生效）。
+# 本段必须与 roles.json 里本角色的列表逐条一致，由 `qa/verify-preset-parity.mjs` 强制；
+# 手改本段会被门禁判红：要改工具面，先改 roles.json，再把同样的列表抄到这里。
+# 本文件是**运行时真正被读的那一份**（2026-10-12 起）：SDK server 按 bosom-jsonrpc 的
+# config.agentPreset 在 agent 工厂 setup 里调 agentPresets.mount()，会话 join 到这里。
+# 所以下面的工具面与技能面都是**生效的声明**，不再是「同一事实的第二份表示」。
+#
+# 总管是唯一「全量面」角色（roles.json 的 steward = ["*"]）：这里也写 `*`，
+# 而不是把当时的工具名抄一份——抄一份就意味着内核每加一个工具这里都要跟，
+# 2026-10-12 的 bosom_task_* 就是这么漏掉的。写 `*` 之后这类漂移结构上不可能发生。
+# 技能面：总管是唯一入口，保持**全量**——默认根（项目 .agents/skills 与用户级技能）＋
+# 五个角色目录＋公共目录。它是唯一需要「什么都能干」的角色。
+# 为什么总管的「全量」也必须写在这里：host 的 skill-filesystem 已 disabled（技能面住 preset），
+# 不写它就成了唯一看不到技能的角色。
+# !!js 整体加引号是必须的：不加引号时 YAML 会把行内的 ? [ 等字符当流式语法，整行解析成别的形状。
+- id: skill-filesystem
+  name: '@deepseek-ai/dsh-skill-filesystem'
+  config:
+    includeDefaultRoots: true
+    customSkillDirs: !!js "[process.env.DSH_HOME + '/.agent-presets/steward/skills', process.env.DSH_HOME + '/.agent-presets/creator/skills', process.env.DSH_HOME + '/.agent-presets/publisher/skills', process.env.DSH_HOME + '/.agent-presets/operator/skills', process.env.DSH_HOME + '/.agent-presets/device/skills']"
+- id: bosom-kernel
+  name: '@deepseek-ai/dsh-bosom-friend-kernel'
+  config:
+    tools:
+      - '*'

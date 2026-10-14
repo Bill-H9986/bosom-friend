@@ -1,0 +1,12 @@
+{
+  "#/": "[[\"ASIDE\",\"group sticky left-0 top-0 hidden h-scree\",0,0,240,900],[\"NAV\",\"flex flex-col gap-3 pr-1\",12,136,215,324],[\"ASIDE\",\"group sticky right-0 top-0 hidden h-scre\",1200,0,240,900]]",
+  "#/draft-box": "[[\"ASIDE\",\"group sticky left-0 top-0 hidden h-scree\",0,0,240,900],[\"NAV\",\"flex flex-col gap-3 pr-1\",12,136,215,324],[\"NAV\",\"page-tabs\",272,52,122,32],[\"ASIDE\",\"group sticky right-0 top-0 hidden h-scre\",1200,0,240,900]]",
+  "#/tasks-history": "[[\"ASIDE\",\"group sticky left-0 top-0 hidden h-scree\",0,0,240,900],[\"NAV\",\"flex flex-col gap-3 pr-1\",12,136,215,324],[\"ASIDE\",\"group sticky right-0 top-0 hidden h-scre\",1200,0,240,900]]",
+  "#/ai-interaction": "[[\"ASIDE\",\"group sticky left-0 top-0 hidden h-scree\",0,0,240,900],[\"NAV\",\"flex flex-col gap-3 pr-1\",12,136,215,324],[\"NAV\",\"page-tabs\",272,52,164,32],[\"NAV\",\"mt-4 overflow-x-auto pb-1 [scrollbar-wid\",328,276,784,92],[\"ASIDE\",\"group sticky right-0 top-0 hidden h-scre\",1200,0,240,900]]",
+  "#/knowledge": "[[\"ASIDE\",\"group sticky left-0 top-0 hidden h-scree\",0,0,240,900],[\"NAV\",\"flex flex-col gap-3 pr-1\",12,136,215,324],[\"NAV\",\"page-tabs\",272,52,108,32],[\"ASIDE\",\"flex w-60 shrink-0 flex-col border-r bor\",272,128,240,740],[\"ASIDE\",\"hidden w-56 shrink-0 flex-col border-l b\",944,128,224,740],[\"ASIDE\",\"group sticky right-0 top-0 hidden h-scre\",1200,0,240,900]]",
+  "#/calendar": "[[\"ASIDE\",\"group sticky left-0 top-0 hidden h-scree\",0,0,240,900],[\"NAV\",\"flex flex-col gap-3 pr-1\",12,136,215,324],[\"ASIDE\",\"group sticky right-0 top-0 hidden h-scre\",1200,0,240,900]]",
+  "#/data-statistics": "[[\"ASIDE\",\"group sticky left-0 top-0 hidden h-scree\",0,0,240,900],[\"NAV\",\"flex flex-col gap-3 pr-1\",12,136,215,324],[\"ASIDE\",\"group sticky right-0 top-0 hidden h-scre\",1200,0,240,900]]",
+  "#/monitor": "[[\"ASIDE\",\"group sticky left-0 top-0 hidden h-scree\",0,0,240,900],[\"NAV\",\"flex flex-col gap-3 pr-1\",12,136,215,324],[\"ASIDE\",\"group sticky right-0 top-0 hidden h-scre\",1200,0,240,900]]",
+  "#/settings": "[[\"ASIDE\",\"group sticky left-0 top-0 hidden h-scree\",0,0,240,900],[\"NAV\",\"flex flex-col gap-3 pr-1\",12,136,215,324],[\"NAV\",\"page-tabs\",272,52,374,32],[\"ASIDE\",\"group sticky right-0 top-0 hidden h-scre\",1200,0,240,900]]",
+  "#/accounts": "[[\"ASIDE\",\"group sticky left-0 top-0 hidden h-scree\",0,0,240,900],[\"NAV\",\"flex flex-col gap-3 pr-1\",12,136,215,324],[\"ASIDE\",\"group sticky right-0 top-0 hidden h-scre\",1200,0,240,900]]"
+}

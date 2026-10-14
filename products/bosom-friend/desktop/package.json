@@ -1,0 +1,9 @@
+{
+  "name": "bosom-friend-desktop",
+  "productName": "Bosom Friend",
+  "author": "Bosom Friend",
+  "version": "0.4.0",
+  "description": "Bosom Friend 0.3.0 桌面壳：DSH 内核宿主与自研前端容器（内置 Agnes AI 官方模型 + 长视频每镜旁白 + 内置浏览器保留登录态）",
+  "main": "electron/main.cjs",
+  "private": true
+}

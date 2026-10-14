@@ -1,0 +1,18 @@
+{
+  // DEF-240-IMPLEMENT-3 隔离测试专用：只解决 @web/* 别名，不参与产品构建。
+  // baseUrl 以本文件所在目录为基准，因此从 qa/isolation 回到前端 src 需要上两级。
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@web/*": ["../../project/bosom-friend-web/src/*"]
+    }
+  }
+}

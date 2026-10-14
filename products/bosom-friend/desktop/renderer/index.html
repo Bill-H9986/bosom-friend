@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
+    >
+    <title>Bosom Friend</title>
+    <style>
+      body { font-family: "Microsoft YaHei", sans-serif; background: #ffffff; color: #111827; margin: 0; }
+      main { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 0 32px; text-align: center; }
+      img { width: 96px; height: 96px; }
+      h1 { font-size: 24px; margin: 0; font-weight: 600; }
+      .hint { color: #6b7280; margin: 0; max-width: 560px; line-height: 1.7; }
+      .version { color: #9ca3af; font-size: 13px; margin: 0; }
+      .tier { display: none; color: #6b7280; font-size: 13px; margin: 0; }
+      .tier[data-open="true"] { display: block; }
+      .problem { display: none; max-width: 560px; border: 1px solid #fecaca; background: #fef2f2; color: #b91c1c; border-radius: 10px; padding: 14px 16px; font-size: 14px; line-height: 1.7; text-align: left; }
+      .problem[data-open="true"] { display: block; }
+      .actions { display: none; gap: 10px; }
+      .actions[data-open="true"] { display: flex; }
+      button { font: inherit; font-size: 14px; padding: 8px 18px; border-radius: 8px; cursor: pointer; border: 1px solid #d1d5db; background: #ffffff; color: #111827; }
+      button.primary { border-color: #7c3aed; background: #7c3aed; color: #ffffff; }
+      button:disabled { opacity: .5; cursor: default; }
+
+      /* 启动进度条：宽度只由主进程上报的真实里程碑决定；测不出长度的阶段走条纹不确定态，
+         绝不按时间假装百分比（用户要能区分「在动」与「卡死」）。 */
+      .progress { width: min(420px, 100%); display: flex; flex-direction: column; gap: 8px; margin-top: 2px; }
+      .progress-track { position: relative; height: 6px; border-radius: 999px; background: #ede9fe; overflow: hidden; }
+      .progress-fill { height: 100%; width: 0%; border-radius: 999px; background: #7c3aed; transition: width .35s ease; }
+      .progress-meta { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; color: #4b5563; }
+      .progress-percent { font-variant-numeric: tabular-nums; }
+      .progress-detail { min-height: 18px; margin: 0; font-size: 12px; color: #9ca3af; }
+      /* 不确定态：填充长度仍等于真实进度，只用一条来回扫的光带表示"在工作"。
+         绝不用满格条纹冒充进度——那会让 6% 看起来像 100%。 */
+      .progress-sweep { position: absolute; top: 0; bottom: 0; left: 0; width: 30%; display: none; border-radius: 999px; background: linear-gradient(90deg, rgba(124, 58, 237, 0), rgba(124, 58, 237, .55), rgba(124, 58, 237, 0)); }
+      .progress[data-mode="indeterminate"] .progress-sweep { display: block; animation: bf-progress-sweep 1.4s ease-in-out infinite; }
+      @keyframes bf-progress-sweep { 0% { transform: translateX(-100%); } 100% { transform: translateX(333%); } }
+      .elapsed { margin: 0; font-size: 12px; color: #9ca3af; font-variant-numeric: tabular-nums; }
+      @media (prefers-reduced-motion: reduce) {
+        .progress-fill { transition: none; }
+        .progress[data-mode="indeterminate"] .progress-sweep { animation: none; opacity: .35; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="logo.png" alt="Bosom Friend">
+      <h1>Bosom Friend</h1>
+      <p class="hint" data-role="hint">正在启动，请稍候…</p>
+      <div class="progress" data-role="progress" data-mode="indeterminate">
+        <div
+          class="progress-track"
+          role="progressbar"
+          aria-labelledby="bf-progress-stage"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow="0"
+          aria-busy="true"
+          data-role="progressbar"
+        >
+          <div class="progress-fill" data-role="progress-fill"></div>
+          <div class="progress-sweep" data-role="progress-sweep"></div>
+        </div>
+        <div class="progress-meta">
+          <span id="bf-progress-stage" data-role="progress-stage">正在准备…</span>
+          <span class="progress-percent" data-role="progress-percent">0%</span>
+        </div>
+        <p class="progress-detail" data-role="progress-detail"></p>
+      </div>
+      <p class="elapsed" data-role="elapsed"></p>
+      <p class="tier" data-role="tier" data-open="false"></p>
+      <div class="problem" data-role="problem" data-open="false"></div>
+      <div class="actions" data-role="actions" data-open="false">
+        <button class="primary" data-role="retry">重试启动</button>
+        <button data-role="quit">完全退出</button>
+      </div>
+      <p class="version">版本 <code data-role="version">加载中…</code></p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

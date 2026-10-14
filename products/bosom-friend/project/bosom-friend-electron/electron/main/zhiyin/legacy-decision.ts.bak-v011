@@ -1,0 +1,40 @@
+/**
+ * 旧接待轮询 → 内核的统一决策桥
+ *
+ * 返回 null 表示内核不可用，调用方回退旧后端接口（迁移期兜底）。
+ */
+import { getKernelRuntime } from '../zhiyin-kernel-host';
+
+export interface ReceptionDecision {
+  matched: boolean;
+  reply?: string;
+}
+
+export async function decideReception(params: {
+  message: string;
+  platform?: string;
+  source?: 'comment' | 'dm';
+}): Promise<ReceptionDecision | null> {
+  const runtime = getKernelRuntime();
+  if (!runtime) return null;
+  try {
+    const result = (await runtime.invoke('automation.decide', {
+      kind: params.source === 'dm' ? 'dm' : 'comment',
+      content: params.message,
+      platform: params.platform,
+    })) as {
+      ok?: boolean;
+      data?: { matched?: boolean; reply?: string };
+    } | null;
+    if (!result || typeof result !== 'object') return null;
+    if (result.ok && result.data) {
+      return {
+        matched: result.data.matched === true,
+        reply: result.data.reply,
+      };
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}

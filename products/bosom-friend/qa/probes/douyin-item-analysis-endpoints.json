@@ -1,0 +1,183 @@
+[
+  {
+    "path": "/janus/douyin/creator/data/item_analysis/involved_vertical",
+    "http": 200,
+    "keys": [
+      "primary_verticals",
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": 0,
+    "status_msg": "",
+    "head": "{\"primary_verticals\":[],\"status_code\":0,\"status_msg\":\"\"}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/item_analysis/overview?item_id=7590012672851119410",
+    "http": 200,
+    "keys": [
+      "average_comment_count_per_video",
+      "average_like_count_per_video",
+      "average_play_duration",
+      "average_share_count_per_video",
+      "bounce_rate_2s",
+      "completion_rate_5s",
+      "cover_click_ratio",
+      "median_play_count",
+      "status_code",
+      "status_msg",
+      "submission_count"
+    ],
+    "status_code": 0,
+    "status_msg": "",
+    "head": "{\"average_comment_count_per_video\":{\"metric_name\":\"条均评论量\"},\"average_like_count_per_video\":{\"metric_name\":\"条均点赞数\"},\"average_play_duration\":{\"metric_name\":\"条均播放时长"
+  },
+  {
+    "path": "/janus/douyin/creator/data/item_analysis/detail?item_id=7590012672851119410",
+    "http": 200,
+    "keys": [
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": null,
+    "status_msg": "",
+    "head": "{\"status_code\":null,\"status_msg\":null}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/item_analysis/trend?item_id=7590012672851119410",
+    "http": 200,
+    "keys": [
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": null,
+    "status_msg": "",
+    "head": "{\"status_code\":null,\"status_msg\":null}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/item_analysis/base?item_id=7590012672851119410",
+    "http": 200,
+    "keys": [
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": null,
+    "status_msg": "",
+    "head": "{\"status_code\":null,\"status_msg\":null}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/item_analysis/source?item_id=7590012672851119410",
+    "http": 200,
+    "keys": [
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": null,
+    "status_msg": "",
+    "head": "{\"status_code\":null,\"status_msg\":null}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/item_analysis/audience?item_id=7590012672851119410",
+    "http": 200,
+    "keys": [
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": null,
+    "status_msg": "",
+    "head": "{\"status_code\":null,\"status_msg\":null}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/item_analysis/video?item_id=7590012672851119410",
+    "http": 200,
+    "keys": [
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": null,
+    "status_msg": "",
+    "head": "{\"status_code\":null,\"status_msg\":null}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/item_analysis/content?item_id=7590012672851119410",
+    "http": 200,
+    "keys": [
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": null,
+    "status_msg": "",
+    "head": "{\"status_code\":null,\"status_msg\":null}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/item_analysis/item?item_id=7590012672851119410",
+    "http": 200,
+    "keys": [
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": null,
+    "status_msg": "",
+    "head": "{\"status_code\":null,\"status_msg\":null}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/item_analysis/stat?item_id=7590012672851119410",
+    "http": 200,
+    "keys": [
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": null,
+    "status_msg": "",
+    "head": "{\"status_code\":null,\"status_msg\":null}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/item_analysis/play?item_id=7590012672851119410",
+    "http": 200,
+    "keys": [
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": null,
+    "status_msg": "",
+    "head": "{\"status_code\":null,\"status_msg\":null}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/item/list?count=10&cursor=0",
+    "http": 200,
+    "keys": [
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": null,
+    "status_msg": "",
+    "head": "{\"status_code\":null,\"status_msg\":null}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/content/item/list?count=10&cursor=0",
+    "http": 200,
+    "keys": [
+      "status_code",
+      "status_msg"
+    ],
+    "status_code": null,
+    "status_msg": "",
+    "head": "{\"status_code\":null,\"status_msg\":null}"
+  },
+  {
+    "path": "/janus/douyin/creator/data/overview/item_contribution_top?dimension=1&recent_days=7",
+    "http": 200,
+    "keys": [
+      "date_range",
+      "dimension",
+      "english_metric_name",
+      "items",
+      "metric_name",
+      "status_code",
+      "status_msg",
+      "value_type"
+    ],
+    "status_code": 0,
+    "status_msg": "",
+    "head": "{\"date_range\":{\"end_date\":\"20260912\",\"start_date\":\"20260906\"},\"dimension\":1,\"english_metric_name\":\"play_cnt\",\"items\":[{\"item_id\":7682660673825869119,\"metric_val"
+  }
+]

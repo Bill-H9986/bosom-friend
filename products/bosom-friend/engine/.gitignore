@@ -1,0 +1,7 @@
+# engine 自有源码入库；依赖、运行时与采集产物不入库
+.venv/
+__pycache__/
+social-auto-upload/
+_exam_evidence/
+_probe_shots/
+*.log

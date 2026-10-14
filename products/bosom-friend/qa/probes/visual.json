@@ -1,0 +1,185 @@
+{
+ "#/": {
+  "overflowX": false,
+  "widest": [
+   "pointer-events-none fixed inset-0 z-0 opacity-80"
+  ],
+  "broken": 0,
+  "spinners": 0,
+  "dialogs": 0,
+  "zeroH": 0,
+  "nothing": false,
+  "headings": [
+   "Bosom\nFriend",
+   "Bosom Friend AI 内容创作营销",
+   "精选示例",
+   "金丝雀码头探店打卡视频",
+   "餐厅探店短视频"
+  ],
+  "tinyBtns": 1,
+  "len": 1287,
+  "verdict": "PASS"
+ },
+ "#/draft-box": {
+  "overflowX": false,
+  "widest": [],
+  "broken": 0,
+  "spinners": 0,
+  "dialogs": 0,
+  "zeroH": 0,
+  "nothing": false,
+  "headings": [
+   "Bosom\nFriend",
+   "内容创作",
+   "全部",
+   "温馨提示"
+  ],
+  "tinyBtns": 2,
+  "len": 452,
+  "verdict": "PASS"
+ },
+ "#/tasks-history": {
+  "overflowX": false,
+  "widest": [],
+  "broken": 0,
+  "spinners": 0,
+  "dialogs": 0,
+  "zeroH": 0,
+  "nothing": false,
+  "headings": [
+   "Bosom\nFriend",
+   "任务记录",
+   "温馨提示"
+  ],
+  "tinyBtns": 1,
+  "len": 345,
+  "verdict": "PASS"
+ },
+ "#/ai-interaction": {
+  "overflowX": false,
+  "widest": [],
+  "broken": 0,
+  "spinners": 0,
+  "dialogs": 0,
+  "zeroH": 0,
+  "nothing": false,
+  "headings": [
+   "Bosom\nFriend",
+   "AI互动",
+   "热点内容",
+   "平台导航",
+   "实时热榜"
+  ],
+  "tinyBtns": 2,
+  "len": 365,
+  "verdict": "PASS"
+ },
+ "#/knowledge": {
+  "overflowX": false,
+  "widest": [],
+  "broken": 0,
+  "spinners": 0,
+  "dialogs": 0,
+  "zeroH": 0,
+  "nothing": false,
+  "headings": [
+   "Bosom\nFriend",
+   "知识库",
+   "反向链接",
+   "温馨提示"
+  ],
+  "tinyBtns": 1,
+  "len": 391,
+  "verdict": "PASS"
+ },
+ "#/calendar": {
+  "overflowX": false,
+  "widest": [],
+  "broken": 0,
+  "spinners": 0,
+  "dialogs": 0,
+  "zeroH": 0,
+  "nothing": false,
+  "headings": [
+   "Bosom\nFriend",
+   "温馨提示"
+  ],
+  "tinyBtns": 6,
+  "len": 506,
+  "verdict": "PASS"
+ },
+ "#/data-statistics": {
+  "overflowX": false,
+  "widest": [],
+  "broken": 0,
+  "spinners": 0,
+  "dialogs": 0,
+  "zeroH": 0,
+  "nothing": false,
+  "headings": [
+   "Bosom\nFriend",
+   "增长趋势",
+   "平台贡献",
+   "平台效率",
+   "作品排行"
+  ],
+  "tinyBtns": 1,
+  "len": 508,
+  "verdict": "PASS"
+ },
+ "#/monitor": {
+  "overflowX": false,
+  "widest": [],
+  "broken": 0,
+  "spinners": 0,
+  "dialogs": 0,
+  "zeroH": 0,
+  "nothing": false,
+  "headings": [
+   "Bosom\nFriend",
+   "全局监控中心7×24 常驻自动监控中",
+   "温馨提示"
+  ],
+  "tinyBtns": 1,
+  "len": 789,
+  "verdict": "PASS"
+ },
+ "#/settings": {
+  "overflowX": false,
+  "widest": [],
+  "broken": 0,
+  "spinners": 0,
+  "dialogs": 0,
+  "zeroH": 0,
+  "nothing": false,
+  "headings": [
+   "Bosom\nFriend",
+   "设置",
+   "个人资料",
+   "通用设置",
+   "温馨提示"
+  ],
+  "tinyBtns": 1,
+  "len": 421,
+  "verdict": "PASS"
+ },
+ "#/accounts": {
+  "overflowX": false,
+  "widest": [],
+  "broken": 0,
+  "spinners": 0,
+  "dialogs": 1,
+  "zeroH": 0,
+  "nothing": false,
+  "headings": [
+   "Bosom\nFriend",
+   "账号管理",
+   "我的账号",
+   "自动接待",
+   "温馨提示"
+  ],
+  "tinyBtns": 3,
+  "len": 629,
+  "verdict": "PASS"
+ }
+}

@@ -1,0 +1,49 @@
+{
+  "page": {
+    "title": "Data Statistics",
+    "subtitle": "Aggregated performance of your published content",
+    "updatedAt": "Updated {{date}}",
+    "noCapturedAt": "No update time yet",
+    "updateProgress": "{{updated}}/{{total}} works updated",
+    "updateProgressPartial": "{{updated}}/{{total}} works updated ({{zeroOnly}} returned 0 this sync, no real values)"
+  },
+  "filters": {
+    "platform": "Platform",
+    "allPlatforms": "All platforms",
+    "dateRange": "Date range",
+    "selectPlatform": "Select platform"
+  },
+  "actions": {
+    "query": "Query",
+    "refresh": "Refresh"
+  },
+  "dashboard": {
+    "metrics": {
+      "workCount": "Works",
+      "publishedWorkCount": "Published",
+      "views": "Views",
+      "likes": "Likes",
+      "comments": "Comments",
+      "shares": "Shares",
+      "favorites": "Favorites"
+    },
+    "growthTitle": "Growth Trend",
+    "growthMetric": "Metric",
+    "metricUnavailable": "The platform returned no “{{metric}}” value this time and there is no other engagement metric to compare; nothing is estimated here.",
+    "metricUnavailableShort": "No data this time",
+    "metricNotCollected": "“{{metric}}” was not collected in this sync (other engagement metrics have real values). Retry the sync; nothing is estimated here.",
+    "metricNotCollectedShort": "Not collected — retry sync",
+    "metricNoSignal": "The platform returned no “{{metric}}” value this time and there is no other engagement metric to compare; nothing is estimated here.",
+    "metricNoSignalShort": "No data this time",
+    "platformContributionTitle": "Platform Contribution",
+    "platformEfficiencyTitle": "Platform Efficiency",
+    "topWorksTitle": "Top Works"
+  },
+  "states": {
+    "untitled": "Untitled work",
+    "noData": "No data",
+    "noPublished": "No published works yet. Create your first content now.",
+    "noCaptured": "Works published but data not captured yet. Syncing…",
+    "loadFailed": "Failed to load data. Please retry."
+  }
+}

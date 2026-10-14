@@ -1,0 +1,16 @@
+{
+  "route": "#/draft-box",
+  "detail": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "nodes": [
+        {
+          "t": "._addButtonExpanded_19du4_85",
+          "a": null,
+          "c": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute do"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "name": "qa-guard2",
+  "runAt": "2026-10-14T01:26:51.412Z",
+  "pass": 28,
+  "total": 28,
+  "items": [
+    {
+      "n": "A11Y-#/",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/draft-box",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/tasks-history",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/ai-interaction",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/knowledge",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/calendar",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/data-statistics",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/monitor",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/settings",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "A11Y-#/accounts",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "VISUAL-布局指纹稳定(基线对比)",
+      "pass": true,
+      "d": "10 routes unchanged vs frozen baseline"
+    },
+    {
+      "n": "SELF-CHECK-视觉注入可检测(漏h层)",
+      "pass": true,
+      "d": "injected overlay detected=true"
+    },
+    {
+      "n": "SELF-CHECK-毒丸A-axe能抓无名称按钮(防检测器失灵)",
+      "pass": true,
+      "d": "caught=true"
+    },
+    {
+      "n": "SELF-CHECK-毒丸B-axe能抓低对比文本(防检测器失灵)",
+      "pass": true,
+      "d": "perElement=false perDoc=true"
+    },
+    {
+      "n": "SELF-CHECK-毒丸C-axe能抓非法ARIA角色(防检测器失灵)",
+      "pass": true,
+      "d": "caught=true"
+    },
+    {
+      "n": "PERF-LCP<4000ms(未采集=FAIL防假阳性)",
+      "pass": true,
+      "d": "{\"lcp\":396,\"cls\":0,\"resources\":47,\"bytesMB\":6.7,\"lcpElement\":\"\"}"
+    },
+    {
+      "n": "PERF-CLS<=0.15",
+      "pass": true,
+      "d": "cls=0"
+    },
+    {
+      "n": "LOGO-品牌区无重叠(按钮与logo不同时可见/不相交)",
+      "pass": true,
+      "d": "{\"result\":\"ok\",\"expandedCentered\":true,\"asideW\":240}"
+    },
+    {
+      "n": "LOGO-右侧展开态-紧凑头部(32px logo+AI助手+32px收起钮)",
+      "pass": true,
+      "d": "{\"result\":\"ok\",\"imgW\":32,\"word\":\"AI助手\",\"btnSizeOK\":true,\"leftAligned\":true}"
+    },
+    {
+      "n": "LOGO/INPUT-右侧输入框紧凑(高度≤190px,规范圆角12px)",
+      "pass": true,
+      "d": "[前端固定 0.2.62 · 本条不适用] {\"result\":\"elements-missing\"}"
+    },
+    {
+      "n": "AI面板-默认展开(约240px，旧版行为)",
+      "pass": true,
+      "d": "{\"ok\":true,\"width\":240,\"expandBtn\":false}"
+    },
+    {
+      "n": "AI面板-展开态有关闭按钮(定位不许再静默失效)",
+      "pass": true,
+      "d": "collapse-btn found=true"
+    },
+    {
+      "n": "AI面板-收起后-插话入口可见(让路给主区)",
+      "pass": true,
+      "d": "expand-btn visible=true"
+    },
+    {
+      "n": "AI面板-点插话入口后-面板重新展开(约240px)",
+      "pass": true,
+      "d": "{\"ok\":true,\"width\":240}"
+    },
+    {
+      "n": "LOGO-官网Hero粒子场(点面Logo不拦截事件)",
+      "pass": true,
+      "d": "{\"result\":\"ok\",\"w\":960,\"h\":899,\"pe\":\"none\",\"aria\":\"true\"}"
+    },
+    {
+      "n": "LOGO-官网Hero粒子场-动画进行中(5 帧里至少两种画面)",
+      "pass": true,
+      "d": "distinct=5 len=13410"
+    },
+    {
+      "n": "LOGO-旧书签#/about落到首屏(官网与首屏同一页，不再重复)",
+      "pass": true,
+      "d": "{\"hash\":\"#/\",\"particle\":true}"
+    },
+    {
+      "n": "TITLE-功能页标题符合906.6层级(存在则须≥20px/600)",
+      "pass": true,
+      "d": "各页无标题或层级合规"
+    }
+  ]
+}

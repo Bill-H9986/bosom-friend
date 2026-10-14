@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-14T01:24:15.774Z",
+  "lines": {
+    "server/src/api.ts": 8698,
+    "server/src/long-video.ts": 2111,
+    "server/src/routes-content.ts": 1686,
+    "server/src/routes-channels.ts": 1439,
+    "kernel/src/index.ts": 4082
+  }
+}

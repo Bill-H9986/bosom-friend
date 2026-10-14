@@ -1,0 +1,14 @@
+﻿</main></div><button id="top" title="回到顶部">↑</button><div id="lb"><img id="lbi" alt=""></div>
+<script>var bar=document.getElementById('bar'),btnTop=document.getElementById('top');
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);bar.style.width=(p*100)+'%';if(h.scrollTop>520){btnTop.classList.add('show');}else{btnTop.classList.remove('show');}});
+btnTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+var lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
+document.querySelectorAll('main img').forEach(function(im){im.addEventListener('click',function(){lbi.src=im.src;lb.style.display='flex';});});
+lb.addEventListener('click',function(){lb.style.display='none';});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){lb.style.display='none';}});
+try{
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.05});
+document.querySelectorAll('.reveal').forEach(function(x){io.observe(x);});
+var spy=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var ls=document.querySelectorAll('nav.side a');ls.forEach(function(x){x.classList.remove('on');});var l=document.querySelector('nav.side a[href="#'+en.target.id+'"]');if(l){l.classList.add('on');}}});},{rootMargin:'-18% 0px -72% 0px'});
+document.querySelectorAll('section.card').forEach(function(s){spy.observe(s);});
+}catch(e){}</script><script>var _b=document.querySelector('a.brand');if(_b){_b.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});}</script></body></html>

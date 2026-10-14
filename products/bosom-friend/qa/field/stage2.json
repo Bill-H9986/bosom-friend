@@ -1,0 +1,34 @@
+{
+  "ranAt": "2026-08-28T08:37:25.968Z",
+  "results": [
+    {
+      "n": "重启后对话任务保留",
+      "pass": true,
+      "d": "list=2"
+    },
+    {
+      "n": "重启后发布记录保留",
+      "pass": true,
+      "d": "count=1"
+    },
+    {
+      "n": "任务记录页含历史对话",
+      "pass": true,
+      "d": "len=202"
+    },
+    {
+      "n": "重启后生成记录保留",
+      "pass": true,
+      "d": "count=2"
+    },
+    {
+      "n": "全程页面零错误",
+      "pass": true,
+      "d": ""
+    }
+  ],
+  "shots": [
+    "11-after-restart.png"
+  ],
+  "pageErrors": []
+}

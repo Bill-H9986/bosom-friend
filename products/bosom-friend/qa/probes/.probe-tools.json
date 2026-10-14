@@ -1,0 +1,16 @@
+[
+  "bosom_content_generate_script",
+  "bosom_content_list_drafts",
+  "bosom_content_update_draft",
+  "bosom_data_dashboard",
+  "bosom_job_list",
+  "bosom_kernel_ping",
+  "bosom_material_list",
+  "bosom_platform_list_accounts",
+  "bosom_platform_login_status",
+  "bosom_platform_sync_works",
+  "bosom_reception_list_pending",
+  "skill",
+  "web_fetch",
+  "web_search"
+]

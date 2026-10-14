@@ -1,0 +1,57 @@
+## 1 draft-generation/v2 create: {"code":0,"data":{"taskIds":["gen-8e11e52a"]},"message":"ok"}
+poll 5s status=generating
+poll 10s status=generating
+poll 15s status=generating
+poll 20s status=generating
+poll 25s status=generating
+poll 30s status=generating
+poll 35s status=generating
+poll 40s status=generating
+poll 45s status=generating
+poll 50s status=generating
+poll 55s status=generating
+poll 60s status=generating
+poll 65s status=generating
+poll 70s status=generating
+poll 75s status=generating
+poll 80s status=generating
+poll 85s status=generating
+poll 90s status=generating
+poll 95s status=generating
+poll 100s status=generating
+poll 105s status=generating
+poll 110s status=generating
+poll 115s status=generating
+poll 120s status=generating
+poll 125s status=generating
+poll 130s status=generating
+poll 135s status=generating
+poll 140s status=generating
+poll 145s status=generating
+poll 150s status=generating
+poll 155s status=generating
+poll 160s status=generating
+poll 165s status=generating
+poll 170s status=generating
+poll 175s status=generating
+poll 180s status=generating
+poll 185s status=generating
+poll 190s status=generating
+poll 195s status=generating
+poll 200s status=generating
+poll 205s status=generating
+poll 210s status=generating
+poll 215s status=generating
+poll 220s status=generating
+poll 225s status=generating
+poll 230s status=generating
+poll 235s status=generating
+poll 240s status=generating
+## 1 draft settle final: STILL GENERATING after 240s: {"code":0,"data":[{"id":"gen-8e11e52a","status":"generating","points":0,"createdAt":"2026-09-07T06:48:48.251Z","updatedAt":"2026-09-07T06:49:38.845Z","request":{"groupId":"mg-persist","kind":"video","prompt":"晨跑","duration":0,"resolution":"","aspectRatio":"","quantity":1,"imageCount":1},"response":{"title":"晨跑｜口播脚本","description":"\n以下是可直接发布的完整内容：\n\n---\n\n**标题：** 早起跑步的人，后来都怎么样了？\n\n**口播正文（60秒）：**\n\n（0-3秒 画面：闹钟响起，手按掉闹钟，特写）\n很多人问我，晨跑最难的是什么？不是距离，是起床。\n\n（3-15秒 画面：系鞋带，出门，第一口呼吸冷空气，眼神坚定）\n以前我赖床到最后一秒，直到我发现，晨跑带来的那种\"我赢了一天\"的掌控感，是任何咖啡都给不了的。\n\n（15-40秒 画面：跑步过程中的城市空镜、日出、汗水滴落、节奏感剪辑）\n清晨6点，城市还没醒，但你的身体已经热了。这种多巴胺是纯粹的、持久的，它会让你一整天都专注、不焦虑。哪怕只跑20分钟，那种通透感，足以抵消一整天的疲惫。\n\n（40-55秒 画面：跑完拉伸，对着镜头微笑，展示运动手表数据）\n别想太多，别等\"有状态\"再开始。穿上鞋，迈出第一步，就是胜利。\n\n（55-60秒 画面：黑屏字幕）\n明天早上6点，操场见？\n\n**话题标签：**\n`#晨跑` `#自律` `#早起打卡` `#运动改变生活` `#跑步日记`\n\n---\n\n✅ 草稿已保存至平台（ID: `5bf54c7d-ce2d-43bf-934e-d9d9bf9534b5`）","topics":["#干货","#晨跑"],"imageUrls":["/bosom-friend/api/assets/file/ai-img-269c15cc.png"],"generatedImageCount":1,"generatedBy":"ai","generatedModel":"agnes-image-2.5-flash","coverUrl":"/bosom-friend/api/assets/file/ai-img-269c15cc.png"}}],"message":"ok"}
+## 2 douyin searchTopic: status=200 {"code":0,"data":[],"message":"ok"}
+## 3 agent-collect#0: status=200 code=0 items=14 insight="已从全网采集 14 条与「咖啡」相关的小红书内容，结果均保留原文链接。" isSample=false source=agent
+## 3 agent-collect#1: status=200 code=0 items=14 insight="已从全网采集 14 条与「咖啡」相关的小红书内容，结果均保留原文链接。" isSample=false source=agent
+## 4 hot feed itemLimit=5: status=200 code=0 items=5 freshness=fresh first={"rank":1,"title":"家长群 教师负担","heatText":"1607992","targetUrl":"https://s.weibo.com/weibo?q=%23%E5%AE%B6%E9%95%BF%E7%BE%A4+%E6%95%99%E5%B8%88%E8%B4%9F%E6%8B%85%23"}
+## 4 hot feed itemLimit=3: status=200 code=0 items=3 freshness=fresh first={"rank":1,"title":"家长群 教师负担","heatText":"1607992","targetUrl":"https://s.weibo.com/weibo?q=%23%E5%AE%B6%E9%95%BF%E7%BE%A4+%E6%95%99%E5%B8%88%E8%B4%9F%E6%8B%85%23"}
+## 5 miniapp auth: status=200 {"code":50100,"data":null,"message":"抖音小程序授权完成回调尚未接入，当前不会伪装成功"}
+## 6 work validate: status=200 {"code":50100,"data":null,"message":"平台作品归属校验尚未接入真实验证，当前不会伪造已通过"}

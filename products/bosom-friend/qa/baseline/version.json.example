@@ -1,0 +1,6 @@
+{
+  "version": "0.2.59",
+  "url": "https://github.com/Bill-H9986/zhiyin/releases/latest/download/BosomFriend-Setup-0.2.59.exe",
+  "notes": "融合创作（数字人 + 文生视频 B-roll）、长视频字数门槛前置提示、知识库检索修复。",
+  "minimum": "0.2.50"
+}

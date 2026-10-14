@@ -1,0 +1,27 @@
+{
+  "privacyPolicy": {
+    "title": "Politique de confidentialité - Comment nous protégeons vos données",
+    "description": "Lisez la politique de confidentialité d'Bosom Friend pour comprendre comment nous collectons, utilisons, stockons et protégeons vos informations personnelles.",
+    "keywords": "politique de confidentialité, protection des données, informations personnelles, conformité RGPD, sécurité des données, Bosom Friend"
+  },
+  "termsOfService": {
+    "title": "Conditions d'utilisation - Accord utilisateur et directives",
+    "description": "Consultez les conditions d'utilisation d'Bosom Friend couvrant les droits des utilisateurs, les directives de contenu, les conditions de paiement et les règles d'utilisation.",
+    "keywords": "conditions d'utilisation, accord utilisateur, règles de la plateforme, directives de contenu, conditions de paiement, Bosom Friend"
+  },
+  "dataDeletion": {
+    "title": "Guide de suppression des données - Supprimer votre compte",
+    "description": "Instructions étape par étape pour supprimer votre compte Bosom Friend et vos données personnelles. Informations sur les politiques de conservation des données.",
+    "keywords": "suppression des données, suppression de compte, droits à la vie privée, effacement des données, supprimer compte, Bosom Friend"
+  },
+  "dataProtection": {
+    "title": "Accord de protection des données - RGPD et conformité",
+    "description": "L'accord de protection des données d'Bosom Friend décrit les normes de traitement des données conformes au RGPD, les mesures de sécurité et vos droits.",
+    "keywords": "protection des données, conformité RGPD, traitement des données, sécurité des données, droits à la vie privée, Bosom Friend"
+  },
+  "extensionPrivacy": {
+    "title": "Confidentialité de l'extension - Utilisation des données et permissions",
+    "description": "Découvrez comment l'extension de navigateur Bosom Friend gère vos données. Informations sur les permissions et les mesures de sécurité.",
+    "keywords": "confidentialité extension, extension navigateur, extension Chrome, permissions données, Bosom Friend extension"
+  }
+}

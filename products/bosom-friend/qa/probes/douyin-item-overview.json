@@ -1,0 +1,115 @@
+{
+  "7590012672851119410": {
+    "average_comment_count_per_video": {
+      "metric_name": "条均评论量"
+    },
+    "average_like_count_per_video": {
+      "metric_name": "条均点赞数"
+    },
+    "average_play_duration": {
+      "metric_name": "条均播放时长"
+    },
+    "average_share_count_per_video": {
+      "metric_name": "条均分享量"
+    },
+    "bounce_rate_2s": {
+      "metric_name": "条均2s跳出率"
+    },
+    "completion_rate_5s": {
+      "metric_name": "条均5s完播率"
+    },
+    "cover_click_ratio": {
+      "metric_name": "条均点击率"
+    },
+    "median_play_count": {
+      "metric_name": "播放量中位数"
+    },
+    "status_code": 0,
+    "status_msg": "",
+    "submission_count": {
+      "metric_name": "周期内投稿量"
+    }
+  },
+  "7587420732767816986": {
+    "average_comment_count_per_video": {
+      "metric_name": "条均评论量"
+    },
+    "average_like_count_per_video": {
+      "metric_name": "条均点赞数"
+    },
+    "average_play_duration": {
+      "metric_name": "条均播放时长"
+    },
+    "average_share_count_per_video": {
+      "metric_name": "条均分享量"
+    },
+    "bounce_rate_2s": {
+      "metric_name": "条均2s跳出率"
+    },
+    "completion_rate_5s": {
+      "metric_name": "条均5s完播率"
+    },
+    "cover_click_ratio": {
+      "metric_name": "条均点击率"
+    },
+    "median_play_count": {
+      "metric_name": "播放量中位数"
+    },
+    "status_code": 0,
+    "status_msg": "",
+    "submission_count": {
+      "metric_name": "周期内投稿量"
+    }
+  },
+  "7586620032134778150": {
+    "average_comment_count_per_video": {
+      "metric_name": "条均评论量"
+    },
+    "average_like_count_per_video": {
+      "metric_name": "条均点赞数"
+    },
+    "average_play_duration": {
+      "metric_name": "条均播放时长"
+    },
+    "average_share_count_per_video": {
+      "metric_name": "条均分享量"
+    },
+    "bounce_rate_2s": {
+      "metric_name": "条均2s跳出率"
+    },
+    "completion_rate_5s": {
+      "metric_name": "条均5s完播率"
+    },
+    "cover_click_ratio": {
+      "metric_name": "条均点击率"
+    },
+    "median_play_count": {
+      "metric_name": "播放量中位数"
+    },
+    "status_code": 0,
+    "status_msg": "",
+    "submission_count": {
+      "metric_name": "周期内投稿量"
+    }
+  },
+  "_contribution_top": {
+    "date_range": {
+      "end_date": "20260912",
+      "start_date": "20260906"
+    },
+    "dimension": 1,
+    "english_metric_name": "play_cnt",
+    "items": [
+      {
+        "item_id": 7682660673825869000,
+        "metric_value": 5,
+        "publish_time": "",
+        "title": ""
+      }
+    ],
+    "metric_name": "播放量",
+    "status_code": 0,
+    "status_msg": "",
+    "value_type": 1
+  }
+}

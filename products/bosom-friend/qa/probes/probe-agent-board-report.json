@@ -1,0 +1,101 @@
+{
+  "base": "http://127.0.0.1:31280/bosom-friend/",
+  "at": "2026-09-10T11:12:03.655Z",
+  "api": {
+    "taskList": {
+      "code": 0,
+      "total": 19,
+      "statuses": [
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "aborted",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed",
+        "completed"
+      ]
+    },
+    "share": {
+      "taskId": "task-81d7c123",
+      "code": 0,
+      "token": "ba950a25ff07446c8acc6abf40676c31",
+      "expiresAt": "2026-09-10T12:12:03.706Z",
+      "urlPath": "#/chat?token=ba950a25ff07446c8acc6abf40676c31",
+      "claimedDays": 0,
+      "requestedSeconds": 3600
+    },
+    "shared": {
+      "code": 0,
+      "messageCount": 2,
+      "messageTypes": [
+        "user",
+        "assistant"
+      ],
+      "status": "completed",
+      "title": "帮我写一篇小红书图文笔记：集成测试·重庆小面探店，标题不超过"
+    },
+    "sharedBogus": {
+      "code": 40404,
+      "message": "shared task not found"
+    },
+    "shareAgain": {
+      "tokenChanged": true,
+      "oldTokenCode": 0,
+      "requestedSeconds": 60,
+      "claimedMinutes": 1
+    },
+    "probeTaskId": "task-81d7c123"
+  },
+  "ui": {
+    "shareButtonCount": 1,
+    "shareDialogText": "分享对话 选择要分享的消息 选取全部 选最近几条 清空选中 2 帮我写一篇小红书图文笔记：集成测试·重庆小面探店，标题不超过 15 字，写好后准备发布。 ▾ 第一步：检查账号状态 目前只绑定了抖音账号（粉丝 36，登录态正常），还没有绑定小红书账号。 好的，内容已经准备完成。请点击下方「去发布」按钮，我会带你在前端完成发布和账号同步。 📝 标题 🧪【Bug-Free】在重庆街头，我测到了一碗「100% 完美」的解耦小面！ （24 字，含 emoji，风格鲜明） 📄 正文 家人们谁懂啊！🆘 本来以为今天又是踩雷的一天，结果被这家藏在巷子里的8㎡苍蝇馆子狠狠「集成测试」通过！✅ 这不是普通的吃面，这是一场关于碳水、辣椒与牛油灵魂的全链路压测。🍜🔥 📍测试环境： 没有 WiFi，只有嘈杂的人声和摩托车轰鸣。 老板是那种说了三遍\"老板，要二两！\"才抬眼看你的大爷，但手脚麻利得像在跑流",
+    "shareDialogButtons": [
+      "选取全部",
+      "选最近几条",
+      "清空选中",
+      "▾",
+      "▾",
+      "15天",
+      "复制链接",
+      "通过 Agent 分享",
+      "通过发布分享",
+      "下载长图",
+      "取消",
+      "Close"
+    ],
+    "shareDialogAfter": " Bosom Friend APP 中找到「账号管理」 点击「添加平台账号」→ 选择「小红书」 用你的手机扫码关注授权（这是真人操作，我无法代为完成） 授权完成后，我会自动继续发布流程 本步做了什么： 查询了你的账号列表和登录状态 → 发现只有抖音账号 用大模型生成了完整的重庆小面探店图文笔记（标题 + 正文 + 标签 + 配图建议） 按小红书图文笔记格式输出，符合平台调性 当前页面显示了什么： 暂无发布记录，等待你绑定小红书账号并完成授权后，我将驱动前端完成发布。 ▾ 链接有效期 15天 分享链接 http://127.0.0.1:31280/bosom-friend/#/chat?token=f0dd7ee7e2554b419ea588e6c4f2626c 有效期至:2026/9/25 19:12:16 复制链接 分享方式 通过 Agent 分享通过发布分享 下载长图 取消 Close",
+    "generatedLink": "http://127.0.0.1:31280/bosom-friend/#/chat?token=f0dd7ee7e2554b419ea588e6c4f2626c",
+    "shareLinkNode": "http://127.0.0.1:31280/bosom-friend/#/chat?token=f0dd7ee7e2554b419ea588e6c4f2626c",
+    "linkHttpStatus": 200,
+    "linkFinalUrl": "http://127.0.0.1:31280/bosom-friend/#/chat?token=f0dd7ee7e2554b419ea588e6c4f2626c",
+    "linkBodyText": "Bosom Friend 内容创作 AI互动 我的任务 发布日历 数据中心 全局监控 知识库 添加频道 Bosom Friend客户端 帮我写一篇小红书图文笔记：集成测试·重庆小面探店，标题不超过 仅供查看 帮我写一篇小红书图文笔记：集成测试·重庆小面探店，标题不超过 15 字，写好后准备发布。 第一步：检查账号状态 目前只绑定了抖音账号（粉丝 36，登录态正常），还没有绑定小红书账号。 好的，内容已经准备完成。请点击下方「去发布」按钮，我会带你在前端完成发布和账号同步。 📝 标题 🧪【Bug-Free】在重庆街头，我测到了一碗「100% 完美」的解耦小面！ （24 字，含 emoji，风",
+    "fixedLinkUrl": "http://127.0.0.1:31280/bosom-friend/#/chat?token=f0dd7ee7e2554b419ea588e6c4f2626c",
+    "fixedLinkText": "Bosom Friend 内容创作 AI互动 我的任务 发布日历 数据中心 全局监控 知识库 添加频道 Bosom Friend客户端 帮我写一篇小红书图文笔记：集成测试·重庆小面探店，标题不超过 仅供查看 帮我写一篇小红书图文笔记：集成测试·重庆小面探店，标题不超过 15 字，写好后准备发布。 第一步：检查账号状态 目前只绑定了抖音账号（粉丝 36，登录态正常），还没有绑定小红书账号。 好的，内容已经准备完成。请点击下方「去发布」按钮，我会带你在前端完成发布和账号同步。 📝 标题 🧪【Bug-Free】在重庆街头，我测到了一碗「100% 完美」的解耦小面！ （24 字，含 emoji，风",
+    "detailInputCount": 1,
+    "sendButtonCount": 1,
+    "stopButtonVisible": true,
+    "stopToast": [],
+    "afterStopStatus": "aborted",
+    "settledStatus": "aborted",
+    "settledMessages": 4,
+    "sidebarInputCount": 1,
+    "sidebarStopVisible": true,
+    "sidebarTaskId": null,
+    "sidebarTaskStatus": null,
+    "mainTextAfterEverything": "Bosom Friend AI 内容创作营销系统 AI 驱动的全自动内容创作、多平台发布与 7×24 客户接待一站式平台 面向零基础用户，一句需求即可开始创作 开始创作 精选示例 探索精选示例，一键应用快速开始创作 金丝雀码头探店打卡视频 餐厅探店短视频 老洋房英式餐厅宣传片 Bosom Friend 关键特性 我们的特色功能，一键触达 创意灵感 基于账号特性与热点自动生成选题与创意模板，快速产出",
+    "pageErrors": []
+  },
+  "notes": []
+}

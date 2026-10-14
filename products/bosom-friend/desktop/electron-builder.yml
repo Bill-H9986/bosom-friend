@@ -1,0 +1,90 @@
+appId: com.bosomfriend.desktop
+productName: Bosom Friend
+electronVersion: 33.4.11
+npmRebuild: false
+artifactName: BosomFriend-Setup-${version}.exe
+
+directories:
+  output: release/${version}
+
+# LOGO/图标：必须显式声明，否则 electron-builder 会回落到 Electron 默认图标
+# （构建日志会出现 "default Electron icon is used reason=application icon is not set"）。
+# buildResourcesDir 保持默认 build/，里面放 icon.ico（256x256，7 档）+ icon.png。
+icon: build/icon.ico
+
+# Electron fuse：把运行时里用不到的"以 Node 身份运行/注入调试参数"入口焊死。
+# 这四项只收缩攻击面，不改变正常启动路径：
+# - runAsNode=false            拒绝 ELECTRON_RUN_AS_NODE，App 可执行文件不能被当 node 用
+# - enableNodeOptionsEnvironmentVariable=false  忽略 NODE_OPTIONS，防外部注入运行时参数
+# - enableNodeCliInspectArguments=false        忽略 --inspect 等调试开关
+# - enableCookieEncryption=true 平台登录态 Cookie 用系统密钥加密落盘（本产品存的是
+#   抖音/小红书等平台会话，明文 sqlite 一旦被读走等于账号被接管）
+# 刻意不启用（需实际构建验证后再定，不能盲开）：
+# - onlyLoadAppFromAsar / enableEmbeddedAsarIntegrityValidation：改应用加载来源与
+#   asar 完整性校验，与 extraResources 解压出的内核运行时并存时有加载失败风险
+# - grantFileProtocolExtraPrivileges：本产品主界面走 http://127.0.0.1，不依赖 file://
+#   特权；但启动早期仍加载本地 renderer，保持默认更稳
+electronFuses:
+  runAsNode: false
+  enableNodeOptionsEnvironmentVariable: false
+  enableNodeCliInspectArguments: false
+  enableCookieEncryption: true
+
+files:
+  - electron/**/*
+  - renderer/**/*
+  - build/icon.ico
+  - package.json
+
+extraResources:
+  - from: dist/runtime
+    to: runtime
+    filter:
+      - "**/*"
+  - from: dist/kernel-runtime.zip
+    to: kernel-runtime.zip
+    filter:
+      - "**/*"
+  # 自带解压器：安装器（NSIS 跑不了 asar 里的代码）与主进程共用这一份实现。
+  # 纯 Node + 显式 \\?\ 前缀，是唯一不依赖 PATH / 系统长路径开关的解压路径（DEF-055）。
+  - from: electron/kernel-unzip.cjs
+    to: kernel-unzip.cjs
+  - from: ../project/bosom-friend-electron/dist
+    to: frontend-dist
+    filter:
+      - "**/*"
+  # 平台 Python 引擎（worker.py + .venv + social-auto-upload + 便携 Python + 浏览器）：
+  # 由 build-engine-portable.ps1 组装；缺失时安装版无法真实登录/发布/同步。
+  - from: dist/engine-portable
+    to: engine
+    filter:
+      - "**/*"
+
+electronDist: ../project/bosom-friend-electron/node_modules/electron/dist
+
+win:
+  icon: build/icon.ico
+  target:
+    - target: nsis
+      arch:
+        - x64
+
+nsis:
+  # 安装期解压随包内核运行时（zip 62.5MB，解开 23,297 个文件 / 约 430MB）；不设 include 时 electron-builder
+  # 只找默认名 installer.nsh，自定义钩子会被静默忽略，解压全部落到首次启动。
+  include: build/installer.nsh
+  # 安装程序/卸载程序自身的图标（不设的话安装包 exe 是默认的绿色齿轮）
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  installerHeaderIcon: build/icon.ico
+  oneClick: false
+  perMachine: false
+  allowElevation: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Bosom Friend
+  runAfterFinish: false
+  deleteAppDataOnUninstall: false
+
+publish: null

@@ -1,0 +1,12 @@
+{
+  "authority": "G3 判据 4「测试不写用户数据根」。门禁：qa/verify-test-data-isolation.mjs",
+  "note": "exemptions = 直接写数据根且未走守卫的存量脚本（冻结上限只能减不能增）；userRootWriters = 显式要求写用户真实数据根、已在代码里写清理由的脚本。",
+  "frozenCount": 0,
+  "exemptions": [],
+  "userRootWriters": [
+    {
+      "file": "verify-agent-task-actions.mjs",
+      "reason": "AC-005-1「未配置模型给固定提示」必须把真实实例的 llm-user.json 临时移开再放回；隔离数据根无法替代（它验收的是运行中的装机实例）。脚本自带 .ac005-bak 备份与 finally 恢复，并断言「测试后模型配置已还原」。"
+    }
+  ]
+}

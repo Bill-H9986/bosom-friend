@@ -1,0 +1,13 @@
+import { readFileSync, writeFileSync } from 'node:fs';
+const f = 'C:/Users/Jay/Desktop/Bosom friend APP/项目整理清单.md';
+let src = readFileSync(f, 'utf8');
+src = src.replace(/dsh-zhiyin-server/g, 'dsh-bosom-friend-server');
+src = src.replace(/zhiyin-server/g, 'bosom-friend-server');
+src = src.replace(/zhiyin-harness/g, 'bosom-friend-harness');
+src = src.replace(/apps\/` \| cli/g, 'apps/` | cli');
+src = src.replace(/、zhiyin \|/g, '、bosom-friend |');
+src = src.replace(/\/zhiyin/g, '/bosom-friend');
+src = src.replace(/双重 zhiyin 路径/g, '双重路径');
+src = src.replace(/\| 旧双重目录残留 \| `~\/\.dsh\/bosom-friend\/zhiyin\/` 历史文件 \| 可手动删除（无引用） \|/g, '| 旧双重目录残留 | 已清理（2026-08-27 迁移至 ~/.dsh/bosom-friend，旧嵌套目录已删除） |');
+writeFileSync(f, src, 'utf8');
+console.log('inventory cleaned');

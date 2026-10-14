@@ -1,0 +1,672 @@
+{
+  "at": "2026-10-12T14:49:45.398Z",
+  "total": 111,
+  "rows": [
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "auth/register",
+      "line": 2560
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "auth/login",
+      "line": 2596
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "auth/logout",
+      "line": 2612
+    },
+    {
+      "file": "api.ts",
+      "method": "PUT",
+      "path": "auth/password",
+      "line": 2623
+    },
+    {
+      "file": "api.ts",
+      "method": "PUT",
+      "path": "user/info/update",
+      "line": 2667
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "agent/tasks",
+      "line": 2696
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "agent/tasks/cleanup-running",
+      "line": 3461
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "agent/tasks/:taskId/messages",
+      "line": 3490
+    },
+    {
+      "file": "api.ts",
+      "method": "PATCH",
+      "path": "agent/tasks/:taskId",
+      "line": 3556
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "agent/tasks/:taskId/dispatch",
+      "line": 3569
+    },
+    {
+      "file": "api.ts",
+      "method": "DELETE",
+      "path": "agent/tasks",
+      "line": 3597
+    },
+    {
+      "file": "api.ts",
+      "method": "DELETE",
+      "path": "agent/tasks/:taskId",
+      "line": 3613
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "agent/tasks/:taskId/rating",
+      "line": 3635
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "agent/tasks/:taskId/abort",
+      "line": 3650
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "agent/tasks/:taskId/action-result",
+      "line": 3678
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "agent/tasks/:taskId/share",
+      "line": 3706
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "agent/tasks/:taskId/favorite",
+      "line": 3716
+    },
+    {
+      "file": "api.ts",
+      "method": "DELETE",
+      "path": "agent/tasks/:taskId/favorite",
+      "line": 3729
+    },
+    {
+      "file": "api.ts",
+      "method": "PUT",
+      "path": "ai/user-llm",
+      "line": 3832
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "ai/models/fetch",
+      "line": 4044
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "ai/note-cover",
+      "line": 4091
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "ai/logs",
+      "line": 4121
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "ai/object-action",
+      "line": 4189
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "ai/chat",
+      "line": 4213
+    },
+    {
+      "file": "api.ts",
+      "method": "PUT",
+      "path": "v2/prefs/disclaimer",
+      "line": 4303
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "ai/draft-generation/v2",
+      "line": 4316
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "ai/draft-generation/image-text",
+      "line": 4321
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "ai/draft-generation/from-video-url",
+      "line": 4448
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "ai/draft-generation/query",
+      "line": 4481
+    },
+    {
+      "file": "api.ts",
+      "method": "DELETE",
+      "path": "ai/draft-generation",
+      "line": 4534
+    },
+    {
+      "file": "api.ts",
+      "method": "DELETE",
+      "path": "ai/draft-generation/:id",
+      "line": 4549
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "v2/data/cleanup",
+      "line": 6131
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "digital-humans",
+      "line": 7332
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "digital-humans/from-sheet",
+      "line": 7377
+    },
+    {
+      "file": "api.ts",
+      "method": "DELETE",
+      "path": "digital-humans/:id",
+      "line": 7457
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "ai/reference/fourview",
+      "line": 7551
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "ai/prompt/enhance",
+      "line": 7594
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "long-videos/enhance-topic",
+      "line": 7615
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "long-videos",
+      "line": 7669
+    },
+    {
+      "file": "api.ts",
+      "method": "DELETE",
+      "path": "long-videos/:taskId",
+      "line": 7733
+    },
+    {
+      "file": "api.ts",
+      "method": "DELETE",
+      "path": "long-videos",
+      "line": 7760
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "long-videos/:taskId/shots/:index/redo",
+      "line": 7794
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "long-videos/:taskId/extend-script",
+      "line": 7816
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "long-videos/:taskId/resume",
+      "line": 7844
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "long-videos/:taskId/stop",
+      "line": 7882
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "knowledge/distill/backfill",
+      "line": 7907
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "remote-access",
+      "line": 8488
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "remote-access/tunnel/start",
+      "line": 8504
+    },
+    {
+      "file": "api.ts",
+      "method": "POST",
+      "path": "remote-access/tunnel/stop",
+      "line": 8515
+    },
+    {
+      "file": "knowledge-distill.ts",
+      "method": "POST",
+      "path": "knowledge/distill/rate",
+      "line": 590
+    },
+    {
+      "file": "knowledge-distill.ts",
+      "method": "POST",
+      "path": "knowledge/inject-preview",
+      "line": 600
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "POST",
+      "path": "v2/channels/accounts/browser-register",
+      "line": 155
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "POST",
+      "path": "v2/channels/accounts",
+      "line": 241
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "POST",
+      "path": "v2/channels/accounts/:id/analytics/refresh",
+      "line": 305
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "DELETE",
+      "path": "v2/channels/accounts/:id",
+      "line": 326
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "POST",
+      "path": "v2/channels/accounts/:id/logout",
+      "line": 360
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "POST",
+      "path": "v2/channels/accounts/:id/sync",
+      "line": 387
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "POST",
+      "path": "v2/channels/account-groups",
+      "line": 422
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "PATCH",
+      "path": "v2/channels/account-groups/:id",
+      "line": 441
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "DELETE",
+      "path": "v2/channels/account-groups",
+      "line": 456
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "POST",
+      "path": "v2/channels/publish/flows",
+      "line": 498
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "DELETE",
+      "path": "v2/channels/publish/records/:recordId",
+      "line": 657
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "POST",
+      "path": "v2/channels/publish/tasks/:taskId/publish-now",
+      "line": 700
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "POST",
+      "path": "v2/channels/publish/abort-current",
+      "line": 713
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "POST",
+      "path": "v2/channels/publish/tasks/:taskId/retry",
+      "line": 737
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "PATCH",
+      "path": "v2/channels/publish/tasks/:taskId/publish-at",
+      "line": 749
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "DELETE",
+      "path": "v2/channels/publish/tasks/:taskId",
+      "line": 772
+    },
+    {
+      "file": "routes-channels.ts",
+      "method": "POST",
+      "path": "channel/work/validate",
+      "line": 815
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "assets/uploadSign",
+      "line": 253
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "assets/public/:publicUploadId/uploadSign",
+      "line": 258
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "PUT",
+      "path": "assets/upload/:assetId",
+      "line": 268
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "PUT",
+      "path": "assets/public/:publicUploadId/upload/:assetId",
+      "line": 277
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "assets/:assetId/confirm",
+      "line": 286
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "assets/public/:publicUploadId/:assetId/confirm",
+      "line": 295
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "contents/groups",
+      "line": 415
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "DELETE",
+      "path": "contents/groups/:id",
+      "line": 449
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "contents/groups/info/:id",
+      "line": 471
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "contents/drafts",
+      "line": 520
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "DELETE",
+      "path": "contents",
+      "line": 527
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "DELETE",
+      "path": "contents/drafts/filter",
+      "line": 549
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "contents/transfer",
+      "line": 557
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "DELETE",
+      "path": "contents/:id",
+      "line": 569
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "PUT",
+      "path": "contents/:id",
+      "line": 584
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "statistics/channels/douyin/searchTopic",
+      "line": 615
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/statistics/note-comment-search/options",
+      "line": 851
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/statistics/note-comment-search/search",
+      "line": 863
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/statistics/note-comment-search/agent-collect",
+      "line": 890
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/statistics/note-comment-search/note-simple-info",
+      "line": 913
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/statistics/note-comment-search/note-comments",
+      "line": 944
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/statistics/note-comment-search/xhs-url",
+      "line": 951
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "plat/douyin/miniapp-auth/complete",
+      "line": 1011
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "contact/feedback",
+      "line": 1025
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/customer-reception/rules",
+      "line": 1053
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "PUT",
+      "path": "v2/customer-reception/rules/:ruleId",
+      "line": 1082
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "DELETE",
+      "path": "v2/customer-reception/rules/:ruleId",
+      "line": 1108
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/customer-reception/test",
+      "line": 1117
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/customer-reception/suggest",
+      "line": 1129
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/customer-reception/interactions/list",
+      "line": 1218
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/customer-reception/interactions/reply",
+      "line": 1240
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "DELETE",
+      "path": "v2/customer-reception/replies",
+      "line": 1310
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/customer-reception/conversation",
+      "line": 1318
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/customer-reception/config",
+      "line": 1393
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/customer-reception/pending/:pendingId/status",
+      "line": 1414
+    },
+    {
+      "file": "routes-content.ts",
+      "method": "POST",
+      "path": "v2/customer-reception/poll-now",
+      "line": 1455
+    },
+    {
+      "file": "routes-knowledge.ts",
+      "method": "POST",
+      "path": "knowledge/notes",
+      "line": 85
+    },
+    {
+      "file": "routes-knowledge.ts",
+      "method": "PUT",
+      "path": "knowledge/notes/:path",
+      "line": 120
+    },
+    {
+      "file": "routes-knowledge.ts",
+      "method": "DELETE",
+      "path": "knowledge/notes/:path",
+      "line": 141
+    },
+    {
+      "file": "routes-knowledge.ts",
+      "method": "POST",
+      "path": "knowledge/search",
+      "line": 161
+    },
+    {
+      "file": "routes-knowledge.ts",
+      "method": "POST",
+      "path": "knowledge/backlinks",
+      "line": 182
+    },
+    {
+      "file": "routes-knowledge.ts",
+      "method": "POST",
+      "path": "knowledge/choose-vault",
+      "line": 197
+    },
+    {
+      "file": "routes-skill-promotion.ts",
+      "method": "POST",
+      "path": "knowledge/distill/promote",
+      "line": 86
+    }
+  ]
+}

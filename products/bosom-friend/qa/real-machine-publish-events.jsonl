@@ -1,0 +1,37 @@
+{"time":"2026-10-13T16:43:33.003Z","type":"start","detail":"real machine publish driver platform=douyin"}
+{"time":"2026-10-13T16:43:51.539Z","type":"exam-sent","detail":"把草稿 cnt-ixkb2e82（《35岁转行无人机维修，我的一天实录》，已配封面）直接发布到抖音，不要发成别的内容，完成后把平台作品 ID 告诉我。"}
+{"time":"2026-10-13T16:44:33.747Z","type":"direct-publish-detected","detail":"after 42s id=rec-qr5czsi8 status=2"}
+{"time":"2026-10-13T16:44:36.760Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:44:40.013Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:44:43.033Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:44:46.047Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:44:49.062Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:44:52.070Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:44:55.083Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:44:58.090Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:01.108Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:04.125Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:07.133Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:10.141Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:13.156Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:16.173Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:19.192Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:22.209Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:25.215Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:28.226Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:31.243Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:34.253Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:37.268Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:40.275Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:43.292Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:46.306Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:49.314Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:52.331Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:55.336Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:45:58.340Z","type":"record-state","detail":"id=rec-qr5czsi8 status=2 error= link="}
+{"time":"2026-10-13T16:46:01.352Z","type":"record-state","detail":"id=rec-qr5czsi8 status=1 error= link=https://www.douyin.com/video/7696194554529074458"}
+{"time":"2026-10-13T16:46:01.352Z","type":"publish-success","detail":"{\"id\":\"rec-qr5czsi8\",\"workLink\":\"https://www.douyin.com/video/7696194554529074458\",\"title\":\"35岁转行无人机维修，我的一天实录\"}"}
+{"time":"2026-10-13T16:46:01.359Z","type":"verify-data","detail":"{\"accounts\":[{\"nick\":\"小雅日记\",\"uid\":\"46550424756\",\"workCount\":5},{\"nick\":\"小红薯6ACE7C1A\",\"uid\":\"683596e1000000001b020e5c\",\"workCount\":8}],\"workCount\":8}"}
+{"time":"2026-10-13T16:46:01.365Z","type":"verify-reception","detail":"{\"matched\":true,\"rule\":{\"id\":\"rule-default-1\",\"name\":\"发货规则\",\"platforms\":[\"douyin\",\"xhs\"],\"keywords\":[\"发货\",\"物流\",\"什么时候到\"],\"replyMode\":\"template\",\"template\":\"您好，您的订单通常在 48 小时内发出，可在订单详情查看物流；超时可联系人工客服。\",\"enabled\":true,\"priority\":10,\"createdAt\":\"2026-09-21T12:24:29.667Z\",\"updatedAt\":\"2026-09-21T12:24:29.667Z\"},\"ruleId\":\"rule-default-1\",\"reply\":\"您好，您的订单通常在 48 小时内发出，可在订单详情查看物流；超时可联系人工客服。\",\"aiUsed\":false}"}
+{"time":"2026-10-13T16:46:11.561Z","type":"final-page-ok","detail":"accounts+monitor loaded"}
+{"time":"2026-10-13T16:46:11.562Z","type":"errors","detail":""}

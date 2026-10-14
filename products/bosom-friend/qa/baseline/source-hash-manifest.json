@@ -1,0 +1,3787 @@
+{
+  "capturedAt": "2026-09-02T11:06:50.811Z",
+  "git": "b150a551b8d465e31e418e1b2eaf5e79bbb7d28e",
+  "fileCount": 945,
+  "files": [
+    {
+      "path": "bundle/app/src/index.ts",
+      "sha256": "151f2100ace258beec31e92fb5653bc641405beb0d1a793d703fa93eff93dd11"
+    },
+    {
+      "path": "bundle/app/src/invariant.ts",
+      "sha256": "3284a5e4e098921786d3418ac3863663e76ccd064754a42dee1839053e4f06b9"
+    },
+    {
+      "path": "launcher/src/bin.ts",
+      "sha256": "a08f3712f077b6fd069ec42a8208fcad0ff853aa7b5c5db2fea41072e20b5f7d"
+    },
+    {
+      "path": "launcher/src/index.ts",
+      "sha256": "b7c8074b7a2bee571009bd6fba0bf04067fbbf826d9cf84f6a998abc56453842"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/index.ts",
+      "sha256": "1c928c07c0d3fee387061cf92173fe329faabf994fff0472ed8fe2192a0f19a5"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/migrations/1707791500-InitialMigration.ts",
+      "sha256": "773d293a6680cc2c6c6d85805ee79df57a2254c1fcd60570de97da2bbda20f4b"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/migrations/1707801786-AddAccountStatus.ts",
+      "sha256": "6a87ab3f08966ef811a4df769cd2870eb85988f77fe5d067dcf52161f6ae9b66"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/migrations/index.ts",
+      "sha256": "d01dff9dcb775718c1dfc4fc208a0595df023e3302749fc58d503cd5fa4099cd"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/account.ts",
+      "sha256": "271fc9b4a256ac73ea1ebf3a81af208b2ce5f9eb038330a987f348453d16fef7"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/accountGroup.ts",
+      "sha256": "b382367064cd8e9abd42abb54884d6074147f28bd98d8b1e1531d29b9a2c67af"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/autoRun.ts",
+      "sha256": "f8edc27c203455183e5056ba8486b1d63ba3a785242d003316550a6e305cfad3"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/autoRunRecord.ts",
+      "sha256": "9d81d8e1b55127cf3c8d53614ba036524075e17fb388f6b2f59e439b5955cc48"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/dmConversation.ts",
+      "sha256": "b2f768e1241c3fd7b21a8ba2c4aba32de913a6db1cc71c1cb7cb4f455d7e79d0"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/dmReplyRecord.ts",
+      "sha256": "8ff547de626fcf2c258cae9cec8400e4e072af3a022105f251d84cc4257cb68e"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/imgText.ts",
+      "sha256": "c92fb1000c1cdc7c951dbae2fd7758717f03c970e1b7ca996a0519539f5984ce"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/interactionRecord.ts",
+      "sha256": "dab09f501f0df10e4991aadf4f15e9c62a05358f63b303ba0c634c77d976f056"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/pubRecord.ts",
+      "sha256": "e19e71e7853b294797240694dd545bdacf5f7591df6e9221c72f72b94f014151"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/replyCommentRecord.ts",
+      "sha256": "361ef8e7bc20a2c587fe3afa39b1f1717d3045c7758e43c862dbe40013c38efe"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/temp.ts",
+      "sha256": "8155003d63953e0a265a491a5083f7c7ce2d9a964303f7df78d6da5d372d9d4b"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/user.ts",
+      "sha256": "a3301e816a5cb2e15bceac630474fca62af7d7e600e43b42e28a0119bc9462bb"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/video.ts",
+      "sha256": "96229a21201095f5363fdaf2e1206362d943f04ea868ddfd3e4658031a1dec0e"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/db/models/workData.ts",
+      "sha256": "e62dc368335789bba586c62fc493556d5f981499438a9d9dbe9a717fa56a2ba2"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/electron-env.d.ts",
+      "sha256": "2255018e5c7c6401117867f844761a4f685fc725a1e3a70f394fe5179bdea91b"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/global/cache.ts",
+      "sha256": "28f449f7216750c247b66c7b93ed1755e0ae86272cb204d21829462b26ae6f98"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/global/event.ts",
+      "sha256": "a2b53578ef7dd6130e9965eec80a3909ee307e0cf2f32e849bbe9a3e71f4e53b"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/global/log.ts",
+      "sha256": "5b8815d637d0412547616ea1e6a88caa641bea673309192c19086cc515887d74"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/global/notice.ts",
+      "sha256": "bdfc950206d4d0274b58c6a896e48951eb7714e4eff9b9b6967e2323fea8348b"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/global/schedule.ts",
+      "sha256": "a3944769b250fae7e5fa6d3b8fc80e4fdaa60cb239386ae2bf4822806ff631cb"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/global/store.ts",
+      "sha256": "8a3497d5b8ac0dab225ace35857b131cc6bc28960a4209c11384fc9ac3ca25a5"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/global/table.ts",
+      "sha256": "dedfca13c2f6db6267d7a6d00911f82754ae8554bae57aade0607184641f7bb2"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/account/BrowserWindow/browserWindow.d.ts",
+      "sha256": "05a86c7b15af8ad174d0b62effde8f1f5bc000c1cdc4a9c1773967a9698863b2"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/account/BrowserWindow/BrowserWindowItem.ts",
+      "sha256": "fdc936b932394964fe01db583ef241c3ea6021a99c2494ad532b6e13d8b0ef6d"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/account/BrowserWindow/index.ts",
+      "sha256": "d3c3ece2da38c8ad26e13fecc134c7335671dcf2cd8bcefedc6fe4f8a290c29e"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/account/controller.ts",
+      "sha256": "ff3b69873488d3eb28cb16d9457d5488697ee509ba24be23f309b437fd675bbb"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/account/module.ts",
+      "sha256": "af6dff1fa671e1141b980518bddc6692f32dd1a71aa199d720c6e5b0520779d3"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/account/service.ts",
+      "sha256": "934957b47960691767d03abbe21614b3abf665bf4258c3d803474fa739b7fddf"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/api/index.ts",
+      "sha256": "d188f5333770a26cf12230a29c7a4f49036d3cb2640c589dff682a85a3dbb464"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/api/tools.ts",
+      "sha256": "158d73c920fb85a987cff0cfbdd4441e9d77e27a9675124c508d8b9f91f1f5be"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/api/tracing.ts",
+      "sha256": "a37279cfbd1997d6056105432455dffb7f811a747aefdf3cf982d90e524041d2"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/api/types/index.ts",
+      "sha256": "06d1c2227072a5e6e889f2b8748052ea853f3b458c272a5af1b77cc4425019fc"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/app-control/mcp-server.ts",
+      "sha256": "a4363e5f698d9ad5ef969dcb70305a201e06a9dd083e22a7d58470f4db561e3f"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/app.ts",
+      "sha256": "41f15c894f1fac7ab75f9b44e967ddbcb8f0d812931add241e83f6af8977e54e"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/autoRun/comment.ts",
+      "sha256": "482114a9850d7ceb665a6a92d0bf0d89dd37b3218750ffea4ee70d5e6ac3e115"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/autoRun/controller.ts",
+      "sha256": "7f3ffceadd05b304c4014c59b961a253ff7fb9336c37006b8235f33317b9ee57"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/autoRun/module.ts",
+      "sha256": "b30275eb8e9742939e5497a1003209657faeaa822134ab7238dc7e15fc3188d1"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/autoRun/service.ts",
+      "sha256": "e5a7d2e03e72528c5461dd3d1139b0ea96921a45b8df3f0fbef763e2ecdb73fb"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/backend/backendLauncher.ts",
+      "sha256": "945b5d5f386b2e9bc25d1f2227ea52cd721e84d914c526b55161ffb25ca500fb"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/backup/controller.ts",
+      "sha256": "63031b2f90b4711f362817edbc7ebdfebc8672bd4e44f6ac37301928efdb7e48"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/backup/module.ts",
+      "sha256": "f272527aaee7699f00d10079b6b4585d6aa6d594ed52d24cdf7c254a046e3fbc"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/backup/service.ts",
+      "sha256": "7f2e34e4e18d4e70c37b0a368bc5d19af87b01a5790d99f88a0231483895fa65"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/browserControl/cdp.ts",
+      "sha256": "d5ed7dd549d0a0944ff69d860c6510e1cfa13bf0a4f2fa7ebcc3faec500217c1"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/browserControl/controller.ts",
+      "sha256": "e0d84794dde2fd05a01a2b5c1fe5d5d6e4ac70d2ce6f0c059cd85071bafd8743"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/browserControl/detect.ts",
+      "sha256": "198dd52a808798068b4af73b910c40c0c3280764a03ad03fd1f9c09e0049ac58"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/browserControl/launcher.ts",
+      "sha256": "b6767e871a8dcc1f2faeedc52d32f5e8f9730b9edc8e6135cb1ae0376ccde30f"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/browserControl/manager.ts",
+      "sha256": "a0da7f7d5adc88939d0765c8ae21302e79b86777751dd022b2a0d7c13923560a"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/browserControl/module.ts",
+      "sha256": "c4e89b427f6eca020662f1c83eb6ba109d941e1b1429de184ed0afc060bc4f2e"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/comment.ts",
+      "sha256": "992c95c45361e80de5ad3da741a108c6219bb8143d19bf70caeb1d703e1deee8"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/config/backendBase.ts",
+      "sha256": "c7a8054f332aa8c26e9a36c781cc48e56e63814170d89d2ef972685f27d898bc"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/config/userDataMigration.ts",
+      "sha256": "3cfa6108876e223eb461bae7842ab9c822fc05fed49a01095848524275eb6b8c"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/config/userModelConfig.ts",
+      "sha256": "69b7226090240206eefbaf0f550e630ee8c17bce41ae1d9db3085e280dee84c3"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/controller.ts",
+      "sha256": "b7a670e2834509dd2cc9028021ac1bfce8b89373f449a4bc573470552977cd18"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/core/container.ts",
+      "sha256": "f181e4a8063f90a1ce143473201ca9994306d0ba1582c23d6abd9c43446bd511"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/core/decorators.ts",
+      "sha256": "3ecaad1ede9c6219c090eb6f47793c19f7d15c7f61815fc8eb829f6c32dd6ff8"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/core/metadata.ts",
+      "sha256": "af3e6723f8f414898d1d15f928a118b8c1449a7516086452660bedcfd7810a15"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/dm/abogus.cjs",
+      "sha256": "f35aee925311e0256ed06fd11fb43c0bb03ec1dff7859a02f3abd45d68713154"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/dm/controller.ts",
+      "sha256": "11e1a2ef43dc667ff392e027133e7195704faa260fddbc233c5a61b951993892"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/dm/douyin-im.ts",
+      "sha256": "bf6c42431421bb1daf1932294ebc3757083d8c74286e1c79c91ae119b7d8e84c"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/dm/douyinImPageDriver.ts",
+      "sha256": "1a8c794ba860e8c00126c21decbe23e8bddf65312b9a85226506b5be6c330623"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/dm/module.ts",
+      "sha256": "358cca40c24a6099df23b5e97c67c22fb08062cdbc55121015f572bc4b1747a8"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/dm/service.ts",
+      "sha256": "77dc6c2fbf40d169b761475f5063800e9c6800bfa0c2dfa09a8f16be24c6e173"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/dm/xhs-im.ts",
+      "sha256": "1f729e95fad0e8ef8b93461a0608142ddc662ebe7dd7b77494c867220d4b5423"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/dsh-agent.ts",
+      "sha256": "cad6a10704992bbbeec930a9a703aa9fa5abec2efd0631f662efb58926f32005"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/index.ts",
+      "sha256": "5b9d36b1b956bd1066705816a74667f7959d6f0f9251026515eb830bdcf252ae"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/interaction/cacheData.ts",
+      "sha256": "8c3c899f14f3fd86cb230dd1e566e1a7241f02b262027004858e0c4079f00f51"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/interaction/controller.ts",
+      "sha256": "8c9471db96f312841b7a71238bf27fc414d32f480aefaf735c13de169dc006f3"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/interaction/module.ts",
+      "sha256": "5a93e265c15810c8cf5a2ed94a4a0735cd73827ac41fbefb13e94a01b9bde3b7"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/interaction/service.ts",
+      "sha256": "a19ca31539c2d61f3c2d680f4aceb263477898c39139311b5c6d0360f94e9656"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/knowledge/autoLog.ts",
+      "sha256": "52729e501f42d1a6376d383d2ba687cf98f9db3b070054d4783cceccdf3016a6"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/knowledge/controller.ts",
+      "sha256": "37ff82a1576f5a105ab784c0509f2368062a03e614f286f21f14c1f244023e80"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/knowledge/kernel-sync.ts",
+      "sha256": "7a364b17408a8454eb94e6c65e23264a01387b05c43ce17a8390f7171c36e845"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/knowledge/module.ts",
+      "sha256": "934eab3dd9e2baf200862df9902713dc3a8a103fa1a5bde43237bda1b9911060"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/knowledge/service.ts",
+      "sha256": "66e4b8133029deea3d84f43b438593cd65db4e31dfe2003b5a532008e82898db"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/autoDouyinWindow.ts",
+      "sha256": "057c8d19d5723e7e6ec7dbe045515e6b5deac638660bcbd5091b2db8ae16aa1c"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/douyinCloudAuth.ts",
+      "sha256": "f70da65ab383f8f5da926ff6c151e4637614f53ce250a7e065c21ebba49ee9a7"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/douyinCreatorPublisher.ts",
+      "sha256": "cc7ffaedf37d5f06d4b7095dde9d21d80f5ad5a875e8a24de771340af6ee43b0"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/index.ts",
+      "sha256": "deae6861705b8772916990b79c9e2e9764920e3779b7159ab49135972bcc9c83"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/module.ts",
+      "sha256": "14dee4f67c01d1b20a70e77d6c499eff15860012169c091947cf0561b22ccc93"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/plat.type.ts",
+      "sha256": "9be74517e2c008af8e22b073262cd4f8d8c0e9470486b6be842ee38db501798f"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/PlatformBase.ts",
+      "sha256": "39ec1093730274660841e58d4bf97204b5b928e41a30326fd488b6977da743aa"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/platformLogin.ts",
+      "sha256": "24fd96ba54412dbba03880f1612050ec327e5e6b30c3fb823f9a1d0988f92b5b"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/platforms/douyin/douyinWorkPageDriver.ts",
+      "sha256": "87e76e8b002297bd0c41cfceef8f019b96f3934c6be6f2ba6d5d14232c98b229"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/platforms/douyin/index.ts",
+      "sha256": "05f41259cea6e8ac7f423319f2f18c2409bde56ecd79e588bc269d4ea8591288"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/platforms/xhs/index.ts",
+      "sha256": "579264784e35739a6022d56e42a084e069821123f4cd447ed4023462c5d8abed"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/platforms/xhs/xhsCommentPageDriver.ts",
+      "sha256": "08a4cedffad6c7d014e55a99cc9879f52dc6fb2bb41ce1b400186f06a2a4e904"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/platforms/xhs/xhsWorkPageDriver.ts",
+      "sha256": "b8ae483ee1022b6657785d47b98c9e9762a7f7202f125448a9d9a684a2bd4ff2"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/pub/PubItemBase.ts",
+      "sha256": "4518e84a98ccafc44c233fedd1b025481a169abb484ef4654c687bf5e1e4060b"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/pub/PubItemImgText.ts",
+      "sha256": "db3255919e432af538409f8db74587260d417c25355a322bf8e484294a4a1419"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/pub/PubItemVideo.ts",
+      "sha256": "4540834641269a1f33eb58ba08bbde4206e72676a1b626952b35415f572fc7d8"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/workStatsSync.ts",
+      "sha256": "adde9ce7bf193e5a3c2c89d142e11b844b554f511ebf9ead222bea8cb14fc355"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/xhsCreatorPublisher.ts",
+      "sha256": "4ce3c0ad8b9586bd769b78b97512cb0071501e1bf12449af4be1c2ebe3c112e4"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/xhsImSender.ts",
+      "sha256": "157aa8bae4edb68f268704df13581232a52e435dbdf161ed3c1ddc765e08b1d3"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/xhsInPageSigner.ts",
+      "sha256": "2600424099301f4bdb21a71d1743313a3cce7ff2b07b1a2f95065c284faaf9b6"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/xhsSessionSync.ts",
+      "sha256": "91d416eea7da6e54a382a0c782d61726eaf7a38cd92e5f761b9b8e494d8f9ec5"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/plat/xhsWarmup.ts",
+      "sha256": "08cab1e1174fea06bfb88779fb5b3d0acbdb81351725431a7271d91e6f9cf350"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/publish/controller.ts",
+      "sha256": "ec7a104b0fb9c073c8e5803a081db7fc9f825a5ff87a6cd467d9af66af76d2a0"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/publish/imgText/controller.ts",
+      "sha256": "c35a76be612a79613b5802de8715e888410fc98086952ffa35dbc8219d41ecc1"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/publish/imgText/service.ts",
+      "sha256": "f0f00ce781c0149bab11fee9ced3e6b7e4c00bdb9c84b749a53ea176a7376235"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/publish/module.ts",
+      "sha256": "79573bb9d3c7c21a1d0e243c86c1152ffa463a7f4529ef0875292aedf71fe903"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/publish/service.ts",
+      "sha256": "bc4092929ee0f74c9f28f241921cb02105215a7194d69572fcfd1b2d84e0ecfd"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/publish/video/comment.ts",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/publish/video/controller.ts",
+      "sha256": "423cf8eb0d9bee256d39ad67806596c1ee4b88f162ebb29351c9246d7ca35122"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/publish/video/service.ts",
+      "sha256": "4c11a47ba2ab89a852a02462155fe689fb7d41f4bc2d5668c240d068abe90b66"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/reply/cacheData.ts",
+      "sha256": "17c6104b69519bbba0259b9b828f36e4208ac5490b1d89a1720bcefd26d92199"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/reply/commentPageDriver.ts",
+      "sha256": "688c752ef6a17bcd2265f9a5fd1b52bf9195277053e0b6cff246ab0b1b48b8e8"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/reply/controller.ts",
+      "sha256": "b076a54f6a962734f05cb5368cb89d20159f0bf68c93c940dec90857446fb2a7"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/reply/module.ts",
+      "sha256": "b21147ad9f5401d468949bd2a758138bc2516cc9d71981a081325a1629194a34"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/reply/service.ts",
+      "sha256": "7133291075a538e1a36fe6fba11be25b009af13c9d22d9d178507a55e8179eb2"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/safety/cdpAttach.ts",
+      "sha256": "0893a060fd4d4322f12fcf342d2902c43f44c02795953310980e1045522c392d"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/safety/contentFilter.ts",
+      "sha256": "140a4bd0ae60c408084398f94285bd6e402e651ff319315526d1e1a8b600ca23"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/safety/controller.ts",
+      "sha256": "45b21505df778bcd26602710904a1ebd57dd8ed17076e412aa2fcd0c7c241ce1"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/safety/module.ts",
+      "sha256": "8bd47b2303b09697d82f33502fdc760fe0c21cd5560e2213f2135249754bb0f0"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/safety/quota-manager.test.ts",
+      "sha256": "9df3898229f3dfbc8efe93fc98ca77e3f9f01e578ca2cd2fd7cb0e8c5350e9d4"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/safety/quotaManager.ts",
+      "sha256": "59a1715d5433b9ee2beea810e4c393b40bd431a8fced2599e80e78d932b379ed"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/safety/risk-manager.test.ts",
+      "sha256": "a8e06daf0e068c5a05d24827b0f26cceac3a0bb61f43a503aceacd17cfb91242"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/safety/riskManager.ts",
+      "sha256": "9f37bf472aa239ffaaa868331cb9c716c9599bf92640bb645f363cb1dddc5874"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/safety/sessionGuard.ts",
+      "sha256": "9f92e8ec9c750a7e2fcbbd4a7b95b29979b821ed070c7c454d1bb2eb9948f9c8"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/safety/sessionWatchdog.ts",
+      "sha256": "6f96b2ecfc8f938e8c5f820c0871df2a09c4be8173f464c2e7f153bb88a238ae"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/safety/wsClient.ts",
+      "sha256": "e63ac1c8089ef95fd2ca64d61adc512555ff13a5bfac5f5868f622cface77440"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/service.ts",
+      "sha256": "e8c7d8c4d37e123c70c5495c4991f86cdde55ec767da8c69d5d7c547867a1161"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/splash.ts",
+      "sha256": "3f8be4b307de8b241a49b3fb5438ba3b0edb132e3e1841524bb5fbad8b5e9545"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/tools/controller.ts",
+      "sha256": "998624a664240bcd3673821443fadcb0753c12f12de9fdd67e53537cea6573f4"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/tools/module.ts",
+      "sha256": "db57a64df4ef6d1db8a113839a1e1086942922360371b13ebe521bbceeef770e"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/tools/service.ts",
+      "sha256": "e9325807b3bdb4be5b2a75840e24feb166c5a377d7d861efdc96ce2b15bf7359"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/update.ts",
+      "sha256": "82ac806eea0a60ecb0e643faba595ebd091ed9f6fecc1da5b21de4240c938da9"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/user/comment.ts",
+      "sha256": "1bfbfdd54c4e6cbcf7014e7dd3ea26e33b4fac7e34a0e1eb6793bcd3dd583c53"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/user/controller.ts",
+      "sha256": "97b71e0a90dee21daa77f0b842648e0f6667a2bd56d8c27c9f2c6e2b65a6ba57"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/user/module.ts",
+      "sha256": "833b176bc8b605a4a53e3afa4032183b10a4b7632ff9dc47f16d00cf4b346012"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/user/service.ts",
+      "sha256": "f745ab1cbe48e4d1795b05c181bc383cc50282064ccb0870d1ef12448786069c"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/views.ts",
+      "sha256": "56d59d2c45d47eaebb902ec2346556445239ac5734f86da01634f56e5c456b45"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/zhiyin-kernel-host.ts",
+      "sha256": "8032b759a3343522f8b692495914556431829305dde7925ae67cabaeef2011c2"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/zhiyin/adapters.ts",
+      "sha256": "f58f473fb0af958a74802a193afc034fcf7a25af070292ccffb82aa6f4d419f1"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts",
+      "sha256": "af03291e8452b4cbc54d72faaf6d14a9fdd68c0a778bef8100239460651a4837"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/zhiyin/legacy-decision.ts",
+      "sha256": "0a01fe2c5284e8335d72af5038816500c3c964fde27445704da4a489948b636b"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/main/zhiyin/runtime.ts",
+      "sha256": "726f326ec4a8d6ad31a9e656f50e82b1ce2981c45bd5325d283e2f2e21f6fe6c"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/plat/coomont.ts",
+      "sha256": "59cfcd9dd96b9cd25cfb2a7f7f972b65da47986a31105fbab1bb1d5a01f6142e"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/plat/douyin/douyin.type.ts",
+      "sha256": "2d7a9b64ca11a2c0f27dd9d37a891a733dd9be6bd25a7bce6e0afb8082d1e6ef"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/plat/douyin/index.ts",
+      "sha256": "67b6d717fc51b8af200f046f566fa877eda4c1d89413404689c682a0e70f0192"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/plat/requestNet.ts",
+      "sha256": "57fa477f47dc1b32dc8b2d81ebc381f043ea161c12e1ecf09cb46b9c28758acf"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/plat/utils/index.ts",
+      "sha256": "e28a4231065579b358cc389b627e02ecf47cdfcee53a1ee3684454e1b1421f14"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/plat/xiaohongshu/index.ts",
+      "sha256": "392506eee7f764c87e213df12fbd1941a2d12b7e126e6827aaef38fe832d67c2"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/plat/xiaohongshu/xiaohongshu.type.ts",
+      "sha256": "91709dfbbc97687257bc2b1834cea7658928bb663db0c70bbdf0780ebbcb057b"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/preload/index.ts",
+      "sha256": "03c0c189a4c673893ff837c95c965d5d0cfcbdf933613d554ba65e88c81651b9"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/tray/systemTray.ts",
+      "sha256": "d885a9d724b6b54a7ebba7a0801d136410f9a2d05305fc8fc2750465be212bb1"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/util/common.ts",
+      "sha256": "da341fc8f16e2f7390b2f3cd604e2685cda7a32b34c409560917527ec8b5a1f1"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/util/ffmpeg/index.ts",
+      "sha256": "89107978bb686376ea71f558bf7ac2f850813c676b9cc1e1da824343d44a7389"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/util/ffmpeg/video.ts",
+      "sha256": "be2389eaf0bea4253c9ca9f525a13d0a194312935612875085f7dc0e65d9fd8c"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/util/file.ts",
+      "sha256": "dca802e449481d03e31d0a6ae7733d3750ab918a7f31799e8507c3401f304096"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/util/index.ts",
+      "sha256": "809bf9623acaf9334bf3a013e44ce3fe8aeb90c9728aca09d0022b44d9d12549"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/util/time.ts",
+      "sha256": "6ab575081ba829947fb82c42918f9966164210d4400797e671953c84d80402f9"
+    },
+    {
+      "path": "project/bosom-friend-electron/electron/util/windowOperate.ts",
+      "sha256": "f2819494c2143cdd3d216f264f8efa5d41011bfe7a4f89e523bb0f834a90038e"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/api/platform.ts",
+      "sha256": "766ab61a70df2ab5070f0e87e8272de60bffcbee6cf7b01fb0231bb0a657476d"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/api/reception.ts",
+      "sha256": "849d47824d5ff0db5abdc4bd156c9fe24338cfbe765af4e3d49ab8f8df442756"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/api/request.ts",
+      "sha256": "efcab4b326525a3d7ad0d5a4cd2feae05cbe94b33a4adb0e3b6768f15928136b"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/api/tools.ts",
+      "sha256": "942d623154292f048e0ec6f9ac6324a346f84d7403ff8298c8862acca6fffd45"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/api/types/hotTopic.ts",
+      "sha256": "9b58058dbedff40b37a12b315da4899234ad94bf17325b728ae0afbd93df09d9"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/api/types/index.ts",
+      "sha256": "801c305b92b28009748e3abcb9ee7e73738334ad41946ade88042409e7467309"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/api/types/platform.type.ts",
+      "sha256": "1be8ff1e1dd0435094d5c743df77dbbb33223f917b278cd3aef68a5d87cc4e44"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/api/types/tools.ts",
+      "sha256": "6819ebd04fa2c3e6813fbe18d81f305bfe7fab1036d58f2c1aee04a3e7e3ea2c"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/api/types/topic.ts",
+      "sha256": "3b279825a8438bf6903e39375b800192b58b210ea8755824a4cec65408df50dd"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/api/types/user-t.ts",
+      "sha256": "06a54c166c0a2203b77ba1d15fd0fbe7fd6880df8b28278dc6482f35b4496f54"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/api/types/viralTitles.ts",
+      "sha256": "fb652e08d2cd0dbdf68a2c43d6b329ea238d23a93b812ab6df5fbe2fb79faf0d"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/api/user.ts",
+      "sha256": "30780345aaee33f94540ac15bcdffd529b74f9641f97f9f634a87176f320350c"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/App.tsx",
+      "sha256": "f8e9937b347d23c654b7bfc5964ec78d1f770eb366905c1f262fc18e1390cf7d"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/components/Choose/ImgChoose.tsx",
+      "sha256": "87b9b67779ec9fceba8a9e3d1271321ddd2af7bdfb2abb8b0b049717124a4a5d"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/components/Choose/VideoChoose.tsx",
+      "sha256": "9cb9a2c47bf51ff85b81df438e72e47e5a7795f5bc16d4e060b3b3c280e08a4d"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/components/ErrorBoundary/ErrorBoundary.tsx",
+      "sha256": "3cf45fc8922d5aafb1f16945aafbfcb712824daa9dfa9bd6300dc1b001c2bc29"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/components/Inform/index.tsx",
+      "sha256": "0f00774a009e6bca4d200337a78e3f2850932b5d6c1f94b7c13d7713dea94d60"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/components/update/index.tsx",
+      "sha256": "05e5e3426abb656866924c77f186375c8f82c9d10b7176e7c2d5648f62e5af3f"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/components/update/Modal/index.tsx",
+      "sha256": "17c8df16b135e366105dfcbbba9e8d36f481c6f0500f3f526afec4ea63d2f0ae"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/components/update/Progress/index.tsx",
+      "sha256": "afa4c3753e4a70e92ed8e489814c50ef23902b327271f8f0f7a5e26265c87cdd"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/components/WebView/index.tsx",
+      "sha256": "584fb9ffb23c6ebd05c5ea27c6267fb2507959dbf706ae6d8deab9eb8c6775b6"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/components/WindowControlButtons/WindowControlButtons.tsx",
+      "sha256": "2d7422fe9debf8ef2afce78b71877409d5e1b14c8d94a2a45f734b465b7529fb"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/global/table.ts",
+      "sha256": "c7e4454b9f184f1f02395682795e811010c7ca30b2b30faccd00026188f24b89"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/hooks/useCssVariables.ts",
+      "sha256": "4f0845b143d49c7ede27e2c0fff1d3d24948dc6800e7ac9e32d957e4a26a6b44"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/icp/account.ts",
+      "sha256": "64964e09af19ac2c6e690e7c6efccb4318d35df624876ce0f9d2cbaae016eae3"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/icp/app.ts",
+      "sha256": "ff2a8a6cc88369202e64e06db2be23ad2fa7bcc84fcd33906e93c7ee28789cd0"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/icp/autoRun.ts",
+      "sha256": "079195fafbe8893977fa187641bd15a2a62f73c481fbdfc18b9b3f760188cbf2"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/icp/dm.ts",
+      "sha256": "f9653491daf695ecb41ac83aacd129b2ab322d1c764c35ab7160994fe12ea91a"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/icp/publish.ts",
+      "sha256": "a951328a9c2066c34fe87c123cd61d4de1f518e875357b87ebb62a314405b4b0"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/icp/receiveMsg.ts",
+      "sha256": "50fdb6b6270ab3cb9251ec3cf2a749ffd86c41fd24284bc0c4bf95bbb54cc81e"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/icp/reply.ts",
+      "sha256": "257d3e67b6174742f78c8487ac5f932cc6ece6f55411e49f3ebb6ca1f1e6ccfd"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/icp/tools.ts",
+      "sha256": "778a277b50ee2d4e15f9e58714abdc773ffceaed918c371914d1813095770a0a"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/icp/view.ts",
+      "sha256": "de23f4727672c54abe66718121006b0c09eb3d40345eff7bcc8bb09a140344e5"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/layout/LayoutBody.tsx",
+      "sha256": "e4666108f3fb4a8a01619d4d37f95d98470ff752b8b4bd865fc855941b15fa71"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/main.tsx",
+      "sha256": "7405e3db1689522bbbfd2a3806048a15d30fc078f76a1891e800ec2d708f4578"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/router/index.tsx",
+      "sha256": "66a6f10f4ab6d2d964f2bcdbcb62a55a47045a4cf1965204d9992db7af6d9e2e"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/store/account.ts",
+      "sha256": "cbc505c1afedf20ffcc4ff7770b75e3f2ffe20ccb4a99f9291520b8f59d13c6b"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/store/bellMessageStroe.ts",
+      "sha256": "71d443ef43ae12b1d5f06addc0c7f209dac61efda90eee3aca92e90989d572cd"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/store/commont.ts",
+      "sha256": "c4841c1b69e629ac36c8cd49814c5b08ffcb7b07ce0fb587beaf444cc91a9e62"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/store/netStatusStore.ts",
+      "sha256": "a21fe40efdd79c633ccbaa031817cda3ec0f91ff651f1e3b138d97c1e3c15854"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/store/pubStroe.ts",
+      "sha256": "b68a0b1f90182e93e79d8116deb1db9d8d1a8704dd6207d43d6f6bcefab236ed"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/store/user.ts",
+      "sha256": "50bf76641b12fcc69fce8a540ab4e5aac8fe4f9b696e731007a3156864d2ea2f"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/type/bosom-friend-harness.d.ts",
+      "sha256": "47d3384bea94fbcf3d53f36415721d1e2da81042558b3c3700e1a9ae05643db1"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/type/electron-updater.d.ts",
+      "sha256": "7819c8a356b8f075ce9751a6664638af6ff0a2e425da4671fd23154172a6aaf9"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/type/statistics.ts",
+      "sha256": "f411d47cd8426e73cb96930e375aed35b37902c10cc1cd7d60ff7499d041821e"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/utils/clone.ts",
+      "sha256": "623358f1e8d807bffb3ea64e81a3ca181dbcbcca2202ac3210e6bd525bbb6a2b"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/utils/createPersistStore.ts",
+      "sha256": "ea40a8d87084700c6b792383be9e5ca6a39b92a029af6ae461fec3fa7f69dfab"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/utils/index.ts",
+      "sha256": "d90b40a04f3be0faf6ea64843238ec06660eb3ee1c89dc1048306793cf68f501"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/utils/regulars.ts",
+      "sha256": "90492a192c62bf9899ef191980ff7df0f351ee235f672183aaa2809d81e069a8"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/utils/storage.ts",
+      "sha256": "c746dc97e0cf1b1db92aed46420f4766b27d222918024ea7670c3c61d7e74b66"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/utils/StroeEnum.ts",
+      "sha256": "c933b0f396eb4a9ae970b391664d5ff7e9f73bbc1ae8c13e692e98bac338ade7"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/account/comment.ts",
+      "sha256": "91ca372b8d8902e357e9c5f9b4e6ce961649c44f0c41ad2325bcf6f6a838f91a"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/components/ImageLeftSetting/ImageLeftSetting.tsx",
+      "sha256": "4011887a0ef5ed638f0f80d5fc9589a49c8e348602e328511a4572e97acd5c04"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/components/ImageLeftSetting/ImgTextImagesView.tsx",
+      "sha256": "4c26c5b133830366e279ddc366c3daa013e5abc123acfc425d1135907bcafd8b"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/components/ImageRightSetting/components/children/hooks/useImagePlatParams.ts",
+      "sha256": "b137401b0839731c6953f94be8f2d8785605f841e98d3b4020f361de28028f70"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/components/ImageRightSetting/components/children/ImageParamsSet_Douyin.tsx",
+      "sha256": "c601f2afcf68baa262fbba6d95f0fbe4216dc656a6073ded850d24bf63b5267a"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/components/ImageRightSetting/components/children/ImageParamsSet_XHS.tsx",
+      "sha256": "d7c8e4b3b40f40ca13ac88906be8f7af9fb2a6e98ba815525d61782b2d43c00a"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/components/ImageRightSetting/components/ImageParamsSet.tsx",
+      "sha256": "756bf035ce33aa6fbbf0173e21eaf062553dd91106073edf4bc2b9fd03338b8c"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/components/ImageRightSetting/components/ImageParamsSet.type.ts",
+      "sha256": "d5ab081f1f01887cde009393329140ba1188426ba4eed9674d9c0e06572a83e9"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/components/ImageRightSetting/components/ImageRightSettingCommon.tsx",
+      "sha256": "b354cea1b43a7a8d6ff4511eec06307312c9e85702cb51e43351f91980e70a5c"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/components/ImageRightSetting/components/ParamsSettingDetails.tsx",
+      "sha256": "799bc87d5410e1fc484907b27c75d1afa4d1d65d5c7823523e745d9aa190ae01"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/components/ImageRightSetting/ImageRightSetting.tsx",
+      "sha256": "2e68011f751dac154ee0ba1236b25e921c09bf3c248eb0edf3858564f78b0df5"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/imagePage.type.ts",
+      "sha256": "9225a2855f41aa7aaf45e8f7eb9ba48790db62b1e8a53d30c037275874a012f3"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/page.tsx",
+      "sha256": "4d46c6193cf86450f0b3e433cc00cc441ddd6f500a62fdb86c5ff426641e5a5b"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/imagePage/useImagePageStore.ts",
+      "sha256": "97a15bae46acbe7e6b898c1ff6b80db8cd7937ddae204190e6dfc5b6d5873f62"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/pubRecord/components/PubRecordDetails.tsx",
+      "sha256": "a817dd07d6c257a2f0f318b7a894152b93869da9dc6242c657f998cddd9eee4f"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/pubRecord/page.tsx",
+      "sha256": "2aa2f51ff7ccdf3aa851be81858f7dee803f2e13d7b0f3d7e543003203202b3d"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/textPage/page.tsx",
+      "sha256": "fa98f1b7af605eba25b11f0ba954df88c050eeff95460a475a119910e3b0e74c"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/comment.ts",
+      "sha256": "3eab44b2373739ec0824400ebf5c889d63c428a77336b523c3567e3c6cfdea61"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/CommonPubSetting.tsx",
+      "sha256": "b4aa17687bc7d5984d10a9d93c8de52bd989080cf74a6c7386bad80edb2f083b"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/NoChoosePage.tsx",
+      "sha256": "4a3fcd7bf63d7825f00fa1edafc2b6e0e636e380bd52ca6ad9b7447ac02ceebe"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoChooseItem.tsx",
+      "sha256": "5e7a5b7369360c790ab03a1a3827f29d598bba9592691070ea90fe3f87bd4ffd"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoCoverSeting.tsx",
+      "sha256": "c1cf3040f30de02c7b336258553c3fd8db6d0a605d498917cf2324c974a02b96"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoPubSetModal/children/hooks/useVideoPubSetModal.tsx",
+      "sha256": "fa86f6207de284311891821fe7c52d531d0b5a2b273955050fc925dbf65ff11a"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoPubSetModal/children/VideoPubSetModal_DouYin.tsx",
+      "sha256": "40147f623364c27260f2c4d2b960fa58fa1eee314bc499c03d5c580fcaec89af"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoPubSetModal/children/VideoPubSetModal_XSH.tsx",
+      "sha256": "f5424ad3285e5050ad82c51cf9ceee401c4747bb692af8b37e21e4041a3df533"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoPubSetModal/components/LocationSelect.tsx",
+      "sha256": "c3b84f93139dfe47b870adc915908fcd6be1ae7d0b4cd9e70fca953512676dc7"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoPubSetModal/components/TopicSelect.tsx",
+      "sha256": "bbf7d8a8f52e21e41c1301c546b4c61d5e79c3e2b36722cc092c6cae7362a9ec"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoPubSetModal/components/useDebounceFetcher.ts",
+      "sha256": "865fce81e68b7f233c0c30f8b95393cd5d5f8069837184712ee3c282c4d19d80"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoPubSetModal/components/UserSelect.tsx",
+      "sha256": "5e70943bebc22725c785a62c5f03bda23513068807d1f30160da7b6385517761"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoPubSetModal/components/VideoPubSetModalCommon.tsx",
+      "sha256": "4ab79a9e5aab30fd4db5f7e0c4aba83eeb6050927322ed78f8e6eff2b526aba5"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoPubSetModal/components/VideoPubSetModalVideo.tsx",
+      "sha256": "408cd53b139f9ffa59eb7ff65c3f95339d2322c9bf06b0b18f3006f7dcf28a7b"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoPubSetModal/VideoPubSetModal.tsx",
+      "sha256": "e7cd8c96fa430e391e571170fa7dfd06f370371832a6da9df3f3b310cd961b1c"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/components/VideoPubSetModal/videoPubSetModal.type.ts",
+      "sha256": "8249a8b32a839e20ca12417aa3be7b1185d226e9ac839b31f595b6d1d08f7712"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/page.tsx",
+      "sha256": "a57c9a15b59d459dae3a260d679464f510dc3a3d2f9b5dc363eae1073e29069c"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/useVideoPageStore.ts",
+      "sha256": "bce1d32da3ef33c90667b57cbdb7cdd89348192c403edc348607b47de43ead18"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/children/videoPage/videoPage.d.ts",
+      "sha256": "e8c64f834e67a273ff900a06945295b14cc76f5f99ac43f18744aff7f80247f9"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/comment.ts",
+      "sha256": "800c059782fc3847b013e86f6378e8827b6d961f22a49a728fbf34e0a783b9dc"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/AICreateTitle/AICreateTitle.tsx",
+      "sha256": "63f91f240eaa2ea08eca71d1d7be4aef78a742be360da327d6c49f3f12454cda"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/AICreateTitle/useAICreateTitle.ts",
+      "sha256": "9a2dc019666ba9655ff95151e5cf2344db9e2b71ee92d3186a4481bac862b01c"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/ChooseAccountModule/ChooseAccountModule.tsx",
+      "sha256": "9058c183aa4f7c58743b3f695d75feb87115c2c831da0a3a1a993471c252d773"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/ChooseAccountModule/components/PlatChoose.tsx",
+      "sha256": "80c92f83dc08926801f989d8aa239897c3ab56dd73567f73968500eebee253ed"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/CommonComponents/CommonComponents.tsx",
+      "sha256": "f8bf3ff3d34526a99c9b76afe3209e7ae3665d98f7c124022a3b2e1ed8dd244e"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/CommonComponents/CommonLocationSelect.tsx",
+      "sha256": "1414529fad91af60bf6b792643d45aea99ef159d5b4b1b91168827580d04efec"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/CommonComponents/CommonScheduledTimeSelect.tsx",
+      "sha256": "d1c3a74bdf0dc19635b594c8d859eb280eab0e28efe2ad6a6e4a60ae6d499944"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/CommonComponents/CommonTopicSelect.tsx",
+      "sha256": "57d430ac8e031cae46af8e0cf059b821978f4907dbaaeb5f09530c6297375fc5"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/CommonComponents/CommonUserSelect.tsx",
+      "sha256": "c296d74d5ee55a068830c28bcd6445e39298f30d00fe9508d3059d5838b4f8e3"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/CommonComponents/DouyinCommonComponents.tsx",
+      "sha256": "75c0466e20b870af52d18a003926534e5b78f028b61d309aa07b6fef1c36b331"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/PubAccountDetModule/PubAccountDetModule.tsx",
+      "sha256": "a7b4ebd0d78faf883c0b777b88a0645332092418cb113f11ca606da7a8aae429"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/PubProgressModule/PubProgressModule.tsx",
+      "sha256": "9243a903a6b712fec304f57e4de61dec1c58173bc217c5f762aa4e375235510d"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/components/SupportPlat/SupportPlat.tsx",
+      "sha256": "53f1e46346e5741a248d722fdf8ce5b64c3f185c14b7635808d610c80291c6b5"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/hooks/usePubParamsVerify.tsx",
+      "sha256": "ac2e1a92784a8605043e250fb01fd9fc03c374036593d4af69e87f38e1f449cf"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/publish/page.tsx",
+      "sha256": "ad0ada5e8ee4caf98079804a9d51df925cb56087d62e878e3673e1315c173b5d"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/reception/components/DmReception.tsx",
+      "sha256": "dea160d0813f1a2d766bbb8d1471a5e49805ea1d41d295e9f7422382421bd053"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/reception/components/GlobalMonitor.tsx",
+      "sha256": "e7ebdeb29aa73be9422154e98a11be7acf988b7c3eaf94cdf4d60cf14945e41d"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/reception/components/ReceptionMonitor.tsx",
+      "sha256": "6ece35dd2681efda348ee4816580e64337a3482198a748b5b526d5243c3a2f59"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/views/reception/index.tsx",
+      "sha256": "1ed4f4621f357cd78defd43266e8172493d1300f801423ef384a2774e9e7a4fd"
+    },
+    {
+      "path": "project/bosom-friend-electron/src/vite-env.d.ts",
+      "sha256": "404bf481b10ef85ab108f4f0fa0fc817b8ae745e2912dac7d95a788b16fe6cac"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/adapters/platform.ts",
+      "sha256": "8a90417684a54337ef5e0ff2fcfd7f09f7620328e298fe6072b0a0b5c2c417b8"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/automation/engine.ts",
+      "sha256": "425c23ef82a3e8328b59eca0433d054acc2c6bb220111a114e45ed24246d4ecd"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/core/agent.ts",
+      "sha256": "9a423cee21cef06becd4235dc96c527be0ba5c9c2c93dbd937325e81b11d3408"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/core/events.ts",
+      "sha256": "f1f670a38ef3e6fb875304dbf4cfaf32441e824bd3be2893356b1ddef7096939"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/core/guard.ts",
+      "sha256": "20aaa9f6239d35fe423b6e6a7fce6fe293e2726171fe3d69060e1b255a796e7a"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/core/llm.ts",
+      "sha256": "238499ae5f8bf78153a3a7d8ad64cd6b6e3cfff25c17885daccb36d35a0f230c"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/core/prompts.ts",
+      "sha256": "aef191d75b3d5480a4ee2cb6e238de568fdfdde3c9fd1e33944aed5bdc9976bd"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/core/state.ts",
+      "sha256": "dc94e6880a281b261095214ad1073cd1a738e824b0237235076bd55dd869c663"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/data/store.ts",
+      "sha256": "316dc36eb12fcf57f04f6e6c917c6fdcaa87acaa3f810cc1fcff36afe72d5ede"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/evolution/engine.ts",
+      "sha256": "1560abf05e67b2771a7b11faa7b3d4dbdc6c1d89acdacf0b6dc3fa78a7e9c27d"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/index.ts",
+      "sha256": "6228d06e5b6ff8cefe900aa28d7b99b42245e1ef45679d90829cf653647c4c16"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/kernel.ts",
+      "sha256": "222914c57ccd0810600fee269da1c4fd07644e1c54521cba8635d6ae849e23b0"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/knowledge/seed.ts",
+      "sha256": "e44db12cdbd4fbbfa30105d3f14f5420d7742710e61fbbd8c7c35ce5e68b8cbb"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/tools/automation.ts",
+      "sha256": "525f4d6a4adee4c0eafa3e0f2ccbc7d3d2c108c67f4c790a49d87e6d45ec70eb"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/tools/browser.ts",
+      "sha256": "54b8b826abfdc851901b5f6b4569d273c4f52877380ac262930a8f1561247ced"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/tools/content.ts",
+      "sha256": "3f3e29184e8d9d9725abb64ace2a16829eb234545e0a483dd3be6a2ccea724e9"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/tools/download.ts",
+      "sha256": "2fa3d26df8802215cbf065d46904a8dd31f28705093b48cd2748da0d38f3e864"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/tools/platform.ts",
+      "sha256": "c43092b1d9a08e874c5e408d6b7ad6637847a42d91d5ad8fb3802a9f70a986ee"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/tools/registry.ts",
+      "sha256": "ecd0cfaf638079914daac42d8fd4cf718186f9a9d7c914bd27d6c5e140edf14a"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/tools/system.ts",
+      "sha256": "c8ce2f392f654533d915f79c97fb380e156c636254079f76889d026a28ca3e3d"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/types.ts",
+      "sha256": "502fe75a0a8a619d27450b3610c44eb28310e2da33e24a871bedbf72b384a27c"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/workflows/automationWorkflow.ts",
+      "sha256": "0d7f47c4f46e95d8513ca1d04ba05e81325822dd4b247ade1be7b94695266454"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/workflows/contentWorkflow.ts",
+      "sha256": "fbdc55e6eda9ab5916446b9d4fe34e02db8e6f3999902197f0f7dea1485e8dd1"
+    },
+    {
+      "path": "project/bosom-friend-harness/src/workflows/platformWorkflow.ts",
+      "sha256": "a24df6c068563fa1f8b53f46e6aefca6e2f4f64f0e48f9d1733ef4d215867be5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/_server/server-fetch.ts",
+      "sha256": "fdee414d601ec4880fa735694e7b4316e6e47780e418164f64bd89cde67b4f60"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/_shared/credits.types.ts",
+      "sha256": "951044cd34deefd0a90a913fc3bde7d4abbe4e72718409b64ea452f58e4b48b2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/_shared/material.types.ts",
+      "sha256": "3da4741015e8631302ea7a695d07f6ff1c85ef91154c1023e80e604ab814a72d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/accounts/account.api.ts",
+      "sha256": "b26da82f8b38cbbf7aa37f343e4109b9d52c3867084fc4316252bdc9b780c81d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/accounts/account.types.ts",
+      "sha256": "43f40114cab6165ac8244a4021f6cdec41e6b5311acda1173be8ac0882f74e9f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/ai/ai.api.ts",
+      "sha256": "b08d53f1b3ce7112066e39fd6d3a67f1fbb09e91afab6ed9c39a4757d2b6d62a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/ai/ai.constants.ts",
+      "sha256": "399f85578428feea4514f80ffc1a43e1ab8f07b240c2c44c26e34c4235752da9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/ai/ai.types.ts",
+      "sha256": "31e71df26d9147c3deb164c9923396a442903d95b2599cde607de58c13fd4d3a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/analytics/analytics.api.ts",
+      "sha256": "0806dcfb770c96908d8b50f136b7470f9874e8a71882ec8d014423166493ce73"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/auth/auth.api.ts",
+      "sha256": "8fcf9b4cead003febb6d6d919e80f0d9b4b431fdb435a3b332cdbc8e228a5a09"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/auth/auth.types.ts",
+      "sha256": "84612da82d079ed4b38740eadb73aebb2965999612493f0deabf28c9375ec8c7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/channels/channel.api.ts",
+      "sha256": "276c3283741a58b3277006f475f046d672363fb33eaa5b3389b05174dfdc6a3a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/channels/channel.constants.ts",
+      "sha256": "51c11102f2b6bd4ed5cb0188724d6e9ae15d53371f32860400833a700a2a315e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/channels/channel.server.ts",
+      "sha256": "827491bde459883fa2c827b5fca6ec4abe9b1bbe609a26060824ef8b24182795"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/channels/channel.types.ts",
+      "sha256": "8484109b93f3cc6d39b57f95f826ab60205640e9c2e50b115732d6056f45f210"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/contact.ts",
+      "sha256": "5dde37050ca9ac8ebbe326204d8fa61f7661713904b942731ff19cdf5819262a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/materials/material.api.ts",
+      "sha256": "ff59c47c9c484add887821d575ac3a1faebe9efe20dde6ec24b1baefaae9cab3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/materials/material.constants.ts",
+      "sha256": "2a4c3806250d556ac5c7a2e8a92a3be991e04d38da299bd3069c907ab307c303"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/materials/material.types.ts",
+      "sha256": "5213eb69583e5d14925467cdd94f37fb559c0e004ebf2131b7258f6977cac86a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/platforms/douyin.api.ts",
+      "sha256": "68f9cbc315da827a8c18ca6cb77d737065b899464bf0e3fc73696c0640475eee"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/platforms/douyin.constants.ts",
+      "sha256": "7c5dcdcdcf29f77c5abde42c50a20730f612ed86f9627e5171d6af766aa117d1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/platforms/douyin.types.ts",
+      "sha256": "fee4c7cc79c931f3856ceb591890e034cae24a9b315a7f65d820f984150d4197"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/platforms/publish.api.ts",
+      "sha256": "3155d4ef11e82b9365ee686b2c7d314f092f45ce3ceb7d5831d0ca712c1e9b84"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/platforms/publish.constants.ts",
+      "sha256": "5a1574995f7391ba05c289d0dc8916bd55d399e21de743e6429b2ed39f4e2e7b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/platforms/publish.types.ts",
+      "sha256": "211ef3799f55cdedb11f05cbc9232cb3dd88115a4c13eeae5dd5fcc88462d1c6"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/platforms/work.api.ts",
+      "sha256": "ba09db4444c4408ffc498b9e879fe3ee62dcbb3aed4e425b068227adebfa1581"
+    },
+    {
+      "path": "project/bosom-friend-web/src/api/platforms/work.types.ts",
+      "sha256": "0b50832a6d9e5ab0c7166f2e7918aceb9e8667504db2bf359a4f7e446b8c8252"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/accountCore.tsx",
+      "sha256": "55bc97e792785a34c47a5c43a8b3545952cb9242e099712c579982a644d974e9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/accounts.enums.ts",
+      "sha256": "376c00a15b974ab6ad3b0d000990528da7f32051d22870a52fd5779845ba842c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/auth/page.tsx",
+      "sha256": "32838e7c76ffeed1eb7db60e5b521a26c9b3a725c16e890c4ba57791fcc3b63e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/AccountsTopNav/components/AccountItem.tsx",
+      "sha256": "e8274a8b751f3c87a42e8a96bbb6c2031cb2b07540b8aae5092d1aaa7fa28687"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/AccountsTopNav/components/AccountSearchBar.tsx",
+      "sha256": "1874a1be3eb9d6fdf26d1e6d572f10f7d7566e00718c036bc4b93f46c25aa2e7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/AccountsTopNav/components/AccountSelector.tsx",
+      "sha256": "170982eed4d16e160b7565ead55aba3bc8b97ffdd6a4aaf6c0e9bdf0cc48e55c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/AccountsTopNav/components/AccountStatusView.tsx",
+      "sha256": "0194dabfbc78bcac62bc352ba8b306ca65357dff191f501ab8ae142be19fadef"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/AccountsTopNav/components/AllChannelsItem.tsx",
+      "sha256": "37857c691d73102708d6a0bc397b98a2c767f29296ffec3cb9c3ec22f31f0e46"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/AccountsTopNav/components/SpaceGroupItem.tsx",
+      "sha256": "aec2c885b8ba4b2ddbe9db84b774e5106b439470eadf521a0e9b11455a481227"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/AccountsTopNav/index.tsx",
+      "sha256": "222afa346e8a35363806b9e576ca7b67d44610c7f279f3d3c945660b1c15e58f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/AllPlatIcon.tsx",
+      "sha256": "b06ada026d3b6d5b0d52b13c2a22016a6293dc053fb5e01b30bacc03525b5afe"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/calendarFestival.utils.ts",
+      "sha256": "d98b6750ec66bbc3184bff5676f4118ff8aac766653d3102c2d44e7571c5121f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/CalendarFestivalDetailDialog/index.tsx",
+      "sha256": "64d6149e7b66dcba8764e7c5d5bc5ee3b53bb0456cd686bc8e63988efbbc62a0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/CalendarFestivalSummary/index.tsx",
+      "sha256": "399a23554bee95f8420f860bb9afacfe3871a89f15e27454ec1c689ffdcadfd0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/CalendarHolidayBadge/index.tsx",
+      "sha256": "d2b853eba762e6690bfdd1048d58dda6e582a3a6810b8ae97babc2c40daf402f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/CalendarLunarText/index.tsx",
+      "sha256": "c48f38cb7f4b1d2cd5f148f7753398368cbca5e6c1d8a1d67fe704d60d4289ba"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/calendarTiming.utils.ts",
+      "sha256": "2cddecaa0e15c93c110c3dbbbf3ab02755f696ec39734f18a52ebf3bf193bf71"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/CalendarToolbar.tsx",
+      "sha256": "18280fc7ad27e86f2a6e9d90ec29efa6c61303b6de347486dc5e677c5c0fe4c4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/index.tsx",
+      "sha256": "4efcf7cd57047bad49ed8f2f4a645e9a61e26e031ceff9489d12eabc887f2413"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/MobileCalendar/index.tsx",
+      "sha256": "d67311507b2438002113ba24147d26eca6a9892aa900f2e029fc934b956405af"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/MobileCalendar/mobileCalendar.types.ts",
+      "sha256": "aec5f7df1346bdc8a324fdb485dbb51345098f0f8d10d53aa5c9116624e2bf02"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/MobileCalendar/MobileCalendarHeader.tsx",
+      "sha256": "e8ffc1628d91fbbaea0693dce456056c4d258d0694e0b3225d47e0828764e1e7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/MobileCalendar/MobileDayRecords.tsx",
+      "sha256": "023a95419c32e66964025a5a473f2add1bba1d4008bdab71795daba0a861ff44"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/MobileCalendar/MobileMonthView.tsx",
+      "sha256": "f1819110748ff8edbbde2c9c8e2725488665e17b0ab698c6a7e345867c5850eb"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/MobileCalendar/MobileWeekView.tsx",
+      "sha256": "06272a91252ff9e9bfd89a6f1d38aa475d3fdb72e3715d12ef9080d39b6a6b7c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/PCWeekView/index.tsx",
+      "sha256": "4e0e185e3244f48bf8803929c58e167a46e1820921fb1f289d3cefb4b54a468a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTiming/useCalendarTiming.ts",
+      "sha256": "83dfef945d72d2275c386ffb5b2506c2cc28206f45cdac8c480f352f77a3c250"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTimingItem/components/BoxDragPreview.tsx",
+      "sha256": "3561105ed4e5d819e093897eb8928b6f465bc1e15db5a284a8df174506a94efc"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTimingItem/components/CalendarRecord.tsx",
+      "sha256": "aa49ec1603358009bf42b3aada398dbc1094ad729ddb7a70e560a92ff099b257"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTimingItem/components/CustomDragLayer.tsx",
+      "sha256": "e13766b90cda07f9c4d93ec7b4032adf4c042bff996e2c596c74a861273a2327"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTimingItem/components/RecordCore.tsx",
+      "sha256": "6cf267144e948e8e3777fa1b5ca62ad3ad2166f97b79ba1e919e40dc2a05e326"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTimingItem/components/ScrollButtonContainer/index.tsx",
+      "sha256": "78a0f374cf0adb730a17d6e742196b380679b1d3a02a68b75fdd1371c66e414e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTimingItem/components/useDragAutoScroll.ts",
+      "sha256": "09afc32c2be68b3f1a712bbedef46e2877f8ed8f00dc3028ad4744214e04a429"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/components/CalendarTimingItem/index.tsx",
+      "sha256": "95c72f9fa494c05fc41ff759167110e930eb86c7637ef3ae28ffe23df357d8cc"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/hooks/useNewWork.ts",
+      "sha256": "faf630412c6bfbcd6856e8af99b7a939b9b14d22c37ed0eee5f8f4583344ecc1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/accounts/workAnalyticsCacheStore.ts",
+      "sha256": "2b94ef9242ae3cdc075ae0ccab066725632fecce3d9f38343fdd4d50eaac2d98"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/agent-assets/agentAssetsPageCore.tsx",
+      "sha256": "5a27e562c5ebe860211fd5666562e648b9e6567dabddc186837d927e8c20cde5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/agent-assets/components/AgentAssetCard/AgentAssetCardSkeleton.tsx",
+      "sha256": "5bf2d27d09f647566439c299e6cf74124e8c566d87bbc1b9bdc84132eefdb63a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/agent-assets/components/AgentAssetCard/index.tsx",
+      "sha256": "cf4ca06220c84c3079f9da0ce452c39ebb2c3b5969ac3f0d03e2dd8e0de11e89"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/agent-assets/components/AgentAssetCard/VideoPlaceholder.tsx",
+      "sha256": "27807b2601b20e7a731f61679df0a80966891bd354fc79f79b6f95b447809e0d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/agent-assets/components/AgentAssetsHeader/index.tsx",
+      "sha256": "73ae5ef790778bf2bd4bd685a22cff7651a4165fb9d479e9934bff61c5a7e2d3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-interaction/AiInteractionClient.tsx",
+      "sha256": "bb31d30c8eae3adc72a19f5a97bc576bc7ed18315c1ec855458ee21d6f68b45a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-interaction/api.ts",
+      "sha256": "9e765e400333a76bd9b19d0fbf77cc606a3121d76afb547fbe748b262c546a1c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/AiSocialPageContent.tsx",
+      "sha256": "45909b63b29728e934bc47200a0efec41935ec5272d01f0e0dac5b2c54095d29"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/AgentFeatures/index.tsx",
+      "sha256": "1972b7024aeccc34b00fac8a4bce765dc2460f601d6c26f79da2502d4db57f29"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/EcosystemDiagram/index.tsx",
+      "sha256": "cf3dfe66ff3bdad6b332c797a15330a89f1a92b76460e596b1a8c834ba0efc1c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/HomeChat/index.tsx",
+      "sha256": "0905ed4650a1025cdf3c3f3d6703d60bf55a258ea040f1e46552928d9a514eb2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/PromptGallery/components/index.ts",
+      "sha256": "c19ce7d207b69946819f67c4109a39caaa937dc665c5d0c18e08390ae950b870"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/PromptGallery/components/VideoCard.tsx",
+      "sha256": "45f3751414d84c83ae7b240ef5e30049338a63dfedd854966951b6863e28f201"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/PromptGallery/components/VideoDetailModal.tsx",
+      "sha256": "5f3a9c3f99ec1358627f229360c19b03b1cd11066c723bd56e84429cf20d676d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/PromptGallery/data.ts",
+      "sha256": "515d1411d588b1509f04f9f50d871f631c4150a2e44202d42d27f8ae0873fc29"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/PromptGallery/index.tsx",
+      "sha256": "90e1af4577ce202d14740fac1692c4ff6ce70524adec947b1f2bc2e5d304e40b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/PromptGallery/types.ts",
+      "sha256": "ed23b1e6a022bd1ddd304d993d7e9aee74a2d704c27d04c7cee985525dfee2fc"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/TaskPreview/components/MediaPreviewCard/index.tsx",
+      "sha256": "14134d06f3e8de5c5309887d9707d2ba6d04a7cd28a64587a2fe68f58e08403b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/TaskPreview/components/MediaPreviewCard/MediaPreviewCardSkeleton.tsx",
+      "sha256": "9ee212e2ae04d9dae56a78d94e73223a1acab92518fae65ef0c346a5768d01ed"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/TaskPreview/components/MediaPreviewList/index.tsx",
+      "sha256": "0fe01d12edcc02ef8538b4f508c1fad12c70eba2d07cd10aa3803a17fdadf4da"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/ai-social/components/TaskPreview/index.tsx",
+      "sha256": "983ca926fc428295836179eae9e066f7f9ae68c4f152db83788f58e5ec902850"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/auth/components/AuthRedirect.tsx",
+      "sha256": "270db25ffe6878955679c7346c470f8da411dcbf8b504ea465df64d5fd5f4825"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/auth/login/components/LoginContent/AccountLoginForm.tsx",
+      "sha256": "47362d1ee09600ff93933dc7fe898c301527de0c16ed3a8780dfa39f8a875f39"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/auth/login/components/LoginContent/EmailLoginForm.tsx",
+      "sha256": "47d4f5784c047d8ecb1f83a2b971a82eed76268454c6beeb7e486ea005c2e531"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/auth/login/components/LoginContent/index.tsx",
+      "sha256": "6ba5ac9a6d5d2a1a4c575923fdbea8f25e57772ecc5e8630148e168951707f01"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/auth/login/components/LoginContent/PhoneLoginForm.tsx",
+      "sha256": "47d3999887c9406c4fc328666504bf9fa3b910f0c7439cf95862867d2a052d9a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/auth/login/components/LoginContent/useCountdown.ts",
+      "sha256": "6a5aed2def30f6fab62cf3cc4bc638a151568c52af7f7fe1321ecc9c3e77dde6"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/chat/[taskId]/components/ChatHeader/index.tsx",
+      "sha256": "5a32cb0275bbde1aafc166d1db7ae5d45841898239279e04eebec46c04bd1a6a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/chat/[taskId]/components/ChatLoadingSkeleton/index.tsx",
+      "sha256": "68065cf0b710c2b8d4316dd27574e59f33e02b394599f3f2b3640015ec5cf399"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/chat/[taskId]/components/ChatMessageList/index.tsx",
+      "sha256": "d359586cee2a63024ea5c041d91e9a0e8cad2ce1bd7debdfa7eaa3871b9497e8"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/chat/[taskId]/components/index.ts",
+      "sha256": "9e9247bf5bf3e984a88bbe94c9d127c97ddf97c0655e33a68a07a7b72a984029"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/chat/[taskId]/hooks/index.ts",
+      "sha256": "52bbf6e7ce478328ced9df35f409430636ea56a2adda7a3b52dcabf1e2538bf1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/chat/[taskId]/hooks/useChatState.ts",
+      "sha256": "8620ac2f155e2cfb461039a2c64dbb3b582cd048af5d3f18d596a0898c61f7ab"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/chat/[taskId]/hooks/useScrollControl.ts",
+      "sha256": "cb691a787423671403bb02697d8f1f5b44f9e50c95a658eaa5840a800069c1df"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/chat/[taskId]/hooks/useTaskPolling.ts",
+      "sha256": "d1c8ec50ff63245a0403a739ad9bb878e0fec4a72049ce86fd7525c7cd26e79a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/chat/[taskId]/page.tsx",
+      "sha256": "c6ab9c8f38a926f5cd6cb632ee49b9fc795ebf9dc4143f88558381dfaabe0288"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/chat/[taskId]/utils/index.ts",
+      "sha256": "00a073342ad0e132197b9418224952ffa2018d06fbed69c23b64a69b76a5a68e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/chat/layout.tsx",
+      "sha256": "b4c3242ee3e99e4ec273411d0f64c3619d6584f1902fb01a34703796357a80fd"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/chat/page.tsx",
+      "sha256": "7cf5f6fc48a0ebd3a5ba803fc788f1d4cbab72675f0c5303ae318adfa52e83ed"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/data-statistics/api.ts",
+      "sha256": "4e2380e35cf5ef0f397ebff310cd2519012dda0609dc8f3cd50de8cfd8f810c0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/data-statistics/components/EChart.tsx",
+      "sha256": "f48037518f17638fe8baad622b2ee1f5deb60f4216809fd1d6653dd6d00ce73d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/data-statistics/DataStatisticsClient.tsx",
+      "sha256": "c43f86e58c95f3ea5fea9626262e88974d751f5dda4a75d73740f18ce8b03fc3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/draft-box/DraftBoxCore.tsx",
+      "sha256": "98fe13684ef2423742b3231306558e44b8f15b76506bad34e0e36e80dae530a8"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/hot-content/api.ts",
+      "sha256": "29470d5c87220a7f67386551a52773ae86a3209faf04f52b903c8d48ef6718c7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/hot-content/category/[cid]/page.tsx",
+      "sha256": "275e3ed55a15d947477334d26ae1fd61e20517bdd9ddd8b44572a3b0f7384922"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/hot-content/components/HotContentCard.tsx",
+      "sha256": "cecf0e777e4a15f48c638c58e1560cfa3b915a4aa2c1634b139562534eaf117e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/hot-content/components/HotContentCategoryContent.tsx",
+      "sha256": "90d763408b4cd8d4eea416b496dd4dda9e056705994a11eb0bc20dda09116aea"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/hot-content/components/HotContentDetailContent.tsx",
+      "sha256": "43a259372bf5ec4182857694325740ff21763ea64e70928166416a5bfb5be2b2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/hot-content/components/HotContentHomeContent.tsx",
+      "sha256": "23f4bf750681bd4093faea034d22ac8ccc82bf834fb4a142b16ef0b949ca6f2e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/hot-content/components/HotContentNavigation.tsx",
+      "sha256": "733825c5e5cb3fe7dcb0d2b29211c60b8cf2922cb357bf0fd1d46b433baf42bc"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/hot-content/components/HotContentRankedList.tsx",
+      "sha256": "6b265cec9550cb1416ae92df4a4422ffd5a567596cf3b6ae6ff5f77f8f5612da"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/hot-content/components/HotContentRouteError.tsx",
+      "sha256": "9e6283d396dab3246634ef8d84bc0ae06aecddd24aa9213ba4ac42229d8b063b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/hot-content/components/HotContentSkeletons.tsx",
+      "sha256": "58dae0057e404f9f356129fbc3165dbba46eb2a65d0d3ff52a69d7a96667264e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/hot-content/HotContentClient.tsx",
+      "sha256": "86bede5abfd6af34921b45c889a648cb4106fe84513efe0d5a04defdf4cad573"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/hot-content/source/[sourceKey]/page.tsx",
+      "sha256": "60a9caf18b1028e41f200be7afaee68b6077184d824cfa8ac51c2986a804c36f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/not-found.tsx",
+      "sha256": "d3b448ba83dfb11484600f166695ec3a5f73c62e7409df145177733f371913a8"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/page.tsx",
+      "sha256": "652254125cad523f5188d2a170e4fc430af3f02ebdc45085fe80eae139212485"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/tasks-history/components/UserLogsModal/index.tsx",
+      "sha256": "7b92d508797fdcfab5f2dee0c9729a1ef53ffa03e5ba7de3cdad73aabb318764"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/tasks-history/components/VideoHistoryModal/index.tsx",
+      "sha256": "23efdf0b78e454d9181f31e85050f79d5c2528092b4a35ca5f20dfcf4ba4b26f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/[lng]/tasks-history/TasksHistoryPageContent.tsx",
+      "sha256": "130c826beca99463b27e1e20078cbd99494760346ca76212131533103a186df6"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/config/accountConfig.ts",
+      "sha256": "186a401400af77b418ead19d719146c02157f29c42c996da6096f449edcee77a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/config/appDownloadConfig.ts",
+      "sha256": "bdf51b04de034b86df78d4800cee89279dc77c52d1ef77176ae3480261c3fcba"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/config/enterpriseConfig.ts",
+      "sha256": "a0983d8dc93fe9701cadbc9520024ee5eef4ba9e50e77fac16e68cc35e919bf5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/config/helpConfig.ts",
+      "sha256": "5c886ca5dbbdec3c5d3ba18bee576cf026d66608699cb65b5e552f80a7d7a00e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/config/platConfig.ts",
+      "sha256": "e4b1ad27047b08b93d31a02e4b430cb51c0e9e2cb85973dca13c9e09cd258c57"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/config/publishConfig.ts",
+      "sha256": "028d3c8e0abbf3ebabc3a9c509f0863b91c4cb0038d15f0cd03b768c37500e0e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/config/tagConfig.ts",
+      "sha256": "37b0200875b0e5d4222f9fa3a10e18d1d182ef358a3d803706ec32d02e2cedc7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/globals.ts",
+      "sha256": "203957ee091a8bab84249706f8c68f1b941e867db3847559b9fcde075fe8cf5b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/i18n/client.ts",
+      "sha256": "6fc9481dc1779c17e578a32be29d8183c4e12854a7735f3857d969433ad7e0cd"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/i18n/hreflangMap.cjs",
+      "sha256": "839676e78cbd800c219de09da26ac250f332f2e617dacbf9bf399de5d3434b6e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/i18n/hreflangMap.d.ts",
+      "sha256": "bb05f57d795c8acc5548873117470e9e1047a221d227fd5463bd26d6fe472570"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/i18n/hreflangMap.ts",
+      "sha256": "82cf2fd729cb4376d3599e8c6dd22a8ac7faa3dcb10f64fe2b8f1b222fabfc57"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/i18n/index.ts",
+      "sha256": "b20cae053867bac85e5713319ec8e4ad2aa71e023717bcdf741113e31e05dc46"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/i18n/languageConfig.ts",
+      "sha256": "1ba746d75c9977a1237225ca42c8edef9afb0b437480a4c5694a957164abc9c3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/i18n/settings.ts",
+      "sha256": "28cade56ddec6dd22ae129375468f7ce2128fde6d16d78aae02f45cea0f22603"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/layout.utils.ts",
+      "sha256": "b699aa0528f4f2088309b342c60816e8c2b9a5e81ce37dbca458f7794b28cd21"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LayoutSidebar/components/BottomSection/AccountEntry.tsx",
+      "sha256": "904485b9641373da4c61022a55e30416a717a47114b9b3fad4974640b4e2b23d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LayoutSidebar/components/BottomSection/index.tsx",
+      "sha256": "d303ca1a72e79230180eb72acb301638fdc33402022762f6758123247a9121d9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LayoutSidebar/components/BottomSection/PluginEntry.tsx",
+      "sha256": "000e4f51f2bfcaf9aaaef64689fce25038c8dd72b700511e095a57e319abca45"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LayoutSidebar/components/BottomSection/SettingsEntry.tsx",
+      "sha256": "8c001ecdeec724882a82e486f863081fca43f9bdba8d8a64c7823ad60330e452"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LayoutSidebar/components/BottomSection/SystemIntroEntry.tsx",
+      "sha256": "c09834b5d9421bb926b4bba2d8ac264fbd496645c6a2a30a1ddbda2f68b78e8e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LayoutSidebar/components/index.ts",
+      "sha256": "6bae4100bb8ae63ae358e1f4fa67088a98d752209a151ec1359de68ea2578cd7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LayoutSidebar/components/LogoSection.tsx",
+      "sha256": "3e00b35ed60756dad84a631d90ebe69390d8f463596bd2c8ea1f980e6062a9ea"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LayoutSidebar/components/NavSection.tsx",
+      "sha256": "0f6b2a9785657f5838285e681447af8f107c736ae21629382540a14e53b80dd0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LayoutSidebar/components/UserDropdownMenu.tsx",
+      "sha256": "dbda572e06b8c1fc9e8d20fb5c6936e1c97d8ecd70e446832e70d5bea2e3ea6d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LayoutSidebar/components/UserSection.tsx",
+      "sha256": "5ca62cfb8f19ca9c923812cdce1cc89c9b644290e4ba96bf8070035d40f7e9ac"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LayoutSidebar/index.tsx",
+      "sha256": "46fe9ff3c6c23722393dacd45396f77a71fa617b820b911e3e30b7e1c8de0e18"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LayoutSidebar/types.ts",
+      "sha256": "463c9a3878d021850acd3821b9e4a9fbc98059bbdc199f21291a394a400a3f6f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/LoginDialog/index.tsx",
+      "sha256": "8944b77dd481fc6bb3cf9a1ce1456530a758696fd88f3701a57dd84d2e2912c8"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/MainContent/index.tsx",
+      "sha256": "2637e1bcae438f5d64fad8cc036599fc26207917d326228dc572d33f72f5820a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/MobileNav/components/index.ts",
+      "sha256": "70bd0f9da0bdb2504821cc70d5aa0b0313ab58ab3d9c44d513ac8221d24836d9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/MobileNav/components/MobileBottomBar/index.tsx",
+      "sha256": "d4b9bb33b9a78ffdcc0c3049d14ce383148932ed0e34565c331d71157ddce9a5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/MobileNav/components/MobileMyChannelsButton.tsx",
+      "sha256": "6607d7ba7a5639deb93f206b8c18477f106d8782a551e419eccbb1e28dc2e406"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/MobileNav/components/MobileNavItem.tsx",
+      "sha256": "07de798667010a635f3be8dc3ae70d29fbbc931d7b46a4a0bb5c8c1986d076e2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/MobileNav/components/MobileNavList.tsx",
+      "sha256": "d23a29879a2d1ff12b2f72e365acd43782a411047b0650b36bfbc7b6ba5577b4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/MobileNav/components/MobileTopBar.tsx",
+      "sha256": "4a5903ea3b246007239353d767665750f3ef7691f003ce22cb00d95a2bfefc8f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/MobileNav/components/MobileUserSection.tsx",
+      "sha256": "e81483e9417745f59e5fe30b8e059136fe538d4704222724c2b41ffd7b001e00"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/MobileNav/index.tsx",
+      "sha256": "c8e6a0dc51476ee2e9755d21156e4efaf87c177bb454214d7153f66eb2090d95"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/MobileNav/types.ts",
+      "sha256": "3fe55b47b1f15f0ed645847bff67deefbc97b711523308464ce69aeae10cf9ac"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/PageShell.tsx",
+      "sha256": "6a1c09e6d13d35edf5fbe66fbb17420bd6c6da75af8ee4ba58bcb2a37fef250d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/Providers.tsx",
+      "sha256": "b85f14096ca51a0b6c42e85a03b7de2d196af173ce194acb400afe92d09b72eb"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/routerData.tsx",
+      "sha256": "8f2a267ee90dca57a16a4e80591fc498586a0b9dc88c3ff0e48cc3df265770b6"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/SettingsModal/index.tsx",
+      "sha256": "2097f924689f6fb15247affdaa4bd5f6e749c4e6f723ae886981ed62665d38e5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/SettingsModal/tabs/BrowserControlTab.tsx",
+      "sha256": "78463466908f15970c6a370d954a045ec97790486da41ae0f2eae695b2847633"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/SettingsModal/tabs/components/AvatarCropModal/index.tsx",
+      "sha256": "b69894c5a267e4bbeea876a6c1d88d15602f05680bad17a7895682ac5eaf907b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/SettingsModal/tabs/CustomLlmTab.tsx",
+      "sha256": "4ab2bcff500f6e37c17a9e842d48428ff931ac6adbd327290d934eace3f68dcf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/SettingsModal/tabs/GeneralTab.tsx",
+      "sha256": "26a5bcaedea0dcfd114b2098c67b88de526fa290f73b1154a11d421f34f3fec4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/SettingsModal/tabs/index.ts",
+      "sha256": "8a7aea6ca5044ed44a3ec23aa179e284cb68b9b85cb5e342412c0daa3583c3ca"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/SettingsModal/tabs/OtaTelemetryTab.tsx",
+      "sha256": "2102ee7c96187a507de7aaabb6b14fbf742216dffb3c51f6e1a9346295435b38"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/SettingsModal/tabs/ProfileTab.tsx",
+      "sha256": "7440d63f53088b8695d95285df01bb9c07c6f8a6629c8636695dabcdd33d84c9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/shared/components/BrandWordmark/index.tsx",
+      "sha256": "8387cde915203de2d209de1f417017002390e8716e8cdb85ea00b7ec3bd13d9c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/shared/components/ExternalLinks.tsx",
+      "sha256": "c062c26927c89d564fa4737e82e11c2660eb7ed02acd2452153c16c4858a1b09"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/shared/components/index.ts",
+      "sha256": "4adb3927bd447f3ecf405bc4a9dc7ceddacde4bf95039aa4ead96f3afb10d3a8"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/shared/constants.ts",
+      "sha256": "439feeb7c55c8add46280f94e1fd6dbf70cebb87680adfc7524b078bac197963"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/shared/hooks/index.ts",
+      "sha256": "d0943428960092a5a77846da5092709aa738b2080da36052d61e45f66e9ab614"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/shared/hooks/useGitHubStars.ts",
+      "sha256": "96aecec67c435f258765de0745d3f71d3573d9032fa077bc8087b68c760bb846"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/shared/hooks/useNavigationLogic.ts",
+      "sha256": "e953d56abc3b5d276eb250470bac7950aede3012d6a4f910aa107c04110fc913"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/shared/hooks/useVisibleRouterData.ts",
+      "sha256": "c383e5b7be4a66eff3dd3ae284da8f109e4aef0dc1ffa3cdb0f17ac195ef90c1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/shared/index.ts",
+      "sha256": "d95a0c45ad1923e034debcd2181b9eeabf37af028cd86e4ef7d9ec3f04cb1588"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/shared/utils/index.ts",
+      "sha256": "f7ce7b125d23c1c4e9d2cb078cbbbc7e3c692873b1040c7cea923f9e799c3b5c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/app/layout/shared/utils/routeUtils.ts",
+      "sha256": "759307c3f18f707f6bf1510af244a7cc7bd8729ac15767f4acaf6fd73e3ad52f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/assets/brand/logo-thickness.ts",
+      "sha256": "80442f81aa5f0830bffbb89959f275dc040f42fbb6b4400cef01069562abcb4b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/AIAssistantPanel/index.tsx",
+      "sha256": "fdb3c1c17c94e0b4acf2cd99d088fb7086a3936385208c5bfc92de73088500fa"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/channelManagerStore.ts",
+      "sha256": "792127c58b37aedd473a610059fc97004cb7556acbb13eec76348831a3218d5a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/components/AuthLoadingPage.tsx",
+      "sha256": "41145c0d024306da2f54466f0bf9ab3f18bb59147ebc162d76a02975fcfacc47"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/components/ChannelItem.tsx",
+      "sha256": "ca65f937877dabcce1b113e4a16fed43f9902ddf84faef2d89c09fa3bf83fc6f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/components/ChannelSidebar.tsx",
+      "sha256": "e03e13dc1ea728330012a75aba9151dcac695014ed6be54ecb14ac03cab2b8cf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/components/ConnectChannelList.tsx",
+      "sha256": "a7e4f6d68b1472098e6b8bfba201ec5ac02aa54cead071b5832dcfe681e08572"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/components/CreateSpaceSection.tsx",
+      "sha256": "ae68e7e352e91f91ca50fa143a0332051a189367b459a9bda14b2e1415f4be06"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/components/DeleteConfirmDialog.tsx",
+      "sha256": "f107e2dc87c72667228dbd20f9ef518a597f6292fb24eb3e1f08c1573bef9c26"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/components/FansRefreshActions/index.tsx",
+      "sha256": "36a1a4f1263af71749dc4e9d8b917f8f38797895685dc3a325ceeb82d344290c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/components/MainPage.tsx",
+      "sha256": "5fe0d10616cf2dad6185203b3edac164466bd9cde9c557b77ce968e4211d8fe3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/components/SpaceItem.tsx",
+      "sha256": "37eae6481c77d986d73f66288fd568dde9b14c64cd85b4224633918d11f1b7c2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/components/SpaceListSkeleton.tsx",
+      "sha256": "a0f046af752440e5b4e0b6dc471de087b5ca9cf80f16c5873fa471b8603d9eef"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/components/UnifiedChannelSpaceList.tsx",
+      "sha256": "78f5b400bbce57c7f462b123113dcae7edb61e4bdfbb851240b74bc0d4a28f9a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/fansRefreshCooldownStore.ts",
+      "sha256": "d8cfe074a18f903cd271090d1a5a59d41ac2786d2619431c180369708afc8d45"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/hooks/useFansRefresh.ts",
+      "sha256": "8c9b691c0b2d20e511df2e07e1b48d49b76759cec19047544a4e97f95daf127f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/index.tsx",
+      "sha256": "505cf19d999ebed1747dbaa8fd9ea0071bfa9c2404c48490280c14c411257336"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/types.ts",
+      "sha256": "8499c4f48cad78033f441c14b651ba78d66201b056c0330d06e50b460f62e13a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/utils/desktopLogin.ts",
+      "sha256": "fa28262109467bf80f69dd845370027efb7373b212c0bcd8357d65d7d289da35"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ChannelManager/utils/fansRefreshSupport.ts",
+      "sha256": "1f7401ae631905b7875f9da1e4e7e8c75cbe125bbfa4a345836a2c4ba9297d63"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/ActionCard/executePublishAction.ts",
+      "sha256": "f518f35ac58b13a9c275107551b518c37b7ccce177b5e5d3a0af3798c59237f8"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/ActionCard/index.tsx",
+      "sha256": "4110fba0b80a0dead08176cc88fb6832ea06b2d83e6d3ca16dcb4ec94c1b44dc"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/ChatInput/index.tsx",
+      "sha256": "a2b68cbf1594dbba3829c1fd8f6bfa68cf8e04c9ac64a7cf30e8891051986e56"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/ChatMessage/index.tsx",
+      "sha256": "d81c81458b35df9c96a9a90a78896e976c70adbaea1d15308425f26c26579c81"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/ChatMessage/MediaGallery.tsx",
+      "sha256": "8c5bf3dc5c3aa8cd010f539df47a5aba9cc8e01541d06fec3ad9a3d9f0ca7a55"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/ChatMessage/PluginPublishCard/index.tsx",
+      "sha256": "4f681005f6598f5f06b4cba6f7f2adee324eda4912e7c209c601d282552cf844"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/ChatMessage/PluginPublishCard/usePluginPublishCache.ts",
+      "sha256": "0a8c3a7e3a87170914affc2d2ac75fefb496455934de5e79f4edc3a4ab60a3a4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/ChatMessage/PublishDetailCard/index.tsx",
+      "sha256": "5d559a0924e5a6ff38b9147b96797badc28f7f9a4b309b196d6e30609ea48abd"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/ChatMessage/PublishDetailCard/PublishDetailSkeleton.tsx",
+      "sha256": "9b60147e522c6b6f719af6bddac7dbb47b08e94fff2fbd40a94e78098019a10c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/ChatMessage/ToolDetailModal.tsx",
+      "sha256": "5a953c2b2c36a57422730c13c6955e326400523745de85b6733e07f993a6707a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/ChatMessage/WorkflowComponents.tsx",
+      "sha256": "5e3653fbdcbeae9f367c79e2f6b019019b74e8299952b8af03cd5e60e3e727ad"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/index.tsx",
+      "sha256": "a29bd83083454c18703986b539b6c3ec1b66f0e7c3fcb4052f236929f6e1db25"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/MediaUpload/index.tsx",
+      "sha256": "53a2903240cfd92f41274c71c6aa5ba2f25e129e8cab1b8a9a3d52ba8414dba3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/Rating/index.tsx",
+      "sha256": "21aba60ad99d3605517f5917b3216c591894fd23dad59532f09a012e3386a8e4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/Rating/RatingModal.tsx",
+      "sha256": "0d1f7381b7045379ca10bc8721bcd110cc37fa6e934944829dde2af111188dbd"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/Share/generateShareImages.ts",
+      "sha256": "6e506bb63f0c79b7a2b3fa4da5c4e0fe02202dbda638ca543239512563adc7e1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/Share/ShareModal.tsx",
+      "sha256": "0148036f4b68b98e1dd13f986528313ad3aeb3f08b06317026ae40039ded8a32"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/Share/SharePreviewModal.tsx",
+      "sha256": "92ca6af8e35fe38d96811a23246a91b666780f2ddebfb31cdbfd4115e9b3e7df"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/TaskCard/index.tsx",
+      "sha256": "50cc6ae7cf2233b2e83080046993dcdaaeda12a48d116d013d252ba9ed0a0715"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/TaskCard/TaskCardSkeleton.tsx",
+      "sha256": "96d805f23e5c69c839a98b4289f434eda2e1098fdd5e09b3e44fcc83062ec47c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/TaskHistoryList.tsx",
+      "sha256": "e4c02506166691d192e92d3eeea9008d05c0b28fe542e5fe16c31bb459d1b9d6"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/utils/convertMessages.ts",
+      "sha256": "6421c2fd4c63c1c2d3cd435c0bc10c803bda7e5ea496c64b6a5256657cacbbdf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/utils/index.ts",
+      "sha256": "ea99fc1934afea788cdaa7a7aace7ebeb034ea0f08613dec705d4065342ba47c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/utils/parseMessageContent.ts",
+      "sha256": "0bb8f24d35a7c3fb9fcf90c32aca9d1dd4131b55c4116f9fc7bd65dcbfc80764"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Chat/utils/taskStatus.ts",
+      "sha256": "a0baf3dd2af405283b833f558dae9ed600556458429f4824bbad5493344aa95a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/AvatarPlat/index.tsx",
+      "sha256": "1bc05fb36b088656d4ed0b19024f77623031ea637a3adc69ed2ea5e4fe56558d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/EditTitleModal/index.tsx",
+      "sha256": "f61975568b260b65dfdc0f7e802485efcd32a3a5cd9d40691513ccf815e20d6b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/EmptyState.tsx",
+      "sha256": "22672e3735941e3824652855826f85a0fda620935d8ee7eebf9b1812c3d8629e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/FavoriteButton/index.tsx",
+      "sha256": "ccc3e0f676a8a1454a5314d0112061ac3bd3e4c01f72def7b0047e3b3982ef52"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/index.ts",
+      "sha256": "c4fb38b17fe2bc2fdf686c53ab32b1f2769d2ab5adb59ac87cc42a9a48836d82"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/MediaPreview/BrushEditor/BrushCanvas.tsx",
+      "sha256": "7044166d1ef10978ab6d140f8c807912dac87bfee89e22dc111291848844e050"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/MediaPreview/BrushEditor/BrushToolbar.tsx",
+      "sha256": "1646d1fb0a72ef205084c1d7ed3cdfd11b0013e09ac134f09893975075e761fc"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/MediaPreview/BrushEditor/CropOverlay.tsx",
+      "sha256": "d9ee5c9c17172a1b2fccbc774c045f27cf831f903c3fed518be654f93e077da9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/MediaPreview/BrushEditor/imageExport.ts",
+      "sha256": "cbbba117210d5c876aa2f5b8e60bba1e1dd3292b124988e7e5fff21e59fbe578"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/MediaPreview/BrushEditor/ImageExportControls/index.tsx",
+      "sha256": "d1a3c85c5feb9c2ced665a2c28850629c6d6f9363ddca9b8dafc2f97d9d45ca1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/MediaPreview/BrushEditor/index.tsx",
+      "sha256": "4f1db8af040c8f60f5ccdede5ea7eb9417a5756036eee74aac1944bb48e18569"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/MediaPreview/BrushEditor/useBrushEditor.ts",
+      "sha256": "9c0dc7c9bce653c9d3c88f3d84e42d3ab98c8c6a1635945723e983747c4f1316"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/MediaPreview/BrushEditor/useCropEditor.ts",
+      "sha256": "6c273967857ccdd143482eeb79b1135ca1633c97a463e79825faf87503df05a4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/MediaPreview/index.tsx",
+      "sha256": "34229ddb0caa656223061cb3e2be61b730db202dd22880800cbec47a835c79cc"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/MorphingIcon/index.tsx",
+      "sha256": "ef3be486899bcc36aa548dff9fca90e100e0cb57f4363bf865415122b101880c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/OssImage/index.tsx",
+      "sha256": "d9f8b1e999a7b316d1ee2e65524490854f7fa7a6a118649490ac69779b491463"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/PlatformIcon/index.tsx",
+      "sha256": "2865b41cfc179c38bde958d2bc05138e2d8139a424754e5cf99fb6c2bc93aede"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/SectionHeader.tsx",
+      "sha256": "f523c8cada5080e2666ffc94826807173fa65dd75df88b2192f0156d02fa4316"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/UserAvatar/index.tsx",
+      "sha256": "3e730e914ae3a0c00bf343ca03dceb573f844a1adaf868c3b053815e6786dc92"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/common/WechatBrowserOverlay/index.tsx",
+      "sha256": "21dea94c703c5c9202215201b949d80b9576afade6f652609304ff92a65a7916"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/DisclaimerModal/index.tsx",
+      "sha256": "ec5cb16cf509bf85f1946a34d26257107b765270c74cd73c7f34364e7a29b6e2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/AddMediaButton/index.tsx",
+      "sha256": "e2bd2db64001cd174acd56bb7b133a9783709e183bccc79be821247fdade6e34"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/CaptionPromptField/index.tsx",
+      "sha256": "425472925e0ea5d95c6b7c11096dfc07c1a77db64568ec439349de188e346862"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/DragUploadOverlay/index.tsx",
+      "sha256": "c27d0145cddd1632103c045531dcaad9ddb3dffd00679cba73d40c5d515131f7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/components/AudioMediaCard/index.tsx",
+      "sha256": "e91f842a7b2e8712a4149adc83fb5f78652401ff3899999cb49d1d44513f40e7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/components/DesktopImageStack/index.tsx",
+      "sha256": "841140c6036a7a1a11b8f5da00d75f1252ef2851ee4404b288fbe1a41b4fdf41"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/components/MediaStackCard/index.tsx",
+      "sha256": "87a76e741651baaacd11ad0ae1fd9b52ecd8022c4211f4999afaf500b5f8edf2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/components/MobileImageStack/index.tsx",
+      "sha256": "8c0dd9cd270bc74f58af1e29586f114067edfbf840db2482a1fd7a968ceb240d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/components/UploadProgressOverlay/index.tsx",
+      "sha256": "61d4496f6d8ec20f0ee28b008318068d0503ccfca13c8524a1517ec2970c0acc"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/components/VideoMediaCard/index.tsx",
+      "sha256": "0d3edd4db65d2f37cf4d9052a43169b17818e543cdda572d4bcf26bb63002265"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/hooks/useImageStackLayout.ts",
+      "sha256": "da9eb3c39f905315532187c8654e47c87a67379315a657213cb9b812367bfc1b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/hooks/useImageStackPreview.ts",
+      "sha256": "27b0e2b1b92890b4a85c85f4fa3725cc251983613c353dabf35ebef6714d719b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/hooks/useImageStackRemoval.ts",
+      "sha256": "86e6a541b782ab7908243c70f78669e8618a0a767e751e9bc6dd6989f2fcbec6"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/hooks/useIsImageStackMobile.ts",
+      "sha256": "a33a27243c6e32fc2431924a967e48411c9569bbc9dd21027c066d6a626f1dfe"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/hooks/useVideoInfoMap.ts",
+      "sha256": "069d08e6d749553c9a17933cf73cade5f20537f2682d88df11971cdc6345f297"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/index.tsx",
+      "sha256": "fd900e7c5f5977e3b7565690343ebabcc976b02dbf7cb8946e8d36fc19acbbb3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/types/index.ts",
+      "sha256": "2204e6a8fbd6c9a9d4e1ec98907d0430b7425484147120e935a636034c4c0b2a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/utils/constants.ts",
+      "sha256": "d47dd78abd89a838ade0062a2081f0ff9fb7e2f9c825c55703fe4a6e3b150c71"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/utils/media.ts",
+      "sha256": "8662c3d9baea4835ca3e50211902ed8d05d1587677f2eb3934b954708446eb40"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ImageStack/utils/styles.ts",
+      "sha256": "6cbdf13f7964f45647f3bc58013a90071aa70abafef8a726af7e2365643ac05f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/components/EmptyMediaMentionMenu/index.tsx",
+      "sha256": "23f3fb04093a3f2a35504ec87bab03785da71d4a66c5446b688ab1f72ae17b3d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/components/EmptyMediaMentionMenuContent/index.tsx",
+      "sha256": "9e45a07c6dd1effdb07caded2bbf4ebb7e3f084cfbc73b438378fd9a210f147f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/components/MediaMentionChip/index.tsx",
+      "sha256": "02ff76a7288e00fc0e1b250fc4568fa00da66ad5b00a5029a159f1912d218078"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/components/MediaMentionMenu/index.tsx",
+      "sha256": "51000df81aff8baf46e2757f188a13e1780671ea0b2e33d848c16d0f3f434de2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/components/MediaMentionMenuItem/index.tsx",
+      "sha256": "8ff17109126fdb375ca9709a704afe1c6b8742207412f697d8fdf9f09f5ee1ef"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/components/MediaMentionThumbnail/index.tsx",
+      "sha256": "63a6c8c45040cd97f124bd788e5acae85d9487a994c89c51a65adb4b6943d0e3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/context/MediaMentionContext.tsx",
+      "sha256": "cfd5a35b1b479b9bc3210111395afa91bd3500d02ba2e24d9d9a4338c294bbf1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/hooks/useMediaMentionPromptInputState.ts",
+      "sha256": "65cc126948fc1a565734a2ef9e843e431b17670a7e84ccf14ef83f4d7b4f1363"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/index.tsx",
+      "sha256": "5931ba7d504000b39160c5f37caf5e0e6dbbeb33ccca1be6ce0eae5948882289"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/plugins/CompositionSyncPlugin.tsx",
+      "sha256": "fd712e5d5c7574e5c285aed9597eddc7ec2ec49e049f7593e0a6d56a5d710926"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/plugins/EmptyMediaMentionActionGuardPlugin.tsx",
+      "sha256": "196d1ffc88d6605c8f6e11192df3078c0304476ad3aa2bdae86563c92ec8f106"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/plugins/InitialValuePlugin.tsx",
+      "sha256": "b0b07a7229d5ffcfd0b78724462cf89f0b70f44c0d6843c4dad3b5f22f4dad6f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/plugins/MaxLengthPlugin.tsx",
+      "sha256": "d6b51a16f3bd5b497fcfd294e0cf199e4dffa02c2ee0b3bd46d9d4ea0c09b2cf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/plugins/PasteMediaMentionPlugin.tsx",
+      "sha256": "b144a2282058a80bddc206b080718b74bae5aa3d8f39a1f7e66b6a6edf695287"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/types/index.ts",
+      "sha256": "f80d1ca33f68cb6ae929678882bf9e0ab338decff0a1f1e078088742b808c358"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/utils/constants.ts",
+      "sha256": "e422e8664bbece44b16268c87eccc17bfc370e2511b4cadbe54229ee100b968e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/utils/editorConfig.ts",
+      "sha256": "b8cf4a4c47b36fac1c4374bec63c4fc8200db5a1865ba62e86b6344bf6053a10"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/MediaMentionPromptInput/utils/mentionItems.ts",
+      "sha256": "07ba368e79eef6e4204bbd691c39e20d09b6f0983b6f41a0231ec8f1bbaa28fa"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/PlatformLimitsInfo/index.tsx",
+      "sha256": "f0d7acb6af371f1d17de91d463efcb9e64f6d857ec904d542a9ec30e7c2eb950"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/PlatformSelector/index.tsx",
+      "sha256": "9fff0c721a10a79f82a127fcdfd92c003770feb61aafb00aa0959c1c24034ebd"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/PromptComposer/index.tsx",
+      "sha256": "4a9acae7a638228a82e2825bd3f3d758f64493330575dd3e0b6640c9de04fa03"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/PromptEditorDialog/index.tsx",
+      "sha256": "e9ce422fecf55d63b6126d4d44e17f14d09dd7b08a027763f8798aa4ea57ee5e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/StyleSelect/index.tsx",
+      "sha256": "eb8a7506447ac95e9d5aeaa9a33cd48d49b95aeaa6179e3c253108cbbb2fa869"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/AspectRatioSelect/index.tsx",
+      "sha256": "b92c57592c91abaaea8659bd675895b1956f2994c597ce3ae1d461987af3cd94"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/CreditsSubmitControl/index.tsx",
+      "sha256": "f1d37072a0c931e098442b22610ee9f061d35260b5ba1c4f77212482af3596fa"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/DurationSelect/index.tsx",
+      "sha256": "22251219666e4ab8276f559d8ab1c7453c02fa7deaec743752adc0c7d2548d5b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/GenerationModeSelect/index.tsx",
+      "sha256": "be34c892178474429294f5a3eef7c80fb6e9b26c4282403b4069e6a289091d6a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/ImageCountSelect/index.tsx",
+      "sha256": "efd8d76fe9be8a353c4abdcd07d1697135cb074ac849223f78b9b5e89eab4ea9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/ImageSizeSelect/index.tsx",
+      "sha256": "57f7d5640134efd459a481e7ea2c555841c207216cd17e4c2e10f6b490f5012c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/ModelSelect/index.tsx",
+      "sha256": "33009b0a48bc6038191764b110a2079ec30e1b68bb86d32ac187eaaf79976e45"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/MoreOptionsToggle/index.tsx",
+      "sha256": "6dae64fc94208099bf34d28ab50c1ef4bcb75f6fb5c98911cff25a3853ba494a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/QuantitySelect/index.tsx",
+      "sha256": "c12cdb1383b53399bd103ee81a1cc6a47c20171d9533010a212b01d6d5644ea3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/ToolbarLinks/index.tsx",
+      "sha256": "9ff862d41fb3a761a73eeeb1436374d3a25b4d80fc493dc13537a048c354524b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/VideoEditModeBadge/index.tsx",
+      "sha256": "8efedd1ce947e3c8dc1fce157e4fe2b3b4373be2ae4146b570ceaf008ca99cff"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/VideoModelParamsSelect/index.tsx",
+      "sha256": "45302a2f285516269fd04faba173a136b48113e3e5e7fd6c4ed948a9e8ea3abb"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/components/VideoResolutionSelect/index.tsx",
+      "sha256": "717d57291c3332f6a67bc8c6f9ed2dd4ed2a11e1c963c446ce08e39d6258f4dd"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/hooks/useClickPopover.ts",
+      "sha256": "fa97b332be7fd2e5a7b8367839dc980f4680302baa49cbd5c17582e3510800b5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/hooks/useToolBarActions.ts",
+      "sha256": "526a64158015d28524d42e974914c7afc094b51602c6355c1d69cb66d312123c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/hooks/useToolBarDerivedData.ts",
+      "sha256": "239691aa10bc78ad9da8761c54dcc766150c92ea9bb939f82325ad3fd46725f8"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/hooks/useToolBarDraftValues.ts",
+      "sha256": "f62f8a735dd443371949499c5b1bb6705a02310a92093bb4019359a1747dd440"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/index.tsx",
+      "sha256": "3277b3793bc2968b624fee837d0cedd036da92d6e51fdb1f8b663974aa8cf376"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/types/base.ts",
+      "sha256": "3dce26bbd36e8736f149107362a9a497a2d404738fe7c1065ff9693968c84b63"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/types/components.ts",
+      "sha256": "7dbd4a8a58a447d400ba0ce494ef5bd6fab0101025dc75675fd67f8afb5613bf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/types/hooks.ts",
+      "sha256": "61035128b89a0adb44fa5fa0034a02649d7cf92fd7f2f36ce6fdffa6f094392b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/types/index.ts",
+      "sha256": "2cbef3d26cb6a01a07b9448c98f01f016844539d969d8dfb05b1a7437a281763"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/components/ToolBarInline/utils/styles.ts",
+      "sha256": "8e742d6b006161cd675644bbbb0ae2ca3becb64c625143fc27b131b79f0fb615"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/hooks/useAiBatchCreditState.ts",
+      "sha256": "030951204ad4473453248363c3c29b8a142277b96226dff80fb992b009fb4ad6"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/hooks/useAiBatchGenerateBarController.ts",
+      "sha256": "4ead7e0bf2b266739d21b340a922ef80ae7e4dd590b330bc99615706a5e10d52"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/hooks/useAiBatchModelData.ts",
+      "sha256": "960f6e4e60786f954a6ad73488603980765db880539c5cf895062ac070cc04b4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/hooks/useAiBatchPlatformPromptState.ts",
+      "sha256": "5286aab1d59b08bc0cbbb05eea480239913d3dff74de0769800987362eccc345"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/hooks/useAiBatchPromptMeta.ts",
+      "sha256": "a32c2d9e47e295b76080c4ebccd00539a329074b00cf6264eb2bdd44321da833"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/hooks/useAiBatchSubmitHandler.ts",
+      "sha256": "4575b179456c244ec381430ff55dd6345848f5df4576c713013ef4dffdf852df"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/hooks/useDragUploadHandlers.ts",
+      "sha256": "0dbe35041ff5c2e42e513c2910a64b8094f5177959d67f7bff6d82810ec2c817"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/hooks/useLocalUploadHandler.ts",
+      "sha256": "544268a09056f8d9945b2620ba0b7c07df3ad16698872740ed8f1b4a8e41a8b1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/hooks/useMediaMentionControls.ts",
+      "sha256": "c4ed601f96126386bc3f766b60cdf0eaf88e2acf54f60fd7b5c3cd7e8c371692"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/hooks/usePricingData.ts",
+      "sha256": "211c06035db8cfe6766ad819d558f8554ec40c52cf24b14be4008100e8cc7262"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/index.tsx",
+      "sha256": "7cda9df875f9836b3969bf2136c11b2219ad16c908d51788373cef1554ec675b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/store/aiBatchGenerateBarStore.ts",
+      "sha256": "3fcad5d10bf97f21dcb033682c6148135320a7f31018a3dec2c34da505765368"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/store/aiBatchGenerateBarStore.types.ts",
+      "sha256": "13b40f336cae75b9fba451d890b6c18bb8da6a2898db2de39dd5a555281b6843"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/store/index.ts",
+      "sha256": "6352636d8dd3c29c5d5cfaf4b355225f4efde17171611ffedfe5b43d3a712b30"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/store/useAiBatchGenerateBarStoreBindings.ts",
+      "sha256": "2e484404498021c9e73fa1005278e4352212d6bd101c1423762a06489b7c9214"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/types/index.ts",
+      "sha256": "c529553304228e1c1e52d5685a86955a7fdc3cdd1be7f10b18e11aea33fd65ce"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/utils/constants.ts",
+      "sha256": "ccbac5969359203b6b3ec0c194ed02ff8fdc2bc69d9a92380064b591b029574a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/utils/helpers.ts",
+      "sha256": "80b50dee98a54aa5a56c7a89fe711c40133178a95a25914835e0f55adbfbf726"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/utils/platformCompatibility.ts",
+      "sha256": "0aa4618a215163c1ee231a6a55f856766b6917012d0c2934e6e54458b0b4d6cf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AiBatchGenerateBar/utils/platformLimits.ts",
+      "sha256": "4f51188b28a1cba0d060255bd9f04f4544175b15dd7405e3698801595ff5b2a9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/AllListSection/index.tsx",
+      "sha256": "d054d251e6c4b908c10d52dfdd60b1241cd1c67c694be2f363ef67b882e0c640"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/BatchActionBar/index.tsx",
+      "sha256": "4184da96360c478dc85254edc217d1ca69c19613d01ab8fc0b265f72da5824d0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/ConditionalDeleteDialog/index.tsx",
+      "sha256": "5564a76fa661afdc0c0c8e646b6ff392984f82adf78a5f80d257b37d8faa3816"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/ContentTabs/mediaTabStore.ts",
+      "sha256": "e3c55eef3015a79289ee5c9e4a342393e9c385df2c39f2965d02ffc5d7ca74b0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/CreateMaterialModal/index.tsx",
+      "sha256": "e3c65c601e650acaa8b4c878b6e40f6ec99a57e1c2b9287c8e3029999309ee8a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/CreateMaterialModal/InlinePlatformSelector/index.tsx",
+      "sha256": "3f25baad6b5b08bcec707be60f3f9d26ef093c06c705d46caca6a28319a3bd03"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/CreateMaterialModal/MaterialValidationAlert/index.tsx",
+      "sha256": "2be02ecc62060aebede68eb6023bd4fe268942b661c5d54ebf8956a5d62f5e40"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/CreateMaterialModal/MobileContent.tsx",
+      "sha256": "cb48111e320c47deda71b0320157035b002d645916f03f2848bcbb9c5c350754"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/CreateMaterialModal/useCreateMaterialForm.ts",
+      "sha256": "e17bbace9a1a6169bf0438e443c393fae8011a0e4d450547693db63e67a3837a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/CreateMaterialModal/useMaterialValidation.ts",
+      "sha256": "3378c67ff92908f563c6587b0eeeb3e97ee3b2381a3d1b869ef245cd3923cbb5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/CreateMaterialModal/utils.ts",
+      "sha256": "879b6f9649a7d3ab2fe0bd727491abe7a449845ea19a255f2c27eee6bb9ec0b7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/CreatePlanModal/index.tsx",
+      "sha256": "d45730554cda7ad51f8a41a6aa21d05fc78122e5b9c7d7fbf87178ef9c4490de"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/DraftContentModule/index.tsx",
+      "sha256": "50534283cebc1852b6c187ea68a71561e14a96c0569f5b07e03ab1c53d93d8ff"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/DraftDetailDialog.tsx",
+      "sha256": "be31a28a6ad78185eff936fd55011b7a9a8956cb184defe5da56932716876bab"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/DraftListSection.tsx",
+      "sha256": "774a5187e546bb04147a56b96424c88d966662967a9e1d02198ee88d156a2e5e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/DraftListToolbar/index.tsx",
+      "sha256": "3ea2d4bfc028d6c7fee3c718ad3b71157f9db54af044034c5de3b6a10c062025"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/GeneratingCard/index.tsx",
+      "sha256": "49f75d99a1996c9f58852fa954d9ec9a27cb6db63c90029c5979551ac76db7e9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/GenerationDetailDialog/index.tsx",
+      "sha256": "a610abc6ef07a6476591364b99fd21c1eb08ceed8724a017e82f41397f6ca34a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/GenerationParamsCard/index.tsx",
+      "sha256": "e245d79018ae9cff6ce8c8ca8072e3535a6a648b5dfb83a5dba5a07e7247d988"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/LazyImage.tsx",
+      "sha256": "604d78e74936c3989fddcc23fc1ef9bae2e2a894463820f6bb95460f896a1984"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/loadMoreObserver.ts",
+      "sha256": "7c740c72cda5cb7b53fcb69cd05c4cfe9a4ce9ad09d456290930814a993b45a0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/MediaAddToReferenceAction/index.tsx",
+      "sha256": "cc728517c11b9d41002858d6f146e961f4a57357e24b765f9bbc073bee11587c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/MediaCard/index.tsx",
+      "sha256": "97e1b193e8d589c6152284745681c07adb79596e598b5a7a281f8c2e7480fd5b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/MediaListSection/index.tsx",
+      "sha256": "2fee47d04dd71372288f526b156a90afe0af8692a8c763fbe037dd14b3bc050b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/MediaMentionPromptText/index.tsx",
+      "sha256": "bc0b311568ebbf55111e72e2cffcee522c140b013da82086b5b710c9d7df28e0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/PlanTabBar/index.tsx",
+      "sha256": "ff03e4d5fc270f6efac8171d407eae0a8ea01686848121207cfae6429e94c33b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/PlanTabBar/MorePanel/index.tsx",
+      "sha256": "8b3f153b73524ef4bd996e0c5e256bae7d694e0669ce4ba4901d393f97ddeaf2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/PlanTabBar/MorePanel/PlanListItem.tsx",
+      "sha256": "0f57a11bee8f509dd66c0bb9f79c6502cdaef83c9a6726790cd2a45173dd187e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/PublishDialogDragSource/index.tsx",
+      "sha256": "9ea9331b9e20482092d6383a567b29bdbf7fbd672216df2cd2bcbf27cb567712"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/TransferDraftDialog/index.tsx",
+      "sha256": "0487c3d390ce94be25b092f663893f52a5c4784784fca9fd53c2ffd41f9ab536"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/VideoCreateDraftAction/index.tsx",
+      "sha256": "41b3fcbc45edaadf2aeb1cde6bea48944f81602350cd75ae510aeeb58b47e224"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/components/VideoCreateDraftTaskWidget/index.tsx",
+      "sha256": "a6c11aa3479be8c1edcc7b81f31b89ca50adc48080ec0a4c90190ecb5086a7d4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/hooks/useContainerMasonryColumns.ts",
+      "sha256": "90df5984f6f5a496524c21c0b0f2214727b8d2c437a3d6e0a6ac4d577d0e43be"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/hooks/useDraftReferenceMaxImages.ts",
+      "sha256": "2e8bef0d7b3a2dd804990fb935de293e9605f4387e6f70323d0ec4ba98425e16"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/hooks/useGenerationPolling.ts",
+      "sha256": "d1b9650c194caffaa365d6d89255a5e6495abe943531923a0baf7094b1d71a7f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/utils/draftGenerationQueue.ts",
+      "sha256": "9253c21295d60f806089d476f1028d653c72108b2ca314b2eef0a99d056566f1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/utils/materialUseCount.ts",
+      "sha256": "b477d358ba1f7735ac61155e9b1b12d73cde08dfcd5c0c6104f3c53d2d7838e3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/utils/mediaFileName.ts",
+      "sha256": "4ae65cddd75bafdb0b3823d775c65b5853a6cbd5dc71f7806c592f0ce177f619"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/draft-box/utils/promptLimits.ts",
+      "sha256": "e08837ecfa7f9ca18d20ea62621b28bdd3b87ed1461213deb247b4a4b69de2e4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/effects/LogoParticleField.tsx",
+      "sha256": "26a273eeff5b5c4c13551c1d9a6d3095a5a8b8a10ca1ee751ed4797445551194"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/effects/ParticleField.tsx",
+      "sha256": "0068be988888e95122edef98e1007a786362a30aacad915da7f71836b089e613"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Plugin/index.ts",
+      "sha256": "25cde557fbdb767eaac10b568b9558a9b602dd88de8e6ee379f651b14b1c278c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Plugin/PluginDownloadContent.tsx",
+      "sha256": "05d3fa48acaac1c5592c068ba18d82eecfe10a2d94905cce0e62eddd52a170a4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Plugin/PluginModal.tsx",
+      "sha256": "b3a37aecbcde0375e9f14f1f3824d99d55120b2011444567bc62ea34fec0175a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Plugin/PluginNoPermission.tsx",
+      "sha256": "0122f3ec58d163ed1a9ae1f3a3ab3492336df1c3a7eb9d39dd2840dfef5ffa87"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Plugin/PluginNotInstalled.tsx",
+      "sha256": "0fc6e0c073c7bc8f60de926336d2bd4718ce0a61203b6242faa5e1ad78eb4405"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Plugin/PluginPublishingFloatButton/index.tsx",
+      "sha256": "715f677a905e72533c6cc3d8d1bde2841f86a7e2eb811a845583ceff972537dc"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Plugin/PluginReady/AccountsTab.tsx",
+      "sha256": "d423be1717ff35eff8fef6d685aa122138c8607b29bbf7e6dc38840da0954c6b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Plugin/PluginReady/index.tsx",
+      "sha256": "efe8c7368699483262da5931bace2746da4c0c2777185b95acbd04b89096b2ba"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Plugin/PluginReady/PublishListTab.tsx",
+      "sha256": "dbb312b54e3ba445bc41e578e035dac9fa866a8daf0bf28ea5bef39f00806854"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Plugin/PluginUpdatePopover/index.tsx",
+      "sha256": "a473edc4ad5973a3f96b2ddfc0a6b34efd31ad8e32758277c740356144941d52"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/Plugin/PublishDetailModal.tsx",
+      "sha256": "798a7c5c76e9a349ef84a7d167b8b1908f729741fa72b4d769b286b6659884c0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/AccountSelector/index.tsx",
+      "sha256": "392fcd35fa150eb406e2a246aac83ce469194f927ae86d93d13494ae38db7a30"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/Choose/ImgChoose.tsx",
+      "sha256": "e9a1e3a9099b2abf94c5bd72908e5e13eea65b2e1ca5c4c946f2273c7403b480"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/DesktopPublishContent/index.tsx",
+      "sha256": "228bdf1c38283d4099d4e400d37d68efa583efdcfe80f444f6fe97977f0381c1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/DesktopPublishContent/PublishDialogDraftPanel.tsx",
+      "sha256": "0b91669dcead252b57b7d824e727ddfedf8726cae05604cb14dc8ecc8f521a45"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/DesktopPublishContent/PublishDialogDragPreviewLayer.tsx",
+      "sha256": "2bacec0bb73f5c30c3c024942c56205e1a7750854ad8d5e7ed8d0d45f53b74b7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/DesktopPublishContent/useDesktopPublishLayout.ts",
+      "sha256": "76eb8945b8c975557d0dcea7aab5bc1b7f7e25b52e6ec794eb593be7e94e8836"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/DouyinLaunchModal/index.tsx",
+      "sha256": "c8c668a26d11e8bd57ad0e784bebf48852459724def181f31bdedb7c8c5320b2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/DouyinQRCodeModal.tsx",
+      "sha256": "8c136c11ff462957dc6bc22cd13f23194ecde3d5aafa459265d675f8d1784619"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/ErrorSummary/index.tsx",
+      "sha256": "8a8c6ae80961bdc577023c200eae54d1e81d1c2338f89a4cc9341af6867e5861"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/MaterialSelectionModal/components/AgentGroupCard.tsx",
+      "sha256": "b0f91aa8a2b58ba924b3705c3f9c689cd6913e5738b490fc78fe9a9cbd3cf1cd"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/MaterialSelectionModal/components/EmptyState.tsx",
+      "sha256": "92b46269bca2780a12826ad991584212a4cdd6e00aea30ccd13495d0158db9e9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/MaterialSelectionModal/components/GroupCard.tsx",
+      "sha256": "149627ca809149f23b65eb3c3d7844fcaa2e92a2883ca0832846b6243ea3abb1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/MaterialSelectionModal/components/GroupCardSkeleton.tsx",
+      "sha256": "79a9b9446dc852ee3d0bc4b314660e566fff0fdb6dcb9096853f776c846d7b98"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/MaterialSelectionModal/components/index.ts",
+      "sha256": "2e81c5c11f1b90e265564701f5aa2f3470387e86cf87aabc8ab8091199622e89"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/MaterialSelectionModal/components/MediaCardSkeleton.tsx",
+      "sha256": "912ee720b7a447acee7c02ce0a2f2ae92312b0e708fb1f1df9f5108d98e92d0f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/MaterialSelectionModal/components/SelectableMediaCard.tsx",
+      "sha256": "b45b50bcb26522b13efcee316e2e93b9571281866c712b79815dcb8c5c8071af"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/MaterialSelectionModal/index.tsx",
+      "sha256": "5c94225208a5e02805e71d695f7be5727d4651e56c09e6f1d8067974adab0bdd"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/MaterialSelectionModal/types.ts",
+      "sha256": "12fe5ebb20d8836bbd07df0b76bbd0be1dfcbfe18e02624ebaab9aa7e8b504e8"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/mobile/MobilePublishContent.tsx",
+      "sha256": "a4bf986b387d8dc0f76d0348639548293f139b98ed75c530e1c2111639eee4fa"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PlatParamsSetting/common/CommonTitleInput.tsx",
+      "sha256": "6abdcaa23042a2953326317abb5b7f1157dfeae334aa862035e69f398f1d16a9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PlatParamsSetting/hooks/usePlatParamsCoomon.tsx",
+      "sha256": "18fe8bfdb3cca36f4adc3913ea100208318ab68f26bc23dc949940a7ca6490d0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PlatParamsSetting/index.tsx",
+      "sha256": "aea0d724a8a769ebc8d47289fbb15c6c9f58e8129316099bd138d31d46cfaa9c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PlatParamsSetting/plats/BilibiliPartitionCascader/index.tsx",
+      "sha256": "a69bdf9271d5192c3d5b46f986a98cc486666520253f2ba88d1de35a973f3e61"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PlatParamsSetting/plats/BilibParams.tsx",
+      "sha256": "769d4e39f1552db5189fc964b512a9cdaeeb6a18d0c7a14807d8ff2f718c04d5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PlatParamsSetting/plats/DouyinParams.tsx",
+      "sha256": "f37470f8b55c5e6ca11fd48747b6fe20c94beb94167b2406479bf14e917d5278"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PlatParamsSetting/plats/KwaiParams.tsx",
+      "sha256": "1cb9c9d0e65d898efc032c565d44e743e6b0d9c47d58a1965842a3f37034a9a2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PlatParamsSetting/plats/plats.type.ts",
+      "sha256": "5f62424fc263a7421de11d4667a0072017714251358edbc2b9295b19f942aef3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PlatParamsSetting/plats/WxGzhParams.tsx",
+      "sha256": "b990619949f100310edacb83b3135745afcc00bcbd36f91b85c9a3777b8f1649"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PlatParamsSetting/plats/WxSphParams.tsx",
+      "sha256": "7c211fd41622a4210a2115725e01489546506ee0d8d1add5b0bf7b929e2284f4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PlatParamsSetting/plats/XhsParams.tsx",
+      "sha256": "a94f52faf63b3c2276dc24b8710fa8a67d23bca847ec9da379c2ef8f17c1c958"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PublishDatePicker/DateTimePicker.tsx",
+      "sha256": "712e9d50eda0b776f35b789cdae145d2752309c71ca474b521530c594d1ce450"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PublishDatePicker/index.tsx",
+      "sha256": "f3a14881d409a58c9ea6e834d74a3c27a040bfc39d6aafa0072a66e8ce622472"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PublishDatePicker/publishDatePicker.enums.ts",
+      "sha256": "908c10485d94618d6cfbc29c175e1fa2101aba65bd8efcc91b9816f5dab3725e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PublishDialogSkeleton/index.tsx",
+      "sha256": "7b2d1547f792a1e5e2d32ceb070259c39d8332175a8130f7252a1fa528c8a9c5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PublishFooter/index.tsx",
+      "sha256": "35e98fb69ba9d85dd358915846f62d3e23969293382ef2b0badf787366daf625"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PublishManageUpload/publishManageUpload.enum.ts",
+      "sha256": "edfef79341acbc1cf778f02e2f0b1d5614d51030cbd24a95fb5d7e2f3f45d8c3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PublishManageUpload/PublishUploadProgress.tsx",
+      "sha256": "3be4ecb682fa72a195790cecdd2aef77202abe2a1c0290374b750babca5bcd7f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PublishManageUpload/usePublishManageUpload.ts",
+      "sha256": "bb6ba6b646e1f8752e16693a7d851c19ce90c0623df6f70fe2c7b8cc0b1dc8cf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PublishManageUpload/usePublishManageUpload.type.ts",
+      "sha256": "b460cdddbf7692c22e23ebae6b8848888e39b459e2253afd39c09a9128b953e4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PublishManageUpload/usePublishManageUpload.utils.ts",
+      "sha256": "19923c502c75708391fcb4d0c1ee6d89f97152d86c3f82226337dbb48030a2ce"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PublishModals/index.tsx",
+      "sha256": "4e132f4be7b13ea75cc7cb2d088085e348a7eb8e02a5a65d1546b03eb0509731"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PubParmasTextarea/index.tsx",
+      "sha256": "ffeb1183db8c900faa59762b223cadeede746568ec6616ece772fc686967e688"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PubParmasTextarea/PubParmasMentionInput/components/Menu.tsx",
+      "sha256": "18d65516bd0a71f947bb9c03b90bed3b0938bbaaeb1d58d8736f4eee07e3106b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PubParmasTextarea/PubParmasMentionInput/index.tsx",
+      "sha256": "6cb6e569074f9d7fc68408c6c86bdb281bad5e3d17e408c839d85c79a3f0d2ce"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PubParmasTextarea/PubParmasMentionInput/utils/editor-utils.ts",
+      "sha256": "b0de272d35274fe7170feff60b62441d467a790b583c2e64be413bef7591b7de"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PubParmasTextarea/PubParmasTextareaUpload.tsx",
+      "sha256": "b4798b65059b0c745fed466514205f3907fb2a2b7eb98ef8aefc7cefa42817bf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PubParmasTextarea/PubParmasTextuploadImage.tsx",
+      "sha256": "eb42d65d0cb4ede12b0dfd9672f8c49f60644e2a0ffebf73949df9e30d9929a2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/compoents/PubParmasTextarea/VideoCoverSeting.tsx",
+      "sha256": "603c4a0915bfb4586387e27f683a65af09f4161085e22c4be86e018f23653324"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/hooks/useAccountClickHandler.ts",
+      "sha256": "6cb8a75d5ded7fb7a055f22f6d4db2bbc48a5fc1afc2dacdcc27e5cadb78710c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/hooks/useAutoPublishOnReady.ts",
+      "sha256": "fb301192dfa3bf401654a531b86b3f4df75ec0a31b3b50cb7aeaab12234dd893"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/hooks/useCloseDialog.tsx",
+      "sha256": "d07d405d315db5bc34ebd55464c71da6949c547add0825a146979b1a82f2ea36"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/hooks/usePlatformAuth.ts",
+      "sha256": "8162014599e200bb0e30a449a1a1a370d3ffa22bf1befabd2ca135cf5b794867"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/hooks/usePublishActions.ts",
+      "sha256": "0a1ebb118bbce6e24b387747f5aee98881c93cc9849be1f21766e7aed317ce7d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/hooks/usePublishState.ts",
+      "sha256": "02535b0611dab8f6acfe2e84f64b2d4e3bad5ecdaab74836f2f562d7bef5d0d9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/hooks/usePubParamsVerify.tsx",
+      "sha256": "f839b3690f7c2bd0cd9f16f3825b6a59aba9169d109088c915981d8db805466e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/hooks/useUploadSync.ts",
+      "sha256": "d961cba7444d922d91d737cbb20e7fe7fc9a030d7ce609ba5d4b7f7fe73d71db"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/hooks/useValidatedPublishTrigger.ts",
+      "sha256": "3413f1277d8dfe8adb3086f5c1581212b4f8a181bba4f7ab6c0da8ad380f6085"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/index.tsx",
+      "sha256": "ff2578ede2d737c0df45a2b6c5015b6dbbf760d07fb9d7c20c2c499f6f5a7820"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/publishDialog.type.ts",
+      "sha256": "00f2c6f6c8ecc19839bf1715615f8d48353b56d59f9261bef338cf6152e4b099"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/PublishDialog.util.ts",
+      "sha256": "8c38e32aa21617434ec1ed7aaa2304bf1d3b46a7f79ee3f00d10d645774b946e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/usePublishDialog.ts",
+      "sha256": "99bdd3aafbc57c35cad34166f716ca8cbc1ea1309b2c4fc194ca75aab6de8836"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/usePublishDialogData.ts",
+      "sha256": "87064f1815cb0722e021576c1d2c65c209fc1263b28cb2fe4a5fc0736651bf78"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/PublishDialog/usePublishDialogStorageStore.tsx",
+      "sha256": "9b4d53c2e37ebdc46a6ba4c3e5c6f08b80b1c82c3568847b83aaefcee8570381"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/alert-dialog.tsx",
+      "sha256": "e0dbd72811efe16da84554e1ac1fb7bc8b6ab2dbc7ceac330cdd715ab5860b5f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/alert.tsx",
+      "sha256": "b0bbe81553cefe5e41b3656672d60055e2ccd7dd45d63b77c7357f8d904812f8"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/avatar.tsx",
+      "sha256": "137c1e6ac74191fa9fd2c51443c9b9da51392dff3225d2ebf96bfd5dbc6b896c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/badge.tsx",
+      "sha256": "9c522aa4768bb04b8da83165efc97494fd728e8838f04d31a6c4a033d9d696ff"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/button.tsx",
+      "sha256": "e3883e10ffb0ba264fc7e6592f984af9a5a712782deb606dc9e23d8fbd494077"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/card.tsx",
+      "sha256": "e44e960597d6625a043b62fbd51b116a7f7b533d9acf1a0489b6ff366f4841ff"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/carousel.tsx",
+      "sha256": "f0b0fd4df213c454c5b1062894f39fb9a6d36fdda3d6b94dba1043f5538b8d9d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/checkbox.tsx",
+      "sha256": "408443d778244f6ea8fe262898ad0f43a46c09ecfcd8810425a97f9ea5767f9a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/collapsible.tsx",
+      "sha256": "bb21d9ef19753e1843bdb879d80345aacc06f3f21f421f08a8b8d5d8828468e0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/command.tsx",
+      "sha256": "58b53baf1a61abda090c27ffe13efc4b791090d7c695fbea572d493930f1d602"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/date-picker/index.tsx",
+      "sha256": "a5ac54e3291fd9ee8d3320eaf4f3f6a82e16e552f9bb56445ca80abb1b93d5da"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/date-range-picker/index.tsx",
+      "sha256": "c178da01931a9ac3da79eec7b2252cac0f73ac6e99e21c35720431ca2a1725c5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/dialog.tsx",
+      "sha256": "bdf7c894694788412e9372b5a99dec7ecedf9d9d64dfa04fae601b0a59c3ac05"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/dropdown-menu.tsx",
+      "sha256": "dd2036c727b2d63d5c8760e8127dadf1aa158d47b0a328507246dab2ca9add07"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/empty.tsx",
+      "sha256": "42f93fb10c0b9a1edf505ac6ef1e364bf1c3b4459010344c117727e6b8fb93ad"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/form.tsx",
+      "sha256": "78841fa1eff419f0b302177718cf54c046c4cbf2c8b452ec179004ffc5b1b151"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/grid.tsx",
+      "sha256": "427237dfa65e6d6429b3d6c21c706ee49cf9e5779e7393cf35cb545e9ba04bba"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/hover-card.tsx",
+      "sha256": "63197e192a0354edc978ccc1c58a5145fcee3beb5e807d5c75dcfa85429326be"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/input.tsx",
+      "sha256": "0f013fbdc61796ef73f5ccf37b5cbb45786c28d482a87c4ffa0088fa791c4a8c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/label.tsx",
+      "sha256": "f042586f7d182549123e367c5ff42e193812399d54d33559f1e834c89e8c2ce4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/list.tsx",
+      "sha256": "c02cd4c197775c5c56fe10a9dfee2a3da966c6fe5fd6d4052cb3dad82b89ed1c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/modal.tsx",
+      "sha256": "6debfb09ccd6a4649ea6347163cc8beffdbe9bd59095c1dd75e8b627f2aec89a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/NotificationCenter.tsx",
+      "sha256": "9e02b00d5ef04f93ffb8d2e7df810b0c6337e8bfa1a1a22c25c28384746a5bd8"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/number-input.tsx",
+      "sha256": "183872dcf1bc33cadf928007ea07bb4492e5fe8886c33ec705ff00fd193d8fe9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/pagination.tsx",
+      "sha256": "0ae95b9b57bb8af88bb2011f3f58e6fd7e34e4acd71c2559f95396fb546253ca"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/password-input.tsx",
+      "sha256": "55e73bea131c0e4b954b9e57a6f679ad938b2d3bdce1dc5e62ac9f0422591e99"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/popover.tsx",
+      "sha256": "12821cee530a0de0019f13f2e7ba9efa39c524a3dc9cc7428a322f555ff25286"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/progress.tsx",
+      "sha256": "f22bd6701f4d4db53401dc30c376315bb5c32ecf1e49f1aa970614cd5e8e1757"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/radio-group.tsx",
+      "sha256": "67c152ab34a9f1741cf40686193c780db158c7068490c4cd30c1e04b1a11a94b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/radio.tsx",
+      "sha256": "c06ed21c078ad55fb3e690771ea919d32c4e9f7173277c0fb13b30a222ec753c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/scroll-area.tsx",
+      "sha256": "aef919069b4b90e5d6e8c5c17a90dac16337499df3ea26748ba87c102adf3448"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/searchable-select.tsx",
+      "sha256": "6149c2b7cc9e77afe60fe31ee63591c4b3d35f591aefe0380b567f5fef40a305"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/select.tsx",
+      "sha256": "1cfa470874d08a0e084e7f14ec4d10aee9c6cd767f2f450567a656fb7dac4040"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/sheet.tsx",
+      "sha256": "ef09586cc95c03fca1a4ebebf0687102c0c5c19ea184bcfd44ce8f110512cca1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/skeleton.tsx",
+      "sha256": "2d47312c4aa45eb4db7e3cba28844f92ea2cb6ac06a180a9861cfdbdf69c98f3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/slider.tsx",
+      "sha256": "223d73467d0ad19baa4eb7bffc610dcd053e196b0e405b43e1f724eda6eab2d2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/sonner.tsx",
+      "sha256": "d2541e198126091a790384e3cb828be478cd8f11e1c41f4bc73f33060a1441b4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/spin.tsx",
+      "sha256": "4d3b1ee871c5a2ecd45bfae26df678989aecf138ed096df2b443bc3e78910707"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/star-rating.tsx",
+      "sha256": "53f4c7e63322df40557e68ae3c81e886bf27575cce446d08f479ca3c869e7567"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/steps.tsx",
+      "sha256": "59c8ff388a782a74062bedeceedba58d67052a6351b688a4a7541b5c4347b5a4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/switch.tsx",
+      "sha256": "b33ebdf159b4e6c375f9106ee8fa7466758ef917d9454158c8c2f83ab862a5e3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/table.tsx",
+      "sha256": "a013283c4ed1ba88524024af814bfbd5506f00650d07a34a4d2e84ba47e43134"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/tabs.tsx",
+      "sha256": "297dca552dd16914cfea847b6ab1452c14a0f420b909b939a2ec7e96664f7fe5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/textarea.tsx",
+      "sha256": "3673a0af66471fb2208e2192b8eb50d646ff6efe863e37fbf8c81d7fd378b20a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/ui/tooltip.tsx",
+      "sha256": "b863884ad862abd014d3de83c6362de7ec62a67684271ca672171970cbbb3219"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/UserDialogs/index.tsx",
+      "sha256": "552d3581056197147c631d229587bf0ee5c0aac395f6e8ebf08dd812efa6a2ef"
+    },
+    {
+      "path": "project/bosom-friend-web/src/components/UserDialogs/notificationData.ts",
+      "sha256": "eb59d13f12fd80aa091282621b2a014811b169be7ab35785e4209fdaaedf037a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/config/api.ts",
+      "sha256": "96b9ffed2ca4608f403887de86f8ba077b392b2518bca85ab17cb6ed274fc9cc"
+    },
+    {
+      "path": "project/bosom-friend-web/src/config/app.ts",
+      "sha256": "553a681971faf1b47773c6c37d1df5a1cba6c6eadd6eab3d28137ee66fe85bd0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/config/auth.ts",
+      "sha256": "bee464d2808e6f8a13aab9d91812313b63b96194646268035e55711ae4bcae0f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/constant.ts",
+      "sha256": "1ebdc931a15bfc0092146b9057fe09a76696160a92bbe9b101e3bab9ac092864"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/AccountPage.tsx",
+      "sha256": "b2b41c118f7860fb9cc5c88f063aea8a77b608e50fd1a64db2e8a8fb68468220"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/AgentAssetsPage.tsx",
+      "sha256": "59c0acf5100c37e9e383c68b1880039e44d183c141d7808187c9a814549216d5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/AiInteractionPage.tsx",
+      "sha256": "928d53d740fddaa821dff6b238b32551ed0fca66112a067080842c6540526361"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/CalendarPage.tsx",
+      "sha256": "9f8b76dec9c7dcdb40d0ba4585175f839f870429b9697fbd7c425fb420091d7f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/ChatDetailPage.tsx",
+      "sha256": "fc7c4460543109fab1a534d83f269e2c7cbe65113168bf3a181242410b06129d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/DataStatsPage.tsx",
+      "sha256": "8df382a29049da4b45a2882c5ab1c6b24fd21a471385ba14d2f1a09efbad2def"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/DraftBoxPage.tsx",
+      "sha256": "cd713cb9f64b1490b3630ef16da960e54d936d2e32fd2db9800fe21be86fb33f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/KnowledgePage.tsx",
+      "sha256": "eb9cb77c9fca18107e968ce719510b9d6113f9bcf1a7c632b946d59e79b99544"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/MonitorPage.tsx",
+      "sha256": "bd0b5835fac0845222a7d3f2cfa9102f3121ee4f0e6d1ea946bb802e604064ad"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/SettingsPage.tsx",
+      "sha256": "2e4d7c6753f9f6c37db7b7c19b369ba7cc8330c67d99769c311f58022f7796f1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/SharedChatPage.tsx",
+      "sha256": "b800d2c21c9a9772aa3596afde0151a567ba292ae6fee4f781de27c2dc81e9cf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/SystemIntroPage.tsx",
+      "sha256": "bf8182951f913382ab41541a43b888bc05164ed2b10c4f1241b153b4ea90b82e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/TasksHistoryPage.tsx",
+      "sha256": "0264c575fd4efaeb6ab2fe87dff9b69f982d8457df23eb4e32d8f333964a1c04"
+    },
+    {
+      "path": "project/bosom-friend-web/src/desktop-pages/WebAppLayout.tsx",
+      "sha256": "21260cc26c014688fce1affff946c87bfb8f8abfa03c6784e6043892fc2eb611"
+    },
+    {
+      "path": "project/bosom-friend-web/src/hooks/index.ts",
+      "sha256": "b224cf5b8aff00f0681f0c061d50feb8baf5251dc17472883b4752eb2a92a03a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/hooks/useDocumentTitle.ts",
+      "sha256": "117c757e9b06ab9a84b36bac40ba3307e1cfb8b192e74ceab10380b1b8344456"
+    },
+    {
+      "path": "project/bosom-friend-web/src/hooks/useDouyinPublishSession.ts",
+      "sha256": "2f88547a1362fb5f5c49c8ebb6aaeff189d03bcbdce817bfbdc5120fac977d86"
+    },
+    {
+      "path": "project/bosom-friend-web/src/hooks/useDraftGenerationPricing.ts",
+      "sha256": "c8b8d119cfac329d048f8f567a7fbc26b5f0969afbbc1d95dae423062fb1113b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/hooks/useGeolocation.ts",
+      "sha256": "deff298e978c67d1ba624e56391d83279e0eb05a3ec1c672b75de62314f759ff"
+    },
+    {
+      "path": "project/bosom-friend-web/src/hooks/useIsMobile.ts",
+      "sha256": "e50f2f200974f9e0d85090527983bb24911788d29e80e1a0a79f8096eb3daf0e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/hooks/useKeepTimeCountdown.ts",
+      "sha256": "ed3c180eb497e90b09929955f94cb7eac6b5052e6e4b1b04c600a2f96ad4f443"
+    },
+    {
+      "path": "project/bosom-friend-web/src/hooks/useMediaUpload.ts",
+      "sha256": "31f020554310a8c8022d3b32997e5d14e39b8f6ec9e409cb39812846ca9014a3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/hooks/usePlatformMetadata.ts",
+      "sha256": "b8ec8d0f343050b2032c3270adbe01939660eaee43e6be269b23e1b66dbc5020"
+    },
+    {
+      "path": "project/bosom-friend-web/src/hooks/useSystem.ts",
+      "sha256": "639ad81c97a3430cd3b8e2ef2406c12f149670c57ed9347d7f64d643797a21f8"
+    },
+    {
+      "path": "project/bosom-friend-web/src/hooks/useVideoThumbnail.ts",
+      "sha256": "707ee87ae348f43d0ef62b86abf1840381409ffc4f580a8139f9fd05ed6bf5c2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/next-shims/dynamic.tsx",
+      "sha256": "51ea10a4001d60630c807b6ba83740fffeb2fea5715ffa5af0903076d70186e9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/next-shims/image.tsx",
+      "sha256": "423841a304b63118e4e9b28fa3050516fb37ac2dabb8de248597dbf26b7e4b1d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/next-shims/link.tsx",
+      "sha256": "eb0f28ab57562156a0f750ae2e64168793298d459953986c3653bd760f3fb8e9"
+    },
+    {
+      "path": "project/bosom-friend-web/src/next-shims/navigation.ts",
+      "sha256": "a9fa4f190b0919de66f2591f69d3b963efff5e9ba4b3708591a5579829e41518"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/account.ts",
+      "sha256": "8c2820340f0e4daba185f8fe5af6e3500220620aa1450a2bc5c5cd0f84f6b498"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/agent.constants.ts",
+      "sha256": "976a6a54dcc36f75ecf174f1f1a969725eedac9e1a37ab3b722498cb07cc5f9b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/agent.methods.ts",
+      "sha256": "fea50bbcbfb6e3c72321198f33a407f39e0c113c72d9682363c6538c855e4aff"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/agent.state.ts",
+      "sha256": "bccd5bda5db8477ec41ec8bfaf327bf3148601e54f1f2a2ae299574887b9e7d6"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/agent.types.ts",
+      "sha256": "2699754c0b05938a69a79caf58a2ff4e4b4c3205b2565b016842b6d1692ad0d4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/handlers/action.handlers.ts",
+      "sha256": "f57070d186886f80317f8698a1bf95d9ea6d951a59afe92757044cb3829b91a0"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/handlers/index.ts",
+      "sha256": "f62121a1247e121cf7ade984289b6a665fc1f47e3a34f9b905802792ee4cb15e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/index.ts",
+      "sha256": "6bccd7699ecb80198ab910d515503a0eea0fc7e46113cc9e987a08a6d6d0c323"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/sessionRecovery.ts",
+      "sha256": "167d3321abfeb42210d65f8d2436db53443fe57bdcb23f4ca642f0e75c68d8bf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/task-instance/index.ts",
+      "sha256": "4780921a9d41ae214f2ad1b6897056a9cd9cc262f251f56ebbe18e798aef566f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/task-instance/message.handler.ts",
+      "sha256": "256acda05f07e9488426a00354c249e77f682f489c41e04c1fec6d61e1007251"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/task-instance/sse.handler.ts",
+      "sha256": "9bf77b8ee700ae527d366b03b7be43cbed7b798d1c19633a395ea1ccb433d60d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/task-instance/task-instance.types.ts",
+      "sha256": "1270fa75ebf16d8c993609a355e80d877059fcef995a59ab045c586d537dc156"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/task-instance/TaskInstance.ts",
+      "sha256": "44b804381be5d48b3acb9bfe0c1f6da657b9e1792996798950b4b8a79be82d23"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/task-instance/workflow.handler.ts",
+      "sha256": "e123d39537936fc3cb35761f6996256d94af847a4a7d29df2313537a364d92cf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/utils/buildPrompt.ts",
+      "sha256": "33edaf6252a375cd42c52b8bd266fcd840dc85a788f526d3a039acc1e380745f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/utils/index.ts",
+      "sha256": "68a8a3e0be811b6517cf5127a069f97c55f0ac045e9762fa403309b6e970e1be"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/utils/message.ts",
+      "sha256": "3995cfb376b9c438aaee247aa4490891aa74aabe8d8a04d7d967d54c2149463f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/utils/progress.ts",
+      "sha256": "6a8bd0b2a65cc1c820dfc89adea66bcd953f01362ae00cfa91fb289f49eb14c2"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agent/utils/refs.ts",
+      "sha256": "b85f0ce1473816cafbc38237dcfd683fb5d3dbb5c0dac0ab8a5b2d0231a7cfd6"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/agentFollow.ts",
+      "sha256": "69c4f80c6882a6b3b41e78cd6c7d223125c67e29d24844eda1005633c15b0c14"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/aiAssistant.ts",
+      "sha256": "530c90bf28fe89482f755c0d6e65bdba32e6504af1b9a58aa76dfc24146df608"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/douyinPublishSession.ts",
+      "sha256": "25597d060f49a6b274991c20666dd738f0611b2d58c1e23bbe662b0e7979d57e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/draft-box/brandPromotionStore/index.ts",
+      "sha256": "a1ff491881e2d88c62b13ed55e665f81db4af7376b8a695ed53d4082e1becb04"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/draft-box/brandPromotionStore/types.ts",
+      "sha256": "eb93d3545e393ebc3b1e3ad3c2d06dec6ec66f0dcc472cf5d4b23c2c5e2c0608"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/draft-box/draftBoxConfigStore.ts",
+      "sha256": "1d185feb8bf2e5b4948b73affd3968d74bf894faa200e35f89e2fb848e644e3b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/draft-box/materialSync.ts",
+      "sha256": "65bde67e21b2dc4e6affcaa51aeacedba8122e43896ea70c5712097e7554caab"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/draft-box/planDetailStore.ts",
+      "sha256": "4a6088e8fdbbda11221193ede3e296e4e55256bfebe2d562e16b5830dcbb92ae"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/draft-box/planTabStore/index.ts",
+      "sha256": "a1d8bf928dacbd19e248bf9afe3ff497a3ded2876694b19e73e1282d7bfc8e4c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/draft-box/planTabStore/types.ts",
+      "sha256": "016b4910d4be14a19210924735b74c1203a6c53ffd1d4cba30aff30097f9cffc"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/draft-box/transferDraftDialogStore.ts",
+      "sha256": "ae2f3f15cbac4ca2ef2e00bed6c40997f789d274f7700ff61f5d46b6aee533d6"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/index.ts",
+      "sha256": "abe6d4e117051d34f74dc86368c7c9da19c25d3ffa44f2d96d096f53553c775e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/llmConfig.ts",
+      "sha256": "b3b3dceb74b6165a06bd9b65039c4068e94592d7e84168accd42a55556672a83"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/login-dialog/index.ts",
+      "sha256": "e242c6c2d3a00784092617131fe09d6fa61f4432039c724e6d4c7bca3ecc2b60"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/notifications.ts",
+      "sha256": "208e12b308d9d6ff719b57b4ec3c716ac0eff699fa2b4f71550fdd3df39fbf42"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/platformMetadata/index.ts",
+      "sha256": "7268bd3126c0e283c68b52667d53616967100dd8898a7f3e84116737f8a73c04"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/platformMetadata/staticIcons.ts",
+      "sha256": "8e4f5c519013f6c5fa72126c494af32bb9fac1074f3ea438bb9b73b29478ca13"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/platformMetadata/utils.ts",
+      "sha256": "3f26757bd73a10eefc661e9f66c1b325e8b2cde6253aaeea3eb6f83aa1543e80"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/account.utils.ts",
+      "sha256": "738b2ee70e8a8fef8757e1d257b0cadfaedcc765d1c94ecfdd6f9abfbbd7f049"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/constants.ts",
+      "sha256": "c98cb1c623861bb67a01ea4583bd373382499b6051553565702a7ca4c5a7475e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/hooks.ts",
+      "sha256": "51b41e1a8612c7697a0ed5795c56847a03bce3526f2ab54f4caea491d56fc7bf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/index.ts",
+      "sha256": "b9b8ad9f521c5b973ff96276baf8e2316621e6cdd3ae74088ca010ef7c4aea84"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/plats/douyin/homeFeed.ts",
+      "sha256": "cf0fe0a3d4dd4f2debfe7eef55f7199ba381b99480adab70cec407578a2a307c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/plats/douyin/index.ts",
+      "sha256": "41bfbe1c2909e53ee5931642fd4c9d1d38a7bb636f9fe2252699172302a3e183"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/plats/douyin/types.ts",
+      "sha256": "79173b8a014ff7b851def20379cc81c7d928ae96b46578f1d45be80cdd4792ef"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/plats/douyin/workDetail.ts",
+      "sha256": "3af80da632d0f19d18fd29fc8c730457315b29bcd4fb520c47732fad104c3d6e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/plats/index.ts",
+      "sha256": "518f63f9e787d4b7fa14131014a484102b76b6dcc175571da4a1dc8b27361dab"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/plats/manager.ts",
+      "sha256": "e5684fa6fd0848a5d2583a7ff9f127d22e22720e2659b66254b129a061f91ef8"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/plats/types.ts",
+      "sha256": "066aae42c27b0d0d81eae5f00453b47b2d6d9765e45c075bc95f809960edba2f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/plats/xhs/comment.ts",
+      "sha256": "2476a618469423a5702a4cc3a2fe281f22a3b8d4ab2a4404a50c30666b6bf818"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/plats/xhs/homeFeed.ts",
+      "sha256": "ca9fdebe23978a124262bc0db6d0bb80dbff46bb23bbd8e0b87620f7b34c2fed"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/plats/xhs/index.ts",
+      "sha256": "2995c628198fc4becdf66cbd15936ad7b247ca2616c976bad9cfa4aef97545ba"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/plats/xhs/types.ts",
+      "sha256": "49731d963700cd956deb13f1b0d7198b5a733111702df6b0973a86dee301a484"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/plugin.utils.ts",
+      "sha256": "36083eb78075503f77e0a25f4612b817231f1e0df68a246b0852cc079f352c52"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/request.ts",
+      "sha256": "eac4c9aa448a75f96aa2c7be5cd19c829ecf17ebd193aa558e8dc02391a90547"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/store.ts",
+      "sha256": "146f3421d3e4a1340a9c57d50103b420a9bd848ae287900bf46dff1f5c404488"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/types/baseTypes.ts",
+      "sha256": "6d7114f29f93679f775d8847e7a2289c6affd00223b1cb8e2ca05857ddc4ebe3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/types/index.ts",
+      "sha256": "847ac7f70395827e4587aa2b54562f3928360928b8655dd61bef43b5374cf7f7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/types/plat.type.ts",
+      "sha256": "b185f1ef9098f80beadcb634209b46271009cafe74106e64c8b7b1b37778de24"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/types/progress.types.ts",
+      "sha256": "ba7472acf8d01dc4ced31dcc36983ae90fc8f4ec7bfd264b80a7ef425bcbf250"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/types/publish.types.ts",
+      "sha256": "023a0e8984d76ae422724030cd319e412211d3131c02299827fab4d3d4e37524"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/types/publishTask.types.ts",
+      "sha256": "361ccc061f10ab5b40ff1b8838e68b2a98838426f318ac82a4fee71f91b7dde4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/plugin/utils.ts",
+      "sha256": "096a40c9720b8b19d4f616082008342f78c72a97a5df3dba2a94880d30f6bf6e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/publishDetailCache.ts",
+      "sha256": "39355dabe1663c08dc0cdba98f37aca603558a54f48d6a49620cae6731da5f3a"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/receptionAuto.ts",
+      "sha256": "48e2c688dd0c3d8c672a3dc09ff9db2169848292861973847ac132ff087d0335"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/settingsModal.ts",
+      "sha256": "982e3f9d014f54839d74bf3c87ae2d3d2b6904f84b849f63998ac6218fed95c3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/system.ts",
+      "sha256": "109a68f4711653b183ef71639be7fec2475809dcf9b8368899f362d53f0cabd7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/thumbnailCache.ts",
+      "sha256": "4621dbbfda7062341c123b574b8a682892ae57b4fabe71e134d8cf7f2dcdcc8f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/user/index.ts",
+      "sha256": "9f57240646ae7df2d2c0182a1e172d06721b676baed12da73e2d857263ecbf29"
+    },
+    {
+      "path": "project/bosom-friend-web/src/store/user/utils/device.ts",
+      "sha256": "a2fd7cdc1aa9898203e7fb993562e6c4a03972a58f7684a81813ea024de0bad3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/types/agent-asset.ts",
+      "sha256": "46a68587e5ac4df99bcb782a471ff7fa6fd31cf607ca71c096c915574a3682b7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/types/global.d.ts",
+      "sha256": "b8e9d5a266bc03e19021b321f17c936766c1d65f4d7343bbbef4efdda3b62959"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/agent/asset.ts",
+      "sha256": "925110c71a7c196a422e3cd0f3bfcaf71d9f6a9ff2af385e2492bd7809a5903e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/agentFeedback.ts",
+      "sha256": "61c2cf67e30093cdf7e39be8106f11a581191963519801337537f31b07214535"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/appLaunch.ts",
+      "sha256": "6b5db581dbbf4ef96c5df471964a6ed2e42a9fc8fb16a8e1cacd1bf5f4f5db3d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/assetPath.ts",
+      "sha256": "1cdbaeeb0beb6330184507c2e05a49e16b204225946aca2290cfc030642c9b00"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/auth.ts",
+      "sha256": "505e3c8cfe88e15a5d5b77d4da92a9f6cf356aab2d63410f9c5038f0c57e7fd7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/bosomFriendAssistant.ts",
+      "sha256": "dfce6aabd18f7fe1bd08effa7a5cb9cb62907c2243c1ca95d960c2c26820abb4"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/browser.ts",
+      "sha256": "ef41ee3180474d932af06d9159c46845de7a4a60a0b85442e88a48f3023db948"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/card.ts",
+      "sha256": "422897b651550d7eb548ace556e1f3f5e88bf7047d1e4a50ac03e7cf0ac20c01"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/className.ts",
+      "sha256": "1f220dc4695697dadeba9d04b6851b87dcbe37faf945950c0f43349ff3eb02c3"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/common.ts",
+      "sha256": "d5fefebfc475d782ae073e3850ccd8b28d4b8940174000ba314b6597aad919fb"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/currency.ts",
+      "sha256": "d75c23b7cc717c9953f3cc60e2fcfa573fb1d49d322024551e9ab86a44c07389"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/download.ts",
+      "sha256": "b64ea21dc5cbb76462fc91cdb67597e80a2cd3ecf92a48a8c5c8d4f0ae37dfe1"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/format.ts",
+      "sha256": "94fbdc252aac5bf1d8f022e657e1c7071f2c92f2b03af5755cc698c6374b75d7"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/media.ts",
+      "sha256": "79adf9f8dc55bf3d8874d2c292f1f04ee8ae5fe62adb145fa801a60dd1380c27"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/metadata.ts",
+      "sha256": "bc7e88f097d6b1e7fdb5d9b75be08274d3eef80760c40dcd09da43e2aa136183"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/oss.ts",
+      "sha256": "315cbbde46a89a2265b9f38540dce2e18f7f65578ee5317b1fc8c12f7003505d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/publish/desktopRoute.ts",
+      "sha256": "ef89c7595620fa75666504461874e3803d97035dd46e9639278a0bc9f7872108"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/receptionAutoRunner.ts",
+      "sha256": "0218916a10deb7a19161675e7ad98a22c2d7b497b5f94c11aca8cf1482288b1d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/region/domain.ts",
+      "sha256": "3f0904aef6837585afe6c9f310e9049d4721c0002578f34e096eec4d34f24449"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/region/redirect.ts",
+      "sha256": "c32c8c83361b61da9432269e9ff047c80d88d9a95d088fb7e559d1d1ec11a33c"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/request/client.ts",
+      "sha256": "a30de015e3a47b5cee817f88ef90853b7bfb24aac796a0144675110b18b275a6"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/request/FetchService.ts",
+      "sha256": "b57ba30c2dfd51e72950460e8286a15c42c31ad5db6c152860114f7f1d08d18d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/request/index.ts",
+      "sha256": "e9332c866418d8ff653812787158cf5c2dd07245caa33b08fa282143e3180abf"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/request/types.ts",
+      "sha256": "e703368e450d998d55d5bf094c8b0206c041563e50a4b30c9a4566148d9ab330"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/social/account.ts",
+      "sha256": "92a5c29ce5d1e7ecdc63985d6b445e2387072a4d31cfe455272de8223fb2816e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/storage/createPersistStore.ts",
+      "sha256": "6147f0ee015d46c702f670c7a43c753a85e0c4ff89062ac54df282826a733fd5"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/storage/indexedDBStorage.ts",
+      "sha256": "3443794edc0eb5610d03c0672cc7d5524c575770ea7a975a55e3bce3019f459d"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/storage/localStorage.ts",
+      "sha256": "35f346aebb3088d95461d9d6f633a137b962eda770fd6bb4e67b2725e2f3332f"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/title.ts",
+      "sha256": "7f7adad694f83384d9781968887603414f86f4487d6f44940ca838601f1d72ef"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/ui/confirm.tsx",
+      "sha256": "8ed8cd4751a302ef5fd45586aca99dad266db2abb4724190fcb9e361cc20155e"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/ui/notification.ts",
+      "sha256": "486d1994dedadf8e369d52ac242ccde64ee21f252ff43bc1f4c9a44b57905059"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/ui/toast.ts",
+      "sha256": "391b4406e106d9e47c6a531bb96aff9929d50b4e5958d3998bf6f53614eec7ef"
+    },
+    {
+      "path": "project/bosom-friend-web/src/utils/userLlm.ts",
+      "sha256": "ad9aea1a6914c89948ca0f6ad41bc774377885008cb022696d53cb0c7b58ab9b"
+    },
+    {
+      "path": "project/bosom-friend-web/src/vite-env.d.ts",
+      "sha256": "f07c7d25c0f1f9cd32faa27281ac7417fb339ce45c2a9044025bca1fe3094542"
+    },
+    {
+      "path": "server/src/api.ts",
+      "sha256": "b023c9581896f69c6b599f42526a57c7828880e7d3f8d497349f310d34a3b384"
+    },
+    {
+      "path": "server/src/http.ts",
+      "sha256": "6e187e98d76dd30b89361770b63be68f020bb8bfd769d8260389dd1499c1d7c1"
+    },
+    {
+      "path": "server/src/index.ts",
+      "sha256": "bb5f2b69b9bbf6ffb9ba09be496e3f002ef5a11f0d9402f068f08e5f1f897c79"
+    },
+    {
+      "path": "server/src/invariant.ts",
+      "sha256": "6edd3993481458674fc2fa75e0d48a9e3ab967eb5b90779d1dae0c652e63e28f"
+    },
+    {
+      "path": "server/src/platform-catalog.ts",
+      "sha256": "709d404c2465c32fc3734a294edc6f78f9b698b86df32dc20b68c4520c7a792e"
+    },
+    {
+      "path": "server/src/platform-interactions.ts",
+      "sha256": "38eb8fa3a802620296bacc5279ff9c3e5bcf8a50aba80a236806c46939b92adf"
+    },
+    {
+      "path": "server/src/platform-login.ts",
+      "sha256": "1d304ae0d1cd5bb25e6dba9c7438cc96738f9a8690fecf90d3d47cc9a09a5b1b"
+    },
+    {
+      "path": "server/src/platform-sync.ts",
+      "sha256": "d78815338f902a8a1027f55bfa4d228ad5f961c4d87c76708273442853f787ad"
+    },
+    {
+      "path": "server/src/reception-engine.ts",
+      "sha256": "0e0f093bf1d11732e6602f91a72c93f7a174fb9ec563270064f0979fdf8fc4d2"
+    },
+    {
+      "path": "server/src/reception-rules.ts",
+      "sha256": "932e9c45d07fb8776569ac28c389c0c2d2bbf7bb01f483378e34568dfbb8aeda"
+    },
+    {
+      "path": "server/src/routes-channels.ts",
+      "sha256": "e2bfe0b0e2c86e301639ec6d7d11f3008c9e51afb9458118050439ae2742b2e5"
+    },
+    {
+      "path": "server/src/routes-content.ts",
+      "sha256": "b1667919e9f0a942f5469336cd4ac6303b61bf313e9a9e7d5179cc8520d97c9c"
+    },
+    {
+      "path": "server/src/routes-knowledge.ts",
+      "sha256": "914abd5d5826f56b4e815bd31cc8e5ca463c48db9bfa61dea11fc3fa0072a1fb"
+    },
+    {
+      "path": "server/src/security.ts",
+      "sha256": "bcbe553a1f24035798f860e11beca3ddd14006826f6e9621bf563f7ada41fdbf"
+    },
+    {
+      "path": "server/src/store-helper.ts",
+      "sha256": "ad328ccffe374216a77ed3a35080ed2c52c7ebb85fce753510c597d4eccd0750"
+    },
+    {
+      "path": "server/src/store.ts",
+      "sha256": "ff58b279f526168e5a86233e7759bd93fb4f2d610ec3ea935c98b4973ac4fcea"
+    },
+    {
+      "path": "server/src/types.ts",
+      "sha256": "b5684fc8f1dddc8b7cb0e772a32afb80a517150157028f40fa49e6ed600ecd9d"
+    }
+  ]
+}

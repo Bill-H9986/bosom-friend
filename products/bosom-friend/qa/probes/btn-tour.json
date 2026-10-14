@@ -1,0 +1,325 @@
+{
+ "results": [
+  {
+   "route": "#/draft-box",
+   "btn": "sidebar-toggle-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/draft-box",
+   "btn": "sidebar-account-entry",
+   "verdict": "API"
+  },
+  {
+   "route": "#/draft-box",
+   "btn": "sidebar-user-trigger",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/draft-box",
+   "btn": "创作|",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/draft-box",
+   "btn": "素材库|",
+   "verdict": "API"
+  },
+  {
+   "route": "#/draft-box",
+   "btn": "ai-assistant-collapse-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/draft-box",
+   "btn": "我已阅读并同意以上免责声明，自愿承担使用本平台产|",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/draft-box",
+   "btn": "ai-assistant-expand-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/draft-box",
+   "btn": "同意并进入平台|",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/tasks-history",
+   "btn": "sidebar-toggle-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/tasks-history",
+   "btn": "sidebar-account-entry",
+   "verdict": "API"
+  },
+  {
+   "route": "#/tasks-history",
+   "btn": "sidebar-user-trigger",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/tasks-history",
+   "btn": "|",
+   "verdict": "API"
+  },
+  {
+   "route": "#/tasks-history",
+   "btn": "我的收藏|",
+   "verdict": "API"
+  },
+  {
+   "route": "#/tasks-history",
+   "btn": "ai-assistant-collapse-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/ai-interaction",
+   "btn": "sidebar-toggle-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/ai-interaction",
+   "btn": "sidebar-account-entry",
+   "verdict": "API"
+  },
+  {
+   "route": "#/ai-interaction",
+   "btn": "sidebar-user-trigger",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/ai-interaction",
+   "btn": "热点内容|",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/ai-interaction",
+   "btn": "评论搜索|",
+   "verdict": "API"
+  },
+  {
+   "route": "#/ai-interaction",
+   "btn": "ai-assistant-expand-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/knowledge",
+   "btn": "sidebar-toggle-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/knowledge",
+   "btn": "sidebar-account-entry",
+   "verdict": "API"
+  },
+  {
+   "route": "#/knowledge",
+   "btn": "sidebar-user-trigger",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/knowledge",
+   "btn": "挂载外部库|",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/knowledge",
+   "btn": "新建笔记|",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/knowledge",
+   "btn": "ai-assistant-collapse-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/calendar",
+   "btn": "sidebar-toggle-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/calendar",
+   "btn": "sidebar-account-entry",
+   "verdict": "API"
+  },
+  {
+   "route": "#/calendar",
+   "btn": "sidebar-user-trigger",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/calendar",
+   "btn": "calendar-prev-btn",
+   "verdict": "API"
+  },
+  {
+   "route": "#/calendar",
+   "btn": "calendar-next-btn",
+   "verdict": "API"
+  },
+  {
+   "route": "#/calendar",
+   "btn": "calendar-toggle-solar-festival",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/calendar",
+   "btn": "calendar-toggle-solar-term",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/calendar",
+   "btn": "calendar-view-week",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/calendar",
+   "btn": "calendar-view-month",
+   "verdict": "API"
+  },
+  {
+   "route": "#/calendar",
+   "btn": "calendar-today-btn",
+   "verdict": "API"
+  },
+  {
+   "route": "#/calendar",
+   "btn": "ai-assistant-expand-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "sidebar-toggle-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "sidebar-account-entry",
+   "verdict": "API"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "sidebar-user-trigger",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "全部平台|",
+   "verdict": "API"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "抖音|",
+   "verdict": "API"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "小红书|",
+   "verdict": "API"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "选择日期范围|",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "data-statistics-query",
+   "verdict": "API"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "播放/浏览|",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "点赞|",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "评论|",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "分享|",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "收藏|",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/data-statistics",
+   "btn": "ai-assistant-collapse-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/monitor",
+   "btn": "sidebar-toggle-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/monitor",
+   "btn": "sidebar-account-entry",
+   "verdict": "API"
+  },
+  {
+   "route": "#/monitor",
+   "btn": "sidebar-user-trigger",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/monitor",
+   "btn": "刷新|",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/monitor",
+   "btn": "ai-assistant-expand-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/settings",
+   "btn": "sidebar-toggle-btn",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/settings",
+   "btn": "sidebar-account-entry",
+   "verdict": "API"
+  },
+  {
+   "route": "#/settings",
+   "btn": "sidebar-user-trigger",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/settings",
+   "btn": "通用设置|",
+   "verdict": "NOOP"
+  },
+  {
+   "route": "#/settings",
+   "btn": "自定义大模型|",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/settings",
+   "btn": "系统与更新|",
+   "verdict": "DOM"
+  },
+  {
+   "route": "#/settings",
+   "btn": "ai-assistant-collapse-btn",
+   "verdict": "DOM"
+  }
+ ],
+ "errs": []
+}

@@ -1,0 +1,188 @@
+{
+  "name": "qa-guard",
+  "runAt": "2026-10-14T01:21:28.466Z",
+  "pass": 36,
+  "total": 36,
+  "items": [
+    {
+      "n": "SELF-CHECK 关键词检测(应命中)",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "SELF-CHECK 关键词检测(不应误报)",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "SELF-CHECK 拆行检测(去空白后命中)",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "SELF-CHECK LAYOUT 同源图片失败→红",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "SELF-CHECK LAYOUT 外链图片失败→告警但不阻塞",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "SELF-CHECK LAYOUT 外链正常→无告警",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "SELF-CHECK LAYOUT 扫描失败→不得伪装成正常",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "SELF-CHECK 图片分类 同源→local",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "SELF-CHECK 图片分类 外链→external",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "SELF-CHECK 图片分类 非法URL→按 local 保守处理",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "static-前端源码目录存在",
+      "pass": true,
+      "d": "C:/Users/Jay/Desktop/Bosom friend APP/products/bosom-friend/project/bosom-friend-web/src"
+    },
+    {
+      "n": "static-禁词零残留(21 文件层)",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "frozen-产物 index.html 哈希与声明一致",
+      "pass": true,
+      "d": "SHA256=D99D083CE9FE（声明前缀 D99D083CE9FE）"
+    },
+    {
+      "n": "frozen-产物引用完整（无悬空 assets）",
+      "pass": true,
+      "d": "引用 6 个资源，全部存在"
+    },
+    {
+      "n": "DEF-237-插件零注入(静态)",
+      "pass": true,
+      "d": "前端源码里 window.ZhiyinPlugin 取值 45 处、注入赋值 0 处——插件来自本仓库之外，产品只做消费方"
+    },
+    {
+      "n": "DEF-237-插件属性访问有保护(契约)",
+      "pass": true,
+      "d": "直接属性访问 8 处，其中判空守卫 4 处、try 块内 4 处——插件缺失时要么走判空分支、要么抛错被 try 捕获，都不会白屏"
+    },
+    {
+      "n": "i18n-route 键七语言同步",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "DEF-237-运行时探针(浏览器托管)",
+      "pass": true,
+      "d": "页面 complete http://127.0.0.1:31280/bosom-friend/：window.ZhiyinPlugin=undefined、window.ipcRenderer=object（产品 shim=true）、可选链取值不抛错（ZhiyinPlugin?.publish=undefined、ZhiyinPlugin?.wxSphSearchLocation=undefined）"
+    },
+    {
+      "n": "UX-首屏无禁词",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "UX-品牌字标正确",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "UX-免责首次弹出",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "UX-免责同意关闭",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "UX-免责记录写入(本地副本)",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "UX-免责刷新不再弹",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "LAYOUT-#/",
+      "pass": true,
+      "d": "ox=false broken_local=0 broken_external=0 len=1163"
+    },
+    {
+      "n": "LAYOUT-#/draft-box",
+      "pass": true,
+      "d": "ox=false broken_local=0 broken_external=0 len=435"
+    },
+    {
+      "n": "LAYOUT-#/tasks-history",
+      "pass": true,
+      "d": "ox=false broken_local=0 broken_external=0 len=180"
+    },
+    {
+      "n": "LAYOUT-#/ai-interaction",
+      "pass": true,
+      "d": "ox=false broken_local=0 broken_external=0 len=2098"
+    },
+    {
+      "n": "LAYOUT-#/knowledge",
+      "pass": true,
+      "d": "ox=false broken_local=0 broken_external=0 len=269"
+    },
+    {
+      "n": "LAYOUT-#/calendar",
+      "pass": true,
+      "d": "ox=false broken_local=0 broken_external=1 len=728"
+    },
+    {
+      "n": "LAYOUT-#/data-statistics",
+      "pass": true,
+      "d": "ox=false broken_local=0 broken_external=6 len=1000"
+    },
+    {
+      "n": "LAYOUT-#/monitor",
+      "pass": true,
+      "d": "ox=false broken_local=0 broken_external=0 len=629"
+    },
+    {
+      "n": "LAYOUT-#/settings",
+      "pass": true,
+      "d": "ox=false broken_local=0 broken_external=0 len=290"
+    },
+    {
+      "n": "LAYOUT-#/accounts",
+      "pass": true,
+      "d": "ox=false broken_local=0 broken_external=0 len=620"
+    },
+    {
+      "n": "UX-页面零错误",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "API-响应全部code=0",
+      "pass": true,
+      "d": ""
+    }
+  ]
+}
