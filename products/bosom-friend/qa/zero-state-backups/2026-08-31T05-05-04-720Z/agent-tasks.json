@@ -1,0 +1,61 @@
+[
+  {
+    "id": "task-91db07d6",
+    "userId": "zy-user-001",
+    "title": "你好！",
+    "description": "",
+    "tags": [],
+    "status": "completed",
+    "medias": [],
+    "errorMessage": "",
+    "prompt": "你好！",
+    "messages": [
+      {
+        "type": "user",
+        "uuid": "u-5635a7d0",
+        "message": "你好！",
+        "createdAt": "2026-08-31T02:57:30.837Z"
+      },
+      {
+        "type": "assistant",
+        "uuid": "a-11091667",
+        "content": "你好呀！我是 Bosom Friend AI 内容助手～\n\n想做点什么内容？小红书笔记、短视频脚本、公众号图文，还是别的？\n\n直接告诉我你的主题和需求，我帮你搞定！💪",
+        "message": {
+          "content": [
+            {
+              "type": "text",
+              "text": "你好呀！我是 Bosom Friend AI 内容助手～\n\n想做点什么内容？小红书笔记、短视频脚本、公众号图文，还是别的？\n\n直接告诉我你的主题和需求，我帮你搞定！💪"
+            }
+          ]
+        },
+        "createdAt": "2026-08-31T02:57:31.597Z"
+      },
+      {
+        "type": "user",
+        "uuid": "u-3a702122",
+        "message": "你是谁？会干嘛？用的什么大模型？！",
+        "createdAt": "2026-08-31T02:57:48.883Z"
+      },
+      {
+        "type": "assistant",
+        "uuid": "a-c5572ed5",
+        "content": "我刚刚说了，Bosom Friend AI 内容营销助手，生成小红书笔记、短视频脚本、公众号图文这些。大模型用的是通义千问（Qwen），阿里云那块，很稳。",
+        "message": {
+          "content": [
+            {
+              "type": "text",
+              "text": "我刚刚说了，Bosom Friend AI 内容营销助手，生成小红书笔记、短视频脚本、公众号图文这些。大模型用的是通义千问（Qwen），阿里云那块，很稳。"
+            }
+          ]
+        },
+        "createdAt": "2026-08-31T02:57:50.602Z"
+      }
+    ],
+    "rating": null,
+    "ratingComment": null,
+    "favorite": false,
+    "favoritedAt": null,
+    "createdAt": "2026-08-31T02:57:30.837Z",
+    "updatedAt": "2026-08-31T02:57:50.602Z"
+  }
+]

@@ -1,0 +1,41 @@
+# 创作管家（creator）：从选题、写稿、出图、出片到落进草稿箱。
+# 依据：ADR-005-AGENT《管家 preset 与 Skills 规格》第 3 节；工具面即权限边界（BFS-102）。
+
+# 人设：追加在部署默认提示之后（不用 complete，保留基座的通用能力与安全边界）。
+- id: persona
+  name: '@deepseek-ai/dsh-persona'
+  config:
+    prefix: >-
+      你是 Bosom Friend 的**创作管家**：负责选题、写稿、生成图片与视频、剪成分镜、把成品落进草稿箱。你的交付物是**草稿箱里的一条内容**，不是对话里的一段文本——写完必须调用工具真的存进去。
+    suffix: >-
+      发布不是你的职责：用户要发布时，把草稿 id 与标题交代清楚，交给发布管家。素材、数字人形象、长视频任务都在你的工具面里。
+
+# 工具面：本管家能看到并调用的工具。面之外的工具不注册——对它是「不存在」，
+# 比「注册了再叮嘱别用」可靠（内核插件的 config.tools 支持完整名与前缀星号；单写 `*` = 全量）。
+#
+# 唯一事实源：`presets/roles.json`——内核运行期只读它（经 BF_AGENT_ROLE 生效）。
+# 本段必须与 roles.json 里本角色的列表逐条一致，由 `qa/verify-preset-parity.mjs` 强制；
+# 手改本段会被门禁判红：要改工具面，先改 roles.json，再把同样的列表抄到这里。
+# 本文件是**运行时真正被读的那一份**（2026-10-12 起）：SDK server 按 bosom-jsonrpc 的
+# config.agentPreset 在 agent 工厂 setup 里调 agentPresets.mount()，会话 join 到这里。
+# 所以下面的工具面与技能面都是**生效的声明**，不再是「同一事实的第二份表示」。
+# 技能面：本管家能看到并加载的技能目录——与工具面**同住这份文件**（2026-10-12 收手：
+# host 的 skill-filesystem 已 disabled，技能面的唯一声明处就是这里）。
+# 目录由 launcher/scripts/sync-presets.mjs 从仓库 presets/<role>/skills 与 skills/ 物化到
+# $DSH_HOME/.agent-presets/ 下：本角色技能 ＋ 跨管家通用技能（handoff / truthful-report）。
+# 机制（官方源码实证）：skill registry 是 host + per-scope 分层的，preset 里挂的 provider
+# 只对该 agent 生效（packages/skill/tool-skill/src/index.ts:207-212）。
+# !!js 整体加引号是必须的：不加引号时 YAML 会把行内的 ? [ 等字符当流式语法，整行解析成别的形状。
+- id: skill-filesystem
+  name: '@deepseek-ai/dsh-skill-filesystem'
+  config:
+    includeDefaultRoots: false
+    customSkillDirs: !!js "[process.env.DSH_HOME + '/.agent-presets/creator/skills']"
+- id: bosom-kernel
+  name: '@deepseek-ai/dsh-bosom-friend-kernel'
+  config:
+    tools:
+      - bosom_content_*
+      - bosom_material_*
+      - bosom_digital_human_*
+      - bosom_long_video_*

@@ -1,0 +1,33 @@
+﻿Bosom Friend 内核运行时修复包（现场用）
+========================================
+
+症状：启动页停在 80%「加载产品界面」，错误框写着
+  内核运行时解压失败（PATH 上的 tar.exe 失败（spawn tar.exe ENOENT）；随包 Python 失败（Command failed: …））
+
+原因（一句话）：内核运行时这份压缩包里最深有 232 字符的相对路径，解到
+%APPDATA%\Bosom Friend\kernel-runtime 之后超过 Windows 的 MAX_PATH 260；
+而 Windows 的长路径支持默认是关的，系统 tar 与随包 Python 都过不去。
+
+怎么用（三步，不用命令行）：
+  1) 把这个文件夹整个拷到那台电脑上（U 盘 / 网盘 / 局域网共享都行，别只拷其中一个文件）；
+  2) 先让 Bosom Friend 从托盘「完全退出」（右键托盘图标 → 完全退出），
+     然后在任务管理器里确认没有 Bosom Friend 进程；
+  3) 双击「修复内核运行时.cmd」，等它跑完。
+
+它会做两件事：
+  A. 请求一次管理员授权（UAC 弹窗点“是”），把 Windows 长路径支持打开（LongPathsEnabled=1）。
+     如果点“否”也没关系：解压照样会做，只是内核读取深路径文件仍有风险，建议之后重跑一次。
+  B. 用 Bosom Friend 自带的 Node + kernel-unzip.cjs 把 resources\kernel-runtime.zip 解到
+     %APPDATA%\Bosom Friend\kernel-runtime（走 \\?\ 长路径写法，不受 260 限制）。
+     这台机器上大约几分钟，窗口别关。
+
+跑完之后它会自动启动 Bosom Friend（首次启动还要装载内核，慢一点正常）。
+若内核仍起不来：重启一次系统再启动应用（长路径开关按进程缓存），并把窗口里的完整输出、
+以及 %APPDATA%\Bosom Friend\kernel-extract.log 发给开发者。
+
+文件夹里都有什么：
+  修复内核运行时.cmd        双击入口（内部调用 run-repair.ps1）
+  run-repair.ps1            A（提权开长路径）+ 收尾提示
+  repair-kernel-runtime.ps1 B 的解压阶梯与环境事实（与仓库同一份，逐字复制）
+  kernel-unzip.cjs          自带解压器（纯 Node + ZIP64 + \\?\ 前缀，不依赖 tar / Python / 注册表）
+  说明.txt                  本文件

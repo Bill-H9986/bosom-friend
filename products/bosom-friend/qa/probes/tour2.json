@@ -1,0 +1,90 @@
+{
+ "results": [
+  {
+   "route": "#/welcome",
+   "btn": "同意并进入平台",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-channel",
+   "btn": "sidebar-toggle-btn",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-channel",
+   "btn": "sidebar-account-entry",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-channel",
+   "btn": "sidebar-user-trigger",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-channel",
+   "btn": "开始创作|",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-channel",
+   "btn": "ai-assistant-collapse-btn",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-channel",
+   "btn": "我已阅读并同意以上免责声明，自愿承担使用本平台产|",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-channel",
+   "btn": "|",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-publish",
+   "btn": "sidebar-toggle-btn",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-publish",
+   "btn": "sidebar-account-entry",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-publish",
+   "btn": "sidebar-user-trigger",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-publish",
+   "btn": "创作|",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-publish",
+   "btn": "素材库|",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-publish",
+   "btn": "ai-assistant-expand-btn",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#modal-publish",
+   "btn": "我已阅读并同意以上免责声明，自愿承担使用本平台产|",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#ai-panel",
+   "btn": "新对话|",
+   "verdict": "EFFECT"
+  },
+  {
+   "route": "#ai-panel",
+   "btn": "帮我写一条抖音爆款文案|",
+   "verdict": "EFFECT"
+  }
+ ],
+ "errs": []
+}

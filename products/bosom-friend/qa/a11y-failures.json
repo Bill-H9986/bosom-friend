@@ -1,0 +1,88 @@
+{
+  "#/draft-box": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodes": [
+        {
+          "t": ".pl-4.bg-clip-padding:nth-child(1) > .hover\\:border-primary\\/50.bg-card[data-testid=\"draftbox-generating-task-card\"]:nth-child(1) > .h-\\[60px\\].space-y-1.p-2\\.5 > div:nth-child(1) > .mt-0\\.5.text-warning.line-clamp-2",
+          "a": {
+            "fgColor": "#f49500",
+            "bgColor": "#ffffff",
+            "contrastRatio": 2.3,
+            "fontSize": "9.0pt (12px)",
+            "fontWeight": "normal",
+            "messageKey": null,
+            "expectedContrastRatio": "4.5:1"
+          },
+          "c": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #f49500, background color:"
+        },
+        {
+          "t": ".pl-4.bg-clip-padding:nth-child(2) > .hover\\:border-primary\\/50.bg-card[data-testid=\"draftbox-generating-task-card\"]:nth-child(1) > .aspect-\\[3\\/4\\].bg-muted.overflow-hidden > .border-warning\\/40.bg-warning\\/10.shadow-none",
+          "a": {
+            "fgColor": "#f49500",
+            "bgColor": "#f5ebdd",
+            "contrastRatio": 1.95,
+            "fontSize": "9.0pt (12px)",
+            "fontWeight": "normal",
+            "messageKey": null,
+            "expectedContrastRatio": "4.5:1"
+          },
+          "c": "Fix any of the following:\n  Element has insufficient color contrast of 1.95 (foreground color: #f49500, background color"
+        },
+        {
+          "t": ".pl-4.bg-clip-padding:nth-child(2) > .hover\\:border-primary\\/50.bg-card[data-testid=\"draftbox-generating-task-card\"]:nth-child(1) > .h-\\[60px\\].space-y-1.p-2\\.5 > div:nth-child(1) > .mt-0\\.5.text-warning.line-clamp-2",
+          "a": {
+            "fgColor": "#f49500",
+            "bgColor": "#ffffff",
+            "contrastRatio": 2.3,
+            "fontSize": "9.0pt (12px)",
+            "fontWeight": "normal",
+            "messageKey": null,
+            "expectedContrastRatio": "4.5:1"
+          },
+          "c": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #f49500, background color:"
+        },
+        {
+          "t": ".pl-4.bg-clip-padding:nth-child(3) > .hover\\:border-primary\\/50.bg-card[data-testid=\"draftbox-generating-task-card\"]:nth-child(1) > .h-\\[60px\\].space-y-1.p-2\\.5 > div:nth-child(1) > .mt-0\\.5.text-warning.line-clamp-2",
+          "a": {
+            "fgColor": "#f49500",
+            "bgColor": "#ffffff",
+            "contrastRatio": 2.3,
+            "fontSize": "9.0pt (12px)",
+            "fontWeight": "normal",
+            "messageKey": null,
+            "expectedContrastRatio": "4.5:1"
+          },
+          "c": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #f49500, background color:"
+        },
+        {
+          "t": ".pl-4.bg-clip-padding:nth-child(4) > .hover\\:border-primary\\/50.bg-card[data-testid=\"draftbox-generating-task-card\"]:nth-child(1) > .h-\\[60px\\].space-y-1.p-2\\.5 > div:nth-child(1) > .mt-0\\.5.text-warning.line-clamp-2",
+          "a": {
+            "fgColor": "#f49500",
+            "bgColor": "#ffffff",
+            "contrastRatio": 2.3,
+            "fontSize": "9.0pt (12px)",
+            "fontWeight": "normal",
+            "messageKey": null,
+            "expectedContrastRatio": "4.5:1"
+          },
+          "c": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #f49500, background color:"
+        },
+        {
+          "t": ".pl-4.bg-clip-padding:nth-child(5) > .hover\\:border-primary\\/50.bg-card[data-testid=\"draftbox-generating-task-card\"]:nth-child(1) > .h-\\[60px\\].space-y-1.p-2\\.5 > div:nth-child(1) > .mt-0\\.5.text-warning.line-clamp-2",
+          "a": {
+            "fgColor": "#f49500",
+            "bgColor": "#ffffff",
+            "contrastRatio": 2.3,
+            "fontSize": "9.0pt (12px)",
+            "fontWeight": "normal",
+            "messageKey": null,
+            "expectedContrastRatio": "4.5:1"
+          },
+          "c": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #f49500, background color:"
+        }
+      ]
+    }
+  ]
+}

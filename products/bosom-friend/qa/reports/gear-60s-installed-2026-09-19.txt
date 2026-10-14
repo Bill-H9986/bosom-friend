@@ -1,0 +1,25 @@
+launched pid=35292
+ready=true
+gears: durations=[] longDurations=[]
+estimates={}
+假厂商: http://127.0.0.1:49218/v1
+PASS 把视频通道临时指向假厂商 | {"code":0,"data":{"hasApiKey":true,"providerCount":1},"message":"ok"}
+PASS 视频通道确实指向假厂商 | video.baseUrl=http://127.0.0.1:49218/v1
+PASS 对话通道仍有密钥（只动视频通道，没把别的服务清掉） | {"model":"agnes-3.0-flash","hasApiKey":true}
+PASS 30 秒生成请求被受理 | {"code":0,"data":{"taskIds":["gen-75c661ca"]},"message":"ok"}
+PASS 生成走到终态 | {"id":"gen-75c661ca","status":"success","points":0,"createdAt":"2026-09-19T05:55:53.146Z","updatedAt":"2026-09-19T06:00:05.363Z","request":{"groupId":"default","kind":"video","prompt":"端到端验收用的测试画面：60 秒档位","duration":60,"resolution":"720p","aspectRatio":"9:16","quantity":1,"model":"agnes-video-2.5-flash","draftType":"video"},"response":{"title":"端到端验收用的测试画面：60 秒档位｜抖音长视频分镜（60 秒 · 720p · 9:16）","desc
+PASS 生成成功 | success
+PASS 拼装路径收到 15 次整片下单（60 秒 = 4+4+4+4+4+4+4+4+4+4+4+4+4+4+4） | 全部下单=[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4] 整片下单=[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]
+PASS 每次下单都在官方 4~12 秒内 | [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]
+PASS 拼装下单秒数合计等于 60 | 60
+PASS 生成记录里带成片地址 | /bosom-friend/api/assets/file/ai-vid-0d112157.mp4
+PASS 成片已落盘 | C:\Users\Jay\.bosom-friend\bosom-friend\uploads\ai-vid-0d112157.mp4
+PASS 成片时长收敛到 60 秒（±0.6） | actual=60.28s
+PASS 生成记录标注这是拼装成片（不是降级轮播） | generatedModel=video:composed:15clips generatedBy=ai
+   整条耗时 4 分钟（假厂商每片延迟 15000 ms）
+PASS 用户配置恢复请求被受理 | {"code":0,"data":{"hasApiKey":true,"providerCount":1},"message":"ok"}
+PASS 视频通道已恢复原值（地址/型号/密钥都在） | {"baseUrl":"https://api.agnes-ai.cn/v1","model":"agnes-video-2.5-flash","hasApiKey":true}
+PASS 对话通道原样（地址/型号/密钥都在） | {"baseUrl":"https://api.agnes-ai.cn/v1","model":"agnes-3.0-flash","hasApiKey":true}
+
+COMPOSED_30S PASS checks=16 fail=0
+probe exit=0 wallMinutes=4

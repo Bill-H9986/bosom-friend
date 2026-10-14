@@ -1,0 +1,17 @@
+{
+  "name": "bosom-friend-e2e",
+  "private": true,
+  "type": "module",
+  "description": "Bosom Friend 端到端测试套件（Playwright Test）：三大核心 CRUD + 关键不变量，跑在正在运行的开发实例上",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report report",
+    "trace": "playwright show-trace"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1"
+  }
+}

@@ -1,0 +1,108 @@
+CLAUDE.local.md
+.env
+node_modules/
+lib/
+*.tsbuildinfo
+pnpm-debug.log
+.pnpm-store/
+.cache/
+examples/*/*.jsonl
+.storages/
+.sessions/
+examples/*/.sessions/
+coverage/
+.coverage-times.json
+.doc-typecheck-*/
+.node-next-types-*/
+.oxlint-contract-*/
+.oxlintrc.contract-*.json
+oxlint-contract-*.ts
+.humanize/
+tmp/
+.claude/commands/
+.claude/launch.json
+.claude/settings.json
+.vscode/
+.DS_Store
+.idea
+mise.toml
+dist-exe/
+/dist/
+apps/desktop/.desktop-build/
+python/sdk-runtime/src/deepseek_harness_runtime/runtime/deepseek-harness-sdk-runtime-*
+python/sdk-runtime/src/deepseek_harness_runtime/runtime/node/
+python/**/__pycache__/
+python/**/.pytest_cache/
+packages/**/__pycache__/
+apps/web/dist/
+.artifacts/
+.dsh-build/
+.playwright-mcp/
+.orig
+.worktrees/
+worktrees/
+.agents/worktrees/
+.typert-*/
+native/system/test/bin/
+# 竞品分析的大体积原始素材（帧图与报告已归入产品 docs/参考资料/）
+analysis/**/*.mp4
+# 会话期间的临时探针 / 监考脚本与中间产物（下划线前缀一律排除）
+# 正式交付物是 analysis/ 下的 .md 报告与 _exam-shots 证据截图，这两类显式保留。
+analysis/_*
+!analysis/_exam-shots/
+!analysis/_exam-shots/**
+
+# 外部资料的原样抓取（竞品与官方文档，调研素材而非本项目源码）
+analysis/agnes-docs/
+analysis/agnes-official/
+analysis/pavo-scrape/
+
+# 工作区根的一次性临时文件（下划线前缀）
+/_*.txt
+/_*.log
+/_*.json
+# 本地开发运行日志（dev-runtime / dev-web / dev-web.detached / 媒体联调）
+/dev-*.log
+/products/dev-*.log
+/media-test.log
+
+# 第 0 步收口留档：现场调试残留（一次性探针 / 临时截图 / 运行日志）移出版本控制后暂存于此
+/_archive-20260926/
+
+# 课件制作工作区：本地素材与脚本，与本产品源码无关
+/courseware/
+
+# ---- 2026-10-12 通宵补：产物、过程文件、一次性脚本不许进库 ----
+# 产品前端产物：历史上进过库，每次重建都产生一批新 hash 文件名，反复增删没有意义
+/products/bosom-friend/project/bosom-friend-electron/dist/
+# 桌面壳产物与发布目录
+/products/bosom-friend/desktop/dist/
+/products/bosom-friend/desktop/release/
+# 过程截图（证据统一留在 analysis/_exam-shots，那里有白名单）
+/products/bosom-friend/project/ui-shots-*/
+# qa 跑出来的日志与改稿备份（门禁本身进库，运行痕迹不进）
+/products/bosom-friend/qa/*.log
+/products/bosom-friend/qa/**/*.bak-*
+# 各线用完即弃的一次性诊断脚本与碎片笔记（AGENTS 0.7：脚本只允许门禁与一次性诊断，诊断查清即删）
+/analysis/*.cjs
+/analysis/frag*.md
+/analysis/coverage-*.json
+/analysis/p1-uncovered.json
+
+# 根级一次性临时脚本（各线调试用，不进库）
+/.tmp-*
+/products/bosom-friend/*.log
+
+# 过程截图目录（体积大、可再生；证据统一走 analysis/_exam-shots 白名单）
+/analysis/frontend-s2-*/
+/products/bosom-friend/analysis/s2-screenshots/
+# 临时状态碎片（与 frag*.md 同类）
+/analysis/t.md
+/analysis/t[0-9]*.md
+
+# 产品内的分析截图目录（_drive / s2-screenshots，体积大且可再生）
+/products/bosom-friend/analysis/
+# 各线写在 launcher/scripts 下的一次性探针（AGENTS 0.7：查清即删）
+/products/bosom-friend/launcher/scripts/bf-*.mjs
+# 已删目录的漏网探针
+/products/bosom-friend/qa/probes/

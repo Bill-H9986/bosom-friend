@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-13T04:50:33.342Z",
+  "tools": 58,
+  "writeOps": 120,
+  "writeOpsCovered": 86,
+  "writeOpsTotal": 94,
+  "handwritten": 39,
+  "handwrittenPercent": 41,
+  "coverage": 91,
+  "toolizablePercent": 100,
+  "notToolizable": 8,
+  "frontendLines": 160840,
+  "ownerInjection": true,
+  "officialMount": true,
+  "mainChainCases": 13
+}

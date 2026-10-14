@@ -1,0 +1,236 @@
+# Bosom Friend 内核 bundle 补丁层：在 dsh-base 之上挂载 SDK JSON-RPC 服务端与本内核插件。
+# stdout 只承载 JSON-RPC 帧；dsh-base 不含控制台日志插件，此处也不挂任何 logger。
+
+- insert:
+    - id: bosom-jsonrpc
+      name: '@deepseek-ai/dsh-sdk-jsonrpc-server'
+      config:
+        # 管家组装（ADR-005-AGENT）：SDK server 据此把每个会话 join 到对应 preset
+        # （packages/sdk/server/src/server.ts 的 createSession 在 agent 工厂的
+        # setup(agentCtx) 里调 agentPresets.mount）。角色由服务端注入的
+        # BF_AGENT_ROLE 表达（creator / publisher / operator / device / steward）；
+        # 未注入时用 steward（面是全量），与旧的「未注入即全量注册」行为一致。
+        # BF_TEXT_ONLY=1 是纯文本会话（写稿/改写/检查）：join 空组装 presets/none（零工具、无人设）。
+        # 2026-10-12 夜修（C2）：这一行原先返回 `undefined`（= 不 join），而 ADR-006 附录那次尝试把
+        # schema 改成必填 → loader 报 `$.agentPreset missing required value`，纯文本链路挂了 50 分钟。
+        # 根因不是环境也不是加载顺序：**表达式返回 undefined 与「必填」直接冲突**——当时只改了
+        # schema、没改这一行，而注释里写的意图（join none）从来没落到代码上。
+        # 现在恒返回字符串：`none` 由 presets/none/agent.cordis.yml（空列表）承接，
+        # 独立内核进程（BF_TEXT_ONLY=1 ＋ agentPreset=none）与隔离白盒 mount 均已验证通过。
+        # `agentPreset` 仍是**可选**字段（改必填要动官方包一行，见 ADR-006 附录），所以本行单独改安全。
+        # 2026-10-12 修（开发版起不来的根因）：`!!js` 表达式**必须整体加引号**。
+        # 不加引号时 YAML 把行内的 `?` 当**显式键标记**，整行被解析成映射对象，
+        # schemastery 于是报 `$.agentPreset expected string but got [object Object]`，
+        # loader 直接拒绝启动（实测 dev-web.err.log 原文即此）。
+        agentPreset: !!js "(process.env.BF_TEXT_ONLY === '1' ? 'none' : (process.env.BF_AGENT_ROLE || 'steward'))"
+
+    # 内核工具插件**不在这里挂**（2026-10-12 让位给 preset）：它由会话 join 的那份
+    # preset 提供——$DSH_HOME/.agent-presets/<role>/agent.cordis.yml 里的 bosom-kernel 行，
+    # config.tools 就是该角色的工具面。两处同时挂会以「tool "…" is already registered」
+    # 整轮失败（packages/core/tools 的重名判据），所以工具面只能有一个入口。
+    # 纯文本会话（BF_TEXT_ONLY=1）不开任何工具：它在上面 bosom-jsonrpc 的 agentPreset
+    # 表达式里 join 空组装 presets/none（什么都不挂），模型连工具都看不到（DEF-155 的预防层）。
+    # roles.json 仍是工具面的**唯一事实源**：五份 preset 的 config.tools 由
+    # qa/verify-preset-parity.mjs 强制与它逐条一致（含运行期副本）。
+
+    # 管家组装（ADR-005-AGENT）：preset 目录（preset.yml + agent.cordis.yml）随仓库交付，
+    # 装机时物化到 $DSH_HOME/.agent-presets（agent-presets 默认扫用户根，不必写路径）。
+    #
+    # 2026-10-12 起**真正生效**：SDK server 按上面 bosom-jsonrpc 的 config.agentPreset，
+    # 在 agent 工厂的 setup(agentCtx) 里调 agentPresets.mount()，会话因此 join 到
+    # presets/<role>/agent.cordis.yml——人设（persona 插件的 prefix/suffix）与
+    # 工具面（bosom-kernel 的 config.tools）都从那份文件来。角色的表示仍是
+    # BF_AGENT_ROLE（服务端按任务归属注入），preset id 与角色同名。
+    # default=steward：未指定角色时用总管（面是全量）。
+    - id: bosom-agent-presets
+      name: '@deepseek-ai/dsh-agent-presets'
+      config:
+        default: steward
+
+    # 让产品里的 AI 智能体**亲自动手**操作界面。
+    #
+    # 为什么必须有这一条（2026-10-11 产品负责人当场指出）：「动作卡 + 前端写死的执行器」
+    # 不是智能体动手，而是我替它写好了脚本——它只生成一张提词卡，真正点按钮的是
+    # executePublishAction.ts 里写死的选择器。它没有手。
+    # 挂上 Playwright MCP 之后，模型的工具面里会多出 browser_navigate / browser_click /
+    # browser_type / browser_snapshot 等：**它自己看页面、自己决定点哪**，
+    # 前端不再需要为每种动作预先写一个执行器。
+    - id: bosom-computer-use
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: computer
+        transport: stdio
+        command: npx
+        args: ['-y', '@playwright/mcp']
+        toolCallTimeoutMs: 300000
+
+# 用户自定义 OpenAI 兼容网关（Agnes）：静态目录、无密钥；密钥经子进程环境变量 AGNES_API_KEY。
+- id: llm-pi-ai
+  config:
+    providers:
+      agnes:
+        displayName: Agnes
+        apiKeyEnv: AGNES_API_KEY
+        api: openai-completions
+        baseURL: https://api.agnes-ai.cn/v1
+        models:
+          - id: agnes-2.0-flash
+            name: Agnes 2.0 Flash
+            contextWindow: 65536
+            maxTokens: 8192
+          - id: agnes-2.5-flash
+            name: Agnes 2.5 Flash
+            contextWindow: 65536
+            maxTokens: 8192
+          - id: agnes-2.5-pro
+            name: Agnes 2.5 Pro
+            contextWindow: 131072
+            maxTokens: 16384
+          - id: agnes-2.5-pro-alpha
+            name: Agnes 2.5 Pro Alpha
+            contextWindow: 131072
+            maxTokens: 16384
+          - id: agnes-2.5-pro-beta
+            name: Agnes 2.5 Pro Beta
+            contextWindow: 131072
+            maxTokens: 16384
+
+# ---------------------------------------------------------------------------
+# 产品语境通道（ADR-003 口径二：模型可见的稳定语境走官方上下文通道，不拼字符串）
+#
+# 为什么必须覆盖这一行：`dsh-agent-instructions` 会把 **用户全局 `$DSH_HOME/AGENTS.md`**
+# 与 **项目链** 两份都注入会话。内核 cwd 在开发态是仓库根，项目链于是读到
+# DeepSeek Harness 自己的 `AGENTS.md`（"改 packages/ 前先读 docs/architecture.md"）——
+# 那是基座的开发说明，对内容营销 APP 的模型是纯噪声与误导（已用真实请求验证）。
+# 把项目链的候选名换成产品专属的 `BOSOM.md`：仓库里的 AGENTS.md/CLAUDE.md 不再可能进来，
+# 而用户全局那一份（`USER_GLOBAL_FILE` 是固定常量 `AGENTS.md`，不受本行影响）照常生效——
+# 产品稳定语境（领域/约束/历史）就住在那里，用户可编辑、会话可审计。
+# ---------------------------------------------------------------------------
+- id: agent-instructions
+  config:
+    maxBytes: 65536
+    # 项目链候选名换成产品专属的 BOSOM.md（2026-10-12 修复）。
+    #
+    # 为什么是修复：这两行原先挂在 `- id: system-prompt` 下，而 system-prompt 的 Config
+    # 没有这两个字段（packages/core/system-prompt/src/index.ts 的 Config 只有
+    # includeHarnessIdentity / includeRuntimeContext / personaPrefix / personaSuffix / toolOrder），
+    # schemastery 忽略未知字段 → 静默失效：注释里写明的"仓库 AGENTS.md/CLAUDE.md 不再可能进来"
+    # 从未成立，产品内核的项目链一直在读仓库根 AGENTS.md（DSH 自己的开发说明，
+    # 对内容营销 APP 的模型是纯噪声与误导）。真正认这两个字段的是本插件
+    # （packages/context/agent-instructions/src/config.ts）。
+    #
+    # 候选名只能是**纯文件名**：resolveInstructionFileCandidates 会过滤掉含 `/` 或 `\` 的项。
+    # 用户全局 `$DSH_HOME/AGENTS.md` 是固定常量、不受本配置影响，照常生效（产品稳定语境的家）。
+    # 本项目链没有 BOSOM.md 时项目链为空——空是对的，读进 DSH 的开发说明才是错的。
+    instructionFileCandidates: ['BOSOM.md']
+    localInstructionFileCandidates: []
+
+# ---------------------------------------------------------------------------
+# 部署级人设（`@deepseek-ai/dsh-system-prompt` 的 personaPrefix）。
+#
+# 为什么走这条路而不是 `dsh-persona`：persona 插件的工作方式是「preset 挂载它」，
+# 而产品内核入口（dsh-sdk-jsonrpc-server）**不做 preset 组装**（见本文件前面的说明），
+# 所以 persona 行挂上去也不生效；system-prompt 的 personaPrefix 是部署级配置，
+# 不经过 preset，改一行就生效（八路审计的 U5 条目）。
+#
+# 人设口径与产品负责人 2026-10-12 拍板的 D1 一致：总管是用户的**唯一入口**，
+# 不给它设工具禁区的"话"（工具面就是全量，2016-10-12 定案），
+# 但四类动作必须拿到明确指令——这与硬约束 2/3 是同一条。
+# ---------------------------------------------------------------------------
+- id: system-prompt
+  config:
+    personaPrefix: >-
+      你是 Bosom Friend 的管家，也是用户的唯一入口：用户说一句话，你负责理解、拆解并把事办完——
+      该调工具就调工具，页面只是结果的可视化，不是你去指挥用户点的地方。
+      汇报只讲三件事：做了什么、结果在页面哪里看得见、下一步是什么。
+      涉及**发布、删除、花钱、对外沟通（评论/私信/分享）**这四类动作时，必须先拿到用户的明确指令；
+      不确定发哪一条、哪个号时先问清楚再动手。
+      失败时如实说原文原因，并给用户三个选择：断点继续 / 重新生成 / 放弃。
+      不知道就说不知道：平台没回传的数据不能当 0 讲，没验证过的结论不能说成已验证。
+    # 人设按角色由 preset 提供（2026-10-12 收手）：本行原先自己按 BF_AGENT_ROLE 注入
+    # personaSuffix（读 .agent-presets/personas.json）。2026-10-12 实测确认 preset 的 persona 行
+    # 已在 scoped 层覆盖部署级人设（同一个 creator 会话里，部署级特征句「也是用户的唯一入口」
+    # 命中 0 次、preset 的「创作管家」命中 9 次），那份 suffix 已是死代码——两套并行人设只会
+    # 让「谁在说话」变成见仁见智。人设现在只有一处来源：presets/<role>/agent.cordis.yml 的 persona 行。
+
+# ---------------------------------------------------------------------------
+# 工具面收敛：这是面向普通用户的桌面内容营销 APP，模型的工具必须只有"业务工具"。
+#
+# 实测（qa/probes/probe-agent-instructions.mjs 抓到的真实模型请求）：收敛前 35 个工具，
+# 其中 25 个来自编码智能体——模型可以在客户的 Windows 上执行 `pwsh`、读写任意文件、
+# 派生 subagent、跑 workflow/ralph。对消费者产品这既不是能力也不是卖点，是风险。
+# 收敛后只剩 10 个 `bosom_*` 业务工具 + 语境类工具。
+#
+# 注意：本文件是 pnpm 注入进 node_modules 的**副本**，改完必须重装才生效：
+#   pnpm install --filter @deepseek-ai/dsh-bosom-friend-kernel
+# 打包安装版另需重新物化内核运行时（desktop/rebuild-kernel-and-installer.ps1）。
+# ---------------------------------------------------------------------------
+- id: tool-pwsh
+  disabled: true
+
+- id: tool-fs
+  disabled: true
+
+- id: tool-fs-search
+  disabled: true
+
+- id: tool-subagent
+  disabled: true
+
+- id: tool-subagent-fork
+  disabled: true
+
+- id: tool-subagent-list-agents
+  disabled: true
+
+- id: tool-subagent-control
+  disabled: true
+
+- id: tool-workflow
+  disabled: true
+
+- id: tool-ralph
+  disabled: true
+
+- id: tool-jobs
+  disabled: true
+
+- id: tool-goal
+  disabled: true
+
+- id: command-goal
+  disabled: true
+
+- id: tool-todo
+  disabled: true
+
+- id: plan-mode
+  disabled: true
+
+# ---------------------------------------------------------------------------
+# 技能面住 preset，host 收手（2026-10-12）。
+#
+# 为什么 host 这行必须 disabled，而不是「不写就行」：base 里这行的默认根会给**所有** agent
+# 提供 `.agents/skills`（仓库里 12 个产品技能，含 bosom-friend-publish）与 `$DSH_HOME/skills`
+# （经验升格技能，含 publish-draft-to-douyin 等发布流程）。它与 preset 里那个只对该角色生效的
+# provider 一合并，creator 又会看到发布技能——等于白切，而且是最难发现的那种：两份目录都"对"。
+#
+# 技能目录现在由 presets/<role>/agent.cordis.yml 的 skill-filesystem 行声明，与工具面同住一份
+# 文件。机制（官方源码实证）：skill registry 是 host + per-scope 分层的，preset 里挂的 provider
+# 只对该 agent 生效（packages/skill/tool-skill/src/index.ts:207-212），而 host 的 tool-skill
+# 查目录时带 agent scope（同文件 131-133）。官方参考实现见
+# packages/bundle/web-app/cordis.patch.yml:393-406（host 的 skill-filesystem 与 tool-skill 都 disabled）。
+#
+# 代价（刻意）：不 join preset 的会话——BF_TEXT_ONLY 纯文本会话——**没有任何技能目录**；
+# 它本来也没有工具，这是设计。风险是「某条链路忘了传 agentPreset → 技能面静默为空」，
+# 所以门禁里必须有一条「host 已 disabled ＋ 五份 preset 都有 skill 行」的断言。
+# ---------------------------------------------------------------------------
+- id: skill-filesystem
+  disabled: true
+
+# 纯文本会话里连"查资料"的工具也不要：它们同样会引出工具驱动的回复。
+- id: tool-web
+  disabled: !!js process.env.BF_TEXT_ONLY === '1'
+
+- id: tool-skill
+  disabled: !!js process.env.BF_TEXT_ONLY === '1'

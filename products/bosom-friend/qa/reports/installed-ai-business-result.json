@@ -1,0 +1,374 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\e2e\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "-g",
+      "AC-004-1|AC-016-1|AC-018-1",
+      "--reporter=list,json"
+    ],
+    "configFile": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\e2e\\playwright.config.ts",
+    "rootDir": "C:/Users/Jay/Desktop/Bosom friend APP/products/bosom-friend/qa/e2e/specs",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Jay/Desktop/Bosom friend APP/products/bosom-friend/qa/e2e/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/Jay/Desktop/Bosom friend APP/products/bosom-friend/qa/e2e/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ac-verification.spec.ts",
+      "file": "ac-verification.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "AC-004-1 一句话生成，页面流式显示 AI 回复",
+          "file": "ac-verification.spec.ts",
+          "line": 941,
+          "column": 6,
+          "specs": [
+            {
+              "title": "一句提示词真的调到大模型并返回非模板正文",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 360000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\e2e\\specs\\ac-verification.spec.ts",
+                        "line": 946,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 29105,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T15:11:59.639Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "C:\\Users\\Jay\\Desktop\\Bosom friend APP\\products\\bosom-friend\\qa\\e2e\\specs\\ac-verification.spec.ts",
+                            "line": 946,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6f18f2b1554974e22af9-05669655fb39a9da87d0",
+              "file": "ac-verification.spec.ts",
+              "line": 942,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "AC-016-1 自定义大模型保存后对话生效",
+          "file": "ac-verification.spec.ts",
+          "line": 958,
+          "column": 6,
+          "specs": [
+            {
+              "title": "对话使用的就是设置里保存的那个模型",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2286,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T15:12:29.018Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6f18f2b1554974e22af9-df859b33fc53ec4d88d1",
+              "file": "ac-verification.spec.ts",
+              "line": 959,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "agent-conversation.spec.ts",
+      "file": "agent-conversation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "AC-018-1 仅与 AI 对话即可完成各项功能",
+          "file": "agent-conversation.spec.ts",
+          "line": 64,
+          "column": 6,
+          "specs": [
+            {
+              "title": "说「打开数据中心」后会话里出现导航卡，点一下就真的到数据中心",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 33663,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T15:12:31.332Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "58a12474b0498b7a4a30-9ff31c0ef927a23a1544",
+              "file": "agent-conversation.spec.ts",
+              "line": 65,
+              "column": 3
+            },
+            {
+              "title": "说「帮我打开草稿箱。」拿到 navigateToDraft 导航卡，点一下就跳到 draft-box",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 30327,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T15:13:05.019Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "58a12474b0498b7a4a30-b8182ea0531ba96d548c",
+              "file": "agent-conversation.spec.ts",
+              "line": 91,
+              "column": 5
+            },
+            {
+              "title": "说「带我去全局监控看看。」拿到 navigateToMonitor 导航卡，点一下就跳到 monitor",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 43928,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T15:13:35.360Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "58a12474b0498b7a4a30-7b0001f7ab9a51fd4f33",
+              "file": "agent-conversation.spec.ts",
+              "line": 91,
+              "column": 5
+            },
+            {
+              "title": "说「打开知识库。」拿到 navigateToKnowledge 导航卡，点一下就跳到 knowledge",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23624,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T15:14:19.306Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "58a12474b0498b7a4a30-efc5768e6ee9465d75e1",
+              "file": "agent-conversation.spec.ts",
+              "line": 91,
+              "column": 5
+            },
+            {
+              "title": "没有导航意图的创作需求不会被误跳转",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79995,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-22T15:14:42.947Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "58a12474b0498b7a4a30-dfe8c309e31edab44d83",
+              "file": "agent-conversation.spec.ts",
+              "line": 103,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-22T15:11:59.047Z",
+    "duration": 244415.00400000002,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

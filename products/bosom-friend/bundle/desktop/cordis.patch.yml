@@ -1,0 +1,37 @@
+# 桌面运行时补丁层：官方 Web 服务 + 产品业务服务。inject webServer 由本层提供；
+# 前端产物目录经环境变量 BF_FRONTEND_DIST 注入（打包态指向资源目录，开发态指仓库 dist）。
+
+- insert:
+    # 端口跟随 BF_DESKTOP_PORT（默认 31280）：桌面主进程、并行 QA 与探针都用这个变量做端口隔离，
+    # 主进程读它去连服务端，服务端也必须读它去监听——写死会让「服务在 31280、探针等 31299」永远不成立（DEF-060）。
+    # 注意：改这个文件后必须跑一次 pnpm install 再重新物化运行时——注入式安装把工作区包按 files 复制到
+    # .pnpm/<id>/，运行时加载的是那份副本，不 install 就还是旧内容（2026-09-16 踩过）。
+    - id: bosom-webserver
+      name: '@deepseek-ai/dsh-host-webserver'
+      config:
+        # 监听地址：默认只监听回环（别人连不上）。开启「远程访问 → 局域网可达」后，
+        # 启动器（launcher/src/bin-desktop.ts）会在 boot 之前把 BF_BIND_HOST 设成 0.0.0.0——
+        # 监听地址是启动时定的，所以这个开关要重启运行时才生效（界面会如实说明）。
+        # 表达式里不能出现 ": "（YAML 会把它当成映射），所以这里用 && / || 而不是三元运算符。
+        host: !!js (process.env.BF_BIND_HOST === '0.0.0.0' && '0.0.0.0') || '127.0.0.1'
+        port: !!js Number(process.env.BF_DESKTOP_PORT ?? 31280)
+
+    # 媒体能力面（packages/media）：图片/视频/语音的厂商 HTTP 只允许出现在 dsh-media-pi-ai 里。
+    # 路由（baseURL + 凭据 ref + 方言）由产品设置页写进 $DSH_HOME/settings.yaml 的 media-pi-ai 段；
+    # 这里只声明"挂载"：没有路由时 ctx.media 如实报「没有可用的媒体提供方」，不会静默直连。
+    - id: media
+      name: '@deepseek-ai/dsh-media'
+
+    - id: media-pi-ai
+      name: '@deepseek-ai/dsh-media-pi-ai'
+      config:
+        providers: {}
+
+    # 与 dev/web 层（bundle/app/cordis.patch.yml）挂的是同一个插件：id 与共享配置必须一致，
+    # 只有 frontendDist 是桌面运行时独有。一致性由 qa/verify-cordis-patches.mjs 在门禁里校验。
+    - id: bosom-friend-server-api
+      name: '@deepseek-ai/dsh-bosom-friend-server/api'
+      config:
+        dataRoot: !!js dshHomePath('bosom-friend')
+        authEnabled: false
+        frontendDist: !!js (process.env.BF_FRONTEND_DIST ?? '')

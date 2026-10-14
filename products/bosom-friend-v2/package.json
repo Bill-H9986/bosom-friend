@@ -1,0 +1,20 @@
+{
+  "name": "bosom-friend-desktop",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Bosom Friend 0.2.0 desktop application, rebuilt with a professional Electron desktop standard.",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "qa/*"
+  ],
+  "scripts": {
+    "verify": "node scripts/verify-v2.mjs",
+    "desktop:dev": "pnpm --filter @bosom-friend/desktop dev",
+    "desktop:build": "pnpm --filter @bosom-friend/desktop build",
+    "test:unit": "pnpm -r run test:unit",
+    "test:e2e": "pnpm --filter @bosom-friend/desktop-e2e test"
+  },
+  "packageManager": "pnpm@11.7.0"
+}

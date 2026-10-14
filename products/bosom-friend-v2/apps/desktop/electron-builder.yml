@@ -1,0 +1,30 @@
+appId: com.bosomfriend.desktop
+productName: Bosom Friend
+artifactName: BosomFriend-Setup-${version}.exe
+
+directories:
+  output: release/${version}
+
+files:
+  - electron/**/*
+  - renderer/**/*
+  - package.json
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Bosom Friend
+  runAfterFinish: false
+  deleteAppDataOnUninstall: false
+
+publish: null

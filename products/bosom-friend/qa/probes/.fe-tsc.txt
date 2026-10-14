@@ -1,0 +1,87 @@
+﻿node.exe : npm warn Unknown project config "network-concurrency". This will stop working in the next major version of n
+pm. See `npm help npmrc` for supported config options.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn Unknow...config options.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+npm warn Unknown project config "inject-workspace-packages". This will stop working in the next major version of npm. S
+ee `npm help npmrc` for supported config options.
+products/bosom-friend/project/bosom-friend-electron/electron/main/app-control/mcp-server.ts(428,45): error TS7006: Parameter 'entry' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/app-control/mcp-server.ts(466,36): error TS7006: Parameter 'sample' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/index.ts(25,37): error TS2307: Cannot find module '../../../bosom-friend-harness/src/index' or its corresponding type declarations.
+products/bosom-friend/project/bosom-friend-electron/electron/main/knowledge/kernel-sync.ts(18,8): error TS2307: Cannot find module '../../../../bosom-friend-harness/src/index' or its corresponding type declarations.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin-kernel-host.ts(15,8): error TS2307: Cannot find module '../../../bosom-friend-harness/src/index' or its corresponding type declarations.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin-kernel-host.ts(22,49): error TS2307: Cannot find module '../../../bosom-friend-harness/src/index' or its corresponding type declarations.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin-kernel-host.ts(82,55): error TS7006: Parameter 's' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin-kernel-host.ts(84,13): error TS7006: Parameter 's' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin-kernel-host.ts(110,41): error TS7006: Parameter 'm' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin-kernel-host.ts(111,40): error TS7006: Parameter 'm' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin-kernel-host.ts(116,22): error TS7006: Parameter 'm' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin-kernel-host.ts(232,51): error TS7006: Parameter 'result' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin-kernel-host.ts(265,20): error TS7006: Parameter 'event' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(41,8): error TS2307: Cannot find module '../../../../bosom-friend-harness/src/index' or its corresponding type declarations.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(280,26): error TS7006: Parameter 'accountId' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(285,19): error TS7006: Parameter 'accountId' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(291,22): error TS7006: Parameter 'input' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(301,23): error TS7006: Parameter 'input' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(307,24): error TS7006: Parameter 'item' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(324,16): error TS7006: Parameter 'input' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(331,17): error TS7006: Parameter 'input' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(426,26): error TS7006: Parameter 'accountId' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(431,19): error TS7006: Parameter 'accountId' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(437,22): error TS7006: Parameter 'input' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(456,16): error TS7006: Parameter 'input' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/adapters.ts(464,17): error TS7006: Parameter 'input' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(24,8): error TS2307: Cannot find module '../../../../bosom-friend-harness/src/index' or its corresponding type declarations.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(172,18): error TS7006: Parameter 'kind' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(172,24): error TS7006: Parameter 'url' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(189,20): error TS7006: Parameter 'engine' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(189,28): error TS7006: Parameter 'url' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(269,20): error TS7006: Parameter 'engine' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(269,28): error TS7006: Parameter 'expression' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(278,17): error TS7006: Parameter 'engine' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(278,25): error TS7006: Parameter 'selector' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(278,35): error TS7006: Parameter 'text' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(288,20): error TS7006: Parameter 'engine' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(288,28): error TS7006: Parameter 'selector' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(288,38): error TS7006: Parameter 'text' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(298,19): error TS7006: Parameter 'engine' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(298,27): error TS7006: Parameter 'selector' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(298,37): error TS7006: Parameter 'timeoutMs' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(315,22): error TS7006: Parameter 'engine' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/browser-bridge.ts(315,30): error TS7006: Parameter 'selector' implicitly has an 'any' type.
+products/bosom-friend/project/bosom-friend-electron/electron/main/zhiyin/runtime.ts(4,37): error TS2307: Cannot find module '../../../../bosom-friend-harness/src/index' or its corresponding type declarations.
+products/bosom-friend/project/bosom-friend-web/src/app/layout/SettingsModal/tabs/OtaTelemetryTab.tsx(118,22): error TS2345: Argument of type '{ update: boolean; currentVersion: string; newVersion?: string | undefined; url?: string | undefined; notes?: string | undefined; force?: boolean | undefined; reason: "error" | "up-to-date" | "update-available" | "ahead"; message?: string | undefined; }' is not assignable to parameter of type 'SetStateAction<UpdateCheckResult | null>'.
+  Type '{ update: boolean; currentVersion: string; newVersion?: string | undefined; url?: string | undefined; notes?: string | undefined; force?: boolean | undefined; reason: "error" | "up-to-date" | "update-available" | "ahead"; message?: string | undefined; }' is not assignable to type 'UpdateCheckResult'.
+    Types of property 'reason' are incompatible.
+      Type '"error" | "up-to-date" | "update-available" | "ahead"' is not assignable to type '"error" | "dev" | "up-to-date" | "rollout" | undefined'.
+        Type '"update-available"' is not assignable to type '"error" | "dev" | "up-to-date" | "rollout" | undefined'.
+products/bosom-friend/project/bosom-friend-web/src/app/layout/SettingsModal/tabs/OtaTelemetryTab.tsx(258,101): error TS2339: Property 'url' does not exist on type 'UpdateCheckResult'.
+products/bosom-friend/project/bosom-friend-web/src/app/layout/SettingsModal/tabs/OtaTelemetryTab.tsx(258,155): error TS2339: Property 'url' does not exist on type 'UpdateCheckResult'.
+products/bosom-friend/project/bosom-friend-web/src/app/layout/SettingsModal/tabs/OtaTelemetryTab.tsx(259,39): error TS2339: Property 'url' does not exist on type 'UpdateCheckResult'.
+products/bosom-friend/project/bosom-friend-web/src/app/layout/SettingsModal/tabs/OtaTelemetryTab.tsx(262,145): error TS2367: This comparison appears to be unintentional because the types '"error" | "dev" | "rollout" | undefined' and '"ahead"' have no overlap.
+products/bosom-friend/project/bosom-friend-web/src/app/layout/SettingsModal/tabs/VoiceProviderTab.tsx(66,26): error TS2345: Argument of type 'ResponseType<VoiceProviderPayload> | null' is not assignable to parameter of type 'VoiceProviderPayload'.
+  Type 'null' is not assignable to type 'VoiceProviderPayload'.
+products/bosom-friend/project/bosom-friend-web/src/app/layout/SettingsModal/tabs/VoiceProviderTab.tsx(109,13): error TS2345: Argument of type 'ResponseType<VoiceProviderPayload> | null' is not assignable to parameter of type 'VoiceProviderPayload'.
+  Type 'null' is not assignable to type 'VoiceProviderPayload'.
+products/bosom-friend/project/bosom-friend-web/src/app/layout/SettingsModal/tabs/VoiceProviderTab.tsx(110,40): error TS18047: 'saved' is possibly 'null'.
+products/bosom-friend/project/bosom-friend-web/src/app/layout/SettingsModal/tabs/VoiceProviderTab.tsx(110,46): error TS2339: Property 'activeName' does not exist on type 'ResponseType<VoiceProviderPayload>'.
+products/bosom-friend/project/bosom-friend-web/src/app/layout/SettingsModal/tabs/VoiceProviderTab.tsx(127,30): error TS18047: 'result' is possibly 'null'.
+products/bosom-friend/project/bosom-friend-web/src/app/layout/SettingsModal/tabs/VoiceProviderTab.tsx(127,37): error TS2339: Property 'provider' does not exist on type 'ResponseType<{ provider: string; text: string; }>'.
+products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/ContentTabs/mediaTabStore.ts(913,52): error TS2339: Property 'fetchAllList' does not exist on type '{ video: MediaTypeState; img: MediaTypeState; all: AllTabState; activeMaterialGroupId: string | null; previewOpen: boolean; previewIndex: number; ... 6 more ...; draftCreationWidgetMinimized: boolean; }'.
+products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/ContentTabs/mediaTabStore.ts(914,54): error TS2339: Property 'fetchMediaList' does not exist on type '{ video: MediaTypeState; img: MediaTypeState; all: AllTabState; activeMaterialGroupId: string | null; previewOpen: boolean; previewIndex: number; ... 6 more ...; draftCreationWidgetMinimized: boolean; }'.
+products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/ContentTabs/mediaTabStore.ts(915,52): error TS2339: Property 'fetchMediaList' does not exist on type '{ video: MediaTypeState; img: MediaTypeState; all: AllTabState; activeMaterialGroupId: string | null; previewOpen: boolean; previewIndex: number; ... 6 more ...; draftCreationWidgetMinimized: boolean; }'.
+products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/DraftDetailDialog.tsx(238,59): error TS2339: Property 'list' does not exist on type 'ResponseType<{ list: { id: string; label: string; }[]; }>'.
+products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/DraftDetailDialog.tsx(258,21): error TS2339: Property 'field' does not exist on type '{ code?: number | undefined; data?: { field?: string | undefined; value?: string | undefined; } | undefined; }'.
+products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/DraftDetailDialog.tsx(264,53): error TS2339: Property 'field' does not exist on type '{ code?: number | undefined; data?: { field?: string | undefined; value?: string | undefined; } | undefined; }'.
+products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/DraftDetailDialog.tsx(264,69): error TS2339: Property 'value' does not exist on type '{ code?: number | undefined; data?: { field?: string | undefined; value?: string | undefined; } | undefined; }'.
+products/bosom-friend/project/bosom-friend-web/src/components/draft-box/components/DraftDetailDialog.tsx(266,43): error TS2339: Property 'refreshCurrentMaterials' does not exist on type 'Write<IPlanDetailStoreState, { fetchPlanDetail: (planId: string) => Promise<PromotionPlan | null>; fetchMaterials: (planId: string, page?: number) => Promise<...>; ... 49 more ...; initAnalyticsData: (planId: string, force?: boolean, options?: { ...; } | undefined) => Promise<...>; }>'.
+products/bosom-friend/project/bosom-friend-web/src/desktop-pages/KnowledgeDistillPanel.tsx(116,44): error TS2339: Property 'name' does not exist on type '{ code?: number | undefined; message?: string | undefined; data?: { path?: string | undefined; name?: string | undefined; } | undefined; }'.
+products/bosom-friend/project/bosom-friend-web/src/desktop-pages/KnowledgePage.tsx(188,27): error TS2339: Property 'value' does not exist on type '{ code?: number | undefined; data?: { value?: string | undefined; } | undefined; }'.
+products/bosom-friend/project/bosom-friend-web/src/store/agent/agent.methods.ts(242,13): error TS2339: Property 'reset' does not exist on type 'IAgentState'.
+products/bosom-friend/project/bosom-friend-web/src/store/draft-box/planDetailStore.ts(497,46): error TS2339: Property 'fetchMaterials' does not exist on type 'IPlanDetailStoreState'.
+products/bosom-friend/project/bosom-friend-web/src/store/draft-box/planDetailStore.ts(523,23): error TS2339: Property 'refreshAfterCascadeDelete' does not exist on type 'IPlanDetailStoreState'.
+products/bosom-friend/project/bosom-friend-web/src/store/draft-box/planDetailStore.ts(540,23): error TS2339: Property 'refreshAfterCascadeDelete' does not exist on type 'IPlanDetailStoreState'.
+products/bosom-friend/project/bosom-friend-web/src/store/draft-box/planDetailStore.ts(1097,23): error TS2339: Property 'refreshAfterCascadeDelete' does not exist on type 'IPlanDetailStoreState'.

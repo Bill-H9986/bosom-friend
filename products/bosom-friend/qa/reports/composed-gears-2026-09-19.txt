@@ -1,0 +1,2 @@
+launched pid=40440 BOSOM_FRIEND_HOME=C:\Users\Jay\AppData\Local\Temp\bf-iso-gears port=31281
+instance ready=false

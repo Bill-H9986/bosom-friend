@@ -1,0 +1,834 @@
+{
+ "douyin": {
+  "actions": {
+   "upload-video": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--file": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--desc": {
+      "type": "str",
+      "required": false
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--schedule": {
+      "type": "schedule_value",
+      "required": false
+     },
+     "--thumbnail": {
+      "type": "existing_file_path",
+      "required": false
+     },
+     "--thumbnail-landscape": {
+      "type": "existing_file_path",
+      "required": false
+     },
+     "--thumbnail-portrait": {
+      "type": "existing_file_path",
+      "required": false
+     },
+     "--product-link": {
+      "type": "str",
+      "required": false
+     },
+     "--product-title": {
+      "type": "str",
+      "required": false
+     },
+     "--declaration": {
+      "type": "str",
+      "required": false
+     },
+     "--collection": {
+      "type": "str",
+      "required": false
+     },
+     "--location": {
+      "type": "str",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--file",
+     "--title"
+    ],
+    "runtime": true
+   },
+   "upload-note": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--images": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--note": {
+      "type": "str",
+      "required": false
+     },
+     "--notef": {
+      "type": "str",
+      "required": false
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--bgm": {
+      "type": "str",
+      "required": false
+     },
+     "--schedule": {
+      "type": "schedule_value",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--images",
+     "--title"
+    ],
+    "runtime": true
+   },
+   "login": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   },
+   "check": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   }
+  }
+ },
+ "kuaishou": {
+  "actions": {
+   "upload-video": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--file": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--desc": {
+      "type": "str",
+      "required": false
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--schedule": {
+      "type": "schedule_value",
+      "required": false
+     },
+     "--thumbnail": {
+      "type": "existing_file_path",
+      "required": false
+     },
+     "--collection": {
+      "type": "str",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--file",
+     "--title"
+    ],
+    "runtime": true
+   },
+   "upload-note": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--images": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--note": {
+      "type": "str",
+      "required": false
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--schedule": {
+      "type": "schedule_value",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--images",
+     "--title"
+    ],
+    "runtime": true
+   },
+   "login": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   },
+   "check": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   }
+  }
+ },
+ "xiaohongshu": {
+  "actions": {
+   "upload-video": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--file": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--desc": {
+      "type": "str",
+      "required": false
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--schedule": {
+      "type": "schedule_value",
+      "required": false
+     },
+     "--thumbnail": {
+      "type": "existing_file_path",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--file",
+     "--title"
+    ],
+    "runtime": true
+   },
+   "upload-note": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--images": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--note": {
+      "type": "str",
+      "required": false
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--schedule": {
+      "type": "schedule_value",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--images",
+     "--title"
+    ],
+    "runtime": true
+   },
+   "login": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   },
+   "check": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   }
+  }
+ },
+ "bilibili": {
+  "actions": {
+   "upload-video": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--file": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--desc": {
+      "type": "str",
+      "required": true
+     },
+     "--tid": {
+      "type": "int",
+      "required": true
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--thumbnail": {
+      "type": "existing_file_path",
+      "required": false
+     },
+     "--schedule": {
+      "type": "schedule_value",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--file",
+     "--title",
+     "--desc",
+     "--tid"
+    ],
+    "runtime": false
+   },
+   "login": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   },
+   "check": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   }
+  }
+ },
+ "tencent": {
+  "actions": {
+   "upload-video": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--file": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--desc": {
+      "type": "str",
+      "required": false
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--schedule": {
+      "type": "schedule_value",
+      "required": false
+     },
+     "--thumbnail": {
+      "type": "existing_file_path",
+      "required": false
+     },
+     "--thumbnail-landscape": {
+      "type": "existing_file_path",
+      "required": false
+     },
+     "--thumbnail-portrait": {
+      "type": "existing_file_path",
+      "required": false
+     },
+     "--short-title": {
+      "type": "str",
+      "required": false
+     },
+     "--category": {
+      "type": "str",
+      "required": false
+     },
+     "--draft": {
+      "type": "str",
+      "required": false
+     },
+     "--collection": {
+      "type": "str",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--file",
+     "--title"
+    ],
+    "runtime": true
+   },
+   "login": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   },
+   "check": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   }
+  }
+ },
+ "alipay": {
+  "actions": {
+   "upload-video": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--file": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--desc": {
+      "type": "str",
+      "required": false
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--thumbnail": {
+      "type": "existing_file_path",
+      "required": false
+     },
+     "--collection": {
+      "type": "str",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--file",
+     "--title"
+    ],
+    "runtime": true
+   },
+   "login": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   },
+   "check": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   }
+  }
+ },
+ "weibo": {
+  "actions": {
+   "upload-video": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--file": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--desc": {
+      "type": "str",
+      "required": false
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--thumbnail": {
+      "type": "existing_file_path",
+      "required": false
+     },
+     "--collection": {
+      "type": "str",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--file",
+     "--title"
+    ],
+    "runtime": true
+   },
+   "login": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   },
+   "check": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   }
+  }
+ },
+ "hupu": {
+  "actions": {
+   "upload-video": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--file": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--desc": {
+      "type": "str",
+      "required": false
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--thumbnail": {
+      "type": "existing_file_path",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--file",
+     "--title"
+    ],
+    "runtime": true
+   },
+   "login": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   },
+   "check": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   }
+  }
+ },
+ "youtube": {
+  "actions": {
+   "upload-video": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--file": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--desc": {
+      "type": "str",
+      "required": false
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--thumbnail": {
+      "type": "existing_file_path",
+      "required": false
+     },
+     "--playlist": {
+      "type": "str",
+      "required": false
+     },
+     "--visibility": {
+      "type": "str",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--file",
+     "--title"
+    ],
+    "runtime": true
+   },
+   "login": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   },
+   "check": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   }
+  }
+ },
+ "baijiahao": {
+  "actions": {
+   "upload-video": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     },
+     "--file": {
+      "type": "existing_file_path",
+      "required": true
+     },
+     "--title": {
+      "type": "str",
+      "required": true
+     },
+     "--desc": {
+      "type": "str",
+      "required": false
+     },
+     "--tags": {
+      "type": "str",
+      "required": false
+     },
+     "--thumbnail": {
+      "type": "existing_file_path",
+      "required": false
+     },
+     "--collection": {
+      "type": "str",
+      "required": false
+     }
+    },
+    "required": [
+     "--account",
+     "--file",
+     "--title"
+    ],
+    "runtime": true
+   },
+   "login": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   },
+   "check": {
+    "args": {
+     "--account": {
+      "type": "str",
+      "required": true
+     }
+    },
+    "required": [
+     "--account"
+    ],
+    "runtime": true
+   }
+  }
+ }
+}

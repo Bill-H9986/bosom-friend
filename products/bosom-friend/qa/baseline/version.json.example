@@ -1,0 +1,6 @@
+{
+  "version": "0.4.0",
+  "url": "https://github.com/Bill-H9986/bosom-friend/releases/download/v0.4.0/BosomFriend-Setup-0.4.0.exe",
+  "notes": "示例：0.4.0 交付版（发布真实性三修 + 抖音图文修复 + 界面冻结 0.2.62）。2026-10-14 起清单挂在主仓 bosom-friend。",
+  "minimum": "0.2.50"
+}

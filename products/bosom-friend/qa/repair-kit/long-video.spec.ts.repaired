@@ -1,0 +1,1218 @@
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest'
+import { agnesTalkingHeadFields } from '../../src/api.ts'
+import {
+  buildSubtitleCuesFromDurations,
+  clampSegmentSeconds,
+  estimateSeconds,
+  minScriptChars,
+  normalizeSpokenText,
+  planSegmentCount,
+  recoverInterruptedLongVideoTasks,
+  redoShot,
+  resumeBlockedReason,
+  resumeStartIndex,
+  splitScript,
+} from '../../src/long-video.ts'
+import { MIN_PRODUCT_SHOTS } from '../../src/storyboard.ts'
+import { BEAT_PROSODY, beatToneHint } from '../../src/speech.ts'
+import { DIGITAL_HUMAN_VOICE_STYLES, voiceProsody } from '../../src/digital-human.ts'
+import { createHarness } from '../harness.ts'
+import type { Harness } from '../harness.ts'
+
+/**
+ * 长视频产出通用工作流：切段口径 + 同一条编排挂不同片段生成器。
+ *
+ * 这条产品线只有一条编排（写稿 → 切段 → 逐段生成 → 拼接），业务差别全在片段生成器：
+ * 数字人口播（固定形象 + 配音）与场景呈现（不出镜、每段一个画面）走的是同一套代码。
+ * 这里把两件事都钉住——切段的边界，以及"换生成器不改编排"。
+ */
+vi.mock('../../src/kernel-client.ts', () => ({
+  createKernelClient: () => ({
+    // 稿件与增强结果都由模型写：桩成两句，正好覆盖"多段拼接"这条路径。
+    // modelScripts 是每个用例自己的答题脚本（按调用顺序取，用完继续用最后一条），
+    // 让"写短了要补写""增强只认模型原文"这类口径能在同一个桩上分别验证。
+    prompt: async (prompt: string, onDelta?: (text: string) => void) => {
+      modelPrompts.push(prompt)
+      // 写稿链路按"目标时长 × 音色语速"折算字数并硬校验，所以桩必须给够字：
+      // 用例自己指定 modelScripts 时以它为准（补写/校准那几条要的正是"故意写短"）。
+      const wanted = /成片目标 (\d+) 秒/.exec(prompt)
+      const planShots = modelShotPlan === ''
+        ? []
+        : ((JSON.parse(modelShotPlan) as { shots?: Array<{ seconds?: number, line?: string }> }).shots ?? [])
+      const planText = planShots.map(shot => shot.line ?? '').filter(line => line !== '').join('')
+      const planned = planShots.reduce((sum, shot) => sum + (Number(shot.seconds) || 0), 0)
+      const target = wanted ? Number(wanted[1]) : 0
+      const scriptTarget = planned > 0 ? Math.min(planned, target > 0 ? target : planned) : target
+      // 有分镜表：稿件 = 分镜台词（不足目标时长再补够，补的句子排在最后）。
+      const planScript = planText !== '' && scriptTarget > 0 ? ensureScript(planText, scriptTarget) : planText
+      const fallback = planScript !== ''
+        ? planScript
+        : (scriptTarget > 0 ? fillerScriptFor(scriptTarget) : SHORT_SCRIPT)
+      // 分镜那一次要求"输出 JSON"：夹具存在就返回分镜表，否则返回普通脚本（触发确定性兜底）。
+      // 有分镜表时稿件就照分镜的台词来（台词必须逐句长在对的镜头上），不足目标时长再补够字数；
+      // 补出来的句子会排在最后，不影响前几镜的台词与配音对齐。
+      const answer = modelScripts.length > 1
+        ? modelScripts.shift()!
+        : (modelScripts.length === 1
+            ? (scriptTarget > 0 ? ensureScript(modelScripts[0]!, scriptTarget) : modelScripts[0]!)
+            : fallback)
+
+      const text = prompt.includes('只输出 JSON') && modelShotPlan !== '' ? modelShotPlan : answer
+      onDelta?.(text)
+      return { text }
+    },
+    close: async () => {},
+  }),
+}))
+
+// 配音不在功能用例的验证范围（要连微软在线服务）：桩掉它，只留编排与接口本身。
+vi.mock('../../src/tts.ts', async () => {
+  const { writeFileSync } = await import('node:fs')
+  return {
+    synthesizeSpeech: async (text: string, voice: string, outFile: string, options?: { probeDuration?: boolean, prosody?: Record<string, string> }) => {
+      ttsCalls.push({ text, voice, probeDuration: options?.probeDuration, prosody: options?.prosody })
+      if (options?.probeDuration !== false) callOrder.push('tts')
+      if (ttsFailOnce && options?.probeDuration !== false) {
+        ttsFailOnce = false
+        return { ok: false as const, error: '配音服务临时不可达（测试桩）' }
+      }
+      writeFileSync(outFile, Buffer.from('fake-mp3:' + text.slice(0, 8)))
+      // 时长与字数挂钩（4.5 字/秒）：母时钟有没有生效，看回填的秒数对不对得上就知道了。
+      const seconds = Math.max(4, Math.round(text.length / 4.5))
+      return { ok: true as const, result: { file: outFile, seconds: options?.probeDuration === false ? 0 : seconds } }
+    },
+  }
+})
+
+// 拼接要真 ffmpeg；编排用例里桩成"按顺序拼字节"，真拼接由 video-compose.spec.ts 覆盖。
+// 但拼接参数要记下来：字幕有没有真的交到拼接这一步，只有在这里才看得见。
+vi.mock('../../src/video-compose.ts', async () => {
+  const { mkdirSync, readFileSync, writeFileSync } = await import('node:fs')
+  const { dirname } = await import('node:path')
+  return {
+    composeSegments: async (options: { segments: string[], outFile: string }) => {
+      composeCalls.push(options)
+      mkdirSync(dirname(options.outFile), { recursive: true })
+      writeFileSync(options.outFile, Buffer.concat(options.segments.map(file => readFileSync(file))))
+      return { ok: true as const, file: options.outFile }
+    },
+  }
+})
+
+let h: Harness
+const AVATAR_URL = '/bosom-friend/api/assets/file/asset-avatar-under-test.png'
+/** 可选的产品参考图（与形象图同样落盘在 uploads 里，由 beforeAll 写入）。 */
+const PRODUCT_URL = '/bosom-friend/api/assets/file/asset-product-under-test.png'
+const SEGMENT_BYTES = Buffer.from('fake-mp4-segment')
+/**
+ * 每次厂商成片下载返回不同的字节。
+ *
+ * 拼接是桩的（按顺序拼字节），所以"成片里有哪些字节"就等于"用了哪几镜的文件"——
+ * 逐镜重做要验证的正是"换掉的那一镜真的进了成片"，这需要每轮下载的字节可区分。
+ */
+let vendorDownloadCounter = 0
+/** 明显短于目标时长的稿子：31 字只值约 7 秒，远不足 12 秒的折算下限（54 字）。 */
+const SHORT_SCRIPT = '姐妹们注意了，这款产品我自己用了三个月，真的离不开它。'
+/** 同一句话补上一个卖点：63 字够了 12 秒，多段与"不补写"两条路径都用它。 */
+const LONG_SCRIPT = SHORT_SCRIPT + '今天直播间直降一百，点下方链接就能拍，库存有限别错过。'
+
+/**
+ * 按目标时长把稿子补够：写稿链路会折算字数下限并硬校验（12 秒 50 字、30 秒 123 字）。
+ *
+ * @param text - 用例给的稿子。
+ * @param targetSeconds - 这条用例的目标成片时长。
+ * @returns 长度不低于该档位折算下限的稿子。
+ */
+function ensureScript(text: string, targetSeconds: number): string {
+  const need = minScriptChars(targetSeconds)
+  if (text.length >= need) return text
+  const filler = '这款产品我自己用了三个月，干皮救急真的顶用。今天直播间直降一百，点下方链接就能拍。'
+  let next = text
+  while (next.length < need) next += filler
+  return next
+}
+
+/**
+ * 从零造一段够长的稿子（用例没指定 modelScripts 时用）。
+ *
+ * @param targetSeconds - 目标成片时长。
+ * @returns 够该档位的稿子。
+ */
+function fillerScriptFor(targetSeconds: number): string {
+  return ensureScript(SHORT_SCRIPT, targetSeconds)
+}
+/**
+ * 口播镜 + 产品镜的夹具（"口播镜的参考图集"那条用例用）。
+ *
+ * 关键在 `references` 的**角色**：分镜层按角色把形象图挂口播镜、产品图挂产品镜，
+ * 生成器据此决定给厂商交几张图（夹具不写 references 时按角色自动补齐）。
+ */
+const PRODUCT_AND_TALK_SHOTS = JSON.stringify({
+  shots: [
+    { kind: 'talking-head', seconds: 5, line: '这瓶面霜我用了三个月。' },
+    { kind: 'product', seconds: 5, visual: '面霜瓶身特写，暖光扫过' },
+    { kind: 'talking-head', seconds: 5, line: '干皮姐妹闭眼冲。' },
+  ],
+})
+
+/** 三个口播镜的夹具：断点续跑要验证"已跑成的镜不重跑、剩下的镜补齐"。 */
+const THREE_TALKING_HEADS = JSON.stringify({
+  shots: [
+    { kind: 'talking-head', seconds: 5, line: '第一镜：开场钩子。' },
+    { kind: 'talking-head', seconds: 5, line: '第二镜：讲卖点。' },
+    { kind: 'talking-head', seconds: 5, line: '第三镜：行动号召。' },
+  ],
+})
+/** 模型答题脚本；末尾那条会被重复使用，until 用例自己改写。 */
+let modelScripts: string[] = [SHORT_SCRIPT]
+/** 分镜夹具：设了它，"导演"那次调用就返回这张分镜表（用于验证执行链路真按分镜跑）。 */
+let modelShotPlan = ''
+/** 置 true 时桩不按目标时长补写稿件：给"稿件长度不是本用例判据"的用例用（如母时钟的顺序）。 */
+let modelScriptExact = false
+/** 模型收到的完整提示词，用于断言要求确实写进了提示词而不是只存在于类型里。 */
+let modelPrompts: string[] = []
+/** 配音调用记录：试听与分段生成对时长探测的要求不同，只有这里看得见。 */
+let ttsCalls: Array<{ text: string, voice: string, probeDuration?: boolean, prosody?: Record<string, string> }> = []
+/** 置 true 时下一次配音合成失败一次（验证母时钟漏掉的镜会在生成阶段补上）。 */
+let ttsFailOnce = false
+/** 调用顺序记录（'tts' / 'video'）：母时钟要求"配音全部先于第一次画面生成"。 */
+let callOrder: string[] = []
+
+/** 厂商侧收到的创建任务请求。 */
+let captured: Array<Record<string, unknown>> = []
+/** 厂商生成请求次数：断点续跑"只补没跑成的镜"要靠它证明（已跑成的镜不能重跑）。 */
+let vendorVideoCalls = 0
+/**
+ * 厂商"从第几次生成起、连续失败多少次"的故障窗（如限流）：默认不失败。
+ *
+ * 用窗口而不是"从某次起永远失败"，是为了造出**失败一次之后恢复**的真实形态——
+ * 断点续跑要验的正是"故障过去之后能把剩下的镜补上"。
+ */
+let vendorVideoFailureWindow = { from: 0, times: 0 }
+/** 夹具性厂商故障：客户端不会因为它重试（4xx）。 */
+const VENDOR_VIDEO_FAILURE = '厂商侧生成失败（测试桩）'
+/** 故障窗口返回的状态码：429 = 限流（暂时，产品会自动重跑这一镜）；400 = 参数被拒（确定，不重试）。 */
+let vendorVideoFailureStatus = 400
+/** 交给拼接的参数（用于断言字幕确实被传下去了）。 */
+let composeCalls: Array<Record<string, unknown>> = []
+
+/** 真实形状的厂商桩：创建任务 200、轮询一次 completed、成片可下载。 */
+function vendorFetch(): typeof fetch {
+  return (async (input: RequestInfo | URL, init?: RequestInit): Promise<Response> => {
+    const url = typeof input === 'string' ? input : input instanceof URL ? input.href : input.url
+    // Agnes 没有 OpenAI 兼容的 /videos/generations（真实返回 404，不触发重试）；返回 500 会白白重试 19 秒。
+    if (url.endsWith('/videos/generations'))
+      return new Response('{"error":"not found"}', { status: 404 })
+    if (url.endsWith('/videos')) {
+      // 顺序记录：母时钟要求"配音全部先于第一次画面生成"，只有这里看得见真实先后。
+      callOrder.push('video')
+      vendorVideoCalls += 1
+      const payload = typeof init?.body === 'string' ? JSON.parse(init.body) as Record<string, unknown> : {}
+      // 与厂商真实行为一致：只收 720P，其它档位 400 拒收并自报合法档位（DEF-073/079）。
+      if (typeof payload.size === 'string' && payload.size !== '720P') {
+        return new Response(JSON.stringify({
+          code: 'invalid_request',
+          message: 'size 必须是 720P 之一',
+          data: { valid_sizes: ['720P'] },
+        }), { status: 400 })
+      }
+      // 400：客户端不为 4xx 重试，测试里"厂商失败"这条路径才不至于白等一串重试退避。
+      const { from, times } = vendorVideoFailureWindow
+      if (from > 0 && vendorVideoCalls >= from && vendorVideoCalls < from + times)
+        return new Response(JSON.stringify({ error: VENDOR_VIDEO_FAILURE }), { status: vendorVideoFailureStatus })
+      captured.push(typeof init?.body === 'string' ? JSON.parse(init.body) as Record<string, unknown> : {})
+      return new Response(JSON.stringify({ id: 't', video_id: 'v', status: 'queued' }), { status: 200 })
+    }
+    if (url.includes('/agnesapi?'))
+      return new Response(JSON.stringify({ status: 'completed', metadata: { url: 'https://cdn.example.com/seg.mp4' } }), { status: 200 })
+    if (url === 'https://cdn.example.com/seg.mp4') {
+      vendorDownloadCounter += 1
+      return new Response(Buffer.concat([SEGMENT_BYTES, Buffer.from('-take' + String(vendorDownloadCounter))]), { status: 200 })
+    }
+    return new Response('{"error":"unexpected"}', { status: 500 })
+  }) as typeof fetch
+}
+
+/** 起任务时允许覆盖的字段（新增入参要在这里显式转发，否则测试看起来"参数没生效"）。 */
+interface StartTaskBody extends Record<string, unknown> {
+  producer: string
+  topic: string
+  targetSeconds?: number
+  producerRef?: string
+  productImageUrl?: string
+  /** 成片分辨率档位（720p / 1080p）；长视频板块默认 1080p。 */
+  resolution?: string
+}
+
+interface TaskView {
+  status: string
+  doneSegments: number
+  totalSegments: number
+  videoUrl?: string
+  errorMessage?: string
+  producer: string
+  segments: Array<{ text: string, audioSeconds: number }>
+  /** 分镜表：逐镜类型与终态（验证"按分镜跑"要看它）。 */
+  shots?: Array<{ kind: string, line: string, status: string, seconds: number, visual: string }>
+  scriptChars?: number
+}
+
+/** 轮询任务直到终态。 */
+// 60 秒：整包并发跑时（多个套件同时开）本用例实测会被 CPU 挤到 30 秒外，
+// 那是环境慢，不是产品失败——门禁里出现过这种假红。
+async function waitForTask(id: string, timeoutMs = 60_000): Promise<TaskView> {
+  const deadline = Date.now() + timeoutMs
+  for (;;) {
+    const res = await h.call<TaskView>('GET', 'long-videos/' + id)
+    if (res.data.status !== 'generating') return res.data
+    if (Date.now() > deadline) return res.data
+    await new Promise(resolve => setTimeout(resolve, 200))
+  }
+}
+
+/**
+ * 等到任务进入某个状态。
+ *
+ * 为什么需要它：起任务与续跑都是"立即回执 + 稍后才真的开跑"（`setTimeout`），
+ * 回执那一刻记录还停在上一个终态。直接等终态会立刻读到那个旧状态，看起来像"什么都没发生"。
+ *
+ * @param id - 任务 id。
+ * @param status - 目标状态。
+ * @param timeoutMs - 等待上限。
+ * @returns 进入该状态时的任务视图。
+ */
+async function waitForStatus(id: string, status: string, timeoutMs = 60_000): Promise<TaskView> {
+  const deadline = Date.now() + timeoutMs
+  for (;;) {
+    const res = await h.call<TaskView>('GET', 'long-videos/' + id)
+    if (res.data.status === status) return res.data
+    if (Date.now() > deadline) throw new Error('等待状态 ' + status + ' 超时，当前是 ' + res.data.status)
+    await new Promise(resolve => setTimeout(resolve, 50))
+  }
+}
+
+/** 起一条长视频任务但不等待：返回任务 id，供"中途失败"这类用例自己等。 */
+async function startTaskRaw(body: StartTaskBody): Promise<string> {
+  const started = await h.call<{ taskId: string }>('POST', 'long-videos', { body })
+  expect(started.code, '任务必须建得起来').toBe(0)
+  return started.data.taskId
+}
+
+/** 起一条长视频任务：body 原样透传（新增入参不必改这里）。 */
+async function startTask(body: StartTaskBody): Promise<TaskView> {
+  const started = await h.call<{ taskId: string }>('POST', 'long-videos', { body })
+  expect(started.code, '任务必须建得起来').toBe(0)
+  return waitForTask(started.data.taskId)
+}
+
+beforeAll(async () => {
+  // 限流重试的退避在测试里压到 0：要验的是"自动重跑这一镜"这条行为，
+  // 不是坐在那里等 20/45/90 秒（真实退避由 BF_LONG_VIDEO_RETRY_DELAYS_MS 给，见 api.ts）。
+  process.env.BF_LONG_VIDEO_RETRY_ATTEMPTS = '2'
+  process.env.BF_LONG_VIDEO_RETRY_DELAYS_MS = '0,0'
+  h = createHarness()
+  mkdirSync(join(h.dataRoot, 'uploads'), { recursive: true })
+  writeFileSync(join(h.dataRoot, 'uploads', 'asset-avatar-under-test.png'), Buffer.from('fake-avatar-png'))
+  // 产品图必须是一张**真 PNG**：内联进厂商请求时会按图片读字节，假字节会被判为"读不出来"而丢弃，
+  // 那样测试看起来"参数没生效"，其实是被正确拒绝了。1x1 透明 PNG。
+  writeFileSync(join(h.dataRoot, 'uploads', 'asset-product-under-test.png'), Buffer.from(
+    'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8AAAwAB/AF/9pQAAAAASUVORK5CYII=',
+    'base64',
+  ))
+  await h.call('PUT', 'ai/user-llm', {
+    body: {
+      providers: [{ id: 'v', displayName: 'V', baseUrl: 'https://media.example.com/v1', apiKey: 'sk-x', models: ['agnes-video-2.5-flash'] }],
+      activeProviderId: 'v',
+      video: { providerId: 'v', model: 'agnes-video-2.5-flash' },
+      // 档位记忆显式清空：产品会把"厂商认的档位"记在这份配置里（DEF-079），
+      // 用例要验的正是"第一次被拒、之后不再被拒"，所以起点必须是"没记过"。
+      videoSizeMemory: {},
+    },
+  })
+})
+afterEach(() => {
+  vi.unstubAllGlobals()
+  captured = []
+  composeCalls = []
+  // 复位成"没指定稿子"：桩会按提示词里的目标时长给够字数；要短稿的用例自己设 modelScripts。
+  // 这里若复位成 [SHORT_SCRIPT]，等于每个用例都被塞进一份 27 字的短稿，写稿闸门一律判失败。
+  modelScripts = []
+  modelShotPlan = ''
+  modelScriptExact = false
+  vendorDownloadCounter = 0
+  vendorVideoCalls = 0
+  vendorVideoFailureWindow = { from: 0, times: 0 }
+  vendorVideoFailureStatus = 400
+  ttsFailOnce = false
+  callOrder = []
+  modelPrompts = []
+  ttsCalls = []
+})
+
+describe('稿件切段：边界由厂商 4~12 秒的硬约束反推', () => {
+  it('相邻短句合并到 ≥4 秒，不会出现"一次生成只念半句"', () => {
+    const segments = splitScript('大家好。今天推荐一款好物。')
+    expect(segments).toHaveLength(1)
+    expect(segments[0]).toContain('大家好')
+    expect(segments[0]).toContain('好物')
+  })
+
+  it('任何一段都不超过 12 秒（超了厂商直接拒收）', () => {
+    for (const segment of splitScript('这是一句特别长的口播文案'.repeat(20)))
+      expect(segment.length).toBeLessThanOrEqual(Math.floor(12 * 4.5) + 1)
+  })
+
+  it('清掉 Markdown、话题标签与多余空白，只留能念的字', () => {
+    expect(normalizeSpokenText('## 标题\n**正文** #带货 #好物\n\n更多内容')).toBe('标题 正文 更多内容')
+    expect(splitScript('   ')).toEqual([])
+  })
+
+  it('时长夹到厂商接受的 4~12 秒区间', () => {
+    expect(clampSegmentSeconds(1)).toBe(4)
+    expect(clampSegmentSeconds(9)).toBe(9)
+    expect(clampSegmentSeconds(60)).toBe(12)
+    expect(clampSegmentSeconds(Number.NaN)).toBe(12)
+  })
+})
+
+describe('稿件长度校准：目标秒数先折算成字数，再要求模型写够', () => {
+  it('目标时长折算成段数与字数下限', () => {
+    expect(planSegmentCount(8)).toBe(1)
+    expect(planSegmentCount(12)).toBe(1)
+    expect(planSegmentCount(13)).toBe(2)
+    expect(planSegmentCount(30)).toBe(3)
+    expect(planSegmentCount(120)).toBe(10)
+    expect(minScriptChars(30)).toBe(135)
+    // 折算与切段共用同一把尺子：估算出的秒数必须等于按字数反推的秒数。
+    const line = '这款面霜主打干皮救急'
+    expect(estimateSeconds(line)).toBe(Math.round(line.length / 4.5))
+  })
+
+  it('写短了的稿子会补写一次（并把补写要求写进提示词），够长就不补', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    expect(SHORT_SCRIPT.length, '这一稿必须真的短于 12 秒的折算字数').toBeLessThan(minScriptChars(12))
+    expect(LONG_SCRIPT.length, '这一稿必须真的够 12 秒').toBeGreaterThanOrEqual(minScriptChars(12))
+    modelScripts = [SHORT_SCRIPT, LONG_SCRIPT]
+    const task = await startTask({ producer: 'scene', topic: '干皮救急面霜', targetSeconds: 12 })
+    expect(task.status, String(task.errorMessage)).toBe('success')
+
+    const writes = modelPrompts.filter(prompt => prompt.includes('你是短视频编剧'))
+    expect(writes.length, '短稿必须触发一次补写').toBe(2)
+    expect(writes[0], '第一次要把字数下限写进提示词').toContain('不少于 ' + String(minScriptChars(12)) + ' 字')
+    expect(writes[1]).toContain('上一稿只有 ' + String(SHORT_SCRIPT.length) + ' 字')
+    expect(task.scriptChars, '稿件真实字数要落盘，生成记录里看得到').toBe(LONG_SCRIPT.length)
+    expect(task.scriptText).toBe(LONG_SCRIPT)
+    // 目标 24 秒、单段上限 12 秒：写足了就该有多段，而不是被切成 1 段凑合。
+    expect(task.totalSegments).toBeGreaterThanOrEqual(2)
+  }, 60_000)
+
+  it('稿子本来够长就不补写（不做无谓的第二次模型调用）', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    modelScripts = [LONG_SCRIPT]
+    const task = await startTask({ producer: 'scene', topic: '加绒保暖内衣', targetSeconds: 12 })
+    expect(task.status, String(task.errorMessage)).toBe('success')
+    expect(modelPrompts.filter(prompt => prompt.includes('你是短视频编剧'))).toHaveLength(1)
+  }, 60_000)
+})
+
+describe('片段生成器契约：口播参数按内容形式选择', () => {
+  it('数字人口播走 reference 模式，带上形象图、音频与固定种子', () => {
+    expect(agnesTalkingHeadFields({ images: ['a'], audios: ['b'], seed: 7 }))
+      .toEqual({ mode: 'reference', images: ['a'], audios: ['b'], seed: 7 })
+    // 厂商上限：Flash 图片 ≤5、音频 ≤3，超出按前几张截断而不是发一个必然 400 的请求。
+    expect(agnesTalkingHeadFields({ images: ['1', '2', '3', '4', '5', '6'], audios: ['a', 'b', 'c', 'd'], seed: 1 }).images)
+      .toEqual(['1', '2', '3', '4', '5'])
+    expect(agnesTalkingHeadFields({ images: ['1'], audios: ['a', 'b', 'c', 'd'], seed: 1 }).audios)
+      .toEqual(['a', 'b', 'c'])
+  })
+})
+
+describe('数字人形象库：producer=digital-human 的可选项', () => {
+  it('没名字或没形象图一律拒绝，不落一条用不了的记录', async () => {
+    expect((await h.call('POST', 'digital-humans', { body: { avatarUrl: AVATAR_URL } })).code).not.toBe(0)
+    expect((await h.call('POST', 'digital-humans', { body: { name: '雅姐' } })).code).not.toBe(0)
+    expect((await h.call('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: '/bosom-friend/api/assets/file/nope.png' } })).code, '形象图读不出来必须当场拒绝').not.toBe(0)
+    expect((await h.call<{ list: unknown[] }>('GET', 'digital-humans')).data.list, '被拒的请求不得留下记录').toHaveLength(0)
+  })
+
+  it('创建后可读回，音色缺省用默认值，删除后列表为空', async () => {
+    const created = await h.call<{ id: string, voice: string, seed: number }>('POST', 'digital-humans', {
+      body: { name: '雅姐', avatarUrl: AVATAR_URL },
+    })
+    expect(created.code).toBe(0)
+    expect(created.data.voice).toBe('zh-CN-XiaoxiaoNeural')
+    expect(Number.isInteger(created.data.seed), '固定种子必须落盘，否则跨次形象不稳').toBe(true)
+    expect((await h.call<{ list: unknown[] }>('GET', 'digital-humans')).data.list).toHaveLength(1)
+    expect((await h.call('DELETE', 'digital-humans/' + created.data.id)).code).toBe(0)
+    expect((await h.call<{ list: unknown[] }>('GET', 'digital-humans')).data.list).toHaveLength(0)
+    expect((await h.call('DELETE', 'digital-humans/' + created.data.id)).code, '重复删除如实报不存在').not.toBe(0)
+  })
+})
+
+describe('同一条通用工作流，换片段生成器即可换业务', () => {
+  it('数字人口播：逐段发给厂商的是"形象图 + 音频 + 固定种子"，成片进草稿箱', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    const task = await startTask({ producer: 'digital-human', producerRef: human.data.id, topic: '春季护肤套装', targetSeconds: 30 })
+
+    expect(task.status, '流水线必须跑完：' + String(task.errorMessage)).toBe('success')
+    expect(task.producer).toBe('digital-human')
+    expect(task.totalSegments).toBeGreaterThanOrEqual(1)
+    expect(task.doneSegments).toBe(task.totalSegments)
+    expect(task.videoUrl, '成片必须落盘').toBeTruthy()
+    for (const segment of task.segments)
+      expect(segment.audioSeconds, '逐段真实时长必须回填').toBeGreaterThan(0)
+
+    expect(captured.length).toBe(task.totalSegments)
+    // 融合创作：口播镜走 reference（形象图 + 音频 + 固定种子），B-roll 镜走纯文生视频。
+    // 两边都必须有，成片里才既有这张脸、也有题材里的实物。
+    for (const payload of captured) {
+      expect(Number(payload.seconds), '单段时长必须在厂商接受的 4~12 秒内').toBeGreaterThanOrEqual(4)
+      expect(Number(payload.seconds)).toBeLessThanOrEqual(12)
+      if (payload.mode === 'reference') {
+        expect(payload.seed, '固定种子必须发给厂商').toBeTypeOf('number')
+        expect(String((payload.images as string[])[0])).toContain('data:image/png;base64,')
+        expect(String((payload.audios as string[])[0])).toContain('data:audio/mpeg;base64,')
+      }
+      else {
+        expect(payload.mode, '非口播镜只能是纯文生视频').toBe('text')
+        expect(payload.images, '非口播镜不带形象图').toBeUndefined()
+      }
+    }
+    expect(captured.filter(payload => payload.mode === 'reference').length, '口播镜必须真的走了参考模式').toBeGreaterThan(0)
+
+    // 字幕必须真的交到拼接：口播文本 + 各段真实时长组成的时间轴，缺一段都会飘。
+    const cues = (composeCalls[0]?.subtitles ?? []) as Array<{ text: string, startSeconds: number, endSeconds: number }>
+    expect(cues.length, '每个段落都要有一条字幕').toBe(task.totalSegments)
+    expect(cues[0]!.startSeconds).toBe(0)
+    for (let i = 1; i < cues.length; i++)
+      expect(cues[i]!.startSeconds, '字幕时间轴必须首尾相接').toBeCloseTo(cues[i - 1]!.endSeconds, 5)
+    expect(cues.map(cue => cue.text).join(''), '字幕文本必须覆盖全部口播稿').toContain('姐妹们注意了')
+
+    // 登记是"任务状态落盘之后"的异步收尾（封面抽取 + 写草稿），
+    // 状态一到 success 就立刻读盘会偶发读不到——等它出现，而不是假定它已经出现。
+    let draft: { type: string, mediaList: Array<{ url: string }>, metadata?: Record<string, string> } | undefined
+    for (let attempt = 0; attempt < 50 && draft === undefined; attempt += 1) {
+      const drafts = h.disk<Array<{ type: string, mediaList: Array<{ url: string }>, metadata?: Record<string, string> }>>('contents.json')
+      draft = drafts.find(item => item.metadata?.producer === 'digital-human')
+      if (draft === undefined) await new Promise(resolve => setTimeout(resolve, 100))
+    }
+    expect(draft, '成片必须登记成草稿').toBeTruthy()
+    expect(draft?.type).toBe('video')
+    expect(draft?.mediaList[0]?.url).toBe(task.videoUrl)
+  }, 60_000)
+
+  it('场景呈现：不出镜、不配音，插同一套编排照样出一条成片', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    const task = await startTask({ producer: 'scene', topic: '秋冬保湿面霜的使用场景', targetSeconds: 24 })
+
+    expect(task.status, '换生成器不改编排：' + String(task.errorMessage)).toBe('success')
+    expect(task.producer).toBe('scene')
+    expect(task.doneSegments).toBe(task.totalSegments)
+    expect(task.videoUrl).toBeTruthy()
+
+    // 场景片段是纯画面：不能带形象图/音频，走的是文生视频。
+    for (const payload of captured) {
+      expect(payload.mode).toBe('text')
+      expect(payload.images, '场景呈现不得夹带形象图').toBeUndefined()
+      expect(payload.audios, '场景呈现不得夹带配音').toBeUndefined()
+    }
+    // 每段画面按它自己的体量要时长：固定 12 秒会让厂商把画面拖慢拉长成"慢动作空镜"。
+    //
+    // 判据按**段数**对账，不按提示词文本找：场景镜交给厂商的是分镜给的画面描述，
+    // 而 task.segments 里存的是旁白文本，两者本来就不是同一句话（这条用例原先按文本找，
+    // 画面描述一进链路就找不到，属于夹具过期）。
+    expect(captured, '每一段都要有对应的厂商请求').toHaveLength(task.segments.length)
+    for (const payload of captured) {
+      const seconds = Number(payload.seconds)
+      const matched = task.segments.some(segment => clampSegmentSeconds(estimateSeconds(segment.text)) === seconds)
+      expect(matched, '每一段时长都要按它那句文案的体量给：' + String(payload.prompt ?? '')).toBe(true)
+    }
+    // 场景呈现的画面在写稿前就要按段数规划，模型才知道这条片有几个镜头可以铺。
+    const writes = modelPrompts.filter(prompt => prompt.includes('你是短视频编剧'))
+    expect(writes[0]).toContain('刚好 ' + String(planSegmentCount(24)) + ' 句')
+    expect(writes[0], '相邻画面不许是同一个场景的重复描述').toContain('同一个场景的重复描述')
+
+    const drafts = h.disk<Array<{ metadata?: Record<string, string> }>>('contents.json')
+    expect(drafts.some(item => item.metadata?.producer === 'scene'), '场景成片同样要进草稿箱').toBe(true)
+  }, 60_000)
+
+  it('未知内容形式与已删除的形象都不建任务，如实报错', async () => {
+    const unknown = await h.call('POST', 'long-videos', { body: { producer: 'no-such-kind', topic: '随便' } })
+    expect(unknown.code, '未知生成器要当场拒绝').not.toBe(0)
+
+    // 形象在开工前就被删掉：必须在建任务这一步就说清楚，而不是建一条注定跑不完的任务。
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '临时', avatarUrl: AVATAR_URL } })
+    await h.call('DELETE', 'digital-humans/' + human.data.id)
+    const orphan = await h.call<{ taskId: string }>('POST', 'long-videos', {
+      body: { producer: 'digital-human', producerRef: human.data.id, topic: '临时任务' },
+    })
+    expect(orphan.code, '形象不存在时必须当场拒绝').not.toBe(0)
+    expect(String(orphan.message), '错误要说清是形象没了').toContain('形象')
+  }, 60_000)
+
+  it('没填卖点时不建任务', async () => {
+    expect((await h.call('POST', 'long-videos', { body: { producer: 'scene', topic: '  ' } })).code).not.toBe(0)
+    expect((await h.call('POST', 'long-videos', { body: { topic: '没有选内容形式' } })).code).not.toBe(0)
+  })
+})
+
+describe('时长分工：长视频板块不接受短视频档位', () => {
+  it('低于下限的目标时长被抬到下限，不让短视频档位进长片链路', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    modelScripts = [LONG_SCRIPT]
+    modelShotPlan = JSON.stringify({ shots: [{ kind: 'talking-head', seconds: 6, line: '一句话就够。' }] })
+    // 测试环境的下限是 8 秒；请求 4 秒 → 应被抬到 8 秒（产品默认下限为 90 秒，见 api.ts）。
+    const started = await h.call<{ taskId: string }>('POST', 'long-videos', {
+      body: { producer: 'digital-human', producerRef: human.data.id, topic: '任何产品', targetSeconds: 4 },
+    })
+    expect(started.code, '抬到下限后仍要建得起来').toBe(0)
+    const task = await waitForTask(started.data.taskId)
+    expect(task.targetSeconds, '短视频档位不得原样进长片链路').toBe(8)
+  }, 60_000)
+})
+
+describe('分镜表驱动执行：口播镜与产品镜各走各的路', () => {
+  it('模型排出的分镜被真的执行：产品镜不带音视频、口播镜走 reference 模式', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    // 夹具：2 个口播镜夹 1 个产品镜——这正是"人只出镜一半时间"的最小形态。
+    modelShotPlan = JSON.stringify({
+      continuity: '米色墙背景，室内柔和暖光，竖屏构图',
+      shots: [
+        { kind: 'talking-head', seconds: 6, line: '姐妹们，秋冬脸干到起皮，化妆卡粉特别明显。', beat: 'hook' },
+        { kind: 'product', seconds: 5, visual: '以参考图中的产品为主体缓慢旋转，微距特写，画面里不出现任何文字与品牌标识', beat: 'product' },
+        { kind: 'talking-head', seconds: 6, line: '这款面霜涂完不黏不闷，第二天上妆也不卡。', beat: 'cta' },
+      ],
+    })
+    const task = await startTask({ producer: 'digital-human', producerRef: human.data.id, topic: '干皮救急面霜', targetSeconds: 17 })
+
+    expect(task.status, '流水线必须跑完：' + String(task.errorMessage)).toBe('success')
+    expect(task.totalSegments, '按分镜跑，不是按稿件切段').toBe(3)
+    expect(task.doneSegments).toBe(3)
+
+    const shots = task.shots ?? []
+    expect(shots.map(item => item.kind)).toEqual(['talking-head', 'product', 'talking-head'])
+    expect(shots.every(item => item.status === 'ready'), '每一镜都要有终态').toBe(true)
+    // 分镜表落盘：逐镜重做要靠它定位，界面也要拿它显示镜头类型。
+    expect(task.segments[0]!.text, '口播镜的文本就是它的台词').toContain('秋冬脸干到起皮')
+    // 产品镜也带旁白：画面切到产品只是画面切走，口播不能停（见 storyboard.ts 的"每一镜都要有 line"）。
+    expect(task.segments[1]!.text, '产品镜的旁白照念').not.toBe('')
+    expect(task.segments[1]!.audioSeconds, '产品镜时长以厂商成片为准，同样要回填').toBeGreaterThan(0)
+
+    // 厂商侧：3 次调用，其中产品镜必须是纯文生视频，绝不能夹带形象图/配音。
+    expect(captured).toHaveLength(3)
+    expect(captured[1]!.mode, '产品镜走图生视频/文生视频，不是 reference 口播').toBe('text')
+    expect(captured[1]!.images, '产品镜不得夹带人物形象图（画面主体是产品）').toBeUndefined()
+    expect(captured[1]!.audios, '产品镜不得夹带配音').toBeUndefined()
+    expect(String(captured[1]!.prompt), '产品镜用画面提示词，且带上连续性约束').toContain('米色墙背景')
+    expect(String(captured[1]!.prompt)).toContain('微距特写')
+    for (const index of [0, 2]) {
+      expect(captured[index]!.mode, '口播镜走 reference 模式').toBe('reference')
+      expect(String(captured[index]!.audios?.[0] ?? '')).toContain('data:audio/mpeg;base64,')
+    }
+    // 配音只发生在口播镜：产品镜不该白花一次 TTS。
+    expect(ttsCalls, '三镜各一句旁白：口播镜的进厂商，产品镜的只进字幕').toHaveLength(3)
+  }, 60_000)
+
+  it('给了产品图：产品镜以真实产品为主体；不给：产品镜不带任何图片', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    modelShotPlan = JSON.stringify({
+      shots: [
+        { kind: 'talking-head', seconds: 6, line: '姐妹们，秋冬脸干到起皮。' },
+        { kind: 'product', seconds: 5, visual: '产品缓慢旋转，微距特写，画面里不出现任何文字与品牌标识' },
+      ],
+    })
+
+    // ① 不给产品图：产品镜不得带任何图片字段（凭空画一个产品比"只有口播"更糟）。
+    captured = []
+    await startTask({ producer: 'digital-human', producerRef: human.data.id, topic: '干皮救急面霜', targetSeconds: 11 })
+    expect(captured, '两镜两次调用').toHaveLength(2)
+    expect(captured[1]!.mode, '没有产品图 → 纯文生视频').toBe('text')
+    expect(captured[1]!.first_frame, '不得凭空塞参考图').toBeUndefined()
+
+    // ② 给了产品图：产品镜以它为首帧（厂商的 1 张图 = keyframe 模式，字段名是 first_frame）。
+    captured = []
+    await startTask({
+      producer: 'digital-human',
+      producerRef: human.data.id,
+      topic: '干皮救急面霜',
+      targetSeconds: 11,
+      productImageUrl: PRODUCT_URL,
+    })
+    expect(captured[1]!.mode, '1 张产品图 → 首帧模式').toBe('keyframe')
+    expect(String(captured[1]!.first_frame), '带的必须是用户那张产品图的字节').toContain('data:image/png;base64,')
+    expect(captured[0]!.mode, '口播镜不受影响，仍走 reference').toBe('reference')
+  }, 60_000)
+
+  it('产品图读不出来时当场拒绝建任务，不建一条注定跑不完的任务', async () => {
+    const orphan = await h.call('POST', 'long-videos', {
+      body: { producer: 'scene', topic: '随便', productImageUrl: '/bosom-friend/api/assets/file/nope.png' },
+    })
+    expect(orphan.code).not.toBe(0)
+    expect(String(orphan.message)).toContain('产品图')
+  })
+
+  it('分镜要求里必须带上"产品镜下限"与"画字禁令"', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    modelScripts = [LONG_SCRIPT]
+    modelShotPlan = JSON.stringify({ shots: [{ kind: 'talking-head', seconds: 6, line: '一句话就够。' }] })
+    await startTask({ producer: 'digital-human', producerRef: human.data.id, topic: '任何产品', targetSeconds: 12 })
+    const directorPrompt = modelPrompts.find(prompt => prompt.includes('只输出 JSON')) ?? ''
+    expect(directorPrompt, '分镜那次调用要认出自己是导演').toContain('你是短视频导演')
+    // 融合创作后的口径：至少 N 个**非口播镜**（product 或 scene）——只写 product 会在没有产品图时
+    // 逼模型硬凑产品画面；非口播镜才是"场地与设备能不能进画面"的那条硬要求。
+    expect(directorPrompt).toContain('至少 ' + String(MIN_PRODUCT_SHOTS) + ' 个非口播镜')
+    expect(directorPrompt, '空镜要按这段口播讲的东西写画面').toContain('按这段口播讲的东西')
+    expect(directorPrompt).toContain('不许出现任何文字、品牌名、logo')
+  }, 60_000)
+})
+
+describe('逐镜重做：只重跑一镜，成片真的更新', () => {
+  /** 三个口播镜的夹具：重做中间那一镜，前后两镜必须原样留在成片里。 */
+  const THREE_SHOTS = JSON.stringify({
+    shots: [
+      { kind: 'talking-head', seconds: 5, line: '第一镜：开场钩子。' },
+      { kind: 'talking-head', seconds: 5, line: '第二镜：讲卖点。' },
+      { kind: 'talking-head', seconds: 5, line: '第三镜：行动号召。' },
+    ],
+  })
+
+  /** 起一条三镜任务并跑完。 */
+  async function startThreeShotTask(): Promise<{ taskId: string, view: TaskView }> {
+    vi.stubGlobal('fetch', vendorFetch())
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    modelShotPlan = THREE_SHOTS
+    const started = await h.call<{ taskId: string }>('POST', 'long-videos', {
+      body: { producer: 'digital-human', producerRef: human.data.id, topic: '干皮救急面霜', targetSeconds: 15 },
+    })
+    expect(started.code).toBe(0)
+    return { taskId: started.data.taskId, view: await waitForTask(started.data.taskId) }
+  }
+
+  it('重做中间一镜：那一镜换新、其他镜原样，成片按镜头顺序重新拼好', async () => {
+    const { taskId, view } = await startThreeShotTask()
+    expect(view.status, String(view.errorMessage)).toBe('success')
+    expect(view.totalSegments).toBe(3)
+    expect(vendorDownloadCounter, '三镜三次下载').toBe(3)
+    // 拼接是桩的：成片字节里带着每一镜的来源标记，重做后应当只剩新的那一镜。
+    const composedBefore = readFileSync(join(h.dataRoot, 'uploads', 'lv-' + taskId + '.mp4'), 'utf8')
+    expect(composedBefore).toContain('-take1')
+    expect(composedBefore).toContain('-take2')
+    expect(composedBefore).toContain('-take3')
+
+    const redo = await h.call<{ index: number, seconds: number }>('POST', 'long-videos/' + taskId + '/shots/1/redo')
+    expect(redo.code, String(redo.message)).toBe(0)
+    expect(redo.data.index).toBe(1)
+    expect(redo.data.seconds, '重做后要回这一镜的真实时长').toBeGreaterThan(0)
+    expect(vendorDownloadCounter, '只多跑了一次厂商生成').toBe(4)
+
+    const composedAfter = readFileSync(join(h.dataRoot, 'uploads', 'lv-' + taskId + '.mp4'), 'utf8')
+    expect(composedAfter, '第 2 镜必须换成新的那一次').not.toContain('-take2')
+    expect(composedAfter, '第 1 镜原样保留').toContain('-take1')
+    expect(composedAfter, '第 3 镜原样保留').toContain('-take3')
+    expect(composedAfter, '新的一镜进了成片').toContain('-take4')
+
+    const after = await h.call<TaskView>('GET', 'long-videos/' + taskId)
+    expect(after.data.status, '重做后成片必须仍是可交付状态').toBe('success')
+    expect(after.data.segments[1]!.audioSeconds, '重做后的真实时长要回填').toBeGreaterThan(0)
+    expect(after.data.shots?.[1]?.status, '那一镜回到就绪态').toBe('ready')
+  }, 60_000)
+
+  it('越界与前置条件如实拒绝：不存在的镜号 / 任务 / 生成中的任务 / 还没生成过的镜', async () => {
+    const { taskId, view } = await startThreeShotTask()
+    expect(view.status).toBe('success')
+    expect((await h.call('POST', 'long-videos/' + taskId + '/shots/9/redo')).code, '不存在的镜号').not.toBe(0)
+    expect((await h.call('POST', 'long-videos/' + taskId + '/shots/-1/redo')).code, '负数镜号').not.toBe(0)
+    expect((await h.call('POST', 'long-videos/no-such-task/shots/0/redo')).code, '任务不存在').not.toBe(0)
+
+    // "生成中不得重做"这条靠接口测不稳（桩厂商几秒就跑完，抢不到进行中那一刻），
+    // 所以直接测编排层的判断——这条守卫本来就在那里，接口只是把它透出来。
+    const deps = {
+      dataRoot: h.dataRoot,
+      loadTasks: () => [{ ...view, id: 'lv-running', status: 'generating' as const }],
+      saveTasks: () => {},
+      writeScript: async () => ({ ok: true as const, text: '' }),
+      registerVideo: async () => {},
+      readAssetBytes: () => null,
+    }
+    const refused = await redoShot(deps, 'lv-running', 0, {
+      kind: 'scene',
+      scriptBrief: () => '',
+      produce: async () => ({ ok: true as const, file: '/nonexistent.mp4', seconds: 4 }),
+    })
+    expect(refused.ok).toBe(false)
+    expect(refused.ok === false ? refused.error : '').toContain('还在生成')
+
+    // 还没生成过的镜（没有对应文件）也不能重做。
+    const noFile = await redoShot(
+      { ...deps, loadTasks: () => [{ ...view, id: 'lv-no-file', status: 'failed' as const, shotFiles: {} }] },
+      'lv-no-file',
+      0,
+      { kind: 'scene', scriptBrief: () => '', produce: async () => ({ ok: true as const, file: '/nonexistent.mp4', seconds: 4 }) },
+    )
+    expect(noFile.ok).toBe(false)
+    expect(noFile.ok === false ? noFile.error : '').toContain('还没有生成过')
+  }, 60_000)
+})
+
+describe('厂商档位：被拒一次之后不再重复被拒（不给限流窗口添乱）', () => {
+  it('第一镜按用户档位试一次被拒，之后每镜直接用厂商认的档位下单', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    modelShotPlan = THREE_TALKING_HEADS
+    // 起点必须是"没记过"：这份记忆写在 llm-user.json 里、同一套件里别的用例会把它写实，
+    // 用例不能依赖"前面没人跑过"。清掉记忆 = 冷启动（新装的机器、刚换模型）。
+    const configPath = join(h.dataRoot, 'llm-user.json')
+    writeFileSync(configPath, JSON.stringify({ ...JSON.parse(readFileSync(configPath, 'utf8')) as Record<string, unknown>, videoSizeMemory: {} }, null, 2), 'utf8')
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    // 用户档位 1080p（长视频板块的默认口径）：厂商只收 720P，所以第一镜必然被拒一次。
+    const task = await startTask({ producer: 'digital-human', producerRef: human.data.id, topic: '干皮救急面霜', targetSeconds: 15, resolution: '1080p' })
+    expect(task.status, String(task.errorMessage)).toBe('success')
+
+    // 内置模型的档位按**官方规格**直接下单，不花一次必然被拒的请求：
+    // agnes-video-2.5-flash 官方只收 720P（见 agnes.ts 的 VIDEO_LIMITS），所以这是三镜各一次、共 3 次。
+    // "被拒一次再记住"那条路径是给**自定义厂商型号**的，由 agnes.ts 的白名单用例覆盖。
+    expect(vendorVideoCalls, '内置模型三镜各一次下单，没有必然被拒的那一次').toBe(3)
+    expect(new Set(captured.map(payload => String(payload.size))), '内置模型直接用官方档位').toEqual(new Set(['720P']))
+
+    // 同一份配置下再跑一条：仍然直接用 720P，不出现多余的下单。
+    vendorVideoCalls = 0
+    captured = []
+    const again = await startTask({ producer: 'digital-human', producerRef: human.data.id, topic: '干皮救急面霜第二季', targetSeconds: 15, resolution: '1080p' })
+    expect(again.status, String(again.errorMessage)).toBe('success')
+    expect(vendorVideoCalls, '第二次同样没有多余的下单').toBe(3)
+    expect(new Set(captured.map(payload => String(payload.size))), '第一镜起就用 720P').toEqual(new Set(['720P']))
+  }, 90_000)
+})
+
+describe('字幕时间轴：一镜一条、按画面真实时长累加', () => {
+  it('每条字幕落在它那一镜的区间里（产品镜没有台词就不占字幕条）', () => {
+    // 夹具厂商按配音时长回话，而成片文件长度由拼接层探得——两者不等长是常态
+    // （实测差 0.2~1 秒，逐镜累加足以把字幕推到下一镜的画面上，DEF-081）。
+    const measured = [3.5, 6.25, 5]
+    // 台词只口播镜有：第 3 镜是产品空镜（没有文本），因此只有两条字幕。
+    const cues = buildSubtitleCuesFromDurations([{ text: '第一句' }, { text: '第二句' }], index => measured[index] ?? 0)
+    expect(cues).toEqual([
+      { text: '第一句', startSeconds: 0, endSeconds: 3.5 },
+      { text: '第二句', startSeconds: 3.5, endSeconds: 9.75 },
+    ])
+    // 字幕条数与"有台词的镜"一一对应，长度等于该镜画面长度：这是不串镜的判据。
+    expect(cues[1]!.endSeconds - cues[1]!.startSeconds).toBeCloseTo(measured[1]!, 5)
+
+    // 探不出时长（0）时兜底到最短段，绝不产生 0 秒或倒序的字幕条。
+    expect(buildSubtitleCuesFromDurations([{ text: '第一句' }, { text: '第二句' }], () => 0)).toEqual([
+      { text: '第一句', startSeconds: 0, endSeconds: 4 },
+      { text: '第二句', startSeconds: 4, endSeconds: 8 },
+    ])
+  })
+
+  it('一镜一条：台词里的换行只是剧本排版，不得拆成两条字幕', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    // 模型常把长台词按行写在 line 里（夹具照抄这个形态）。
+    modelShotPlan = JSON.stringify({
+      shots: [
+        { kind: 'talking-head', seconds: 6, line: '很多姐妹一到换季，脸就紧绷、发痒，\n化妆还卡粉。' },
+        { kind: 'talking-head', seconds: 6, line: '第二镜台词。' },
+      ],
+    })
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    const task = await startTask({ producer: 'digital-human', producerRef: human.data.id, topic: '换季干皮', targetSeconds: 12 })
+    expect(task.status, String(task.errorMessage)).toBe('success')
+
+    // 字幕条数 = 有台词的镜数：拼接层会再按"每屏最多两行"分页（那是排版，不是这里的事）。
+    const cues = (composeCalls.at(-1)?.subtitles ?? []) as Array<{ text: string, startSeconds: number, endSeconds: number }>
+    expect(cues.length, '两镜两句 → 两条字幕（不是三条）').toBe(2)
+    expect(cues[0]!.text, '换行折成一行').toBe('很多姐妹一到换季，脸就紧绷、发痒， 化妆还卡粉。')
+    expect(cues[0]!.text).not.toContain('\n')
+    // 第二条字幕的起点 = 第一镜的真实时长：与前一条首尾相接，不会插进第一镜中间。
+    expect(cues[1]!.startSeconds).toBeCloseTo(cues[0]!.endSeconds, 5)
+  }, 60_000)
+})
+
+describe('口播镜的参考图集：只交形象图（产品画面归产品镜）', () => {
+  it('给了产品图也不往口播镜里塞：口播镜只交形象图 + 配音', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    modelShotPlan = PRODUCT_AND_TALK_SHOTS
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+
+    const withProduct = await startTask({
+      producer: 'digital-human',
+      producerRef: human.data.id,
+      topic: '干皮救急面霜',
+      targetSeconds: 15,
+      productImageUrl: PRODUCT_URL,
+    })
+    expect(withProduct.status, String(withProduct.errorMessage)).toBe('success')
+
+    // 口播镜（reference 模式）：**只交形象图**。
+    //
+    // 为什么不是"形象图 + 产品图"：口播镜的画面主体是这个人，多塞一张产品图会改变厂商的构图
+    // 与口型基准（实测那种片子会变成"产品在动、人在旁边"）；产品该出现在**产品镜**里，
+    // 分镜层已经为它单独排了镜头（同一条时间轴上两者都有）。这条判据是产品口径，不是实现细节。
+    const talking = captured.filter(payload => payload.mode === 'reference')
+    expect(talking.length, '这条片子里要有口播镜').toBeGreaterThan(0)
+    for (const payload of talking) {
+      expect(payload.images, '口播镜只交形象图一张').toHaveLength(1)
+      expect(String((payload.images as string[])[0]), '交出去的必须内联成 Data URI').toContain('data:image/png;base64,')
+      expect(payload.audios, '口播镜必须带配音').toHaveLength(1)
+    }
+
+    // 不给产品图时只交形象图：多塞一张反而会让画面跑偏。
+    captured = []
+    const withoutProduct = await startTask({
+      producer: 'digital-human',
+      producerRef: human.data.id,
+      topic: '干皮救急面霜（不传产品图）',
+      targetSeconds: 15,
+    })
+    expect(withoutProduct.status, String(withoutProduct.errorMessage)).toBe('success')
+    for (const payload of captured.filter(item => item.mode === 'reference'))
+      expect(payload.images as string[], '不传产品图时只交形象图').toHaveLength(1)
+  }, 90_000)
+})
+
+describe('暂时性失败自动重试：限流不该让整条片子失败', () => {
+  it('某一镜撞限流：自动重跑那一镜，任务照样跑完成片', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    modelShotPlan = THREE_TALKING_HEADS
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    // 第 3 次生成被限流一次（夹具给 429：判定为"暂时"），之后恢复。
+    vendorVideoFailureWindow = { from: 3, times: 1 }
+    vendorVideoFailureStatus = 429
+
+    const task = await startTask({ producer: 'digital-human', producerRef: human.data.id, topic: '干皮救急面霜', targetSeconds: 15 })
+    expect(task.status, '限流不该让整条任务失败：' + String(task.errorMessage)).toBe('success')
+    // 三镜各一次 + 被限流的那一次 = 4 次厂商生成请求（说明确实重跑了那一镜）。
+    expect(vendorVideoCalls, '被限流的那一镜重跑了一次').toBe(4)
+    expect(task.shots?.map(shot => shot.status), '三镜最终全部就绪').toEqual(['ready', 'ready', 'ready'])
+  }, 60_000)
+
+  it('确定性失败不重试：参数被拒就如实失败，不白花额度', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    modelShotPlan = THREE_TALKING_HEADS
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    // 400 = 参数被拒：重试只会白花额度，必须当场失败。
+    vendorVideoFailureWindow = { from: 3, times: 1 }
+    vendorVideoFailureStatus = 400
+
+    const task = await startTask({ producer: 'digital-human', producerRef: human.data.id, topic: '干皮救急面霜', targetSeconds: 15 })
+    expect(task.status).toBe('failed')
+    expect(vendorVideoCalls, '只试了一次，没有重试').toBe(3)
+    expect(task.errorMessage, '失败原因要说清是哪一镜、什么原因').toContain('第 3 镜')
+  }, 60_000)
+})
+
+describe('中断收尾与断点续跑：已花掉的厂商调用不能白花', () => {
+  /** 一条跑了一半就停下的三镜任务：前两镜成片在盘上，第三镜失败。 */
+  async function stalledTwoOfThree(avatarUrl: string): Promise<{ taskId: string, view: TaskView }> {
+    vi.stubGlobal('fetch', vendorFetch())
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl } })
+    modelShotPlan = THREE_TALKING_HEADS
+    // 厂商在第 3 次调用上失败一次（如限流），之后恢复——续跑才有机会把第 3 镜补上。
+    vendorVideoFailureWindow = { from: 3, times: 1 }
+    const taskId = await startTaskRaw({ producer: 'digital-human', producerRef: human.data.id, topic: '干皮救急面霜', targetSeconds: 15 })
+    const view = await waitForTask(taskId)
+    return { taskId, view }
+  }
+
+  it('应用重启后被中断的任务定格为失败，并如实记下已生成几镜', () => {
+    // 收尾只清状态、不猜文件在不在（"能不能续跑"由续跑时的文件判据决定）：
+    // 已生成的镜数取自任务记录里的 shotFiles。
+    const tasks = [
+      { id: 'lv-interrupted', status: 'generating' as const, shotFiles: { 0: 'anything.mp4' }, errorMessage: '' },
+      { id: 'lv-untouched', status: 'success' as const, shotFiles: {}, errorMessage: '' },
+    ]
+    const saved: Array<typeof tasks> = []
+    const deps = {
+      loadTasks: () => tasks,
+      saveTasks: (next: typeof tasks) => { saved.push(next) },
+    }
+
+    const recovered = recoverInterruptedLongVideoTasks(deps)
+
+    expect(recovered.tasks, '只收尾真正被中断的那条').toBe(1)
+    expect(recovered.readyShots, '已生成的镜数要如实回报').toBe(1)
+    expect(tasks[0]!.status).toBe('failed')
+    expect(tasks[0]!.errorMessage, '文案要说清"是中断，不是厂商失败"').toContain('生成被中断')
+    expect(tasks[0]!.errorMessage, '文案要给出出路').toContain('可从中断处继续')
+    expect(tasks[1]!.status, '终态任务不得被改动').toBe('success')
+    expect(saved.length, '有改动才落盘').toBe(1)
+  })
+
+  it('没有任何成片的中断任务不谎称能续跑', () => {
+    const tasks = [{ id: 'lv-cold', status: 'generating' as const, shotFiles: {}, errorMessage: '' }]
+    recoverInterruptedLongVideoTasks({ loadTasks: () => tasks, saveTasks: () => {} })
+    expect(tasks[0]!.errorMessage, '一镜都没有时不能承诺续跑').toContain('请重新生成')
+    expect(tasks[0]!.errorMessage).not.toContain('可从中断处继续')
+  })
+
+  it('续跑只补没跑成的镜：已跑成的两镜原样进成片，只多调一次厂商', async () => {
+    const { taskId, view } = await stalledTwoOfThree(AVATAR_URL)
+    // 前置条件：第 1、2 镜各跑成一次（所以有两次下载），第 3 镜的厂商调用失败。
+    expect(view.status, '前置条件：这条任务必须停在中途').toBe('failed')
+    expect(view.errorMessage, '失败原因要落到具体镜号').toContain('第 3 镜')
+    expect(vendorVideoCalls, '前置条件：三次厂商生成，最后一次失败').toBe(3)
+    expect(vendorDownloadCounter, '前置条件：只有两镜真的落盘').toBe(2)
+    expect(view.doneSegments, '前置条件：进度如实停在 2').toBe(2)
+    expect(existsSync(join(h.dataRoot, 'uploads', 'lv-' + taskId + '.mp4')), '前置条件：还没拼出成片').toBe(false)
+
+    const calledBeforeResume = vendorVideoCalls
+    const resumed = await h.call<{ remaining: number }>('POST', 'long-videos/' + taskId + '/resume')
+    expect(resumed.code, String(resumed.message)).toBe(0)
+    expect(resumed.data.remaining, '只剩第三镜要跑').toBe(1)
+    await waitForStatus(taskId, 'generating')
+    const after = await waitForTask(taskId)
+    expect(after.status, '续跑后必须真的成片：' + String(after.errorMessage)).toBe('success')
+    expect(vendorVideoCalls, '只补了没跑成的那一镜').toBe(calledBeforeResume + 1)
+    expect(after.doneSegments, '进度按整条已跑成的镜数算').toBe(3)
+    expect(after.shots?.map(shot => shot.status), '三镜全部就绪').toEqual(['ready', 'ready', 'ready'])
+
+    // 拼接是桩的（按顺序拼字节），成片里的来源标记就是"用了哪几次厂商成片"：
+    // 第 1、2 镜必须是**首次跑成的那两次下载**，第 3 镜是续跑补上的那一次（第 3 次下载）。
+    // 厂商调用是 4 次（3 次失败/成功 + 续跑 1 次），下载只有 3 次——失败的那次调用没留下文件。
+    const composedAfter = readFileSync(join(h.dataRoot, 'uploads', 'lv-' + taskId + '.mp4'), 'utf8')
+    expect(composedAfter, '第一镜是原来那一次，没有被重跑').toContain('-take1')
+    expect(composedAfter, '第二镜是原来那一次，没有被重跑').toContain('-take2')
+    expect(composedAfter, '第三镜是续跑补上的那一次').toContain('-take3')
+    expect(vendorDownloadCounter, '成片只由三次真实落盘的成片拼成').toBe(3)
+  }, 60_000)
+
+  it('续跑的前置条件如实拒绝：不存在的任务 / 没跑成过镜的任务 / 生成中的任务', async () => {
+    const missing = await h.call('POST', 'long-videos/no-such-task/resume')
+    expect(missing.code, '任务不存在').toBe(40404)
+
+    vi.stubGlobal('fetch', vendorFetch())
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    modelShotPlan = THREE_TALKING_HEADS
+    // 第一次调用就失败且一直不恢复：这条任务一镜都没跑成，续跑应当被如实拒绝。
+    vendorVideoFailureWindow = { from: 1, times: 999 }
+    const zero = await startTaskRaw({ producer: 'digital-human', producerRef: human.data.id, topic: '干皮救急面霜', targetSeconds: 15 })
+    const zeroView = await waitForTask(zero)
+    expect(zeroView.status).toBe('failed')
+    expect(vendorVideoCalls, '前置条件：一次都没成功').toBe(1)
+    const refused = await h.call('POST', 'long-videos/' + zero + '/resume')
+    expect(refused.code, '一镜都没跑成时不能续跑').not.toBe(0)
+    expect(refused.message).toContain('重新生成')
+
+    // "生成中不得续跑"这条靠接口抢不到进行中那一刻，所以直接测编排层的判断。
+    const running = { ...zeroView, id: 'lv-running', status: 'generating' as const }
+    expect(resumeBlockedReason(running), '生成中的任务必须拒绝').toContain('还在生成')
+    expect(resumeBlockedReason(undefined), '不存在的任务必须拒绝').toContain('不存在')
+  }, 60_000)
+
+  it('续跑起点按"第一条没跑成的镜"算，中间的空洞不会被跳过', () => {
+    // 文件可用性用真实落盘的文件判定（产品里就是这条判据），这里写两份真文件。
+    const root = join(h.dataRoot, 'uploads')
+    const first = join(root, 'resume-shot-0.mp4')
+    const third = join(root, 'resume-shot-2.mp4')
+    writeFileSync(first, SEGMENT_BYTES)
+    writeFileSync(third, SEGMENT_BYTES)
+    const shots = [{ index: 0 }, { index: 1 }, { index: 2 }]
+    const task = (shotFiles: Record<string, string>): TaskView => ({ ...({} as TaskView), segments: [], shots, shotFiles } as never)
+
+    expect(resumeStartIndex(task({ 0: first, 1: 'missing.mp4' })), '第 2 镜的文件不在了，要从它开始').toBe(1)
+    expect(resumeStartIndex(task({ 0: first, 2: third })), '中间缺一镜时要回到那一镜').toBe(1)
+    expect(resumeStartIndex(task({ 0: first, 1: first, 2: third })), '全部跑成时返回镜头总数').toBe(3)
+    // 文件被清掉（记录还在）与"从没生成过"是同一档：都要重跑那一镜。
+    expect(resumeStartIndex(task({ 0: first, 1: third }), () => true), '判据可注入：全部可用时直接跑满').toBe(3)
+  })
+})
+
+describe('情绪映射：节拍决定语速/音高/音量，也决定写稿语气', () => {
+  it('四拍各自有韵律，且都在"听得自然"的范围内', () => {
+    for (const beat of ['hook', 'pain', 'product', 'cta'] as const) {
+      const prosody = BEAT_PROSODY[beat]
+      expect(prosody.rate, beat + ' 要有语速设定').toMatch(/^[+-]\d+%$/)
+      expect(prosody.pitch).toMatch(/^[+-]\d+%$/)
+      expect(prosody.volume).toMatch(/^[+-]\d+%$/)
+      // 极端值会让人声发假，比平淡更糟：语速调整一律不超过 ±15%。
+      expect(Math.abs(Number.parseInt(prosody.rate, 10)), beat + ' 语速调整不得过激').toBeLessThanOrEqual(15)
+    }
+    expect(BEAT_PROSODY.hook.rate, '钩子要抢注意力：比标准快').toMatch(/^\+/)
+    expect(BEAT_PROSODY.pain.rate, '痛点要沉下来：比标准慢').toMatch(/^-/)
+  })
+
+  it('写稿语气要求与韵律配对：四拍都有可执行的短句，且互不相同', () => {
+    const hints = (['hook', 'pain', 'product', 'cta'] as const).map(beat => beatToneHint(beat))
+    expect(new Set(hints).size, '四拍不能是同一句套话').toBe(4)
+    for (const hint of hints) expect(hint.length).toBeGreaterThan(8)
+  })
+
+  it('配音真的按节拍带上了韵律（钩子快、痛点慢）', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    modelShotPlan = JSON.stringify({
+      shots: [
+        { kind: 'talking-head', seconds: 5, line: '秋冬脸干到起皮，你还在硬扛？', beat: 'hook' },
+        { kind: 'talking-head', seconds: 5, line: '卡粉、紧绷、上妆就起皮。', beat: 'pain' },
+      ],
+    })
+    modelScripts = [LONG_SCRIPT]
+    await startTask({ producer: 'digital-human', producerRef: human.data.id, topic: '干皮救急面霜', targetSeconds: 12 })
+    // 母时钟对每一镜都合成一次（B-roll 那句也念）；这条用例只关心前两镜的节拍韵律。
+    const synthesised = ttsCalls.filter(call => call.probeDuration !== false)
+    expect(synthesised.length).toBeGreaterThanOrEqual(2)
+    // 一次配音的韵律是"音色基准 + 演绎风格 + 节拍"叠加并按 PROSODY_LIMITS 夹紧的结果，
+    // 所以判据是叠出来的那一层确实按节拍变了，不是等于节拍那一层的原值。
+    const voiceId = (await h.call<{ list: Array<{ voice: string }> }>('GET', 'digital-humans')).data.list[0]!.voice
+    const composed = (beat: 'hook' | 'pain'): unknown => voiceProsody(voiceId, DIGITAL_HUMAN_VOICE_STYLES[0]!.id, beat)
+    expect(synthesised[0]!.prosody, '钩子要用钩子的韵律').toEqual(composed('hook'))
+    expect(synthesised[1]!.prosody, '痛点要用痛点的韵律').toEqual(composed('pain'))
+  }, 60_000)
+})
+
+describe('母时钟：配音先定，画面对齐它', () => {
+  it('全片配音在第一次画面生成之前完成，且每句只合成一次', async () => {
+    callOrder = []
+    // 这条用例的判据是"台词逐句长在对的镜头上"，稿件长度不是它的事：关掉自动补写。
+    modelScriptExact = true
+    // 记录真实顺序：配音（msedge-tts 桩）与画面（厂商请求）谁先发生。
+    vi.stubGlobal('fetch', vendorFetch())
+
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    modelShotPlan = JSON.stringify({
+      shots: [
+        { kind: 'talking-head', seconds: 5, line: '第一句口播，秋冬脸干到起皮，上妆还卡粉，真的很难受。' },
+        { kind: 'product', seconds: 5, visual: '产品特写，缓慢旋转' },
+        { kind: 'talking-head', seconds: 5, line: '第二句口播，这罐面霜厚实不闷，晚上涂完第二天很稳。' },
+      ],
+    })
+    const started = await h.call<{ taskId: string }>('POST', 'long-videos', {
+      body: { producer: 'digital-human', producerRef: human.data.id, topic: '干皮救急面霜', targetSeconds: 15 },
+    })
+    const task = await waitForTask(started.data.taskId)
+    expect(task.status, String(task.errorMessage)).toBe('success')
+
+    // ① 顺序：**所有配音都在第一次画面生成之前**（这就是母时钟的含义）。
+    expect(callOrder, '三句配音（产品镜那句也念），且都排在第一次画面生成之前').toEqual(['tts', 'tts', 'tts', 'video', 'video', 'video'])
+    expect(ttsCalls.filter(call => call.probeDuration !== false).length, '三镜各一句旁白都要配音').toBe(3)
+    expect(ttsCalls[0]!.text, '母时钟先合成第一句').toContain('第一句口播')
+    // 产品镜那一句也合成（念在产品画面上、烧字幕），所以第二、三句分别是产品镜与收尾口播镜。
+    expect(callOrder.filter(item => item === 'tts'), '三镜各合成一次').toHaveLength(3)
+    expect(ttsCalls.map(call => call.text).join('|'), '三句都在，且顺序按镜头来').toContain('第二句口播')
+
+    // ② 时长：每一镜的秒数都等于**该句配音的真实秒数**（不再是模型给的 5 秒占位）。
+    const expected = [
+      Math.max(4, Math.round('第一句口播，秋冬脸干到起皮，上妆还卡粉，真的很难受。'.length / 4.5)),
+      5,
+      Math.max(4, Math.round('第二句口播，这罐面霜厚实不闷，晚上涂完第二天很稳。'.length / 4.5)),
+    ]
+    expect(task.shots?.map(shot => shot.seconds)).toEqual(expected)
+    expect(task.segments[1]!.audioSeconds, '产品镜的旁白同样由母时钟定长').toBeGreaterThan(0)
+    expect(task.segments[1]!.text, '产品镜的旁白取自稿件（画面切走时口播不停）').not.toBe('')
+
+    // ③ 不重复合成：生成阶段不得再为同一句配音（母时钟产出的文件被复用）。
+    // "每句只合成一次"：合成次数必须等于有台词的镜数（B-roll 那句同样要念、同样只合成一次）。
+    expect(ttsCalls.filter(call => call.probeDuration !== false).length, '每一句各合成一次，不重复').toBe(task.shots?.filter(shot => shot.line !== '').length ?? 0)
+  }, 60_000)
+
+  it('母时钟漏掉的一镜（配音失败）在生成阶段补一次，失败才落到那一镜身上', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    modelShotPlan = JSON.stringify({
+      shots: [
+        { kind: 'talking-head', seconds: 5, line: '这一句会让配音失败。' },
+        { kind: 'talking-head', seconds: 5, line: '这一句正常。' },
+      ],
+    })
+    // 第一次合成（母时钟那次）失败，第二次（生成阶段补的）成功。
+    ttsFailOnce = true
+    const started = await h.call<{ taskId: string }>('POST', 'long-videos', {
+      body: { producer: 'digital-human', producerRef: human.data.id, topic: '干皮救急面霜', targetSeconds: 12 },
+    })
+    const task = await waitForTask(started.data.taskId)
+    expect(task.status, '个别镜配音失败不该拖垮整条：' + String(task.errorMessage)).toBe('success')
+    expect(task.doneSegments).toBe(2)
+  }, 60_000)
+})
+
+describe('成本与时长预估：点了之前就知道要等多久', () => {
+  it('起任务即回报预估镜数与耗时区间，与"短时长多片段"口径一致', async () => {
+    vi.stubGlobal('fetch', vendorFetch())
+    const human = await h.call<{ id: string }>('POST', 'digital-humans', { body: { name: '雅姐', avatarUrl: AVATAR_URL } })
+    modelScripts = [LONG_SCRIPT]
+    modelShotPlan = JSON.stringify({ shots: [{ kind: 'talking-head', seconds: 5, line: '一句话就够。' }] })
+    const started = await h.call<{ taskId: string, estimate: { shots: number, callsMin: number, callsMax: number, minutesMin: number, minutesMax: number } }>(
+      'POST', 'long-videos',
+      { body: { producer: 'digital-human', producerRef: human.data.id, topic: '任何产品', targetSeconds: 90 } },
+    )
+    expect(started.code).toBe(0)
+    const estimate = started.data.estimate
+    // 测试环境的下限是 8 秒；这里请求 90 秒 → 按 5 秒一镜向上取整 = 18 镜。
+    expect(estimate.shots, '按 5 秒一镜折算').toBe(18)
+    expect(estimate.callsMin, '每镜一次厂商生成').toBe(18)
+    expect(estimate.callsMax).toBe(18)
+    expect(estimate.minutesMin, '每镜 1~5 分钟的量级').toBe(18)
+    expect(estimate.minutesMax).toBe(90)
+    await waitForTask(started.data.taskId)
+  }, 60_000)
+})
+
+describe('产品与卖点：专业提示词增强', () => {
+  it('空输入不调用模型，超长输入如实拒绝', async () => {
+    expect((await h.call('POST', 'long-videos/enhance-topic', { body: { topic: '   ' } })).code).not.toBe(0)
+    expect(modelPrompts, '空输入不该白跑一次模型').toHaveLength(0)
+    const tooLong = await h.call('POST', 'long-videos/enhance-topic', { body: { topic: '面霜'.repeat(300) } })
+    expect(tooLong.code, '超长输入要如实拒绝而不是截断').not.toBe(0)
+    expect(modelPrompts).toHaveLength(0)
+  })
+
+  it('增强结果取模型原文，且要求里带上用户原话与"不许编造"', async () => {
+    const enhanced = '目标人群：25-35 岁干皮女生。使用场景：秋冬上妆前。痛点是卡粉起皮。'
+    modelScripts = [enhanced]
+    const res = await h.call<{ topic: string }>('POST', 'long-videos/enhance-topic', {
+      body: { topic: '秋冬保湿面霜，主打干皮救急，今天直播间直降一百' },
+    })
+    expect(res.code).toBe(0)
+    expect(res.data.topic).toBe(enhanced)
+    expect(modelPrompts).toHaveLength(1)
+    expect(modelPrompts[0], '原话必须带进提示词').toContain('秋冬保湿面霜，主打干皮救急，今天直播间直降一百')
+    expect(modelPrompts[0], '必须禁止编造成分与功效').toContain('不要写')
+    expect(modelPrompts[0], '增强只出文本，不该顺带建任务').toContain('不要标题')
+  })
+})
+
+describe('音色试听：按需合成、缓存复用', () => {
+  it('合成后以音频返回，样音落盘且同一音色第二次复用', async () => {
+    const voiceId = 'zh-CN-XiaoyiNeural'
+    const path = 'digital-humans/voices/' + voiceId + '/preview'
+    const cache = join(h.dataRoot, 'voice-previews')
+    expect(existsSync(cache), '试听前不该有缓存目录').toBe(false)
+
+    const first = await h.call('GET', path, { query: { text: '这款面霜干皮救急' } })
+    expect(first.status).toBe(200)
+    expect(first.headers['content-type'], '响应的必须是音频，不是 JSON 信封').toBe('audio/mpeg')
+    // 试听只要字节：不该为了一个播放器用不到的数字要求本机有 ffmpeg。
+    expect(ttsCalls[0]?.probeDuration, '试听不得读取时长').toBe(false)
+    const cached = readdirSync(cache)
+    expect(cached, '样音要落在数据根里，下次直接命中').toHaveLength(1)
+    expect(readFileSync(join(cache, cached[0]!)).length).toBeGreaterThan(0)
+
+    // 同一音色第二次：命中同一份缓存文件，不新增文件。
+    expect((await h.call('GET', path, { query: { text: '这款面霜干皮救急' } })).status).toBe(200)
+    expect(readdirSync(cache)).toEqual(cached)
+
+    // 缺省样音（不带 text）与自定义文案是两份不同的样音：不拿上一句冒充这一句。
+    expect((await h.call('GET', path)).status).toBe(200)
+    expect(readdirSync(cache)).toHaveLength(2)
+  })
+
+  it('未知音色当场拒绝，不去连配音服务', async () => {
+    const res = await h.call('GET', 'digital-humans/voices/zh-CN-NoSuchVoice/preview')
+    expect(res.code).not.toBe(0)
+    expect(String(res.message)).toContain('音色')
+  })
+
+  it('接口给出的音色全部可试听（列表与试听路由同一份事实源）', async () => {
+    const voices = await h.call<{ list: Array<{ id: string }> }>('GET', 'digital-humans/voices')
+    for (const voice of voices.data.list) {
+      const res = await h.call('GET', 'digital-humans/voices/' + encodeURIComponent(voice.id) + '/preview')
+      expect(res.status, voice.id + ' 必须能试听').toBe(200)
+    }
+  })
+})

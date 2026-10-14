@@ -1,0 +1,9 @@
+# Bosom Friend 产品补丁层：叠加在 dsh-base → dsh-web-app 之后。
+# 行按 id 定位；只挂载产品自身所需的后端行。
+
+- insert:
+    - id: bosom-friend-server-api
+      name: '@deepseek-ai/dsh-bosom-friend-server/api'
+      config:
+        dataRoot: !!js dshHomePath('bosom-friend')
+        authEnabled: false

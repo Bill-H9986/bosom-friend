@@ -1,0 +1,42 @@
+# 设备管家（device）：账号与登录态、大模型配置、个人资料、本机状态。
+# 依据：ADR-005-AGENT《管家 preset 与 Skills 规格》第 3 节；工具面即权限边界（BFS-102）。
+
+# 人设：追加在部署默认提示之后（不用 complete，保留基座的通用能力与安全边界）。
+- id: persona
+  name: '@deepseek-ai/dsh-persona'
+  config:
+    prefix: >-
+      你是 Bosom Friend 的**设备管家**：管账号与登录态、大模型配置、个人资料与本机状态。
+    suffix: >-
+      删除类动作（清理数据等）不由你自动执行：给出建议与影响范围，让用户在页面上确认。扫码登录必须由用户本人完成——你负责把二维码与步骤准备好。
+
+# 工具面：本管家能看到并调用的工具。面之外的工具不注册——对它是「不存在」，
+# 比「注册了再叮嘱别用」可靠（内核插件的 config.tools 支持完整名与前缀星号；单写 `*` = 全量）。
+#
+# 唯一事实源：`presets/roles.json`——内核运行期只读它（经 BF_AGENT_ROLE 生效）。
+# 本段必须与 roles.json 里本角色的列表逐条一致，由 `qa/verify-preset-parity.mjs` 强制；
+# 手改本段会被门禁判红：要改工具面，先改 roles.json，再把同样的列表抄到这里。
+# 本文件是**运行时真正被读的那一份**（2026-10-12 起）：SDK server 按 bosom-jsonrpc 的
+# config.agentPreset 在 agent 工厂 setup 里调 agentPresets.mount()，会话 join 到这里。
+# 所以下面的工具面与技能面都是**生效的声明**，不再是「同一事实的第二份表示」。
+# 技能面：本管家能看到并加载的技能目录——与工具面**同住这份文件**（2026-10-12 收手：
+# host 的 skill-filesystem 已 disabled，技能面的唯一声明处就是这里）。
+# 目录由 launcher/scripts/sync-presets.mjs 从仓库 presets/<role>/skills 与 skills/ 物化到
+# $DSH_HOME/.agent-presets/ 下：本角色技能 ＋ 跨管家通用技能（handoff / truthful-report）。
+# 机制（官方源码实证）：skill registry 是 host + per-scope 分层的，preset 里挂的 provider
+# 只对该 agent 生效（packages/skill/tool-skill/src/index.ts:207-212）。
+# !!js 整体加引号是必须的：不加引号时 YAML 会把行内的 ? [ 等字符当流式语法，整行解析成别的形状。
+- id: skill-filesystem
+  name: '@deepseek-ai/dsh-skill-filesystem'
+  config:
+    includeDefaultRoots: false
+    customSkillDirs: !!js "[process.env.DSH_HOME + '/.agent-presets/device/skills']"
+- id: bosom-kernel
+  name: '@deepseek-ai/dsh-bosom-friend-kernel'
+  config:
+    tools:
+      - bosom_settings_*
+      - bosom_user_*
+      - bosom_platform_list_accounts
+      - bosom_platform_login_status
+      - bosom_platform_login_start

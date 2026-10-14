@@ -1,0 +1,116 @@
+{
+  "ranAt": "2026-08-28T08:36:55.109Z",
+  "results": [
+    {
+      "n": "首屏 Hero + 侧栏",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "无钥匙→引导兜底(配置你自己的钥匙/不内置模型)",
+      "pass": true,
+      "d": "实机测试：介绍下你自己 msgs=2"
+    },
+    {
+      "n": "读取测试用户钥匙",
+      "pass": false,
+      "d": "SKIP-未提供 FIELD_TEST_API_KEY（跳过真实生成，仅测未配置引导）"
+    },
+    {
+      "n": "保存用户钥匙(BYOK)",
+      "pass": true,
+      "d": "SKIP（未提供钥匙，跳过）"
+    },
+    {
+      "n": "BYOK 真实回复(用户钥匙,非模板)",
+      "pass": true,
+      "d": "SKIP（未提供钥匙）"
+    },
+    {
+      "n": "草稿生成任务创建",
+      "pass": true,
+      "d": "gen-a1aa0c5c"
+    },
+    {
+      "n": "草稿生成结算成功",
+      "pass": true,
+      "d": "success"
+    },
+    {
+      "n": "创作页生成记录区渲染",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "发布素材创建",
+      "pass": true,
+      "d": "promo-s67ha48b"
+    },
+    {
+      "n": "添加发布账号(实机路径)",
+      "pass": true,
+      "d": "acc-yye7caz3"
+    },
+    {
+      "n": "一键发布按钮存在",
+      "pass": true,
+      "d": ""
+    },
+    {
+      "n": "发布抽屉填标题并发布",
+      "pass": true,
+      "d": "true"
+    },
+    {
+      "n": "发布记录已落库",
+      "pass": true,
+      "d": "count=1"
+    },
+    {
+      "n": "发布日历渲染",
+      "pass": true,
+      "d": "len=301"
+    },
+    {
+      "n": "数据中心渲染(空态/内容均可)",
+      "pass": true,
+      "d": "{\"len\":308,\"cards\":4}"
+    },
+    {
+      "n": "任务记录含对话",
+      "pass": true,
+      "d": "len=136"
+    },
+    {
+      "n": "全局监控渲染",
+      "pass": true,
+      "d": "len=565"
+    },
+    {
+      "n": "接待规则种子 2 条",
+      "pass": true,
+      "d": "count=2"
+    },
+    {
+      "n": "接待命中测试",
+      "pass": true,
+      "d": "{\"matched\":true,\"rule\":{\"id\":\"rule-default-1\",\"name\":\"发货规则\",\"platforms\":[\"douyin\",\"xhs\"],\""
+    },
+    {
+      "n": "全程页面零错误",
+      "pass": true,
+      "d": ""
+    }
+  ],
+  "shots": [
+    "01-home.png",
+    "02-ai-no-key.png",
+    "05-draft-generated.png",
+    "06-publish.png",
+    "07-calendar.png",
+    "08-data.png",
+    "09-tasks.png",
+    "10-monitor.png"
+  ],
+  "pageErrors": []
+}

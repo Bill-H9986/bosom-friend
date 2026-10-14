@@ -1,0 +1,36 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib/types"
+  },
+  "include": [
+    "src"
+  ],
+  "references": [
+    {
+      "path": "../../../vendor/cordis"
+    },
+    {
+      "path": "../../../vendor/schemastery"
+    },
+    {
+      "path": "../../../packages/host/webserver"
+    },
+    {
+      "path": "../../../packages/llm/llm"
+    },
+    {
+      "path": "../../../packages/media/media"
+    },
+    {
+      "path": "../../../packages/media/media-pi-ai"
+    },
+    {
+      "path": "../../../packages/sdk/client"
+    },
+    {
+      "path": "../../../packages/runtime-diagnostics/invariants"
+    }
+  ]
+}

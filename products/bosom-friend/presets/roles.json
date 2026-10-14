@@ -1,0 +1,29 @@
+{
+  "steward": [
+    "*"
+  ],
+  "creator": [
+    "bosom_content_*",
+    "bosom_material_*",
+    "bosom_digital_human_*",
+    "bosom_long_video_*"
+  ],
+  "publisher": [
+    "bosom_publish_*",
+    "bosom_platform_list_accounts",
+    "bosom_platform_login_status"
+  ],
+  "operator": [
+    "bosom_reception_*",
+    "bosom_data_works",
+    "bosom_platform_sync_works",
+    "bosom_platform_sync_now"
+  ],
+  "device": [
+    "bosom_settings_*",
+    "bosom_user_*",
+    "bosom_platform_list_accounts",
+    "bosom_platform_login_status",
+    "bosom_platform_login_start"
+  ]
+}

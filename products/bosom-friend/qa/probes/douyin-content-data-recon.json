@@ -1,0 +1,400 @@
+[
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/pc/user/info/",
+    "status": 200,
+    "body": {
+      "extra": {
+        "now": 1789283977000
+      },
+      "is_confer_login": false,
+      "is_log_as_person": true,
+      "is_registered": true,
+      "status_code": 0,
+      "status_msg": "",
+      "uid": "98478746276"
+    }
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/notice/?msToken=MeiW7tAMpLsb4B2V1n_pDnU9SzgGCm1fvQ1y04H0YxB2XTgP8xBGErUYtipVFIOYQemUMttA8W7M1Ar7yzIYlJRq9C5tDEAEfvmIn_f41QVxtizxTC2CgWFT26Ierb50UbnXwKvO6m1pxRWfU9KEppaNKdUjhawddTk%3D&a_bogus=dfsVg7WiOdQ5OpMGYKG%2FHJMU9znlNsWjGMidRrUj9PEmyZtbzNer%2FrCkboF84Y8WWYp9kF1HWV0MbDdcp0kTpArkumpfSg4fAG%2F9nX6LMqNpa0isLqDZC0sFFwBYMcTLlQdrieX5ls0ygE5l9HKBAx-a95FEmOmpRNHCdFzyGDS03sgTn9A5eag5",
+    "status": 200,
+    "body": {
+      "extra": {
+        "now": 1789283977000
+      },
+      "message_notice": null,
+      "status_code": 0,
+      "status_msg": ""
+    }
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user/info/",
+    "status": 200,
+    "body": {
+      "cert_info": {
+        "tele_play_cert": {
+          "has_drama_role": false
+        }
+      },
+      "dashboard_opend_date": "2021-11-05",
+      "douyin_user_verify_info": {
+        "avatar_url": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-i-0813_ootlpa9DAazed1dhMmf0REAiACACIgCMsAANiA.jpeg?from=2956013662",
+        "douyin_unique_id": "XchanM520",
+        "follower_count": 770,
+        "following_count": 65,
+        "is_super_tag_user": false,
+        "nick_name": "No name",
+        "sync_to_xigua": true,
+        "teen_model": false,
+        "total_favorited": 293
+      },
+      "extra": {
+        "now": 1789283977000
+      },
+      "has_data_mgmt_perm": true,
+      "has_welfare_donate_permission": false,
+      "is_commerce_user": false,
+      "is_confer_login": false,
+      "is_log_as_person": true,
+      "is_login_hotsoon": false,
+      "is_perm_revoke": false,
+      "is_registered": true,
+      "permissions": [
+        {
+          "extra": "",
+          "id": 303,
+          "key": "CreatorDataManage",
+          "name": "CreatorDataManage",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 330,
+          "key": "CreatorDataManage.UserOverview",
+          "name": "CreatorDataManage.UserOverview",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 331,
+          "key": "CreatorDataManage.ItemL1",
+          "name": "CreatorDataManage.ItemL1",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 332,
+          "key": "CreatorDataManage.ItemL2",
+          "name": "CreatorDataManage.ItemL2",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 333,
+          "key": "CreatorDataManage.Portrait",
+          "name": "CreatorDataManage.Portrait",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 370,
+          "key": "CreatorDataManage.WeekReport",
+          "name": "CreatorDataManage.WeekReport",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 300,
+          "key": "CreatorLogin",
+          "name": "CreatorLogin",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 301,
+          "key": "CreatorContentManage",
+          "name": "CreatorContentManage",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 302,
+          "key": "CreatorInterManage",
+          "name": "CreatorInterManage",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 304,
+          "key": "CreatorConferManage",
+          "name": "CreatorConferManage",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 320,
+          "key": "CreatorInterManage.Following",
+          "name": "CreatorInterManage.Following",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 321,
+          "key": "CreatorInterManage.Fans",
+          "name": "CreatorInterManage.Fans",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 334,
+          "key": "CreatorDataManage.Banner",
+          "name": "CreatorDataManage.Banner",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 335,
+          "key": "CreatorDataManage.TraceOthers",
+          "name": "CreatorDataManage.TraceOthers",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 336,
+          "key": "CreatorDataManage.SearchSelf",
+          "name": "CreatorDataManage.SearchSelf",
+          "status": 3
+        },
+        {
+          "extra": "{\"scene\": \"live_data\", \"priority\": 1}",
+          "id": 342,
+          "key": "CreatorDataManage.Live",
+          "name": "CreatorDataManage.Live",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 344,
+          "key": "CreatorMusicManage",
+          "name": "CreatorMusicManage",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 347,
+          "key": "CreatorDataManage.Banner.Star",
+          "name": "CreatorDataManage.Banner.Star",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 348,
+          "key": "CreatorDataManage.Banner.Music",
+          "name": "CreatorDataManage.Banner.Music",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 349,
+          "key": "CreatorDataManage.Banner.HotLive",
+          "name": "CreatorDataManage.Banner.HotLive",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 350,
+          "key": "CreatorDataManage.Banner.Movies",
+          "name": "CreatorDataManage.Banner.Movies",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 351,
+          "key": "CreatorDataManage.Banner.Sport",
+          "name": "CreatorDataManage.Banner.Sport",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 352,
+          "key": "CreatorDataManage.Banner.SportDe",
+          "name": "CreatorDataManage.Banner.SportDe",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 353,
+          "key": "CreatorInterManage.relation",
+          "name": "CreatorInterManage.relation",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 354,
+          "key": "CreatorInterManage.im",
+          "name": "CreatorInterManage.im",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 355,
+          "key": "CreatorDataManage.Banner.Cospa",
+          "name": "CreatorDataManage.Banner.Cospa",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 356,
+          "key": "CreatorDataManage.Banner.Food",
+          "name": "CreatorDataManage.Banner.Food",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 357,
+          "key": "CreatorDataManage.Banner.Drama",
+          "name": "CreatorDataManage.Banner.Drama",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 359,
+          "key": "CreatorDataManage.Banner.Travel",
+          "name": "CreatorDataManage.Banner.Travel",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 362,
+          "key": "CreatorDataManage.Banner.Amuse",
+          "name": "CreatorDataManage.Banner.Amuse",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 364,
+          "key": "CreatorDataManage.Banner.Car",
+          "name": "CreatorDataManage.Banner.Car",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 365,
+          "key": "CreatorDataManage.Banner.Game",
+          "name": "CreatorDataManage.Banner.Game",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 366,
+          "key": "CreatorInterManage.interactScore",
+          "name": "CreatorInterManage.interactScore",
+          "status": 3
+        },
+        {
+          "extra": "",
+          "id": 518,
+          "key": "CreatorIncomeView",
+          "name": "CreatorIncomeView",
+          "status": 3
+        }
+      ],
+      "person_info": {
+        "category": "汽车"
+      },
+      "roles": [
+        {
+          "id": 100,
+          "key": "CreatorDefaultRole",
+          "name": "创作平台默认角色"
+        },
+        {
+          "id": 124,
+          "key": "CreatorJuniorTask",
+          "name": "创作者平台-完成初级任务"
+        },
+        {
+          "id": 134,
+          "key": "CreatorDataManagementRole",
+          "name": "创作者数据管理角色"
+        }
+      ],
+      "status_code": 0,
+      "status_msg": "",
+      "user_dashboard_time": "2021-11-05",
+      "user_profile": {
+        "account_region": "",
+        "avatar_url": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-i-0813_ootlpa9DAazed1dhMmf0REAiACACIgCMsAANiA.jpeg?from=2956013662",
+        "follower_count": 770,
+        "following_count": 65,
+        "gender": 0,
+        "location": "",
+        "login_with_only_tc": false,
+        "mobile": "131******87",
+        "nick_name": "No name",
+        "region": "CN",
+        "school": "",
+        "secret_id": "MS4wLjABAAAAXkLxUtnnpw1lPqorazLhq1QGQJFPLpvIztV1sKWSjO0",
+        "signature": "……",
+        "total_favorited": 293,
+        "unique_id": "XchanM520",
+        "vcd_info": {
+          "auth_relation_time": 0,
+          "auth_time": 1583483902,
+          "aweme_hotsoon_auth": 1,
+          "aweme_hotsoon_auth_relation": 0,
+          "register_from": ""
+        }
+      }
+    }
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/msg/top?msToken=MeiW7tAMpLsb4B2V1n_pDnU9SzgGCm1fvQ1y04H0YxB2XTgP8xBGErUYtipVFIOYQemUMttA8W7M1Ar7yzIYlJRq9C5tDEAEfvmIn_f41QVxtizxTC2CgWFT26Ierb50UbnXwKvO6m1pxRWfU9KEppaNKdUjhawddTk%3D&a_bogus=Qv4RkzyjxZ%2FcepFbmKGQHJdUTMg%2FNsSjGlTORrWjHPERyhtbz3ea%2FOakboF8sm8WSuB9koIHXV0%2FbddcqUshpArkqmkvSNkSct25nWXogqNdP0isENDZC0mFLwBTl5sLaQdeieXRIs0y6DOlVHoNAOAae5FimOYpWNHAdqzynDC03PyTnnOAea20",
+    "status": 301,
+    "raw": null
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/user_message/unread_count/?msToken=MeiW7tAMpLsb4B2V1n_pDnU9SzgGCm1fvQ1y04H0YxB2XTgP8xBGErUYtipVFIOYQemUMttA8W7M1Ar7yzIYlJRq9C5tDEAEfvmIn_f41QVxtizxTC2CgWFT26Ierb50UbnXwKvO6m1pxRWfU9KEppaNKdUjhawddTk%3D&a_bogus=QfsjDFSLxq8RepMGYcJ%2FHJpUFl9%2FNsWjUBiORc4nSPE4Lw0bz1e3%2FxCkjozUsYWWSYBnkKVHUV0MYDncqsshpArpwmkDSdUjCG25nUXL%2FqipaFvsDHmFC88FFwBTlRsLl%2Fd-iC651sML6EclIHoPAx-GC5zJmYYpbqeAdKYynDCU3PLTnnxXCagf",
+    "status": 200,
+    "body": {
+      "count": 1,
+      "extra": {
+        "now": 1789283977000
+      },
+      "star_count": 8,
+      "status_code": 0,
+      "status_msg": "",
+      "total_count": 9
+    }
+  },
+  {
+    "url": "https://creator.douyin.com/aweme/v1/creator/msg/top/?msToken=MeiW7tAMpLsb4B2V1n_pDnU9SzgGCm1fvQ1y04H0YxB2XTgP8xBGErUYtipVFIOYQemUMttA8W7M1Ar7yzIYlJRq9C5tDEAEfvmIn_f41QVxtizxTC2CgWFT26Ierb50UbnXwKvO6m1pxRWfU9KEppaNKdUjhawddTk%3D&a_bogus=Qv4RkzyjxZ%2FcepFbmKGQHJdUTMg%2FNsSjGlTORrWjHPERyhtbz3ea%2FOakboF8sm8WSuB9koIHXV0%2FbddcqUshpArkqmkvSNkSct25nWXogqNdP0isENDZC0mFLwBTl5sLaQdeieXRIs0y6DOlVHoNAOAae5FimOYpWNHAdqzynDC03PyTnnOAea20",
+    "status": 200,
+    "body": {
+      "extra": {
+        "now": 1789283978000
+      },
+      "status_code": 0,
+      "status_msg": ""
+    }
+  },
+  {
+    "url": "https://creator.douyin.com/janus/douyin/creator/data/author/upgrade/",
+    "status": 200,
+    "body": {
+      "is_show_per_client_data": false,
+      "show_yumme_trends": false,
+      "status_code": 0,
+      "status_msg": "",
+      "upgrade_type": 0
+    }
+  },
+  {
+    "url": "https://creator.douyin.com/janus/douyin/creator/data/item_analysis/involved_vertical?start_date=20260615&end_date=20260913",
+    "status": 200,
+    "body": {
+      "primary_verticals": [],
+      "status_code": 0,
+      "status_msg": ""
+    }
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "name": "@deepseek-ai/bosom-friend",
+  "description": "Bosom Friend 启动器：基于 DeepSeek Harness 基座的 Web 产品入口",
+  "version": "0.1.1-rc.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepseek-ai/deepseek-harness.git",
+    "directory": "products/bosom-friend/launcher"
+  },
+  "type": "module",
+  "bin": {
+    "bosom-friend": "lib/bin-desktop.mjs"
+  },
+  "files": [
+    "lib/bin-desktop.mjs",
+    "lib/bin-kernel.mjs",
+    "config",
+    "cordis.yml"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@deepseek-ai/cordis-plugin-include": "workspace:^",
+    "@deepseek-ai/dsh-app-boot": "workspace:^",
+    "@deepseek-ai/dsh-base": "workspace:^",
+    "@deepseek-ai/dsh-cmdline": "workspace:^",
+    "@deepseek-ai/dsh-bosom-friend-app": "workspace:^",
+    "@deepseek-ai/dsh-bosom-friend-desktop-bundle": "workspace:^",
+    "@deepseek-ai/dsh-bosom-friend-kernel": "workspace:^",
+    "@deepseek-ai/dsh-bosom-friend-server": "workspace:^",
+    "@deepseek-ai/dsh-sdk-client": "workspace:^"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "workspace:^"
+  },
+  "scripts": {
+    "setup": "node scripts/setup-fallback.mjs",
+    "build:kernel": "esbuild src/bin-kernel.ts --bundle --platform=node --format=esm --target=node22 \"--external:@deepseek-ai/*\" --outfile=lib/bin-kernel.mjs",
+    "build:desktop": "esbuild src/bin-desktop.ts --bundle --platform=node --format=esm --target=node22 \"--external:@deepseek-ai/*\" --outfile=lib/bin-desktop.mjs"
+  }
+}

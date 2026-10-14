@@ -1,0 +1,80 @@
+[
+ {
+  "route": "#/ai-interaction",
+  "btn": "热点内容|",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":null,\"ap\":null,\"bs\":null,\"as\":null,\"txt\":\"1011->1011\",\"dlg\":1}"
+ },
+ {
+  "route": "#/knowledge",
+  "btn": "挂载外部库|",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":null,\"ap\":null,\"bs\":null,\"as\":null,\"txt\":\"895->888\",\"dlg\":1}"
+ },
+ {
+  "route": "#/knowledge",
+  "btn": "新建笔记|",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":null,\"ap\":null,\"bs\":null,\"as\":null,\"txt\":\"888->891\",\"dlg\":1}"
+ },
+ {
+  "route": "#/calendar",
+  "btn": "calendar-toggle-solar-festival",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":\"true\",\"ap\":\"false\",\"bs\":null,\"as\":null,\"txt\":\"1010->979\",\"dlg\":1}"
+ },
+ {
+  "route": "#/calendar",
+  "btn": "calendar-toggle-solar-term",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":\"true\",\"ap\":\"false\",\"bs\":null,\"as\":null,\"txt\":\"979->979\",\"dlg\":1}"
+ },
+ {
+  "route": "#/calendar",
+  "btn": "calendar-view-week",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":null,\"ap\":null,\"bs\":null,\"as\":null,\"txt\":\"979->979\",\"dlg\":1}"
+ },
+ {
+  "route": "#/data-statistics",
+  "btn": "播放/浏览|",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":null,\"ap\":null,\"bs\":null,\"as\":null,\"txt\":\"1012->1012\",\"dlg\":1}"
+ },
+ {
+  "route": "#/data-statistics",
+  "btn": "点赞|",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":null,\"ap\":null,\"bs\":null,\"as\":null,\"txt\":\"1012->1012\",\"dlg\":1}"
+ },
+ {
+  "route": "#/data-statistics",
+  "btn": "评论|",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":null,\"ap\":null,\"bs\":null,\"as\":null,\"txt\":\"1012->1012\",\"dlg\":1}"
+ },
+ {
+  "route": "#/data-statistics",
+  "btn": "分享|",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":null,\"ap\":null,\"bs\":null,\"as\":null,\"txt\":\"1012->1012\",\"dlg\":1}"
+ },
+ {
+  "route": "#/data-statistics",
+  "btn": "收藏|",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":null,\"ap\":null,\"bs\":null,\"as\":null,\"txt\":\"1012->1012\",\"dlg\":1}"
+ },
+ {
+  "route": "#/monitor",
+  "btn": "刷新|",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":null,\"ap\":null,\"bs\":null,\"as\":null,\"txt\":\"1293->1293\",\"dlg\":1}"
+ },
+ {
+  "route": "#/settings",
+  "btn": "通用设置|",
+  "verdict": "EFFECT",
+  "detail": "{\"bp\":null,\"ap\":null,\"bs\":null,\"as\":null,\"txt\":\"925->925\",\"dlg\":1}"
+ }
+]

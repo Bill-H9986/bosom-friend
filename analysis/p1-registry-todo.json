@@ -1,0 +1,434 @@
+{
+  "at": "2026-10-12T14:51:20.305Z",
+  "writes": 95,
+  "done": 34,
+  "todo": [
+    {
+      "id": "steward.register",
+      "tool": "bosom_steward_register",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.login",
+      "tool": "bosom_steward_login",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.logout",
+      "tool": "bosom_steward_logout",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.changePassword",
+      "tool": "bosom_steward_change_password",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.cleanupRunningTasks",
+      "tool": "bosom_task_cleanup_running",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.updateTask",
+      "tool": "bosom_task_update",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.clearTasks",
+      "tool": "bosom_task_clear",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.deleteTask",
+      "tool": "bosom_task_delete",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.reportActionResult",
+      "tool": "bosom_task_report_action_result",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.reportLog",
+      "tool": "bosom_steward_report_log",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.runObjectAction",
+      "tool": "bosom_content_run_object_action",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.chat",
+      "tool": "bosom_steward_chat",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "device.cleanupData",
+      "tool": "bosom_device_cleanup_data",
+      "role": "device",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.importDigitalHumanSheet",
+      "tool": "bosom_digital_human_import_sheet",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.deleteDigitalHuman",
+      "tool": "bosom_digital_human_delete",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.deleteLongVideo",
+      "tool": "bosom_long_video_delete",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.clearLongVideos",
+      "tool": "bosom_long_video_clear",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "device.setRemoteAccess",
+      "tool": "bosom_device_set_remote_access",
+      "role": "device",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "device.startTunnel",
+      "tool": "bosom_device_start_tunnel",
+      "role": "device",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "device.stopTunnel",
+      "tool": "bosom_device_stop_tunnel",
+      "role": "device",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.rateExperience",
+      "tool": "bosom_knowledge_rate_experience",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.registerAccountByBrowser",
+      "tool": "bosom_platform_register_account",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.createAccount",
+      "tool": "bosom_platform_create_account",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.refreshAccountAnalytics",
+      "tool": "bosom_platform_refresh_account_analytics",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.unbindAccount",
+      "tool": "bosom_platform_unbind_account",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.logoutAccount",
+      "tool": "bosom_platform_logout_account",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.createAccountGroup",
+      "tool": "bosom_platform_create_account_group",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.updateAccountGroup",
+      "tool": "bosom_platform_update_account_group",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.deleteAccountGroup",
+      "tool": "bosom_platform_delete_account_group",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.deleteRecord",
+      "tool": "bosom_publish_delete_record",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.publishTaskNow",
+      "tool": "bosom_publish_task_now",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.abortCurrent",
+      "tool": "bosom_publish_abort_current",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.retryTask",
+      "tool": "bosom_publish_retry_task",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.rescheduleTask",
+      "tool": "bosom_publish_reschedule",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "publisher.deleteTask",
+      "tool": "bosom_publish_delete_task",
+      "role": "publisher",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.createNote",
+      "tool": "bosom_knowledge_create_note",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.updateNote",
+      "tool": "bosom_knowledge_update_note",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.deleteNote",
+      "tool": "bosom_knowledge_delete_note",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.requestUploadSign",
+      "tool": "bosom_material_request_upload_sign",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.requestPublicUploadSign",
+      "tool": "bosom_material_request_public_upload_sign",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.uploadAsset",
+      "tool": "bosom_material_upload_asset",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.uploadPublicAsset",
+      "tool": "bosom_material_upload_public_asset",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.confirmAsset",
+      "tool": "bosom_material_confirm_asset",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.confirmPublicAsset",
+      "tool": "bosom_material_confirm_public_asset",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.createContentGroup",
+      "tool": "bosom_content_create_group",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.deleteContentGroup",
+      "tool": "bosom_content_delete_group",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.contentGroupInfo",
+      "tool": "bosom_content_group_info",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.deleteContents",
+      "tool": "bosom_content_delete_many",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.deleteDraftsByFilter",
+      "tool": "bosom_content_delete_drafts_by_filter",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.transferContents",
+      "tool": "bosom_content_transfer",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "creator.deleteContent",
+      "tool": "bosom_content_delete",
+      "role": "creator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "steward.submitFeedback",
+      "tool": "bosom_steward_submit_feedback",
+      "role": "steward",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "operator.createReceptionRule",
+      "tool": "bosom_reception_create_rule",
+      "role": "operator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "operator.updateReceptionRule",
+      "tool": "bosom_reception_update_rule",
+      "role": "operator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "operator.deleteReceptionRule",
+      "tool": "bosom_reception_delete_rule",
+      "role": "operator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "operator.suggestReply",
+      "tool": "bosom_reception_suggest_reply",
+      "role": "operator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "operator.listInteractions",
+      "tool": "bosom_reception_list_interactions",
+      "role": "operator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "operator.deleteReplies",
+      "tool": "bosom_reception_delete_reply",
+      "role": "operator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "operator.conversation",
+      "tool": "bosom_reception_conversation",
+      "role": "operator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "operator.setReceptionConfig",
+      "tool": "bosom_reception_set_config",
+      "role": "operator",
+      "kind": "write",
+      "exists": false
+    },
+    {
+      "id": "operator.setPendingStatus",
+      "tool": "bosom_reception_set_pending_status",
+      "role": "operator",
+      "kind": "write",
+      "exists": false
+    }
+  ]
+}

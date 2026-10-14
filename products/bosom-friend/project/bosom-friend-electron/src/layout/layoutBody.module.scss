@@ -1,0 +1,90 @@
+.layoutBody {
+  display: flex;
+  height: 100vh;
+  background: var(--bg-app);
+
+  .layoutMain {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+
+    .layoutBodyMain {
+      flex: 1;
+      overflow: auto;
+      box-sizing: border-box;
+      background: var(--bg-app);
+
+      /* 统一内容区规范：页面根容器透明露出浅灰底，统一内边距 */
+      > div {
+        background: transparent !important;
+        padding: 16px !important;
+      }
+    }
+  }
+
+  /* 非侵入式网络异常横幅：细条、可关闭、不遮挡内容 */
+  .networkBanner {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 36px;
+    padding: 0 16px;
+    background: rgba(255, 119, 160, 0.08);
+    border-bottom: 1px solid rgba(255, 119, 160, 0.22);
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+    animation: networkBannerIn 0.24s ease-out;
+    -webkit-app-region: no-drag;
+
+    .networkBannerIcon {
+      font-size: 13px;
+      line-height: 1;
+      color: #f472b6;
+    }
+
+    .networkBannerText {
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 12px;
+      color: #be185d;
+    }
+
+    .networkBannerClose {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 50%;
+      background: transparent;
+      color: #be185d;
+      font-size: 15px;
+      line-height: 1;
+      cursor: pointer;
+      transition: background 0.15s ease;
+
+      &:hover {
+        background: rgba(255, 119, 160, 0.16);
+        color: #be185d;
+      }
+    }
+  }
+
+  @keyframes networkBannerIn {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

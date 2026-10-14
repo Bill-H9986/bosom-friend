@@ -1,0 +1,2 @@
+# 桌面运行时根配置（空条目列表）；组合层由 launcher/src/bin-desktop.ts 的三层 bundle 补丁叠加。
+[]

@@ -1,0 +1,9 @@
+{"time":"2026-08-31T05:16:59.929Z","type":"start","detail":"real chrome login driver"}
+{"time":"2026-08-31T05:17:08.348Z","type":"page-loaded","detail":"http://127.0.0.1:3080/bosom-friend/"}
+{"time":"2026-08-31T05:17:13.083Z","type":"auth-started","detail":"xhs QR flow"}
+{"time":"2026-08-31T05:17:13.093Z","type":"auth-page","detail":"04:10"}
+{"time":"2026-08-31T05:17:13.093Z","type":"scan-required","detail":"请在打开的真实 Chrome 窗口扫码"}
+{"time":"2026-08-31T05:17:15.107Z","type":"waiting-scan","detail":"0s"}
+{"time":"2026-08-31T05:17:45.498Z","type":"waiting-scan","detail":"30s"}
+{"time":"2026-08-31T05:17:51.578Z","type":"login-success","detail":"[{\"type\":\"xhs\",\"nick\":\"小红书\",\"uid\":\"683596e1000000001b020e5c\",\"status\":1}]"}
+{"time":"2026-08-31T05:17:51.578Z","type":"errors","detail":""}
